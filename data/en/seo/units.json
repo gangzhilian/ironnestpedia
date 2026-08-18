@@ -5,544 +5,273 @@
   "pages": [
     {
       "url_path": "/units",
-      "page_type": "index",
-      "entity": "MapEntity",
-      "source_record_id": null,
       "primary_keyword": "IRON NEST enemies and units",
       "keyword_candidates": [
         "IRON NEST enemy database",
         "IRON NEST unit stats"
       ],
       "title": "IRON NEST Units & Enemies Database - 26 Verified Types",
-      "title_length": 54,
-      "description": "Compare 275 spawn nodes across 87 raw IDs, 26 reviewed units, 51 mission-only IDs and seven reference markers; all canonical merges retain every source row.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "把275个生成节点压缩为87个原始ID，并落实为26个经站长复核的独立单位页、51个任务内嵌ID和7个Reference坐标标记；四组大小写/拼写变体在保留全部源记录的前提下使用canonical ID对外展示。"
+      "description": "Compare 275 spawn nodes across 87 raw IDs, 26 reviewed units, 51 mission-only IDs and seven reference markers; all canonical merges retain every source row."
     },
     {
       "url_path": "/units/allyhospital",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "AllyHospital",
       "primary_keyword": "IRON NEST AllyHospital unit",
       "keyword_candidates": [
         "IRON NEST AllyHospital stats",
         "IRON NEST AllyHospital locations"
       ],
       "title": "IRON NEST AllyHospital Unit - 5 Spawns Across 5 Missions",
-      "title_length": 56,
-      "description": "AllyHospital merges 5 spawns from 5 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "AllyHospital页独有其跨5个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/65538，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "AllyHospital merges 5 spawns from 5 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/allymech",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "AllyMech",
       "primary_keyword": "IRON NEST AllyMech unit",
       "keyword_candidates": [
         "IRON NEST AllyMech stats",
         "IRON NEST AllyMech locations"
       ],
       "title": "IRON NEST AllyMech Unit - 2 Spawns Across 2 Missions",
-      "title_length": 52,
-      "description": "AllyMech merges 2 spawn records across 2 missions, with health 1–1, armour 0–0, stars 0–0 and 1 Role variant, exposing where this unit changes between missions.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "AllyMech页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131074，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "AllyMech merges 2 spawn records across 2 missions, with health 1–1, armour 0–0, stars 0–0 and 1 Role variant, exposing where this unit changes between missions."
     },
     {
       "url_path": "/units/allytank",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "AllyTank",
       "primary_keyword": "IRON NEST AllyTank unit",
       "keyword_candidates": [
         "IRON NEST AllyTank stats",
         "IRON NEST AllyTank locations"
       ],
       "title": "IRON NEST AllyTank Unit - 6 Spawns Across 6 Missions",
-      "title_length": 52,
-      "description": "AllyTank merges 6 spawns from 6 missions and compares health 1–1, armour 0–0, stars 0–0 and 3 Role variants, showing mission-specific strength changes.",
-      "description_length": 151,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "AllyTank页独有其跨6个任务的6次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/262146/262154，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "AllyTank merges 6 spawns from 6 missions and compares health 1–1, armour 0–0, stars 0–0 and 3 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemyartillery",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyArtillery",
       "primary_keyword": "IRON NEST EnemyArtillery enemy",
       "keyword_candidates": [
         "IRON NEST EnemyArtillery stats",
         "IRON NEST EnemyArtillery locations"
       ],
       "title": "IRON NEST EnemyArtillery Enemy - 4 Spawns Across 2 Missions",
-      "title_length": 59,
-      "description": "EnemyArtillery merges 4 spawns from 2 missions and compares health 1–1, armour 0–0, stars 0–1 and 3 Role variants, showing mission-specific strength changes.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "autocomplete"
-      ],
-      "source_unique_value_statement": "EnemyArtillery页独有其跨2个任务的4次生成配置合并结果：生命1–1、装甲0–0、星级0–1及Role变体32769/32801/32929，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyArtillery merges 4 spawns from 2 missions and compares health 1–1, armour 0–0, stars 0–1 and 3 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemyassemblyarea",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyAssemblyArea",
       "primary_keyword": "IRON NEST EnemyAssemblyArea enemy",
       "keyword_candidates": [
         "IRON NEST EnemyAssemblyArea stats",
         "IRON NEST EnemyAssemblyArea locations"
       ],
       "title": "IRON NEST EnemyAssemblyArea Unit - 2 Spawns in 2 Missions",
-      "title_length": 57,
-      "description": "EnemyAssemblyArea merges 2 spawns from 2 missions and compares health 1–1, armour 0–1, stars 2–3 and 1 Role variant, showing mission-specific strength changes.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyAssemblyArea页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–1、星级2–3及Role变体65825，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyAssemblyArea merges 2 spawns from 2 missions and compares health 1–1, armour 0–1, stars 2–3 and 1 Role variant, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemycommander",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyCommander",
       "primary_keyword": "IRON NEST EnemyCommander enemy",
       "keyword_candidates": [
         "IRON NEST EnemyCommander stats",
         "IRON NEST EnemyCommander locations"
       ],
       "title": "IRON NEST EnemyCommander Enemy - 5 Spawns Across 5 Missions",
-      "title_length": 59,
-      "description": "EnemyCommander merges 5 spawns from 5 missions and compares health 1–1, armour 0–1, stars 2–4 and 3 Role variants, showing mission-specific strength changes.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyCommander页独有其跨5个任务的5次生成配置合并结果：生命1–1、装甲0–1、星级2–4及Role变体65825/131073/131201，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyCommander merges 5 spawns from 5 missions and compares health 1–1, armour 0–1, stars 2–4 and 3 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemyfield",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyField",
       "primary_keyword": "IRON NEST EnemyField enemy",
       "keyword_candidates": [
         "IRON NEST EnemyField stats",
         "IRON NEST EnemyField locations"
       ],
       "title": "IRON NEST EnemyField Enemy - 2 Spawns Across 2 Missions",
-      "title_length": 55,
-      "description": "EnemyField merges 2 spawns from 2 missions and compares health 1–1, armour 0–1, stars 1–2 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyField页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–1、星级1–2及Role变体131073/131585，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyField merges 2 spawns from 2 missions and compares health 1–1, armour 0–1, stars 1–2 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemyinfantry",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyInfantry",
       "primary_keyword": "IRON NEST EnemyInfantry enemy",
       "keyword_candidates": [
         "IRON NEST EnemyInfantry stats",
         "IRON NEST EnemyInfantry locations"
       ],
       "title": "IRON NEST EnemyInfantry Enemy - 19 Spawns Across 8 Missions",
-      "title_length": 59,
-      "description": "EnemyInfantry merges 19 spawns from 8 missions and compares health 1–1, armour 0–0, stars 0–1 and 6 Role variants, showing mission-specific strength changes.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyInfantry页独有其跨8个任务的19次生成配置合并结果：生命1–1、装甲0–0、星级0–1及Role变体131073/131201/131265/131329/131585/131617，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyInfantry merges 19 spawns from 8 missions and compares health 1–1, armour 0–0, stars 0–1 and 6 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemymech",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyMech",
       "primary_keyword": "IRON NEST EnemyMech enemy",
       "keyword_candidates": [
         "IRON NEST EnemyMech stats",
         "IRON NEST EnemyMech locations"
       ],
       "title": "IRON NEST EnemyMech Enemy - 3 Spawns Across 3 Missions",
-      "title_length": 54,
-      "description": "EnemyMech merges 3 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 152,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyMech页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131585/262401，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyMech merges 3 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemyrelay",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyRelay",
       "primary_keyword": "IRON NEST EnemyRelay enemy",
       "keyword_candidates": [
         "IRON NEST EnemyRelay stats",
         "IRON NEST EnemyRelay locations"
       ],
       "title": "IRON NEST EnemyRelay Enemy - 2 Spawns Across 2 Missions",
-      "title_length": 55,
-      "description": "EnemyRelay merges 2 spawns from 2 missions and compares health 1–1, armour 0–0, stars 1–2 and 1 Role variant, showing mission-specific strength changes.",
-      "description_length": 152,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyRelay页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级1–2及Role变体65825，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyRelay merges 2 spawns from 2 missions and compares health 1–1, armour 0–0, stars 1–2 and 1 Role variant, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/enemytarget",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyTarget",
       "primary_keyword": "IRON NEST EnemyTarget enemy",
       "keyword_candidates": [
         "IRON NEST EnemyTarget stats",
         "IRON NEST EnemyTarget locations"
       ],
       "title": "IRON NEST EnemyTarget Enemy - 8 Spawns Across 5 Missions",
-      "title_length": 56,
-      "description": "EnemyTarget merges 8 spawns from 5 missions and compares health 1–1, armour 0–1, stars 0–3 and 5 Role variants, showing mission-specific strength changes.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyTarget页独有其跨5个任务的8次生成配置合并结果：生命1–1、装甲0–1、星级0–3及Role变体33/161/289/32801/131105，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "EnemyTarget merges 8 spawns from 5 missions and compares health 1–1, armour 0–1, stars 0–3 and 5 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/frendlyinfantry",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "FrendlyInfantry",
       "primary_keyword": "IRON NEST FrendlyInfantry unit",
       "keyword_candidates": [
         "IRON NEST FrendlyInfantry stats",
         "IRON NEST FrendlyInfantry locations"
       ],
       "title": "IRON NEST FrendlyInfantry Unit - 3 Spawns Across 3 Missions",
-      "title_length": 59,
-      "description": "FrendlyInfantry merges 3 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 1 Role variant, showing mission-specific strength changes.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "FrendlyInfantry页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131082，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "FrendlyInfantry merges 3 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 1 Role variant, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/frendlymech",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "FrendlyMech",
       "primary_keyword": "IRON NEST FrendlyMech unit",
       "keyword_candidates": [
         "IRON NEST FrendlyMech stats",
         "IRON NEST FrendlyMech locations"
       ],
       "title": "IRON NEST FrendlyMech Unit - 5 Spawns Across 3 Missions",
-      "title_length": 55,
-      "description": "FrendlyMech merges 5 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "FrendlyMech页独有其跨3个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131082/262154，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "FrendlyMech merges 5 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/hospital",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "Hospital",
       "primary_keyword": "IRON NEST Hospital unit",
       "keyword_candidates": [
         "IRON NEST Hospital stats",
         "IRON NEST Hospital locations"
       ],
       "title": "IRON NEST Hospital Unit - 3 Spawns Across 3 Missions",
-      "title_length": 52,
-      "description": "Hospital merges 3 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 151,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Hospital页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/131074，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "Hospital merges 3 spawns from 3 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/hostileartillery",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "HostileArtillery",
       "primary_keyword": "IRON NEST HostileArtillery enemy",
       "keyword_candidates": [
         "IRON NEST HostileArtillery stats",
         "IRON NEST HostileArtillery locations"
       ],
       "title": "IRON NEST HostileArtillery Unit - 4 Spawns in 2 Missions",
-      "title_length": 56,
-      "description": "HostileArtillery merges 4 spawns from 2 missions and compares health 1–1, armour 0–0, stars 0–0 and 1 Role variant, showing mission-specific strength changes.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "HostileArtillery页独有其跨2个任务的4次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体32897，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "HostileArtillery merges 4 spawns from 2 missions and compares health 1–1, armour 0–0, stars 0–0 and 1 Role variant, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/hostilebunker",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "HostileBunker",
       "primary_keyword": "IRON NEST HostileBunker enemy",
       "keyword_candidates": [
         "IRON NEST HostileBunker stats",
         "IRON NEST HostileBunker locations"
       ],
       "title": "IRON NEST HostileBunker Enemy - 4 Spawns Across 4 Missions",
-      "title_length": 58,
-      "description": "HostileBunker merges 4 spawns from 4 missions and compares health 1–1, armour 0–1, stars 0–3 and 3 Role variants, showing mission-specific strength changes.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "HostileBunker页独有其跨4个任务的4次生成配置合并结果：生命1–1、装甲0–1、星级0–3及Role变体65/65537/65601，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "HostileBunker merges 4 spawns from 4 missions and compares health 1–1, armour 0–1, stars 0–3 and 3 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/hostileinfatry",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "HostileInfatry",
       "primary_keyword": "IRON NEST HostileInfatry enemy",
       "keyword_candidates": [
         "IRON NEST HostileInfatry stats",
         "IRON NEST HostileInfatry locations"
       ],
       "title": "IRON NEST HostileInfatry Enemy - 5 Spawns Across 4 Missions",
-      "title_length": 59,
-      "description": "HostileInfatry merges 5 spawns from 4 missions and compares health 1–1, armour 0–0, stars 0–0 and 3 Role variants, showing mission-specific strength changes.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "HostileInfatry页独有其跨4个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体65/131073/131137，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "HostileInfatry merges 5 spawns from 4 missions and compares health 1–1, armour 0–0, stars 0–0 and 3 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/hostiletank",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "HostileTank",
       "primary_keyword": "IRON NEST HostileTank enemy",
       "keyword_candidates": [
         "IRON NEST HostileTank stats",
         "IRON NEST HostileTank locations"
       ],
       "title": "IRON NEST HostileTank Enemy - 4 Spawns Across 4 Missions",
-      "title_length": 56,
-      "description": "HostileTank merges 4 spawns from 4 missions and compares health 1–1, armour 0–0, stars 0–0 and 3 Role variants, showing mission-specific strength changes.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "HostileTank页独有其跨4个任务的4次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体65/262145/262209，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "HostileTank merges 4 spawns from 4 missions and compares health 1–1, armour 0–0, stars 0–0 and 3 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/mechanized",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "Mechanized",
       "primary_keyword": "IRON NEST Mechanized unit",
       "keyword_candidates": [
         "IRON NEST Mechanized stats",
         "IRON NEST Mechanized locations"
       ],
       "title": "IRON NEST Mechanized Unit - 2 Spawns Across 2 Missions",
-      "title_length": 54,
-      "description": "Mechanized merges 2 spawns from 2 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Mechanized页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131074/131082，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "Mechanized merges 2 spawns from 2 missions and compares health 1–1, armour 0–0, stars 0–0 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/police",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "Police",
       "primary_keyword": "IRON NEST Police unit",
       "keyword_candidates": [
         "IRON NEST Police stats",
         "IRON NEST Police locations"
       ],
       "title": "IRON NEST Police Unit - 3 Spawns Across 3 Missions",
-      "title_length": 50,
-      "description": "Police merges 3 spawn records across 3 missions, with health 1–1, armour 0–0, stars 0–0 and 2 Role variants, exposing where this unit changes between missions.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Police页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/131074，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "Police merges 3 spawn records across 3 missions, with health 1–1, armour 0–0, stars 0–0 and 2 Role variants, exposing where this unit changes between missions."
     },
     {
       "url_path": "/units/target",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "Target",
       "primary_keyword": "IRON NEST Target unit",
       "keyword_candidates": [
         "IRON NEST Target stats",
         "IRON NEST Target locations"
       ],
       "title": "IRON NEST Target Unit - 26 Spawns Across 13 Missions",
-      "title_length": 52,
-      "description": "Target merges 26 spawns from 13 missions and compares health 1–1, armour 0–1, stars 0–1 and 2 Role variants, showing mission-specific strength changes.",
-      "description_length": 151,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Target页独有其跨13个任务的26次生成配置合并结果：生命1–1、装甲0–1、星级0–1及Role变体33/32801，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "Target merges 26 spawns from 13 missions and compares health 1–1, armour 0–1, stars 0–1 and 2 Role variants, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/trainstation",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "TrainStation",
       "primary_keyword": "IRON NEST TrainStation unit",
       "keyword_candidates": [
         "IRON NEST TrainStation stats",
         "IRON NEST TrainStation locations"
       ],
       "title": "IRON NEST TrainStation Unit - 2 Spawns Across 2 Missions",
-      "title_length": 56,
-      "description": "TrainStation merges 2 spawns from 2 missions and compares health 1–1, armour 0–0, stars 2–3 and 1 Role variant, showing mission-specific strength changes.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "TrainStation页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级2–3及Role变体65537，可直接看出同一单位在不同任务是否被改强或改弱。"
+      "description": "TrainStation merges 2 spawns from 2 missions and compares health 1–1, armour 0–0, stars 2–3 and 1 Role variant, showing mission-specific strength changes."
     },
     {
       "url_path": "/units/allyartillery",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "AllyArtillery",
       "primary_keyword": "IRON NEST AllyArtillery unit",
       "keyword_candidates": [
         "IRON NEST AllyArtillery stats",
         "IRON NEST AllyArtillery locations"
       ],
       "title": "IRON NEST AllyArtillery Unit - 6 Spawns Across 3 Missions",
-      "title_length": 57,
-      "description": "AllyArtillery combines 6 rows from AllyArtillery and allyArtillery as one canonical unit across 3 missions, retaining both IDs, stat ranges and 2 Role variants.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "AllyArtillery页把AllyArtillery与allyArtillery的6条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖3个任务，生命1–1、装甲0–1、星级0–1和Role 32770/32778可跨任务比较。"
+      "description": "AllyArtillery combines 6 rows from AllyArtillery and allyArtillery as one canonical unit across 3 missions, retaining both IDs, stat ranges and 2 Role variants."
     },
     {
       "url_path": "/units/allyinfantry",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "AllyInfantry",
       "primary_keyword": "IRON NEST AllyInfantry unit",
       "keyword_candidates": [
         "IRON NEST AllyInfantry stats",
         "IRON NEST AllyInfantry locations"
       ],
       "title": "IRON NEST AllyInfantry Unit - 14 Spawns Across 10 Missions",
-      "title_length": 58,
-      "description": "AllyInfantry combines 14 rows from AllyInfantry and allyInfantry as one canonical unit across 10 missions, retaining both IDs, stat ranges and 3 Role variants.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "AllyInfantry页把AllyInfantry与allyInfantry的14条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖10个任务，生命1–1、装甲0–0、星级0–2和Role 2/131074/131082可跨任务比较。"
+      "description": "AllyInfantry combines 14 rows from AllyInfantry and allyInfantry as one canonical unit across 10 missions, retaining both IDs, stat ranges and 3 Role variants."
     },
     {
       "url_path": "/units/allyspotter",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "AllySpotter",
       "primary_keyword": "IRON NEST AllySpotter unit",
       "keyword_candidates": [
         "IRON NEST AllySpotter stats",
         "IRON NEST AllySpotter locations"
       ],
       "title": "IRON NEST AllySpotter Unit - 24 Spawns Across 14 Missions",
-      "title_length": 57,
-      "description": "AllySpotter combines 24 rows from AllySpotter and allyspotter as one canonical unit across 14 missions, retaining both IDs, stat ranges and 3 Role variants.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "AllySpotter页把AllySpotter与allyspotter的24条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖14个任务，生命1–1、装甲0–0、星级0–0和Role 6/131078/131082可跨任务比较。"
+      "description": "AllySpotter combines 24 rows from AllySpotter and allyspotter as one canonical unit across 14 missions, retaining both IDs, stat ranges and 3 Role variants."
     },
     {
       "url_path": "/units/enemyarmour",
-      "page_type": "data_entity",
-      "entity": "MapEntity",
-      "source_record_id": "EnemyArmour",
       "primary_keyword": "IRON NEST EnemyArmour enemy",
       "keyword_candidates": [
         "IRON NEST EnemyArmour stats",
         "IRON NEST EnemyArmour locations"
       ],
       "title": "IRON NEST EnemyArmour Enemy - 6 Spawns Across 4 Missions",
-      "title_length": 56,
-      "description": "EnemyArmour combines 6 rows from EnemyArmour and EnemyArmor as one canonical unit across 4 missions, retaining both IDs, stat ranges and 3 Role variants.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "EnemyArmour页把EnemyArmour与EnemyArmor的6条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖4个任务，生命1–1、装甲0–0、星级0–0和Role 131073/131201/131617可跨任务比较。"
+      "description": "EnemyArmour combines 6 rows from EnemyArmour and EnemyArmor as one canonical unit across 4 missions, retaining both IDs, stat ranges and 3 Role variants."
     }
   ]
 }

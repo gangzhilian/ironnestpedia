@@ -5,9 +5,6 @@
   "pages": [
     {
       "url_path": "/mutators",
-      "page_type": "index",
-      "entity": "Mutator",
-      "source_record_id": null,
       "primary_keyword": "IRON NEST mutators",
       "keyword_candidates": [
         "IRON NEST mutator list",
@@ -15,14 +12,7 @@
         "IRON NEST distance mutators"
       ],
       "title": "IRON NEST Mutators Database - 16 Variants, 10 Names",
-      "title_length": 51,
-      "description": "Review 16 mutator configurations under 10 labels, including six same-name variants that change bearing and distance corrections without false deduplication.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "在单页保留10个唯一显示名下的16组“名称+描述+tier”配置，尤其并列呈现六组同名但分别影响方向与距离修正的变体，避免错误去重。"
+      "description": "Review 16 mutator configurations under 10 labels, including six same-name variants that change bearing and distance corrections without false deduplication."
     }
   ]
 }

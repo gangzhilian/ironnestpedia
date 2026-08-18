@@ -20,8 +20,6 @@ const indexRoute = routeMap.get(indexPath);
   <p class="eyebrow">{route.entity} data page</p>
   <h1>{seo.title}</h1>
   <p>{seo.description}</p>
-  <p class="notice">{(route as any).unique_value_statement}</p>
-  {(route as any).merge_note && <p>{(route as any).merge_note}</p>}
 
   <h2>Verified data</h2>
   <DataTable rows={rows} fields={fields} />
@@ -45,4 +43,3 @@ const indexRoute = routeMap.get(indexPath);
     <ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul>
   </section>
 </Layout>
-

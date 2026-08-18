@@ -9,7 +9,8 @@
     "migrate": "node scripts/migrate-from-project-data.mjs",
     "validate:data": "node scripts/validate-data.js",
     "validate:links": "node scripts/check-internal-links.js",
-    "verify": "npm run build && npm run validate:data && npm run validate:links"
+    "validate:no-cjk": "node scripts/check-no-cjk.js",
+    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:no-cjk"
   },
   "keywords": ["iron-nest", "astro", "game-database"],
   "author": "",

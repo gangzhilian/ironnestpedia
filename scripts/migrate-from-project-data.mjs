@@ -47,11 +47,23 @@ await writeJson(join(dataRoot, 'schema.json'), {
 });
 
 const keywordSource = await readJson(join(sourceRoot, '17-keywords.json'));
+const seoPageFields = [
+  'url_path',
+  'primary_keyword',
+  'keyword_candidates',
+  'title',
+  'description',
+];
+const pickSeoPageFields = (page) => Object.fromEntries(
+  seoPageFields
+    .filter((field) => Object.hasOwn(page, field))
+    .map((field) => [field, page[field]]),
+);
 const groups = new Map();
 for (const page of keywordSource.pages) {
   const prefix = page.url_path.split('/').filter(Boolean)[0] || 'home';
   if (!groups.has(prefix)) groups.set(prefix, []);
-  groups.get(prefix).push(page);
+  groups.get(prefix).push(pickSeoPageFields(page));
 }
 for (const [prefix, pages] of groups) {
   await writeJson(join(dataRoot, 'en', 'seo', `${prefix}.json`), {
@@ -73,4 +85,3 @@ console.log(JSON.stringify({
   entity_files: 7,
   live_files: 2,
 }, null, 2));
-

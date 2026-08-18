@@ -3,5 +3,8 @@ import PlaceholderPage from '../../components/PlaceholderPage.astro';
 import { routeMap } from '../../lib/data';
 const route = routeMap.get('/tools/mission-map')!;
 ---
-<PlaceholderPage path={route.url_path} title="Mission Map" reason={route.unique_value_statement} />
-
+<PlaceholderPage
+  path={route.url_path}
+  title="Mission Map"
+  reason="The interactive mission map is reserved for a later release and is not yet available."
+/>

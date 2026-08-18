@@ -15,7 +15,6 @@ const related = getRelatedRoutes(route);
   <p class="eyebrow">{route.entity} index</p>
   <h1>{seo.title}</h1>
   <p>{seo.description}</p>
-  <p class="notice">{(route as any).unique_value_statement}</p>
 
   {children.length > 0 && (
     <section>
@@ -34,4 +33,3 @@ const related = getRelatedRoutes(route);
     <ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul>
   </section>
 </Layout>
-

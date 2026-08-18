@@ -5,25 +5,13 @@
   "pages": [
     {
       "url_path": "/medals",
-      "page_type": "index",
-      "entity": "Medal",
-      "source_record_id": null,
       "primary_keyword": "IRON NEST medals",
       "keyword_candidates": [
         "IRON NEST gold medal guide",
         "IRON NEST medal requirements"
       ],
       "title": "IRON NEST Medals - 26 IDs, 162 Tier Conditions Compared",
-      "title_length": 55,
-      "description": "Compare 26 medal IDs across 54 medal slots and 162 bronze, silver and gold conditions, while both unresolved duplicate definitions remain visible for audit.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "similarweb"
-      ],
-      "source_unique_value_statement": "集中解释26个被真实任务引用的奖章ID如何换算成54个任务奖章槽和162个铜银金门槛，并同时展示两个重复ID的双版本证据而不伪选权威值。"
+      "description": "Compare 26 medal IDs across 54 medal slots and 162 bronze, silver and gold conditions, while both unresolved duplicate definitions remain visible for audit."
     }
   ]
 }

@@ -75,7 +75,27 @@ for (const file of sitemapFiles) {
   }
 }
 for (const path of noindexPaths) if (sitemapUrls.has(path)) errors.push(`${path}: noindex page leaked into sitemap`);
-if (sitemapUrls.size !== 105) errors.push(`sitemap URL total ${sitemapUrls.size}; expected 105`);
+const expectedSitemapRoutes = new Map([
+  ['/', { entity: 'Home', page_type: 'home' }],
+  ...routes
+    .filter((route) => route.page_type !== 'tool_placeholder')
+    .map((route) => [route.url_path, { entity: route.entity, page_type: route.page_type }]),
+]);
+const missingSitemapRoutes = [...expectedSitemapRoutes]
+  .filter(([path]) => !sitemapUrls.has(path))
+  .map(([url_path, route]) => ({ url_path, ...route }));
+const extraSitemapRoutes = [...sitemapUrls]
+  .filter((path) => !expectedSitemapRoutes.has(path));
+if (missingSitemapRoutes.length || extraSitemapRoutes.length) {
+  errors.push(JSON.stringify({
+    sitemap_diff: {
+      expected: expectedSitemapRoutes.size,
+      actual: sitemapUrls.size,
+      missing: missingSitemapRoutes,
+      extra: extraSitemapRoutes,
+    },
+  }));
+}
 
 if (errors.length) {
   console.error(JSON.stringify({ status: 'FAIL', html_pages: htmlFiles.length, audited_pages: audited.length, sitemap_urls: sitemapUrls.size, errors }, null, 2));
@@ -89,5 +109,8 @@ console.log(JSON.stringify({
   audited_pages: audited.length,
   below_three_inbound: 0,
   minimum_inbound: Math.min(...inboundCounts),
+  expected_sitemap_urls: expectedSitemapRoutes.size,
   sitemap_urls: sitemapUrls.size,
+  missing_sitemap_urls: missingSitemapRoutes.length,
+  extra_sitemap_urls: extraSitemapRoutes.length,
 }, null, 2));

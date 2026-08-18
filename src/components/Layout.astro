@@ -36,6 +36,7 @@ const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placehol
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex,follow" />}
     <meta property="og:type" content="website" />
@@ -76,7 +77,6 @@ const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placehol
       <div class="inner">
         <nav aria-label="Database indexes">
           {site.entity_indexes.map((item) => <a href={item.url}>{item.label}</a>)}
-          <a href="/sitemap-index.xml">Sitemap</a>
         </nav>
         <p>{site.footer_disclaimer}</p>
       </div>
@@ -92,4 +92,3 @@ const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placehol
     </script>
   </body>
 </html>
-

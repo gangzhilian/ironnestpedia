@@ -5,9 +5,6 @@
   "pages": [
     {
       "url_path": "/missions",
-      "page_type": "index",
-      "entity": "Mission",
-      "source_record_id": null,
       "primary_keyword": "IRON NEST missions",
       "keyword_candidates": [
         "IRON NEST mission guide",
@@ -15,369 +12,177 @@
         "IRON NEST all targets"
       ],
       "title": "IRON NEST Missions Database - 15 Campaign, 2 Challenge",
-      "title_length": 54,
-      "description": "Explore 15 campaign missions and 2 challenges in an unlock chain linking prerequisites, follow-ups, medals and achievements; 14 debug/Base graphs are excluded.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "autocomplete",
-        "similarweb"
-      ],
-      "source_unique_value_statement": "只收录15个战役任务和2个挑战模式，并用同一张解锁链串起前置任务、后续任务、奖章槽和成就索引；14个调试、教程重复体与Base模板不会混入玩家关卡数。"
+      "description": "Explore 15 campaign missions and 2 challenges in an unlock chain linking prerequisites, follow-ups, medals and achievements; 14 debug/Base graphs are excluded."
     },
     {
       "url_path": "/missions/fireoncall",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "FireOnCall",
       "primary_keyword": "IRON NEST Fire on Call mission",
       "keyword_candidates": [
         "IRON NEST Fire on Call medals",
         "IRON NEST Fire on Call targets"
       ],
       "title": "IRON NEST Fire on Call Mission - 4 Medals, 8 Targets",
-      "title_length": 52,
-      "description": "Fire on Call combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 8 targets while keeping medal thresholds and target configuration together.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Fire on Call页独有其1个前置、1个后续、4个奖章槽、2项关联成就和8条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Fire on Call combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 8 targets while keeping medal thresholds and target configuration together."
     },
     {
       "url_path": "/missions/hightide",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "HighTide",
       "primary_keyword": "IRON NEST High Tide mission",
       "keyword_candidates": [
         "IRON NEST High Tide medals",
         "IRON NEST High Tide targets"
       ],
       "title": "IRON NEST High Tide Mission - 4 Medals, 13 Targets",
-      "title_length": 50,
-      "description": "High Tide combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets while keeping medal thresholds and target configuration together.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "High Tide页独有其1个前置、1个后续、4个奖章槽、2项关联成就和13条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "High Tide combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets while keeping medal thresholds and target configuration together."
     },
     {
       "url_path": "/missions/blindfire",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "BlindFire",
       "primary_keyword": "IRON NEST Blind Fire mission",
       "keyword_candidates": [
         "IRON NEST Blind Fire medals",
         "IRON NEST Blind Fire targets"
       ],
       "title": "IRON NEST Blind Fire Mission - 4 Medals, 17 Targets",
-      "title_length": 51,
-      "description": "Blind Fire combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 17 targets while keeping medal thresholds and target configuration together.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Blind Fire页独有其1个前置、1个后续、4个奖章槽、2项关联成就和17条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Blind Fire combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 17 targets while keeping medal thresholds and target configuration together."
     },
     {
       "url_path": "/missions/phantombattery",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "PhantomBattery",
       "primary_keyword": "IRON NEST Phantom Battery mission",
       "keyword_candidates": [
         "IRON NEST Phantom Battery medals",
         "IRON NEST Phantom Battery targets"
       ],
       "title": "IRON NEST Phantom Battery Mission - 4 Medals, 6 Targets",
-      "title_length": 55,
-      "description": "Phantom Battery combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 6 targets without forcing readers to cross-check separate records.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Phantom Battery页独有其1个前置、1个后续、4个奖章槽、2项关联成就和6条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Phantom Battery combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 6 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/finalharvest",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "FinalHarvest",
       "primary_keyword": "IRON NEST Final Harvest mission",
       "keyword_candidates": [
         "IRON NEST Final Harvest medals",
         "IRON NEST Final Harvest targets"
       ],
       "title": "IRON NEST Final Harvest Mission - 4 Medals, 26 Targets",
-      "title_length": 54,
-      "description": "Final Harvest combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 26 targets without forcing readers to cross-check separate records.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Final Harvest页独有其1个前置、1个后续、4个奖章槽、2项关联成就和26条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Final Harvest combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 26 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/whiteshells",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "WhiteShells",
       "primary_keyword": "IRON NEST White Shells mission",
       "keyword_candidates": [
         "IRON NEST White Shells medals",
         "IRON NEST White Shells targets"
       ],
       "title": "IRON NEST White Shells Mission - 4 Medals, 10 Targets",
-      "title_length": 53,
-      "description": "White Shells combines 1 prerequisite, 0 follow-ups, 4 medal slots, 5 achievements and 10 targets without forcing readers to cross-check separate records.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "White Shells页独有其1个前置、0个后续、4个奖章槽、5项关联成就和10条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "White Shells combines 1 prerequisite, 0 follow-ups, 4 medal slots, 5 achievements and 10 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/hospital-false-flag",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "Hospital False Flag",
       "primary_keyword": "IRON NEST Calibration Fire mission",
       "keyword_candidates": [
         "IRON NEST Calibration Fire medals",
         "IRON NEST Calibration Fire targets"
       ],
       "title": "IRON NEST Calibration Fire Mission - 1 Medal, 5 Targets",
-      "title_length": 55,
-      "description": "Calibration Fire combines 0 prerequisites, 1 follow-up, 1 medal slot, 2 achievements and 5 targets without forcing readers to cross-check separate records.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "autocomplete",
-        "similarweb"
-      ],
-      "source_unique_value_statement": "Calibration Fire页独有其0个前置、1个后续、1个奖章槽、2项关联成就和5条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Calibration Fire combines 0 prerequisites, 1 follow-up, 1 medal slot, 2 achievements and 5 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/ceremony-and-hche",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "ceremony and HCHE",
       "primary_keyword": "IRON NEST ceremony and HCHE mission",
       "keyword_candidates": [
         "IRON NEST ceremony and HCHE medals",
         "IRON NEST ceremony and HCHE targets"
       ],
       "title": "IRON NEST ceremony and HCHE Mission - 1 Medal, 11 Targets",
-      "title_length": 57,
-      "description": "ceremony and HCHE combines 1 prerequisite, 1 follow-up, 1 medal slot, 2 achievements and 11 targets without forcing readers to cross-check separate records.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "ceremony and HCHE页独有其1个前置、1个后续、1个奖章槽、2项关联成就和11条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "ceremony and HCHE combines 1 prerequisite, 1 follow-up, 1 medal slot, 2 achievements and 11 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/insurrections-and-requisitions",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "Insurrections and Requisitions",
       "primary_keyword": "IRON NEST Insurrections and Requisitions mission",
       "keyword_candidates": [
         "IRON NEST Insurrections and Requisitions medals",
         "IRON NEST Insurrections and Requisitions targets"
       ],
       "title": "IRON NEST Insurrections & Requisitions Mission - 10 Targets",
-      "title_length": 59,
-      "description": "Insurrections and Requisitions links 1 prior, 2 follow-ups, 4 medal slots, 2 achievements and 10 targets in one record, preserving its exact objective context.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Insurrections and Requisitions页独有其1个前置、2个后续、4个奖章槽、2项关联成就和10条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Insurrections and Requisitions links 1 prior, 2 follow-ups, 4 medal slots, 2 achievements and 10 targets in one record, preserving its exact objective context."
     },
     {
       "url_path": "/missions/artillery-introduction",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "Artillery Introduction",
       "primary_keyword": "IRON NEST Counter-Battery mission",
       "keyword_candidates": [
         "IRON NEST Counter-Battery medals",
         "IRON NEST Counter-Battery targets"
       ],
       "title": "IRON NEST Counter-Battery Mission - 4 Medals, 8 Targets",
-      "title_length": 55,
-      "description": "Counter-Battery combines 1 prerequisite, 2 follow-ups, 4 medal slots, 2 achievements and 8 targets without forcing readers to cross-check separate records.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "autocomplete"
-      ],
-      "source_unique_value_statement": "Counter-Battery页独有其1个前置、2个后续、4个奖章槽、2项关联成就和8条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Counter-Battery combines 1 prerequisite, 2 follow-ups, 4 medal slots, 2 achievements and 8 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/ironroad",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "IronRoad",
       "primary_keyword": "IRON NEST Iron Road mission",
       "keyword_candidates": [
         "IRON NEST Iron Road medals",
         "IRON NEST Iron Road targets"
       ],
       "title": "IRON NEST Iron Road Mission - 4 Medals, 21 Targets",
-      "title_length": 50,
-      "description": "Iron Road combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 21 targets while keeping medal thresholds and target configuration together.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Iron Road页独有其1个前置、1个后续、4个奖章槽、2项关联成就和21条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Iron Road combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 21 targets while keeping medal thresholds and target configuration together."
     },
     {
       "url_path": "/missions/siegeofcartagena",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "SiegeOfCartagena",
       "primary_keyword": "IRON NEST Siege of Cartagena mission",
       "keyword_candidates": [
         "IRON NEST Siege of Cartagena medals",
         "IRON NEST Siege of Cartagena targets"
       ],
       "title": "IRON NEST Siege of Cartagena Mission - 4 Medals, 13 Targets",
-      "title_length": 59,
-      "description": "Siege of Cartagena combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets without forcing readers to cross-check separate records.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Siege of Cartagena页独有其1个前置、1个后续、4个奖章槽、2项关联成就和13条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Siege of Cartagena combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/the-gorge",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "The Gorge",
       "primary_keyword": "IRON NEST The Gorge mission",
       "keyword_candidates": [
         "IRON NEST The Gorge medals",
         "IRON NEST The Gorge targets"
       ],
       "title": "IRON NEST The Gorge Mission - 4 Medals, 13 Targets",
-      "title_length": 50,
-      "description": "The Gorge combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets while keeping medal thresholds and target configuration together.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "The Gorge页独有其1个前置、1个后续、4个奖章槽、2项关联成就和13条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "The Gorge combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets while keeping medal thresholds and target configuration together."
     },
     {
       "url_path": "/missions/rockofgibraltar",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "RockofGibraltar",
       "primary_keyword": "IRON NEST Rock of Gibraltar mission",
       "keyword_candidates": [
         "IRON NEST Rock of Gibraltar medals",
         "IRON NEST Rock of Gibraltar targets"
       ],
       "title": "IRON NEST Rock of Gibraltar Mission - 4 Medals, 8 Targets",
-      "title_length": 57,
-      "description": "Rock of Gibraltar combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 8 targets without forcing readers to cross-check separate records.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Rock of Gibraltar页独有其1个前置、1个后续、4个奖章槽、2项关联成就和8条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Rock of Gibraltar combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 8 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/deadreckoning",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "DeadReckoning",
       "primary_keyword": "IRON NEST Dead Reckoning mission",
       "keyword_candidates": [
         "IRON NEST Dead Reckoning medals",
         "IRON NEST Dead Reckoning targets"
       ],
       "title": "IRON NEST Dead Reckoning Mission - 4 Medals, 10 Targets",
-      "title_length": 55,
-      "description": "Dead Reckoning combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 10 targets without forcing readers to cross-check separate records.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Dead Reckoning页独有其1个前置、1个后续、4个奖章槽、2项关联成就和10条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Dead Reckoning combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 10 targets without forcing readers to cross-check separate records."
     },
     {
       "url_path": "/missions/challangefdc",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "ChallangeFDC",
       "primary_keyword": "IRON NEST Skirmish - Challenge - Counter battery timer mission",
       "keyword_candidates": [
         "IRON NEST Skirmish - Challenge - Counter battery timer medals",
         "IRON NEST Skirmish - Challenge - Counter battery timer targets"
       ],
       "title": "IRON NEST ChallangeFDC Mission - 4 Medals, 15 Targets",
-      "title_length": 53,
-      "description": "ChallangeFDC Counter Battery Timer has 1 prior, 0 follow-ups, 4 medal slots, 0 achievements and 15 targets; its medal and objective context stays in one record.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Skirmish\n- Challenge -\nCounter battery timer页独有其1个前置、0个后续、4个奖章槽、0项关联成就和15条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "ChallangeFDC Counter Battery Timer has 1 prior, 0 follow-ups, 4 medal slots, 0 achievements and 15 targets; its medal and objective context stays in one record."
     },
     {
       "url_path": "/missions/chill",
-      "page_type": "data_entity",
-      "entity": "Mission",
-      "source_record_id": "Chill",
       "primary_keyword": "IRON NEST Skirmish - Chill - Uncontested Front mission",
       "keyword_candidates": [
         "IRON NEST Skirmish - Chill - Uncontested Front medals",
         "IRON NEST Skirmish - Chill - Uncontested Front targets"
       ],
       "title": "IRON NEST Chill Mission - 4 Medals, 18 Targets - Source Data",
-      "title_length": 60,
-      "description": "Chill Uncontested Front has 1 prior, 0 follow-ups, 4 medal slots, 0 achievements and 18 targets; its exact medal and objective context stays in one record.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Skirmish\n- Chill -\nUncontested Front页独有其1个前置、0个后续、4个奖章槽、0项关联成就和18条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。"
+      "description": "Chill Uncontested Front has 1 prior, 0 follow-ups, 4 medal slots, 0 achievements and 18 targets; its exact medal and objective context stays in one record."
     }
   ]
 }

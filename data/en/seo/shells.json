@@ -5,9 +5,6 @@
   "pages": [
     {
       "url_path": "/shells",
-      "page_type": "index",
-      "entity": "Shell",
-      "source_record_id": null,
       "primary_keyword": "IRON NEST shells and ammo",
       "keyword_candidates": [
         "IRON NEST shell types",
@@ -15,441 +12,207 @@
         "IRON NEST ammo database"
       ],
       "title": "IRON NEST Shells & Ammo Database - 21 Types Compared",
-      "title_length": 52,
-      "description": "Compare speed, damage, blast radius and charge-level maximum range for all 21 shell definitions, separating 20 player rounds from the EMPT sentry record.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "autocomplete",
-        "similarweb"
-      ],
-      "source_unique_value_statement": "把21种炮弹的速度、伤害、爆炸半径和各装药级最大射程放在同一可比较口径中，并明确区分20个玩家炮弹与EMPT哨兵定义。"
+      "description": "Compare speed, damage, blast radius and charge-level maximum range for all 21 shell definitions, separating 20 player rounds from the EMPT sentry record."
     },
     {
       "url_path": "/shells/ap",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "AP",
       "primary_keyword": "IRON NEST AP shell",
       "keyword_candidates": [
         "IRON NEST AP ammo",
         "IRON NEST AP round"
       ],
       "title": "IRON NEST AP Shell - 2 Damage, 0.15 Impact Radius Data",
-      "title_length": 54,
-      "description": "AP combines speed 0.7, damage 2, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "similarweb"
-      ],
-      "source_unique_value_statement": "AP页独有速度0.7、伤害2、爆炸半径0.15、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其APShell打孔卡成本10。"
+      "description": "AP combines speed 0.7, damage 2, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/aphe",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "APHE",
       "primary_keyword": "IRON NEST APHE shell",
       "keyword_candidates": [
         "IRON NEST APHE ammo",
         "IRON NEST APHE round"
       ],
       "title": "IRON NEST APHE Shell - 2 Damage, 0.25 Impact Radius",
-      "title_length": 51,
-      "description": "APHE combines speed 0.7, damage 2, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 15; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "APHE页独有速度0.7、伤害2、爆炸半径0.25、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其APHEShell打孔卡成本15。"
+      "description": "APHE combines speed 0.7, damage 2, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 15; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/atmc",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "ATMC",
       "primary_keyword": "IRON NEST ATMC shell",
       "keyword_candidates": [
         "IRON NEST ATMC ammo",
         "IRON NEST ATMC round"
       ],
       "title": "IRON NEST ATMC Shell - 2 Damage, 3 Impact Radius Data",
-      "title_length": 53,
-      "description": "ATMC combines speed 0.7, damage 2, impact radius 3, 1 projectile, 5–30 charge range and punchcard cost 666; no other shell repeats this complete setup here.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "ATMC页独有速度0.7、伤害2、爆炸半径3、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其ATMCShell打孔卡成本666。"
+      "description": "ATMC combines speed 0.7, damage 2, impact radius 3, 1 projectile, 5–30 charge range and punchcard cost 666; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/clmn",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "CLMN",
       "primary_keyword": "IRON NEST CLMN shell",
       "keyword_candidates": [
         "IRON NEST CLMN ammo",
         "IRON NEST CLMN round"
       ],
       "title": "IRON NEST CLMN Shell - 1 Damage, 0.5 Impact Radius",
-      "title_length": 50,
-      "description": "CLMN combines speed 0.7, damage 1, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 17; no other shell repeats this complete setup here.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "CLMN页独有速度0.7、伤害1、爆炸半径0.5、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其CLMNShell打孔卡成本17。"
+      "description": "CLMN combines speed 0.7, damage 1, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 17; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/cyan",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "CYAN",
       "primary_keyword": "IRON NEST CYAN shell",
       "keyword_candidates": [
         "IRON NEST CYAN ammo",
         "IRON NEST CYAN round"
       ],
       "title": "IRON NEST CYAN Shell - 1 Damage, 0.75 Impact Radius",
-      "title_length": 51,
-      "description": "CYAN combines speed 0.7, damage 1, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 28; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "CYAN页独有速度0.7、伤害1、爆炸半径0.75、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其CYANShell打孔卡成本28。"
+      "description": "CYAN combines speed 0.7, damage 1, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 28; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/dril",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "DRIL",
       "primary_keyword": "IRON NEST DRIL shell",
       "keyword_candidates": [
         "IRON NEST DRIL ammo",
         "IRON NEST DRIL round"
       ],
       "title": "IRON NEST DRIL Shell - 1 Damage, 0.07 Impact Radius",
-      "title_length": 51,
-      "description": "DRIL combines speed 0.7, damage 1, impact radius 0.07, 1 projectile, 5–30 charge range and punchcard cost 3; no other shell repeats this complete setup here.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "DRIL页独有速度0.7、伤害1、爆炸半径0.07、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其DRILShell打孔卡成本3。"
+      "description": "DRIL combines speed 0.7, damage 1, impact radius 0.07, 1 projectile, 5–30 charge range and punchcard cost 3; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/eqke",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "EQKE",
       "primary_keyword": "IRON NEST EQKE shell",
       "keyword_candidates": [
         "IRON NEST EQKE ammo",
         "IRON NEST EQKE round"
       ],
       "title": "IRON NEST EQKE Shell - 2 Damage, 0.55 Impact Radius",
-      "title_length": 51,
-      "description": "EQKE combines speed 0.7, damage 2, impact radius 0.55, 1 projectile, 5–30 charge range and punchcard cost 26; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "EQKE页独有速度0.7、伤害2、爆炸半径0.55、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其EQKEShell打孔卡成本26。"
+      "description": "EQKE combines speed 0.7, damage 2, impact radius 0.55, 1 projectile, 5–30 charge range and punchcard cost 26; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/flch",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "FLCH",
       "primary_keyword": "IRON NEST FLCH shell",
       "keyword_candidates": [
         "IRON NEST FLCH ammo",
         "IRON NEST FLCH round"
       ],
       "title": "IRON NEST FLCH Shell - 1 Damage, 0.62 Impact Radius",
-      "title_length": 51,
-      "description": "FLCH combines speed 0.7, damage 1, impact radius 0.62, 1 projectile, 5–30 charge range and punchcard cost 20; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "FLCH页独有速度0.7、伤害1、爆炸半径0.62、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其FLCHShell打孔卡成本20。"
+      "description": "FLCH combines speed 0.7, damage 1, impact radius 0.62, 1 projectile, 5–30 charge range and punchcard cost 20; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/hche",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "HCHE",
       "primary_keyword": "IRON NEST HCHE shell",
       "keyword_candidates": [
         "IRON NEST HCHE ammo",
         "IRON NEST HCHE round"
       ],
       "title": "IRON NEST HCHE Shell - 1 Damage, 0.55 Impact Radius",
-      "title_length": 51,
-      "description": "HCHE combines speed 0.7, damage 1, impact radius 0.55, 1 projectile, 5–30 charge range and punchcard cost 18; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "autocomplete"
-      ],
-      "source_unique_value_statement": "HCHE页独有速度0.7、伤害1、爆炸半径0.55、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其HCHEShell打孔卡成本18。"
+      "description": "HCHE combines speed 0.7, damage 1, impact radius 0.55, 1 projectile, 5–30 charge range and punchcard cost 18; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/he",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "HE",
       "primary_keyword": "IRON NEST HE shell",
       "keyword_candidates": [
         "IRON NEST HE ammo",
         "IRON NEST HE round"
       ],
       "title": "IRON NEST HE Shell - 1 Damage, 0.25 Impact Radius Data",
-      "title_length": 54,
-      "description": "HE combines speed 0.7, damage 1, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "HE页独有速度0.7、伤害1、爆炸半径0.25、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其HEShell打孔卡成本10。"
+      "description": "HE combines speed 0.7, damage 1, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/incn",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "INCN",
       "primary_keyword": "IRON NEST INCN shell",
       "keyword_candidates": [
         "IRON NEST INCN ammo",
         "IRON NEST INCN round"
       ],
       "title": "IRON NEST INCN Shell - 1 Damage, 0.25 Impact Radius",
-      "title_length": 51,
-      "description": "INCN combines speed 0.7, damage 1, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 12; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "INCN页独有速度0.7、伤害1、爆炸半径0.25、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其INCNShell打孔卡成本12。"
+      "description": "INCN combines speed 0.7, damage 1, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 12; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/le",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "LE",
       "primary_keyword": "IRON NEST LE shell",
       "keyword_candidates": [
         "IRON NEST LE ammo",
         "IRON NEST LE round"
       ],
       "title": "IRON NEST LE Shell - 1 Damage, 0.15 Impact Radius Data",
-      "title_length": 54,
-      "description": "LE combines speed 0.7, damage 1, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 8; no other shell repeats this complete setup here.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "LE页独有速度0.7、伤害1、爆炸半径0.15、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其LEShell打孔卡成本8。"
+      "description": "LE combines speed 0.7, damage 1, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 8; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/plcm",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "PLCM",
       "primary_keyword": "IRON NEST PLCM shell",
       "keyword_candidates": [
         "IRON NEST PLCM ammo",
         "IRON NEST PLCM round"
       ],
       "title": "IRON NEST PLCM Shell - 1 Damage, 0.15 Impact Radius",
-      "title_length": 51,
-      "description": "PLCM combines speed 0.7, damage 1, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 15; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "PLCM页独有速度0.7、伤害1、爆炸半径0.15、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其PCLMShell打孔卡成本15。"
+      "description": "PLCM combines speed 0.7, damage 1, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 15; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/phgn",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "PHGN",
       "primary_keyword": "IRON NEST PHGN shell",
       "keyword_candidates": [
         "IRON NEST PHGN ammo",
         "IRON NEST PHGN round"
       ],
       "title": "IRON NEST PHGN Shell - 1 Damage, 0.62 Impact Radius",
-      "title_length": 51,
-      "description": "PHGN combines speed 0.7, damage 1, impact radius 0.62, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "PHGN页独有速度0.7、伤害1、爆炸半径0.62、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其PHGNShell打孔卡成本10。"
+      "description": "PHGN combines speed 0.7, damage 1, impact radius 0.62, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/prpg",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "PRPG",
       "primary_keyword": "IRON NEST PRPG shell",
       "keyword_candidates": [
         "IRON NEST PRPG ammo",
         "IRON NEST PRPG round"
       ],
       "title": "IRON NEST PRPG Shell - 1 Damage, 0.5 Impact Radius",
-      "title_length": 50,
-      "description": "PRPG combines speed 0.7, damage 1, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 7; no other shell repeats this complete setup here.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "PRPG页独有速度0.7、伤害1、爆炸半径0.5、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其PRPGShell打孔卡成本7。"
+      "description": "PRPG combines speed 0.7, damage 1, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 7; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/smk",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "SMK",
       "primary_keyword": "IRON NEST SMK shell",
       "keyword_candidates": [
         "IRON NEST SMK ammo",
         "IRON NEST SMK round"
       ],
       "title": "IRON NEST SMK Shell - 1 Damage, 1 Impact Radius Data",
-      "title_length": 52,
-      "description": "SMK combines speed 0.7, damage 1, impact radius 1, 1 projectile, 5–30 charge range and punchcard cost 2; no other shell repeats this complete setup here.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "autocomplete"
-      ],
-      "source_unique_value_statement": "SMK页独有速度0.7、伤害1、爆炸半径1、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其SMOKEShell打孔卡成本2。"
+      "description": "SMK combines speed 0.7, damage 1, impact radius 1, 1 projectile, 5–30 charge range and punchcard cost 2; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/star",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "STAR",
       "primary_keyword": "IRON NEST STAR shell",
       "keyword_candidates": [
         "IRON NEST STAR ammo",
         "IRON NEST STAR round"
       ],
       "title": "IRON NEST STAR Shell - 0 Damage, 0.5 Impact Radius",
-      "title_length": 50,
-      "description": "STAR combines speed 0.7, damage 0, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 2; no other shell repeats this complete setup here.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions",
-        "autocomplete"
-      ],
-      "source_unique_value_statement": "STAR页独有速度0.7、伤害0、爆炸半径0.5、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其STARShell打孔卡成本2。"
+      "description": "STAR combines speed 0.7, damage 0, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 2; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/tear",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "TEAR",
       "primary_keyword": "IRON NEST TEAR shell",
       "keyword_candidates": [
         "IRON NEST TEAR ammo",
         "IRON NEST TEAR round"
       ],
       "title": "IRON NEST TEAR Shell - 0 Damage, 0.75 Impact Radius",
-      "title_length": 51,
-      "description": "TEAR combines speed 0.7, damage 0, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 8; no other shell repeats this complete setup here.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "TEAR页独有速度0.7、伤害0、爆炸半径0.75、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其TEARShell打孔卡成本8。"
+      "description": "TEAR combines speed 0.7, damage 0, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 8; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/thrm",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "THRM",
       "primary_keyword": "IRON NEST THRM shell",
       "keyword_candidates": [
         "IRON NEST THRM ammo",
         "IRON NEST THRM round"
       ],
       "title": "IRON NEST THRM Shell - 1 Damage, 0.35 Impact Radius",
-      "title_length": 51,
-      "description": "THRM combines speed 0.7, damage 1, impact radius 0.35, 1 projectile, 5–30 charge range and punchcard cost 22; no other shell repeats this complete setup here.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "THRM页独有速度0.7、伤害1、爆炸半径0.35、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其THRMShell打孔卡成本22。"
+      "description": "THRM combines speed 0.7, damage 1, impact radius 0.35, 1 projectile, 5–30 charge range and punchcard cost 22; no other shell repeats this complete setup here."
     },
     {
       "url_path": "/shells/wp",
-      "page_type": "data_entity",
-      "entity": "Shell",
-      "source_record_id": "WP",
       "primary_keyword": "IRON NEST WP shell",
       "keyword_candidates": [
         "IRON NEST WP ammo",
         "IRON NEST WP round"
       ],
       "title": "IRON NEST WP Shell - 0 Damage, 0.75 Impact Radius Data",
-      "title_length": 54,
-      "description": "WP combines speed 0.7, damage 0, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here.",
-      "description_length": 156,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "WP页独有速度0.7、伤害0、爆炸半径0.75、1发投射物及5–30的装药射程跨度这一整组弹道配置，并合并其WPShell打孔卡成本10。"
+      "description": "WP combines speed 0.7, damage 0, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
     }
   ]
 }

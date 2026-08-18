@@ -5,691 +5,343 @@
   "pages": [
     {
       "url_path": "/achievements",
-      "page_type": "index",
-      "entity": "Achievement",
-      "source_record_id": null,
       "primary_keyword": "IRON NEST achievements",
       "keyword_candidates": [
         "IRON NEST achievement list",
         "IRON NEST achievement rarity"
       ],
       "title": "IRON NEST Achievements Database - 33 Unlocks & Rarity",
-      "title_length": 53,
-      "description": "Track all 33 Steam achievements across 17 missions, linking clear and gold unlocks to their exact mission plus live global completion rates for current rarity.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "autocomplete"
-      ],
-      "source_unique_value_statement": "把全部33项Steam成就反查到17个可玩任务，并预留全球完成率活数据，使清关成就与全金成就能按任务和实时稀有度交叉筛选。"
+      "description": "Track all 33 Steam achievements across 17 missions, linking clear and gold unlocks to their exact mission plus live global completion rates for current rarity."
     },
     {
       "url_path": "/achievements/achievement-1-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_1_CLEAR",
       "primary_keyword": "IRON NEST Just Calibrating achievement",
       "keyword_candidates": [
         "IRON NEST Just Calibrating clear unlock",
         "IRON NEST Hospital False Flag achievement"
       ],
       "title": "IRON NEST Just Calibrating - Clear Achievement & Rarity",
-      "title_length": 55,
-      "description": "Just Calibrating: CLEAR for Hospital False Flag, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "similarweb"
-      ],
-      "source_unique_value_statement": "Just Calibrating页把“CLEAR”解锁条件精确落到Hospital False Flag任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Just Calibrating: CLEAR for Hospital False Flag, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-2-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_2_CLEAR",
       "primary_keyword": "IRON NEST Honour Salute achievement",
       "keyword_candidates": [
         "IRON NEST Honour Salute clear unlock",
         "IRON NEST ceremony and HCHE achievement"
       ],
       "title": "IRON NEST Honour Salute - Clear Achievement & Rarity",
-      "title_length": 52,
-      "description": "Honour Salute: CLEAR for ceremony and HCHE, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Honour Salute页把“CLEAR”解锁条件精确落到ceremony and HCHE任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Honour Salute: CLEAR for ceremony and HCHE, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-3-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_3_CLEAR",
       "primary_keyword": "IRON NEST For Their Own Good achievement",
       "keyword_candidates": [
         "IRON NEST For Their Own Good clear unlock",
         "IRON NEST Insurrections and Requisitions achievement"
       ],
       "title": "IRON NEST For Their Own Good - Clear Achievement & Rarity",
-      "title_length": 57,
-      "description": "For Their Own Good is the CLEAR unlock for Insurrections and Requisitions; this page uniquely pairs that exact mission link with a live global completion rate.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "For Their Own Good页把“CLEAR”解锁条件精确落到Insurrections and Requisitions任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "For Their Own Good is the CLEAR unlock for Insurrections and Requisitions; this page uniquely pairs that exact mission link with a live global completion rate."
     },
     {
       "url_path": "/achievements/achievement-4-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_4_CLEAR",
       "primary_keyword": "IRON NEST First Reply achievement",
       "keyword_candidates": [
         "IRON NEST First Reply clear unlock",
         "IRON NEST Artillery Introduction achievement"
       ],
       "title": "IRON NEST First Reply - Clear Achievement & Rarity",
-      "title_length": 50,
-      "description": "First Reply: CLEAR for Artillery Introduction, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "First Reply页把“CLEAR”解锁条件精确落到Artillery Introduction任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "First Reply: CLEAR for Artillery Introduction, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-5-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_5_CLEAR",
       "primary_keyword": "IRON NEST All Clear achievement",
       "keyword_candidates": [
         "IRON NEST All Clear clear unlock",
         "IRON NEST IronRoad achievement"
       ],
       "title": "IRON NEST All Clear Achievement - Clear Unlock Data",
-      "title_length": 51,
-      "description": "All Clear is the CLEAR unlock for IronRoad, paired with a live global completion rate so its exact mission link and current rarity can be checked together.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "All Clear页把“CLEAR”解锁条件精确落到IronRoad任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "All Clear is the CLEAR unlock for IronRoad, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
     },
     {
       "url_path": "/achievements/achievement-6-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_6_CLEAR",
       "primary_keyword": "IRON NEST Breakout achievement",
       "keyword_candidates": [
         "IRON NEST Breakout clear unlock",
         "IRON NEST SiegeOfCartagena achievement"
       ],
       "title": "IRON NEST Breakout Achievement - Clear Unlock Data",
-      "title_length": 50,
-      "description": "Breakout is the CLEAR unlock for SiegeOfCartagena; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Breakout页把“CLEAR”解锁条件精确落到SiegeOfCartagena任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Breakout is the CLEAR unlock for SiegeOfCartagena; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
     },
     {
       "url_path": "/achievements/achievement-7-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_7_CLEAR",
       "primary_keyword": "IRON NEST Cold Start achievement",
       "keyword_candidates": [
         "IRON NEST Cold Start clear unlock",
         "IRON NEST The Gorge achievement"
       ],
       "title": "IRON NEST Cold Start Achievement - Clear Unlock Data",
-      "title_length": 52,
-      "description": "Cold Start is the CLEAR unlock for The Gorge, paired with a live global completion rate so its exact mission link and current rarity can be checked together.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Cold Start页把“CLEAR”解锁条件精确落到The Gorge任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Cold Start is the CLEAR unlock for The Gorge, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
     },
     {
       "url_path": "/achievements/achievement-8-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_8_CLEAR",
       "primary_keyword": "IRON NEST Flying False Colours achievement",
       "keyword_candidates": [
         "IRON NEST Flying False Colours clear unlock",
         "IRON NEST RockofGibraltar achievement"
       ],
       "title": "IRON NEST Flying False Colours - Clear Achievement & Rarity",
-      "title_length": 59,
-      "description": "Flying False Colours: CLEAR for RockofGibraltar, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Flying False Colours页把“CLEAR”解锁条件精确落到RockofGibraltar任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Flying False Colours: CLEAR for RockofGibraltar, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-9-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_9_CLEAR",
       "primary_keyword": "IRON NEST Steady Hands achievement",
       "keyword_candidates": [
         "IRON NEST Steady Hands clear unlock",
         "IRON NEST DeadReckoning achievement"
       ],
       "title": "IRON NEST Steady Hands - Clear Achievement & Rarity",
-      "title_length": 51,
-      "description": "Steady Hands: CLEAR for DeadReckoning, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 150,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Steady Hands页把“CLEAR”解锁条件精确落到DeadReckoning任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Steady Hands: CLEAR for DeadReckoning, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-10-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_10_CLEAR",
       "primary_keyword": "IRON NEST The Gun Answers achievement",
       "keyword_candidates": [
         "IRON NEST The Gun Answers clear unlock",
         "IRON NEST FireOnCall achievement"
       ],
       "title": "IRON NEST The Gun Answers - Clear Achievement & Rarity",
-      "title_length": 54,
-      "description": "The Gun Answers: CLEAR for FireOnCall, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 150,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "The Gun Answers页把“CLEAR”解锁条件精确落到FireOnCall任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "The Gun Answers: CLEAR for FireOnCall, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-11-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_11_CLEAR",
       "primary_keyword": "IRON NEST Beachhead Denied achievement",
       "keyword_candidates": [
         "IRON NEST Beachhead Denied clear unlock",
         "IRON NEST HighTide achievement"
       ],
       "title": "IRON NEST Beachhead Denied - Clear Achievement & Rarity",
-      "title_length": 55,
-      "description": "Beachhead Denied is the CLEAR unlock for HighTide; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Beachhead Denied页把“CLEAR”解锁条件精确落到HighTide任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Beachhead Denied is the CLEAR unlock for HighTide; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
     },
     {
       "url_path": "/achievements/achievement-12-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_12_CLEAR",
       "primary_keyword": "IRON NEST Nothing Was There achievement",
       "keyword_candidates": [
         "IRON NEST Nothing Was There clear unlock",
         "IRON NEST BlindFire achievement"
       ],
       "title": "IRON NEST Nothing Was There - Clear Achievement & Rarity",
-      "title_length": 56,
-      "description": "Nothing Was There: CLEAR for BlindFire, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 151,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Nothing Was There页把“CLEAR”解锁条件精确落到BlindFire任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Nothing Was There: CLEAR for BlindFire, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-13-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_13_CLEAR",
       "primary_keyword": "IRON NEST Mirror Image achievement",
       "keyword_candidates": [
         "IRON NEST Mirror Image clear unlock",
         "IRON NEST PhantomBattery achievement"
       ],
       "title": "IRON NEST Mirror Image - Clear Achievement & Rarity",
-      "title_length": 51,
-      "description": "Mirror Image: CLEAR for PhantomBattery, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 151,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Mirror Image页把“CLEAR”解锁条件精确落到PhantomBattery任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Mirror Image: CLEAR for PhantomBattery, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-14-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_14_CLEAR",
       "primary_keyword": "IRON NEST In the Dark achievement",
       "keyword_candidates": [
         "IRON NEST In the Dark clear unlock",
         "IRON NEST FinalHarvest achievement"
       ],
       "title": "IRON NEST In the Dark - Clear Achievement & Rarity",
-      "title_length": 50,
-      "description": "In the Dark is the CLEAR unlock for FinalHarvest; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "In the Dark页把“CLEAR”解锁条件精确落到FinalHarvest任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "In the Dark is the CLEAR unlock for FinalHarvest; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
     },
     {
       "url_path": "/achievements/achievement-15a-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_15A_CLEAR",
       "primary_keyword": "IRON NEST A City in Celebration achievement",
       "keyword_candidates": [
         "IRON NEST A City in Celebration clear unlock",
         "IRON NEST WhiteShells achievement"
       ],
       "title": "IRON NEST A City in Celebration - Clear Achievement & Rarity",
-      "title_length": 60,
-      "description": "A City in Celebration: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "A City in Celebration页把“CLEAR”解锁条件精确落到WhiteShells任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "A City in Celebration: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-15b-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_15B_CLEAR",
       "primary_keyword": "IRON NEST A City Subdued achievement",
       "keyword_candidates": [
         "IRON NEST A City Subdued clear unlock",
         "IRON NEST WhiteShells achievement"
       ],
       "title": "IRON NEST A City Subdued - Clear Achievement & Rarity",
-      "title_length": 53,
-      "description": "A City Subdued: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 150,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "A City Subdued页把“CLEAR”解锁条件精确落到WhiteShells任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "A City Subdued: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-15c-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_15C_CLEAR",
       "primary_keyword": "IRON NEST The Road Not Taken achievement",
       "keyword_candidates": [
         "IRON NEST The Road Not Taken clear unlock",
         "IRON NEST WhiteShells achievement"
       ],
       "title": "IRON NEST The Road Not Taken - Clear Achievement & Rarity",
-      "title_length": 57,
-      "description": "The Road Not Taken: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "The Road Not Taken页把“CLEAR”解锁条件精确落到WhiteShells任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "The Road Not Taken: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-15d-clear",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_15D_CLEAR",
       "primary_keyword": "IRON NEST A City Silent achievement",
       "keyword_candidates": [
         "IRON NEST A City Silent clear unlock",
         "IRON NEST WhiteShells achievement"
       ],
       "title": "IRON NEST A City Silent - Clear Achievement & Rarity",
-      "title_length": 52,
-      "description": "A City Silent is the CLEAR unlock for WhiteShells; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "A City Silent页把“CLEAR”解锁条件精确落到WhiteShells任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "A City Silent is the CLEAR unlock for WhiteShells; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
     },
     {
       "url_path": "/achievements/achievement-1-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_1_GOLDEN",
       "primary_keyword": "IRON NEST Duty Fulfilled achievement",
       "keyword_candidates": [
         "IRON NEST Duty Fulfilled gold unlock",
         "IRON NEST Hospital False Flag achievement"
       ],
       "title": "IRON NEST Duty Fulfilled - Gold Achievement & Rarity",
-      "title_length": 52,
-      "description": "Duty Fulfilled: GOLD for Hospital False Flag, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Duty Fulfilled页把“GOLDEN”解锁条件精确落到Hospital False Flag任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Duty Fulfilled: GOLD for Hospital False Flag, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-2-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_2_GOLDEN",
       "primary_keyword": "IRON NEST Marksman's Honour achievement",
       "keyword_candidates": [
         "IRON NEST Marksman's Honour gold unlock",
         "IRON NEST ceremony and HCHE achievement"
       ],
       "title": "IRON NEST Marksman's Honour - Gold Achievement & Rarity",
-      "title_length": 55,
-      "description": "Marksman's Honour: GOLD for ceremony and HCHE, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Marksman's Honour页把“GOLDEN”解锁条件精确落到ceremony and HCHE任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Marksman's Honour: GOLD for ceremony and HCHE, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-3-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_3_GOLDEN",
       "primary_keyword": "IRON NEST Exemplary Service achievement",
       "keyword_candidates": [
         "IRON NEST Exemplary Service gold unlock",
         "IRON NEST Insurrections and Requisitions achievement"
       ],
       "title": "IRON NEST Exemplary Service - Gold Achievement & Rarity",
-      "title_length": 55,
-      "description": "Exemplary Service is the GOLD unlock for Insurrections and Requisitions; this page uniquely pairs that exact mission link with a live global completion rate.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Exemplary Service页把“GOLDEN”解锁条件精确落到Insurrections and Requisitions任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Exemplary Service is the GOLD unlock for Insurrections and Requisitions; this page uniquely pairs that exact mission link with a live global completion rate."
     },
     {
       "url_path": "/achievements/achievement-4-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_4_GOLDEN",
       "primary_keyword": "IRON NEST Distinguished Conduct achievement",
       "keyword_candidates": [
         "IRON NEST Distinguished Conduct gold unlock",
         "IRON NEST Artillery Introduction achievement"
       ],
       "title": "IRON NEST Distinguished Conduct - Gold Achievement & Rarity",
-      "title_length": 59,
-      "description": "Distinguished Conduct is the GOLD unlock for Artillery Introduction; this page uniquely pairs that exact mission link with a live global completion rate.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Distinguished Conduct页把“GOLDEN”解锁条件精确落到Artillery Introduction任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Distinguished Conduct is the GOLD unlock for Artillery Introduction; this page uniquely pairs that exact mission link with a live global completion rate."
     },
     {
       "url_path": "/achievements/achievement-5-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_5_GOLDEN",
       "primary_keyword": "IRON NEST Crowned in Brass achievement",
       "keyword_candidates": [
         "IRON NEST Crowned in Brass gold unlock",
         "IRON NEST IronRoad achievement"
       ],
       "title": "IRON NEST Crowned in Brass - Gold Achievement & Rarity",
-      "title_length": 54,
-      "description": "Crowned in Brass is the GOLD unlock for IronRoad; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique.",
-      "description_length": 157,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Crowned in Brass页把“GOLDEN”解锁条件精确落到IronRoad任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Crowned in Brass is the GOLD unlock for IronRoad; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
     },
     {
       "url_path": "/achievements/achievement-6-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_6_GOLDEN",
       "primary_keyword": "IRON NEST Naval Commendation achievement",
       "keyword_candidates": [
         "IRON NEST Naval Commendation gold unlock",
         "IRON NEST SiegeOfCartagena achievement"
       ],
       "title": "IRON NEST Naval Commendation - Gold Achievement & Rarity",
-      "title_length": 56,
-      "description": "Naval Commendation: GOLD for SiegeOfCartagena, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 158,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Naval Commendation页把“GOLDEN”解锁条件精确落到SiegeOfCartagena任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Naval Commendation: GOLD for SiegeOfCartagena, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-8-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_8_GOLDEN",
       "primary_keyword": "IRON NEST Order of Merit achievement",
       "keyword_candidates": [
         "IRON NEST Order of Merit gold unlock",
         "IRON NEST The Gorge achievement"
       ],
       "title": "IRON NEST Order of Merit - Gold Achievement & Rarity",
-      "title_length": 52,
-      "description": "Order of Merit is the GOLD unlock for The Gorge, paired with a live global completion rate so its exact mission link and current rarity can be checked together.",
-      "description_length": 160,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Order of Merit页把“GOLDEN”解锁条件精确落到The Gorge任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Order of Merit is the GOLD unlock for The Gorge, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
     },
     {
       "url_path": "/achievements/achievement-9-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_9_GOLDEN",
       "primary_keyword": "IRON NEST Quiet Precision achievement",
       "keyword_candidates": [
         "IRON NEST Quiet Precision gold unlock",
         "IRON NEST RockofGibraltar achievement"
       ],
       "title": "IRON NEST Quiet Precision - Gold Achievement & Rarity",
-      "title_length": 53,
-      "description": "Quiet Precision: GOLD for RockofGibraltar, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 154,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Quiet Precision页把“GOLDEN”解锁条件精确落到RockofGibraltar任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Quiet Precision: GOLD for RockofGibraltar, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-10-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_10_GOLDEN",
       "primary_keyword": "IRON NEST Iron Discipline achievement",
       "keyword_candidates": [
         "IRON NEST Iron Discipline gold unlock",
         "IRON NEST DeadReckoning achievement"
       ],
       "title": "IRON NEST Iron Discipline - Gold Achievement & Rarity",
-      "title_length": 53,
-      "description": "Iron Discipline: GOLD for DeadReckoning, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 152,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Iron Discipline页把“GOLDEN”解锁条件精确落到DeadReckoning任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Iron Discipline: GOLD for DeadReckoning, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-11-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_11_GOLDEN",
       "primary_keyword": "IRON NEST Coastal Defence Medal achievement",
       "keyword_candidates": [
         "IRON NEST Coastal Defence Medal gold unlock",
         "IRON NEST FireOnCall achievement"
       ],
       "title": "IRON NEST Coastal Defence Medal - Gold Achievement & Rarity",
-      "title_length": 59,
-      "description": "Coastal Defence Medal: GOLD for FireOnCall, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Coastal Defence Medal页把“GOLDEN”解锁条件精确落到FireOnCall任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Coastal Defence Medal: GOLD for FireOnCall, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-12-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_12_GOLDEN",
       "primary_keyword": "IRON NEST Unshaken achievement",
       "keyword_candidates": [
         "IRON NEST Unshaken gold unlock",
         "IRON NEST HighTide achievement"
       ],
       "title": "IRON NEST Unshaken - Gold Achievement & Rarity - Source Data",
-      "title_length": 60,
-      "description": "Unshaken is the GOLD unlock for HighTide, paired with a live global completion rate so its exact mission link and current rarity can be checked together.",
-      "description_length": 153,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Unshaken页把“GOLDEN”解锁条件精确落到HighTide任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Unshaken is the GOLD unlock for HighTide, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
     },
     {
       "url_path": "/achievements/achievement-13-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_13_GOLDEN",
       "primary_keyword": "IRON NEST Master Gunner achievement",
       "keyword_candidates": [
         "IRON NEST Master Gunner gold unlock",
         "IRON NEST BlindFire achievement"
       ],
       "title": "IRON NEST Master Gunner - Gold Achievement & Rarity",
-      "title_length": 51,
-      "description": "Master Gunner is the GOLD unlock for BlindFire, paired with a live global completion rate so its exact mission link and current rarity can be checked together.",
-      "description_length": 159,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Master Gunner页把“GOLDEN”解锁条件精确落到BlindFire任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Master Gunner is the GOLD unlock for BlindFire, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
     },
     {
       "url_path": "/achievements/achievement-14-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_14_GOLDEN",
       "primary_keyword": "IRON NEST Night's Precision achievement",
       "keyword_candidates": [
         "IRON NEST Night's Precision gold unlock",
         "IRON NEST PhantomBattery achievement"
       ],
       "title": "IRON NEST Night's Precision - Gold Achievement & Rarity",
-      "title_length": 55,
-      "description": "Night's Precision: GOLD for PhantomBattery, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 155,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Night's Precision页把“GOLDEN”解锁条件精确落到PhantomBattery任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Night's Precision: GOLD for PhantomBattery, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-15-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_15_GOLDEN",
       "primary_keyword": "IRON NEST Pride of Castile achievement",
       "keyword_candidates": [
         "IRON NEST Pride of Castile gold unlock",
         "IRON NEST FinalHarvest achievement"
       ],
       "title": "IRON NEST Pride of Castile - Gold Achievement & Rarity",
-      "title_length": 54,
-      "description": "Pride of Castile: GOLD for FinalHarvest, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 152,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck"
-      ],
-      "source_unique_value_statement": "Pride of Castile页把“GOLDEN”解锁条件精确落到FinalHarvest任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Pride of Castile: GOLD for FinalHarvest, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     },
     {
       "url_path": "/achievements/achievement-7-golden",
-      "page_type": "data_entity",
-      "entity": "Achievement",
-      "source_record_id": "ACHIEVEMENT_7_GOLDEN",
       "primary_keyword": "IRON NEST Valour Under Fire achievement",
       "keyword_candidates": [
         "IRON NEST Valour Under Fire gold unlock",
         "IRON NEST WhiteShells achievement"
       ],
       "title": "IRON NEST Valour Under Fire - Gold Achievement & Rarity",
-      "title_length": 55,
-      "description": "Valour Under Fire: GOLD for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record.",
-      "description_length": 152,
-      "keyword_sources_used": [
-        "terminology",
-        "competitor_crosscheck",
-        "player_questions"
-      ],
-      "source_unique_value_statement": "Valour Under Fire页把“GOLDEN”解锁条件精确落到WhiteShells任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。"
+      "description": "Valour Under Fire: GOLD for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
     }
   ]
 }
