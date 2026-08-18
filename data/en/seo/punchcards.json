@@ -1,0 +1,30 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/punchcards",
+      "page_type": "index",
+      "entity": "Punchcard",
+      "source_record_id": null,
+      "primary_keyword": "IRON NEST punchcards",
+      "keyword_candidates": [
+        "IRON NEST punchcard list",
+        "IRON NEST spotter punchcard",
+        "IRON NEST shell punchcard costs"
+      ],
+      "title": "IRON NEST Punchcards - 33 Cards, Costs & Uses Explained",
+      "title_length": 55,
+      "description": "Compare 33 punchcards: 21 shell records and 10 abilities with costs, use limits and unlock rules; 3 Spotter variants stay merged to avoid thin duplicate pages.",
+      "description_length": 159,
+      "keyword_sources_used": [
+        "terminology",
+        "competitor_crosscheck",
+        "player_questions",
+        "similarweb"
+      ],
+      "source_unique_value_statement": "用一张表拆清33条正式打孔卡中的21条炮弹型记录与10个独立能力，并比较能力成本、使用次数和解锁条件；Spotter的3个源变体保留但不膨胀成薄页。"
+    }
+  ]
+}

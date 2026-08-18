@@ -1,0 +1,23 @@
+{
+  "name": "ironnestpedia",
+  "version": "1.0.0",
+  "description": "Data-driven Astro skeleton for IronNestPedia.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "migrate": "node scripts/migrate-from-project-data.mjs",
+    "validate:data": "node scripts/validate-data.js",
+    "validate:links": "node scripts/check-internal-links.js",
+    "verify": "npm run build && npm run validate:data && npm run validate:links"
+  },
+  "keywords": ["iron-nest", "astro", "game-database"],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.2"
+  }
+}

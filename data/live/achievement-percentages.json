@@ -1,0 +1,143 @@
+{
+  "endpoint": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v2?gameid=2950790",
+  "fetched_at": "2026-08-16T10:42:23.145Z",
+  "appid": 2950790,
+  "raw_response": {
+    "achievementpercentages": {
+      "achievements": [
+        {
+          "name": "ACHIEVEMENT_1_CLEAR",
+          "percent": "93.4"
+        },
+        {
+          "name": "ACHIEVEMENT_2_CLEAR",
+          "percent": "85.4"
+        },
+        {
+          "name": "ACHIEVEMENT_2_GOLDEN",
+          "percent": "83.9"
+        },
+        {
+          "name": "ACHIEVEMENT_3_CLEAR",
+          "percent": "73.8"
+        },
+        {
+          "name": "ACHIEVEMENT_1_GOLDEN",
+          "percent": "71.7"
+        },
+        {
+          "name": "ACHIEVEMENT_4_CLEAR",
+          "percent": "56.3"
+        },
+        {
+          "name": "ACHIEVEMENT_5_CLEAR",
+          "percent": "43.2"
+        },
+        {
+          "name": "ACHIEVEMENT_6_CLEAR",
+          "percent": "30.2"
+        },
+        {
+          "name": "ACHIEVEMENT_7_CLEAR",
+          "percent": "25.7"
+        },
+        {
+          "name": "ACHIEVEMENT_8_CLEAR",
+          "percent": "23.4"
+        },
+        {
+          "name": "ACHIEVEMENT_9_CLEAR",
+          "percent": "20.3"
+        },
+        {
+          "name": "ACHIEVEMENT_10_CLEAR",
+          "percent": "16.5"
+        },
+        {
+          "name": "ACHIEVEMENT_11_CLEAR",
+          "percent": "11.3"
+        },
+        {
+          "name": "ACHIEVEMENT_12_CLEAR",
+          "percent": "10.3"
+        },
+        {
+          "name": "ACHIEVEMENT_13_CLEAR",
+          "percent": "8.0"
+        },
+        {
+          "name": "ACHIEVEMENT_14_CLEAR",
+          "percent": "6.3"
+        },
+        {
+          "name": "ACHIEVEMENT_15D_CLEAR",
+          "percent": "5.3"
+        },
+        {
+          "name": "ACHIEVEMENT_15A_CLEAR",
+          "percent": "4.0"
+        },
+        {
+          "name": "ACHIEVEMENT_15B_CLEAR",
+          "percent": "3.2"
+        },
+        {
+          "name": "ACHIEVEMENT_15C_CLEAR",
+          "percent": "2.4"
+        },
+        {
+          "name": "ACHIEVEMENT_10_GOLDEN",
+          "percent": "0.8"
+        },
+        {
+          "name": "ACHIEVEMENT_7_GOLDEN",
+          "percent": "0.7"
+        },
+        {
+          "name": "ACHIEVEMENT_11_GOLDEN",
+          "percent": "0.7"
+        },
+        {
+          "name": "ACHIEVEMENT_4_GOLDEN",
+          "percent": "0.6"
+        },
+        {
+          "name": "ACHIEVEMENT_3_GOLDEN",
+          "percent": "0.3"
+        },
+        {
+          "name": "ACHIEVEMENT_8_GOLDEN",
+          "percent": "0.1"
+        },
+        {
+          "name": "ACHIEVEMENT_6_GOLDEN",
+          "percent": "0.1"
+        },
+        {
+          "name": "ACHIEVEMENT_15_GOLDEN",
+          "percent": "0.0"
+        },
+        {
+          "name": "ACHIEVEMENT_14_GOLDEN",
+          "percent": "0.0"
+        },
+        {
+          "name": "ACHIEVEMENT_13_GOLDEN",
+          "percent": "0.0"
+        },
+        {
+          "name": "ACHIEVEMENT_12_GOLDEN",
+          "percent": "0.0"
+        },
+        {
+          "name": "ACHIEVEMENT_9_GOLDEN",
+          "percent": "0.0"
+        },
+        {
+          "name": "ACHIEVEMENT_5_GOLDEN",
+          "percent": "0.0"
+        }
+      ]
+    }
+  }
+}

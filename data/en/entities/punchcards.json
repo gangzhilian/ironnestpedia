@@ -1,0 +1,871 @@
+[
+  {
+    "ID": "ArtilleryFlashNotifier",
+    "Cost": 1,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_LISTENING_POST",
+    "Description.Key": "STR_PUNCHCARD_LISTENNING_POST_TEXT",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "ImpactObserver",
+    "Cost": 1,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_LISTENING_POST",
+    "Description.Key": "STR_PUNCHCARD_LISTENNING_POST_TEXT",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "ListeningPost",
+    "Cost": 1,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_LISTENING_POST",
+    "Description.Key": "STR_PUNCHCARD_LISTENNING_POST_TEXT",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "MoveDirection",
+    "Cost": 10,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_MOVE_DIRECTION_TITLE",
+    "Description.Key": "STR_PUNCHCARD_MOVE_DIRECTION_DESCRIPTION",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "MoveZone",
+    "Cost": 65,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_MOVE_EMERGENCY_TITLE",
+    "Description.Key": "STR_PUNCHCARD_MOVE_EMERGENCY_DESCRIPTION",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "PowderCharges",
+    "Cost": 5,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_POWDERCHARGES_TITLE",
+    "Description.Key": "STR_PUNCHCARD_POWDERCHARGES_DESCRIPTION",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "ScoutPlane",
+    "Cost": 60,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_SCOUTPLACE_TITLE",
+    "Description.Key": "STR_PUNCHCARD_SCOUTPLANE_DESCRIPTION",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "ScoutPlane_OnTimeUse",
+    "Cost": 15,
+    "MaxUses": 1,
+    "Title.Key": "STR_PUNCHCARD_SCOUTPLACE_TITLE",
+    "Description.Key": "STR_PUNCHCARD_SCOUTPLANE_DESCRIPTION",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "APShell",
+    "Cost": 10,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_APSHELL_TITLE",
+    "Description.Key": "STR_PUNCHCARD_APSHELL_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "APHEShell",
+    "Cost": 15,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_APHE_TITLE",
+    "Description.Key": "STR_PUNCHCARD_APHE_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "ATMCShell",
+    "Cost": 666,
+    "MaxUses": 1,
+    "Title.Key": "STR_PUNCHCARD_ATMC_TITLE",
+    "Description.Key": "STR_PUNCHCARD_ATMC_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "CLMNShell",
+    "Cost": 17,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_CLMN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_CLMN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "CYANShell",
+    "Cost": 28,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_CYAN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_CYAN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "DRILShell",
+    "Cost": 3,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_DRIL_TITLE",
+    "Description.Key": "STR_PUNCHCARD_DRIL_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "EQKEShell",
+    "Cost": 26,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_EQKE_TITLE",
+    "Description.Key": "STR_PUNCHCARD_EQKE_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "FLCHShell",
+    "Cost": 20,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_FLCH_TITLE",
+    "Description.Key": "STR_PUNCHCARD_FLCH_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "HCHEShell",
+    "Cost": 18,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_HCHESHELL_TITLE",
+    "Description.Key": "STR_PUNCHCARD_HCHESHELL_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "HEShell",
+    "Cost": 10,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_HESHELL_TITLE",
+    "Description.Key": "STR_PUNCHCARD_HESHELL_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "INCNShell",
+    "Cost": 12,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_INCN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_INCN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "LEShell",
+    "Cost": 8,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_LE_TITLE",
+    "Description.Key": "STR_PUNCHCARD_LE_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "PCLMShell",
+    "Cost": 15,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_PCLM_TITLE",
+    "Description.Key": "STR_PUNCHCARD_PCLM_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "PHGNShell",
+    "Cost": 10,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_PHGN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_PHGN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "PRPGShell",
+    "Cost": 7,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_PRPG_TITLE",
+    "Description.Key": "STR_PUNCHCARD_PRPG_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "SMOKEShell",
+    "Cost": 2,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_SMOKESHELL_TITLE",
+    "Description.Key": "STR_PUNCHCARD_SMOKESHELL_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "STARShell",
+    "Cost": 2,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_STARSHELL_TITLE",
+    "Description.Key": "STR_PUNCHCARD_STARSHELL_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "TEARShell",
+    "Cost": 8,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_TEAR_TITLE",
+    "Description.Key": "STR_PUNCHCARD_TEAR_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "THRMShell",
+    "Cost": 22,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_THRM_TITLE",
+    "Description.Key": "STR_PUNCHCARD_THRM_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "WPShell",
+    "Cost": 10,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_WP_TITLE",
+    "Description.Key": "STR_PUNCHCARD_WP_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "Spotter",
+    "Cost": 6,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_SPOTTER_BEARING_TITLE",
+    "Description.Key": "STR_PUNCHCARD_SPOTTER_BEARING",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "LocationReport",
+    "Cost": 3,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_LOCATION_REPORT_TITLE",
+    "Description.Key": "STR_PUNCHCARD_LOCATION_REPORT_DESCRIPTION",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "Spotter",
+    "Cost": 1,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_SPOTTER_BEARING_TITLE",
+    "Description.Key": "STR_PUNCHCARD_SPOTTER_BEARING",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "Spotter",
+    "Cost": 1,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_SPOTTER_BEARING_TITLE",
+    "Description.Key": "STR_PUNCHCARD_SPOTTER_BEARING",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "TESTING",
+    "Cost": 1,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_TESTING_TITLE",
+    "Description.Key": "STR_TEST",
+    "Requirements": [],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "ATMCShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_ATMC_TITLE",
+    "Description.Key": "STR_PUNCHCARD_ATMC_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "CLMNShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_CLMN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_CLMN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "INCNShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_INCN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_INCN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "MSTDShell",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_MSTD_TITLE",
+    "Description.Key": "STR_PUNCHCARD_MSTD_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "MSTDShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_MSTD_TITLE",
+    "Description.Key": "STR_PUNCHCARD_MSTD_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "PHGNShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_PHGN_TITLE",
+    "Description.Key": "STR_PUNCHCARD_PHGN_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "PRPGShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_PRPG_TITLE",
+    "Description.Key": "STR_PUNCHCARD_PRPG_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "ID": "TEARShellDemo",
+    "Cost": 9999,
+    "MaxUses": 0,
+    "Title.Key": "STR_PUNCHCARD_TEAR_TITLE",
+    "Description.Key": "STR_PUNCHCARD_TEAR_DESCRIPTION",
+    "Requirements": [
+      {
+        "operation": 0,
+        "requirement": {
+          "RequirementType": 1,
+          "Operation": 3,
+          "ShellSlot": 3,
+          "StringValue": "ShellSlot",
+          "IntValue": 0,
+          "BoolValue": 0
+        }
+      }
+    ],
+    "IsRecon": false,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  }
+]

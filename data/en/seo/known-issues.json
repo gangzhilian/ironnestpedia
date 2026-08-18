@@ -1,0 +1,31 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/known-issues",
+      "page_type": "index",
+      "entity": "Meta/Updates",
+      "source_record_id": null,
+      "primary_keyword": "IRON NEST known issues",
+      "keyword_candidates": [
+        "IRON NEST bug fixed",
+        "IRON NEST roadmap",
+        "IRON NEST mid-mission save",
+        "IRON NEST multiplayer"
+      ],
+      "title": "IRON NEST Known Issues & Roadmap - Patch-Verified Status",
+      "title_length": 56,
+      "description": "See which reported bugs are confirmed fixed by official patch notes versus still open, plus verified roadmap items like mid-mission save and console ports.",
+      "description_length": 155,
+      "keyword_sources_used": [
+        "player_questions",
+        "official_patch_notes"
+      ],
+      "source_unique_value_statement": "把5次官方Patch正文里明确写出的bug修复记录和路线图整理成持续更新的状态追踪页，并纠正多人模式的表述误读",
+      "added_at": "2026-08-17",
+      "added_reason": "跨步骤数据复核发现，补在16-page-matrix.json之后，不是原始Codex批量生成的一部分"
+    }
+  ]
+}

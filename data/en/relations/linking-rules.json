@@ -1,0 +1,109 @@
+{
+  "source": "step-19-linking-rules",
+  "task_file": "19-内链图谱设计任务.md",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "updated_at": "2026-08-17T00:00:00+08:00",
+  "check_script": "project-data/iron-nest/19-scripts/check-inbound-links.py",
+  "input_data": "project-data/iron-nest/16-page-matrix.json",
+  "relation_matrix": [
+    {
+      "from": "Mission", "to": "Mission", "relation": "unlockedBy / unlocks",
+      "status": "verified", "usable_now": true,
+      "note": "前置任务链，可做上一关/下一关式互链，evidence见11-schema.json relations[0]"
+    },
+    {
+      "from": "Achievement", "to": "Mission", "relation": "tracks completion of",
+      "status": "verified", "usable_now": true,
+      "note": "29/33通过achievementForClearing/achievementForGolding整数索引精确解析，用于本次修复③"
+    },
+    {
+      "from": "Achievement (GOLDEN)", "to": "Medal", "relation": "requires all medals gold",
+      "status": "verified", "usable_now": false,
+      "note": "关系真实存在，但Medal无独立页，暂不建可点击链接，只作为GOLDEN成就页的文案依据"
+    },
+    {
+      "from": "Mission", "to": "Medal", "relation": "grants",
+      "status": "verified", "usable_now": false,
+      "note": "Medal已嵌入Mission页展示，不是跨页链接场景"
+    },
+    {
+      "from": "Mission", "to": "MapEntity", "relation": "spawns",
+      "status": "verified", "usable_now": true,
+      "note": "275条记录100%有missionRef，是本次修复③⑤的数据基础"
+    },
+    {
+      "from": "MapEntity", "to": "Shell", "relation": "ImmuneShells (List<string>)",
+      "status": "closed_accepted_gap_by_owner_decision", "usable_now": false,
+      "note": "字段存在但275条记录的ImmuneShells当前全部为空。2026-08-17站长在runtime dump插件编译排查多轮失败后明确决定放弃(详见config.json production_unpack.runtime_dump_plugin_attempt，原话'这是一个已记录、已接受的缺口，不是待办事项')，这是已关闭的缺口，不是等数据到位的临时状态；16-page-matrix.json同一缺口的open_questions条目已同步更新为closed_accepted_gap_by_owner_decision"
+    },
+    {
+      "from": "Punchcard", "to": "Punchcard", "relation": "prerequisite (Requirements)",
+      "status": "not_supported", "usable_now": false,
+      "note": "Requirements是通用条件对象，不是Punchcard间引用，11-schema.json明确标注not_supported"
+    }
+  ],
+  "fixes": [
+    {
+      "id": 1,
+      "name": "全站Footer链接7个实体索引页",
+      "applies_to": ["/shells", "/missions", "/achievements", "/units", "/medals", "/punchcards", "/mutators"],
+      "mechanism": "每个页面(包括首页)的footer都包含7个索引链接，来自主文档步骤18/19原有Footer硬性要求",
+      "fixes_pages_count": 1,
+      "fixed_examples": ["/mutators (修复前2条，修复后104+条)"]
+    },
+    {
+      "id": 2,
+      "name": "Shell全网状互链(sibling nav)",
+      "applies_to": "20个Shell独立数据页",
+      "mechanism": "无verified分类字段可用，20个数量可控，每个Shell页链接其余19个",
+      "fixes_pages_count": 20,
+      "not_used_alternative": "按ShellId前缀(AP/HE/SMK等)猜测弹药类型分类——已否决，无schema字段支撑，属编造关系"
+    },
+    {
+      "id": 3,
+      "name": "Achievement同任务互链",
+      "applies_to": "33个Achievement独立数据页(除index)",
+      "mechanism": "按verified的missionRef关系分组，同一Mission下的Achievement互相链接",
+      "fixes_pages_count": 33,
+      "grouping_data": "14个Mission各2个Achievement(clear+golden)，WhiteShells 1个Mission对应5个Achievement(4个CLEAR分支+1个GOLDEN)，challangefdc/chill两个挑战模式无Achievement"
+    },
+    {
+      "id": 4,
+      "name": "/known-issues与其引用的Mission页双向链接",
+      "applies_to": ["/known-issues", "/missions/rockofgibraltar", "/missions/fireoncall", "/missions/phantombattery"],
+      "mechanism": "known-issues页已单向链接这3个Mission页(说明其bug已修复)，改为这3个Mission页也反向链回known-issues",
+      "fixes_pages_count": 1
+    },
+    {
+      "id": 5,
+      "name": "MapEntity(Units)同任务互链",
+      "applies_to": "26个MapEntity独立数据页",
+      "mechanism": "与修复③同一套逻辑，复用Mission→MapEntity的verified missionRef关系",
+      "fixes_pages_count": 1,
+      "fixed_examples": ["/units/hostileartillery (修复前2条:index+challangefdc任务页，修复后+9条同任务单位互链)"]
+    }
+  ],
+  "audit": {
+    "pages_checked": 104,
+    "pages_excluded": "1个tool_placeholder(/tools/mission-map)，按步骤25规则noindex，不参与本规则考核",
+    "before_fixes": {
+      "flagged_count": 56,
+      "flagged_breakdown": {"Shell": 20, "Achievement": 33, "MapEntity": 1, "Meta/Updates": 1, "Mutator": 1}
+    },
+    "after_fixes": {
+      "flagged_count": 0
+    },
+    "verified_by": "project-data/iron-nest/19-scripts/check-inbound-links.py，2026-08-17实际运行确认，非估算"
+  },
+  "rule_1_reinterpretation": {
+    "original_wording": "索引页 + 面包屑 + 相关推荐",
+    "finding": "本站URL是扁平结构(/{实体类型}/{slug})，面包屑是页面出链指向上级，不构成对当前页的入链，实测对本站不成立",
+    "replacement": "索引页(结构性) + 关系型互链(同父实体sibling/双向化，来自11-schema.json verified关系) + 全站Footer(仅索引/合规类页面适用)",
+    "applies_generally": "多级嵌套URL结构(如指南页分类目录)出现时，面包屑才会重新成为真实入链来源，需按实际层级重新判断"
+  },
+  "open_items": [
+    "MapEntity→Shell(ImmuneShells)关系字段存在但未populate；站长已于2026-08-17决定放弃继续获取该数据(已关闭的缺口，非待办)，'克制此单位的弹药'式关系型链接不会自动到位，如未来要做需站长重新拍板后再评估，Shell页继续用全网状互链方案兜底，不是本项目的待办事项",
+    "步骤20指南页产出后，需要按规则7(指南页与数据页必须互链)回来补充具体互链方案，本次尚未涉及",
+    "check-inbound-links.py目前基于16-page-matrix.json静态数据模拟，步骤21建好Astro项目后需迁移成读取实际构建产物的版本；主文档步骤21骨架已预留文件名scripts/check-internal-links.js(JS不是Python)，迁移是用JS重新实现同一套检查逻辑，不是直接复制文件，迁移后Python版应删除或标记deprecated"
+  ]
+}

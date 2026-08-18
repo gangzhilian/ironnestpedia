@@ -1,0 +1,1647 @@
+[
+  {
+    "id": "ally_kills_0to2",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ALLYKILLS0TO2",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ALLYKILLS0TO2",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 6,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 6,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 6,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "avg_accuracy_50to250",
+    "displayNameV2.Key": "STR_MEDAL_NAME_AVGACCURACY50TO250",
+    "hintTextV2.Key": "STR_MEDAL_HINT_AVGACCURACY50TO250",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 3
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0.3
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "counter_battery_100to260",
+    "displayNameV2.Key": "STR_MEDAL_NAME_COUNTERBATTERY100TO260",
+    "hintTextV2.Key": "STR_MEDAL_HINT_COUNTERBATTERY100TO260",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 17,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 100
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 17,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 200
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 17,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 260
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ending1",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENDING1",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENDING1",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 2,
+        "variable": 20,
+        "customVariableKey": "Ending1",
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 0
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ending2",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENDING2",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENDING2",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 2,
+        "variable": 20,
+        "customVariableKey": "Ending2",
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 0
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ending3",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENDING3",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENDING3",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 2,
+        "variable": 20,
+        "customVariableKey": "Ending3",
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 0
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ending4",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENDING4",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENDING4",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 5000
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 0,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 0,
+        "thresholdSource": 0,
+        "threshold": 500
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 2,
+        "variable": 20,
+        "customVariableKey": "Ending4",
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 0
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "enemy_kills_10to30",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENEMYKILLS6TO10",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENEMYKILLS6TO10",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 30
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "enemy_kills_6to10",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENEMYKILLS6TO10",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENEMYKILLS6TO10",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 0
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "enemy_kills_5to20",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENEMYKILLS6TO10",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENEMYKILLS6TO10",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 5
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "enemy_kills_6to10",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENEMYKILLS6TO10",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENEMYKILLS6TO10",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 6
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 8
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 9
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "enemy_kills_6to15",
+    "displayNameV2.Key": "STR_MEDAL_NAME_ENEMYKILLS6TO10",
+    "hintTextV2.Key": "STR_MEDAL_HINT_ENEMYKILLS6TO10",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 6
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 11
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 5,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 15
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "first_shot_fast_with_kills",
+    "displayNameV2.Key": "STR_MEDAL_NAME_FIRSTSHOTFASTWITHKILLS",
+    "hintTextV2.Key": "STR_MEDAL_HINT_FIRSTSHOTFASTWITHKILLS",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 15,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 120
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 5
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 15,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 80
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 15,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 50
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "kill_shot_ratio_0.8to1.5_20kills",
+    "displayNameV2.Key": "STR_MEDAL_NAME_KILLSHOTRATIO08TO1520KILLS",
+    "hintTextV2.Key": "STR_MEDAL_HINT_KILLSHOTRATIO08TO1520KILLS",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 0.8
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 1.2
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 1.5
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "kill_shot_ratio_0.8to2_10kills",
+    "displayNameV2.Key": "STR_MEDAL_NAME_KILLSHOTRATIO08TO1520KILLS",
+    "hintTextV2.Key": "STR_MEDAL_HINT_KILLSHOTRATIO_10_KILLS",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 0.8
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 1.5
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 11,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 2
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 3,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "kill_streak_3to6",
+    "displayNameV2.Key": "STR_MEDAL_NAME_KILLSTREAK3TO6",
+    "hintTextV2.Key": "STR_MEDAL_HINT_KILLSTREAK3TO6",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 3
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 5
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 6
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "kill_streak_4to10",
+    "displayNameV2.Key": "STR_MEDAL_NAME_KILLSTREAK5TO20",
+    "hintTextV2.Key": "STR_MEDAL_HINT_KILLSTREAK3TO6",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 4
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 7
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "kill_streak_5to20",
+    "displayNameV2.Key": "STR_MEDAL_NAME_KILLSTREAK5TO20",
+    "hintTextV2.Key": "STR_MEDAL_HINT_KILLSTREAK3TO6",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 5
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 18,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "no_recon_with_kills",
+    "displayNameV2.Key": "STR_MEDAL_NAME_NORECONWITHKILLS",
+    "hintTextV2.Key": "STR_MEDAL_HINT_NORECONWITHKILLS",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 9,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 9,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 9,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "no_recon_with_kills",
+    "displayNameV2.Key": "STR_MEDAL_NAME_NORECONWITHKILLS",
+    "hintTextV2.Key": "STR_MEDAL_HINT_NORECONWITHKILLS",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 9,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 5
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 9,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 9,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 0
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 3,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 2,
+        "thresholdSource": 0,
+        "threshold": 18
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_100to250",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENT20TO75",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENT20TO75",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 250
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 175
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 100
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_10to30",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENT20TO75",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENT20TO75",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 30
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_15to50",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENT20TO75",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENT20TO75",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 50
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 25
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 15
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_20to50",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENT20TO75",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENT20TO75",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 50
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 35
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 20
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_30to100",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENT20TO75",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENT20TO75",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 100
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 65
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 30
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_50to180",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENT20TO75",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENT20TO75",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 180
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 100
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 50
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "req_spent_high_150to600",
+    "displayNameV2.Key": "STR_MEDAL_NAME_REQSPENTHIGH150TO300",
+    "hintTextV2.Key": "STR_MEDAL_HINT_REQSPENTHIGH150TO300",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 150
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 350
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 8,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 600
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "shots_fired_1to3",
+    "displayNameV2.Key": "STR_MEDAL_NAME_SHOTSFIRED1TO3",
+    "hintTextV2.Key": "STR_MEDAL_HINT_SHOTSFIRED1TO3",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 3
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "shots_fired_2to4",
+    "displayNameV2.Key": "STR_MEDAL_NAME_SHOTSFIRED2TO4",
+    "hintTextV2.Key": "STR_MEDAL_HINT_SHOTSFIRED4TO8",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 4
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 3
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "shots_fired_4to8",
+    "displayNameV2.Key": "STR_MEDAL_NAME_SOTSFIRED4TO9",
+    "hintTextV2.Key": "STR_MEDAL_HINT_SHOTSFIRED4TO8",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 8
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 6
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 4
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "single_impact_kills_2to5",
+    "displayNameV2.Key": "STR_MEDAL_NAME_SINGLEIMPACTKILLS2TO5",
+    "hintTextV2.Key": "STR_MEDAL_HINT_SINGLEIMPACTKILLS2TO5",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 19,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 19,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 3
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 19,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 5
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "three_kill_window_30to90",
+    "displayNameV2.Key": "STR_MEDAL_NAME_THREEKILLWINDOW30TO90",
+    "hintTextV2.Key": "STR_MEDAL_HINT_THREEKILLWINDOW30TO90",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 20,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 90
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 20,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 45
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 20,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 3,
+        "thresholdSource": 0,
+        "threshold": 10
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "TEST",
+    "displayNameV2.Key": "STR_MEDAL_NAME_TEST",
+    "hintTextV2.Key": "STR_MEDAL_HINT_TEST",
+    "BronzeConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 4,
+        "thresholdSource": 0,
+        "threshold": 2
+      }
+    ],
+    "SilverConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 4,
+        "thresholdSource": 0,
+        "threshold": 1
+      }
+    ],
+    "GoldConditions": [
+      {
+        "setOperation": 0,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 0,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 1
+      },
+      {
+        "setOperation": 1,
+        "source": 1,
+        "variable": 0,
+        "customVariableKey": null,
+        "mathOperator": 1,
+        "comparisonOperator": 5,
+        "thresholdSource": 0,
+        "threshold": 60
+      }
+    ],
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  }
+]

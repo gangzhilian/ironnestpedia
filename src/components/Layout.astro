@@ -1,0 +1,95 @@
+---
+import '../styles/global.css';
+import { routes, site } from '../lib/data';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  noindex?: boolean;
+  breadcrumbs?: { label: string; url?: string }[];
+}
+
+const { title, description, path, noindex = false, breadcrumbs = [] } = Astro.props;
+const canonical = new URL(path, site.site_url).href;
+const ogImage = new URL('/og-default.svg', site.site_url).href;
+const breadcrumbItems = [{ label: 'Home', url: '/' }, ...breadcrumbs];
+const breadcrumbJson = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    ...(item.url ? { item: new URL(item.url, site.site_url).href } : {}),
+  })),
+};
+const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => ({
+  label: route.url_path,
+  path: route.url_path,
+}));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    {!noindex && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJson)} />}
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a class="brand" href="/">{site.site_name}</a>
+        <nav aria-label="Primary">
+          {site.navigation.map((item) => <a href={item.url}>{item.label}</a>)}
+        </nav>
+        <form id="site-search" role="search">
+          <label class="eyebrow" for="site-query">Quick jump</label>
+          <input id="site-query" name="query" list="site-paths" placeholder="Type a route, e.g. /shells/ap" autocomplete="off" />
+          <datalist id="site-paths">{searchRoutes.map((item) => <option value={item.label} />)}</datalist>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      {breadcrumbItems.length > 1 && (
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          {breadcrumbItems.map((item, index) => <>{index > 0 && ' / '}{item.url ? <a href={item.url}>{item.label}</a> : item.label}</>)}
+        </nav>
+      )}
+      <slot />
+    </main>
+    <footer>
+      <div class="inner">
+        <nav aria-label="Database indexes">
+          {site.entity_indexes.map((item) => <a href={item.url}>{item.label}</a>)}
+          <a href="/sitemap-index.xml">Sitemap</a>
+        </nav>
+        <p>{site.footer_disclaimer}</p>
+      </div>
+    </footer>
+    <script define:vars={{ searchRoutes }}>
+      document.querySelector('#site-search')?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const input = document.querySelector('#site-query');
+        const value = input instanceof HTMLInputElement ? input.value.trim() : '';
+        const match = searchRoutes.find((entry) => entry.label.toLowerCase() === value.toLowerCase());
+        if (match) window.location.assign(match.path);
+      });
+    </script>
+  </body>
+</html>
+

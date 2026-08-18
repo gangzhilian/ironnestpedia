@@ -1,0 +1,164 @@
+[
+  {
+    "displayName": "Aerial Distance T1",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+    "tier": "T1",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T2",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+    "tier": "T2",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T3",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+    "tier": "T3",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T4",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+    "tier": "T4",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T5",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+    "tier": "T5",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T6",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+    "tier": "T6",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T1",
+    "description": "Effects the precision of the Aerial Distance correction information",
+    "tier": "T1",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T2",
+    "description": "Effects the precision of the Aerial Distance correction information",
+    "tier": "T2",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T3",
+    "description": "Effects the precision of the Aerial Distance correction information",
+    "tier": "T3",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T4",
+    "description": "Effects the precision of the Aerial Distance correction information",
+    "tier": "T4",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T5",
+    "description": "Effects the precision of the Aerial Distance correction information",
+    "tier": "T5",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Aerial Distance T6",
+    "description": "Effects the precision of the Aerial Distance correction information",
+    "tier": "T6",
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Enemy Artillery 3",
+    "description": "determins how many hostile artillery are present",
+    "tier": null,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Enemy Artillery 3",
+    "description": "determins how many hostile artillery are present",
+    "tier": null,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Enemy Artillery 1",
+    "description": "determins how many hostile artillery are present",
+    "tier": null,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Enemy Artillery 2",
+    "description": "determins how many hostile artillery are present",
+    "tier": null,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Enemy Artillery 3",
+    "description": "determins how many hostile artillery are present",
+    "tier": null,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "displayName": "Tutorial Cutaways",
+    "description": "Tutorial Cutaways",
+    "tier": null,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  }
+]

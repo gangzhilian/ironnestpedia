@@ -1,0 +1,21 @@
+---
+import Layout from '../components/Layout.astro';
+import news from '../../data/live/news.json';
+import { getRelatedRoutes, getSeo, labelForRoute, routeMap } from '../lib/data';
+const route = routeMap.get('/known-issues')!;
+const seo = getSeo(route.url_path);
+const related = getRelatedRoutes(route);
+const items = news.raw_response?.appnews?.newsitems ?? [];
+---
+<Layout title={seo.title} description={seo.description} path={route.url_path} breadcrumbs={[{ label: 'Known issues' }]}>
+  <p class="eyebrow">Official update evidence</p>
+  <h1>{seo.title}</h1>
+  <p>{seo.description}</p>
+  <p class="notice">{route.unique_value_statement}</p>
+  <section>
+    <h2>Patch source timeline</h2>
+    <div class="grid">{items.slice(0, 5).map((item) => <article class="card"><h3>{item.title}</h3><p>{new Date(item.date * 1000).toISOString().slice(0, 10)}</p><p class="meta">Official Steam news snapshot. Detailed issue prose remains a step 23/26 content task.</p></article>)}</div>
+  </section>
+  <section><h2>Related missions</h2><ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul></section>
+</Layout>
+

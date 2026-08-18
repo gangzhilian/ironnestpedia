@@ -1,0 +1,7 @@
+---
+import IndexPage from '../../components/IndexPage.astro';
+import { routeMap } from '../../lib/data';
+const route = routeMap.get('/medals')!;
+---
+<IndexPage route={route} />
+

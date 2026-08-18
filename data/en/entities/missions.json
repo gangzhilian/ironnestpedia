@@ -1,0 +1,610 @@
+[
+  {
+    "id": "FireOnCall",
+    "displayName": "Fire on Call",
+    "unlockedBy": [
+      "DeadReckoning"
+    ],
+    "unlocks": [
+      "HighTide"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_10_FireOnCall.asset",
+    "location": "Fire on Call",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "enemy_kills_10to30",
+      "kill_shot_ratio_0.8to2_10kills",
+      "no_recon_with_kills"
+    ],
+    "achievementForClearing": 9,
+    "achievementForGolding": 27,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "HighTide",
+    "displayName": "High Tide",
+    "unlockedBy": [
+      "FireOnCall"
+    ],
+    "unlocks": [
+      "BlindFire"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_11_HighTide.asset",
+    "location": "High Tide",
+    "medalRefs": [
+      "kill_streak_3to6",
+      "three_kill_window_30to90",
+      "avg_accuracy_50to250",
+      "kill_streak_3to6"
+    ],
+    "achievementForClearing": 10,
+    "achievementForGolding": 28,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "BlindFire",
+    "displayName": "Blind Fire",
+    "unlockedBy": [
+      "HighTide"
+    ],
+    "unlocks": [
+      "PhantomBattery"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_12_BlindFire.asset",
+    "location": "Blind Fire",
+    "medalRefs": [
+      "req_spent_50to180",
+      "kill_streak_3to6",
+      "enemy_kills_5to20",
+      "no_recon_with_kills"
+    ],
+    "achievementForClearing": 11,
+    "achievementForGolding": 29,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "PhantomBattery",
+    "displayName": "Phantom Battery",
+    "unlockedBy": [
+      "BlindFire"
+    ],
+    "unlocks": [
+      "FinalHarvest"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_13_PhantomBattery.asset",
+    "location": "Phantom Battery",
+    "medalRefs": [
+      "no_recon_with_kills",
+      "enemy_kills_6to10",
+      "avg_accuracy_50to250",
+      "counter_battery_100to260"
+    ],
+    "achievementForClearing": 12,
+    "achievementForGolding": 30,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "FinalHarvest",
+    "displayName": "Final Harvest",
+    "unlockedBy": [
+      "PhantomBattery"
+    ],
+    "unlocks": [
+      "WhiteShells"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_14_FinalHarvest.asset",
+    "location": "Final Harvest",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "no_recon_with_kills",
+      "enemy_kills_10to30",
+      "first_shot_fast_with_kills"
+    ],
+    "achievementForClearing": 13,
+    "achievementForGolding": 31,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "WhiteShells",
+    "displayName": "White Shells",
+    "unlockedBy": [
+      "FinalHarvest"
+    ],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/MissionGraph_15_WhiteShells.asset",
+    "location": "Barcelona",
+    "medalRefs": [
+      "ending1",
+      "ending2",
+      "ending3",
+      "ending4"
+    ],
+    "achievementForClearing": -1,
+    "achievementForGolding": 32,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Hospital False Flag",
+    "displayName": "Calibration Fire",
+    "unlockedBy": [],
+    "unlocks": [
+      "ceremony and HCHE"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_1Tutorial_Hospital False Flag.asset",
+    "location": "Map Aranjuez",
+    "medalRefs": [
+      "shots_fired_1to3"
+    ],
+    "achievementForClearing": 0,
+    "achievementForGolding": 18,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ceremony and HCHE",
+    "displayName": "ceremony and HCHE",
+    "unlockedBy": [
+      "Hospital False Flag"
+    ],
+    "unlocks": [
+      "Insurrections and Requisitions"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_2Tutorial_Ceremony and HE.asset",
+    "location": "Map Aranjuez",
+    "medalRefs": [
+      "shots_fired_4to8"
+    ],
+    "achievementForClearing": 1,
+    "achievementForGolding": 19,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Insurrections and Requisitions",
+    "displayName": "Insurrections and Requisitions",
+    "unlockedBy": [
+      "ceremony and HCHE"
+    ],
+    "unlocks": [
+      "Artillery Introduction",
+      "Chill"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_3Tutorial_Requisition and scout plane.asset",
+    "location": "Ciudad Real",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "avg_accuracy_50to250",
+      "kill_streak_3to6",
+      "req_spent_30to100"
+    ],
+    "achievementForClearing": 2,
+    "achievementForGolding": 20,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Artillery Introduction",
+    "displayName": "Counter-Battery",
+    "unlockedBy": [
+      "Insurrections and Requisitions"
+    ],
+    "unlocks": [
+      "ChallangeFDC",
+      "IronRoad"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_4Tutorial_Artillery and CBT.asset",
+    "location": "Ciudad Real",
+    "medalRefs": [
+      "three_kill_window_30to90",
+      "counter_battery_100to260",
+      "req_spent_30to100",
+      "enemy_kills_6to10"
+    ],
+    "achievementForClearing": 3,
+    "achievementForGolding": 21,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "IronRoad",
+    "displayName": "Iron Road",
+    "unlockedBy": [
+      "Artillery Introduction"
+    ],
+    "unlocks": [
+      "SiegeOfCartagena"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_5_IronRoad.asset",
+    "location": "Iron Road",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "kill_streak_5to20",
+      "kill_shot_ratio_0.8to2_10kills",
+      "no_recon_with_kills"
+    ],
+    "achievementForClearing": 4,
+    "achievementForGolding": 22,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "SiegeOfCartagena",
+    "displayName": "Siege of Cartagena",
+    "unlockedBy": [
+      "IronRoad"
+    ],
+    "unlocks": [
+      "The Gorge"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_6_SiegeOfCartagena.asset",
+    "location": "Seige of Cartagena",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "enemy_kills_6to15",
+      "no_recon_with_kills",
+      "req_spent_50to180"
+    ],
+    "achievementForClearing": 5,
+    "achievementForGolding": 23,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "The Gorge",
+    "displayName": "The Gorge",
+    "unlockedBy": [
+      "SiegeOfCartagena"
+    ],
+    "unlocks": [
+      "RockofGibraltar"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_7_TheGorge.asset",
+    "location": "the gorge",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "kill_streak_4to10",
+      "enemy_kills_10to30",
+      "kill_shot_ratio_0.8to2_10kills"
+    ],
+    "achievementForClearing": 6,
+    "achievementForGolding": 24,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "RockofGibraltar",
+    "displayName": "Rock of Gibraltar",
+    "unlockedBy": [
+      "The Gorge"
+    ],
+    "unlocks": [
+      "DeadReckoning"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_8_RockofGibraltar.asset",
+    "location": "Rock of Gibraltar",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "enemy_kills_6to10",
+      "no_recon_with_kills",
+      "req_spent_15to50"
+    ],
+    "achievementForClearing": 7,
+    "achievementForGolding": 25,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "DeadReckoning",
+    "displayName": "Dead Reckoning",
+    "unlockedBy": [
+      "RockofGibraltar"
+    ],
+    "unlocks": [
+      "FireOnCall"
+    ],
+    "missionRef": "Assets/Resources/missions/MissionGraph_9_DeadReckoning.asset",
+    "location": "Dead Reckoning",
+    "medalRefs": [
+      "ally_kills_0to2",
+      "kill_streak_3to6",
+      "enemy_kills_6to15",
+      "req_spent_30to100"
+    ],
+    "achievementForClearing": 8,
+    "achievementForGolding": 26,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Base",
+    "displayName": "Skirmish\n- Challenge -\nCounter battery timer",
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/MissionGraph_Base.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ChallangeFDC",
+    "displayName": "Skirmish\n- Challenge -\nCounter battery timer",
+    "unlockedBy": [
+      "Artillery Introduction"
+    ],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/MissionGraph_Challange FDC.asset",
+    "location": null,
+    "medalRefs": [
+      "no_recon_with_kills",
+      "first_shot_fast_with_kills",
+      "kill_shot_ratio_0.8to1.5_20kills",
+      "kill_streak_5to20"
+    ],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Chill",
+    "displayName": "Skirmish\n- Chill -\nUncontested Front",
+    "unlockedBy": [
+      "Insurrections and Requisitions"
+    ],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/MissionGraph_Chill.asset",
+    "location": null,
+    "medalRefs": [
+      "kill_shot_ratio_0.8to1.5_20kills",
+      "kill_streak_5to20",
+      "req_spent_high_150to600",
+      "single_impact_kills_2to5"
+    ],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": null,
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_AllNodes.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "ChallangeFDC",
+    "displayName": null,
+    "unlockedBy": [
+      "Artillery Introduction"
+    ],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Challange super short timer test.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": null,
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_DEBUG MISSION.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": null,
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Move Unit.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": null,
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_ObjectiveTests.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": null,
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_SpawnTest.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": null,
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Trailer static mission.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Tutorial1.5",
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Tutorial_1.5 Single Spotter.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Tutorial1",
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Tutorial_1.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Tutorial2",
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Tutorial_2 (Played 3rd).asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Tutorial3",
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Tutorial_3 (played 2nd).asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Tutorial4",
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Tutorial_4 SHORT TIMER.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  },
+  {
+    "id": "Tutorial4",
+    "displayName": null,
+    "unlockedBy": [],
+    "unlocks": [],
+    "missionRef": "Assets/Resources/missions/ref & debugging/MissionGraph_Tutorial_4.asset",
+    "location": null,
+    "medalRefs": [],
+    "achievementForClearing": 0,
+    "achievementForGolding": 0,
+    "game_version": "4",
+    "data_source": "datamined",
+    "last_updated": "2026-08-16",
+    "confidence": "verified"
+  }
+]

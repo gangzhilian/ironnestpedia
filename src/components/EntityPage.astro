@@ -1,0 +1,48 @@
+---
+import Layout from './Layout.astro';
+import DataTable from './DataTable.astro';
+import { getEmbeddedRows, getPrimaryRows, getRelatedRoutes, getSeo, labelForRoute, routeMap, type RouteEntry } from '../lib/data';
+
+interface Props { route: RouteEntry; }
+const { route } = Astro.props;
+const seo = getSeo(route.url_path);
+const rows = getPrimaryRows(route);
+const fields = (route as any).data_source?.fields ?? Object.keys(rows[0] ?? {});
+const embedded = getEmbeddedRows(route);
+const related = getRelatedRoutes(route);
+const indexPath = `/${route.url_path.split('/').filter(Boolean)[0]}`;
+const indexRoute = routeMap.get(indexPath);
+---
+<Layout title={seo.title} description={seo.description} path={route.url_path} breadcrumbs={[
+  ...(indexRoute ? [{ label: labelForRoute(indexRoute), url: indexRoute.url_path }] : []),
+  { label: seo.primary_keyword || route.source_record_id || route.url_path },
+]}>
+  <p class="eyebrow">{route.entity} data page</p>
+  <h1>{seo.title}</h1>
+  <p>{seo.description}</p>
+  <p class="notice">{(route as any).unique_value_statement}</p>
+  {(route as any).merge_note && <p>{(route as any).merge_note}</p>}
+
+  <h2>Verified data</h2>
+  <DataTable rows={rows} fields={fields} />
+
+  {embedded.map((group) => (
+    <section>
+      <h2>Related {group.entity} records</h2>
+      <DataTable rows={group.rows} fields={group.source.fields ?? Object.keys(group.rows[0] ?? {})} />
+    </section>
+  ))}
+
+  {rows[0] && (
+    <section class="panel">
+      <h2>Record provenance</h2>
+      <p>Game version: <strong>{rows[0].game_version}</strong> · Source: <strong>{rows[0].data_source}</strong> · Updated: <strong>{rows[0].last_updated}</strong> · Confidence: <strong>{rows[0].confidence}</strong></p>
+    </section>
+  )}
+
+  <section>
+    <h2>Related pages</h2>
+    <ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul>
+  </section>
+</Layout>
+

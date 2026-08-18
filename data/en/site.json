@@ -1,0 +1,24 @@
+{
+  "site_name": "IronNestPedia",
+  "game_name": "IRON NEST: Heavy Turret Simulator",
+  "site_url": "https://ironnestpedia.com",
+  "navigation": [
+    { "label": "Shells", "url": "/shells" },
+    { "label": "Missions", "url": "/missions" },
+    { "label": "Achievements", "url": "/achievements" },
+    { "label": "Units", "url": "/units" }
+  ],
+  "entity_indexes": [
+    { "label": "Shells", "url": "/shells" },
+    { "label": "Missions", "url": "/missions" },
+    { "label": "Achievements", "url": "/achievements" },
+    { "label": "Units", "url": "/units" },
+    { "label": "Medals", "url": "/medals" },
+    { "label": "Punchcards", "url": "/punchcards" },
+    { "label": "Mutators", "url": "/mutators" }
+  ],
+  "footer_disclaimer": "Unofficial fan-made data reference. IRON NEST and related trademarks belong to their respective owners.",
+  "data_note": "Values are sourced from verified game data and Steam API records. Each record keeps its version, source, update date, and confidence metadata.",
+  "placeholder_disclaimer": "Temporary step 21 wording. Replace with reviewed compliance copy in step 26."
+}
+

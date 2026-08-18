@@ -1,0 +1,117 @@
+{
+  "source": "step-20-guide-topics",
+  "task_file": "20-指南页选题任务.md",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "updated_at": "2026-08-17T00:00:00+08:00",
+  "input_sources": {
+    "source1_step10_target_topics": {
+      "total_is_target_topic": 32,
+      "all_accounted_for_in_step15": true,
+      "note": "32个is_target_topic=true问题全部能在15-content-priorities.json的topic_importance_ranking(10条)或below_threshold_target_topics(5条)里找到，逐一核对无遗漏"
+    },
+    "source2_step15_phenomena": {
+      "total": 8,
+      "routed": [
+        {"id": "P01", "routing": "known-issues", "reason": "confirmed_fixed"},
+        {"id": "P02", "routing": "known-issues", "reason": "known_issue类型，疑似bug非攻略知识"},
+        {"id": "P03", "routing": "guide_candidate_3", "reason": "炮塔机械运转速度数据基础"},
+        {"id": "P04", "routing": "guide_candidate_2", "reason": "Requisition资源系统数据基础"},
+        {"id": "P05", "routing": "enrich_existing_page:/missions/phantombattery", "reason": "单一任务机制细节，应并入Mission页而非独立指南"},
+        {"id": "P06", "routing": "excluded", "reason": "shelved_low_confidence"},
+        {"id": "P07", "routing": "guide_candidate_4_rejected_merged_into_1_2_3", "reason": "owner_observed且与09-competitor-landscape.json的rejected_false_gaps重叠，站长已决定不做独立页，诉求拆入候选①②③开头"},
+        {"id": "P08", "routing": "known-issues", "reason": "confirmed_fixed"}
+      ]
+    },
+    "source3_step17_unmatched_keywords": {
+      "total": 20,
+      "routed": [
+        {"terms": ["compass", "方位角", "как треангулировать", "why yellow arrow no target"], "routing": "guide_candidate_1", "reason": "4条独立指向方位角/距离误差链主题"},
+        {"terms": ["emergency move"], "routing": "enrich_existing_page:/missions/phantombattery", "reason": "Phantom Battery专属机制"},
+        {"terms": ["time pressure"], "routing": "excluded", "reason": "信息量不足"},
+        {"terms": ["iron nest mission 2 guide", "iron nest mission 2 walkthrough", "iron nest mission 3 walkthrough", "iron nest demo mission 2", "iron nest demo mission 3", "iron nest demo mission", "iron nest demo second mission", "iron nest second mission", "iron nest third mission"], "routing": "excluded", "reason": "与09-competitor-landscape.json的rejected_false_gaps['plain mission walkthrough collection']冲突，见跨步骤复核案例"},
+        {"terms": ["iron nest shell size"], "routing": "excluded", "reason": "与15-content-priorities.json已排除的R06(弹药物理规格)同一话题"},
+        {"terms": ["iron nest liberation mission"], "routing": "blocked", "reason": "Liberation身份未确认(content_priority_unmatched)，身份不确认前不能写指南"},
+        {"terms": ["iron nest mission 2 spotter 1 location"], "routing": "blocked", "reason": "需要MapEntity.Position数据，当前全空；站长已于2026-08-17决定放弃继续获取该数据(与/tools/mission-map同一已关闭缺口，详见config.json production_unpack.runtime_dump_plugin_attempt)，非临时性等待"},
+        {"terms": ["iron nest hell shell", "iron nest unload shell"], "routing": "excluded", "reason": "信息量不足以支撑单独指南"}
+      ]
+    },
+    "source4_cross_step_review": {
+      "method": "重读09-competitor-landscape.json的gap_list和rejected_false_gaps、10-player-questions.json全部问题、14-live-data/news.json patch正文全文、15-content-priorities.json的below_threshold_target_topics",
+      "new_candidates_found": 0,
+      "candidates_excluded_by_this_review": 1,
+      "excluded_detail": "任务顺序攻略集合(9条unmatched autocomplete词的初步方向)与09已否决的'plain mission walkthrough collection'冲突，本轮复核后排除"
+    }
+  },
+  "final_shortlist": [
+    {
+      "id": 1,
+      "title_direction": "IRON NEST方位角/距离误差全解析(bearing/distance/triangulation)",
+      "type": "cross-mission mechanic guide",
+      "status": "confirmed",
+      "evidence": [
+        "project-data/iron-nest/15-content-priorities.json topic_importance_ranking rank2 (mention_count 7, D09/D19/D26/R10/R11/R14/N13)",
+        "project-data/iron-nest/17-keywords.json unmatched_keyword_candidates.similarweb: compass / 方位角 / как треангулировать / why yellow arrow no target"
+      ],
+      "synergy": "与step18首页预告的Unified Firing Planner工具直接联动，指南先讲清机制，工具后续做交互计算",
+      "data_readiness": "ready，rank2的note已明确说明现有数据能覆盖误差传播/平行线求解/cardinal方位角区间"
+    },
+    {
+      "id": 2,
+      "title_direction": "IRON NEST Requisition资源系统全解析(初始值/继承/重置规则)",
+      "type": "cross-mission mechanic guide",
+      "status": "confirmed",
+      "evidence": [
+        "project-data/iron-nest/15-content-priorities.json topic_importance_ranking rank3 (mention_count 4, D07/D14/N03/N08)",
+        "project-data/iron-nest/15-content-priorities.json unexplained_phenomena P04 additional_evidence: Patch #3 'Mission events not resetting correctly' + 'Turret position and movement not resetting correctly'"
+      ],
+      "data_readiness": "ready，P04已有patch note佐证的具体假设"
+    },
+    {
+      "id": 3,
+      "title_direction": "IRON NEST炮塔装填与旋转速度实测",
+      "type": "cross-mission mechanic guide",
+      "status": "confirmed_pending_data",
+      "evidence": [
+        "project-data/iron-nest/15-content-priorities.json topic_importance_ranking rank5 (mention_count 2, note: '零竞品覆盖、零官方数据,稀缺性拉高优先级')",
+        "project-data/iron-nest/15-content-priorities.json unexplained_phenomena P03"
+      ],
+      "data_readiness": "not_ready，需先执行P03的next_action(查assetripper-export2反编译类搜索Reload/RotationSpeed/TraverseRate关键词；查不到则需要站长实际计时)，选题成立但正文数据还未生成"
+    },
+    {
+      "id": 4,
+      "title_direction": "独立新手指南(站长已否决，不做)",
+      "type": "rejected",
+      "status": "owner_decided_no_standalone_page",
+      "evidence": [
+        "project-data/iron-nest/15-content-priorities.json unexplained_phenomena P07 (owner_observed, confidence=verified)"
+      ],
+      "conflict": "project-data/iron-nest/09-competitor-landscape.json rejected_false_gaps: 'English beginner firing guide' — reason: 'Several A-class publishers cover the complete flow in depth.'",
+      "owner_decision": "2026-08-17站长选择方案A：不做独立页，把新手常见坑拆成小节分别塞进候选①②③三篇文章开头，各自补一段零基础解释，不新建第4个指南页",
+      "options_presented_to_owner": [
+        "A. 不做独立页，把新手常见坑拆成小节分别塞进候选①②③三篇文章开头（站长选择此项）",
+        "B. 做，但严格限定范围为'游戏没有教程，开局最容易卡住的N个点'诊断型短页，不做通用操作教程",
+        "C. 做完整版新手指南，接受和竞品部分内容重叠"
+      ]
+    }
+  ],
+  "excluded_summary": [
+    {"candidate": "任务顺序攻略集合(mission 2/3 guide/walkthrough等9词)", "reason": "与09-competitor-landscape.json rejected_false_gaps['plain mission walkthrough collection']冲突"},
+    {"candidate": "金牌/成就边缘可达性条件(rank4)", "reason": "对应P01/P02/P08，已路由到/known-issues页，不重复做指南"},
+    {"candidate": "随机目标生成边界条件(rank9/P06)", "reason": "shelved_low_confidence，数据不足"},
+    {"candidate": "弹药物理规格/shell size(R06)", "reason": "step15已排除，与游戏数值玩法关系较弱"},
+    {"candidate": "Liberation mission", "reason": "身份未确认(content_priority_unmatched)，待站长确认身份后才能重新评估"},
+    {"candidate": "mission 2 spotter 1 location", "reason": "需要MapEntity.Position数据，当前全空；站长已于2026-08-17决定放弃继续获取(已关闭的缺口，非临时阻塞)，与/tools/mission-map同一缺口"},
+    {"candidate": "Emergency Move / Phantom Battery CBT timing (P05)", "reason": "应并入/missions/phantombattery页面内容，不单独成指南"}
+  ],
+  "open_items": [
+    "候选①②③正文撰写时，各自开头需补一小节新手向零基础解释(承接候选④被否决后转移的P07诉求)，不是可选项，是候选④决定的直接落地要求",
+    "候选③(炮塔机械运转速度)需要先补数据(查解包或站长计时实测)才能真正开始写正文",
+    "Liberation身份确认后需回来重新评估该候选是否转为可执行；mission 2 spotter 1 location候选因MapEntity.Position数据缺口已被站长判定为已关闭事项(非等待中)，不再纳入重新评估范围，除非站长明确重新拍板"
+  ],
+  "final_confirmed_guide_count": 3,
+  "final_confirmed_titles": [
+    "IRON NEST方位角/距离误差全解析(bearing/distance/triangulation)",
+    "IRON NEST Requisition资源系统全解析(初始值/继承/重置规则)",
+    "IRON NEST炮塔装填与旋转速度实测"
+  ]
+}

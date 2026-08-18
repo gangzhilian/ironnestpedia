@@ -1,0 +1,514 @@
+{
+  "entities": {
+    "Shell": {
+      "confidence": "verified",
+      "chinese_name": "炮弹/弹药",
+      "evidence": "Step 12 exhaustively parsed all 21 full-release ShellDefinition_*.asset files under assetripper-export2/Assets/Resources/shells (20 named shell definitions plus ShellDefinition_EMPTY in ref/debug). Output: 12-raw-extract/shells.json.",
+      "fields": {
+        "ShellId": {
+          "type": "string",
+          "example": "AP",
+          "evidence": "ShellDefinition_AP.asset (both demo and full release)"
+        },
+        "DisplayName": {
+          "type": "string",
+          "example": "AP",
+          "evidence": "ShellDefinition_AP.asset"
+        },
+        "Description": {
+          "type": "string or null",
+          "example": "null in all 21 full-release definitions",
+          "evidence": "Step 13 schema reconciliation: the serialized field exists but all 21 step-12 records carry an empty/null value; null is therefore an observed valid value, not a missing key",
+          "new_in_full_release": true
+        },
+        "ShellSpeed": {
+          "type": "number",
+          "example": 0.7,
+          "evidence": "ShellDefinition_AP.asset"
+        },
+        "shellSpeedVariationPercent": {
+          "type": "number",
+          "example": 0,
+          "evidence": "ShellDefinition_AP.asset, full release only",
+          "new_in_full_release": true
+        },
+        "Damage": {
+          "type": "number",
+          "example": 2,
+          "evidence": "ShellDefinition_AP.asset"
+        },
+        "ImpactRadius": {
+          "type": "number",
+          "example": 0.15,
+          "evidence": "ShellDefinition_AP.asset, cross-validated against ironnestdb.com/firing-table"
+        },
+        "projectilesPerShell": {
+          "type": "integer",
+          "example": 1,
+          "evidence": "ShellDefinition_AP.asset, full release only",
+          "new_in_full_release": true
+        },
+        "horizontalDispersion": {
+          "type": "number",
+          "example": 0,
+          "evidence": "All 21 full-release ShellDefinition_*.asset files parsed in step 12",
+          "new_in_full_release": true
+        },
+        "verticalDispersion": {
+          "type": "number",
+          "example": 0,
+          "evidence": "All 21 full-release ShellDefinition_*.asset files parsed in step 12",
+          "new_in_full_release": true
+        },
+        "maxPowderCharges": {
+          "type": "integer",
+          "example": 6,
+          "evidence": "ShellDefinition_AP.asset"
+        },
+        "defaultPowderCharge": {
+          "type": "integer",
+          "example": 3,
+          "evidence": "ShellDefinition_AP.asset"
+        },
+        "charge_N_maxRange": {
+          "type": "number (per charge level 1-6)",
+          "example": "charge_1_maxRange=5, charge_6_maxRange=30",
+          "evidence": "ShellDefinition_AP.asset, cross-validated against ironnestdb.com/firing-table"
+        }
+      }
+    },
+    "Mission": {
+      "confidence": "verified",
+      "chinese_name": "任务/关卡",
+      "evidence": "Step 12 exhaustively parsed 31 full-release MissionGraph_*.asset files, all 25 operations/*.asset files, and all 1,934 mission-folder .asset files. MissionNode.cs has a MissionGraph Mission field; each operations/Mission*.asset wrapper points to a gameplay MissionGraph by GUID. These are conclusively two layers, and unlock links were merged onto the 31 Mission records.",
+      "step12_resolution": "MissionGraph is the logical Mission entity. MissionNode in Resources/operations is a separate unlock-graph wrapper and is not emitted as a second entity.",
+      "fields": {
+        "id": {
+          "type": "string or null for unfinished debug graphs",
+          "example": "IronRoad",
+          "evidence": "MissionGraph_5_IronRoad.asset field MissionID"
+        },
+        "displayName": {
+          "type": "string or null",
+          "example": "Iron Road",
+          "evidence": "MissionGraph_5_IronRoad.asset MissionName.Raw/Key, resolved through English.json when Raw is empty"
+        },
+        "unlockedBy": {
+          "type": "array<reference -> Mission.id>",
+          "example": [
+            "Artillery Introduction"
+          ],
+          "evidence": "operations/Mission*.asset ports/UnlockedBy, wrapper GUID traced through each wrapper's Mission field"
+        },
+        "unlocks": {
+          "type": "array<reference -> Mission.id>",
+          "example": [
+            "SiegeOfCartagena"
+          ],
+          "evidence": "operations/Mission*.asset ports/Unlocks, wrapper GUID traced through each wrapper's Mission field"
+        },
+        "missionRef": {
+          "type": "string (relative source asset path)",
+          "example": "Assets/Resources/missions/MissionGraph_5_IronRoad.asset",
+          "evidence": "full-release AssetRipper export"
+        },
+        "location": {
+          "type": "string or null",
+          "example": "Iron Road",
+          "evidence": "MissionGraph.MapReference.resourcePath folder name; map art itself was not extracted"
+        },
+        "medalRefs": {
+          "type": "array<reference -> Medal.id>",
+          "example": [
+            "ally_kills_0to2",
+            "kill_streak_5to20",
+            "kill_shot_ratio_0.8to2_10kills",
+            "no_recon_with_kills"
+          ],
+          "evidence": "MissionGraph.Medals GUID list resolved through MedalDefinition_*.asset.meta files"
+        },
+        "achievementForClearing": {
+          "type": "integer (index into Steam achievement schema; -1 means no single direct achievement)",
+          "example": 4,
+          "evidence": "MissionGraph_5_IronRoad.asset directly stores achievementForClearing=4, which points to ACHIEVEMENT_5_CLEAR at Steam schema index 4. Field serialized in 31/31 MissionGraph records; 14/15 configured campaign missions have a direct clearing index, while WhiteShells uses -1 because it branches to four ending achievements."
+        },
+        "achievementForGolding": {
+          "type": "integer (index into Steam achievement schema)",
+          "example": 22,
+          "evidence": "MissionGraph_5_IronRoad.asset directly stores achievementForGolding=22. Field serialized in 31/31 MissionGraph records; all 15 configured campaign missions have direct gold-achievement indices 18-32."
+        }
+      }
+    },
+    "Medal": {
+      "confidence": "verified",
+      "chinese_name": "勋章(任务内铜/银/金评级)",
+      "evidence": "Step 12 exhaustively parsed 33 full-release MedalDefinition_*.asset files (32 production definitions plus MedalDefinition_Test under ref/debug). MissionGraph.cs declares List<MedalCategoryDefinition> Medals, and every populated MissionGraph.Medals GUID was resolved to Medal.id.",
+      "step12_resolution": "Medal scope is stored on MissionGraph as a direct Medals list; MedalDefinition itself intentionally has no missionId.",
+      "fields": {
+        "id": {
+          "type": "string",
+          "example": "enemy_kills_6to10",
+          "evidence": "MedalDefinition_enemy_kills_6to10.asset"
+        },
+        "displayNameV2.Key": {
+          "type": "string (localization key)",
+          "example": "STR_MEDAL_NAME_ENEMYKILLS6TO10",
+          "evidence": "MedalDefinition_enemy_kills_6to10.asset"
+        },
+        "hintTextV2.Key": {
+          "type": "string (localization key)",
+          "example": "STR_MEDAL_HINT_ENEMYKILLS6TO10",
+          "evidence": "MedalDefinition_enemy_kills_6to10.asset"
+        },
+        "BronzeConditions": {
+          "type": "condition object: {Source: MedalValueSource enum, Variable: MedalTrackedValue enum, MathOperator: comparison op, threshold value}",
+          "example": "Variable: 5, MathOperator: 0 -> Variable 5 = EnemyKills (decoded and cross-validated: this condition is on MedalDefinition_enemy_kills_6to10.asset, whose own ID literally says 'enemy_kills', confirming the decode is correct)",
+          "evidence": "MedalDefinition_enemy_kills_6to10.asset + decompiled Scripts/Assembly-CSharp/MedalValueSource.cs (enum Inline=0/Variable=1/CustomVariable=2) + Scripts/Assembly-CSharp/MedalTrackedValue.cs",
+          "decoded_enum_MedalValueSource": {
+            "0": "Inline",
+            "1": "Variable",
+            "2": "CustomVariable"
+          },
+          "decoded_enum_MedalCompareOperator": {
+            "0": "Equal",
+            "1": "NotEqual",
+            "2": "GreaterThan",
+            "3": "GreaterThanOrEqual",
+            "4": "LessThan",
+            "5": "LessThanOrEqual"
+          },
+          "decoded_enum_MedalMathOperator": {
+            "0": "Add",
+            "1": "Subtract",
+            "2": "Multiply",
+            "3": "Divide"
+          },
+          "decoded_enum_MedalTrackedValue": {
+            "0": "ShotsFired",
+            "1": "ShotsHit",
+            "2": "STARUsed",
+            "3": "Kills",
+            "4": "TargetKills",
+            "5": "EnemyKills",
+            "6": "AllyKills",
+            "7": "StarsKilled",
+            "8": "RequisitionPointsSpent",
+            "9": "ReconUsed",
+            "10": "ReconUsedAfterFirstShot",
+            "11": "AverageImpactDistanceFromNearestTarget",
+            "12": "MissionStartTime",
+            "13": "MissionCompleteTime",
+            "14": "MissionEndTime",
+            "15": "FirstShotTime",
+            "16": "LastTargetDestroyedTime",
+            "17": "CounterBatteryTimeRemaining",
+            "18": "LongestKillStreak",
+            "19": "MostKillsBySingleImpact",
+            "20": "BestThreeKillWindowSeconds"
+          }
+        },
+        "SilverConditions": {
+          "type": "array<condition object>",
+          "evidence": "All 33 MedalDefinition_*.asset files parsed in step 12; same shape as BronzeConditions"
+        },
+        "GoldConditions": {
+          "type": "array<condition object>",
+          "evidence": "All 33 MedalDefinition_*.asset files parsed in step 12; same shape as BronzeConditions"
+        }
+      }
+    },
+    "Punchcard": {
+      "confidence": "verified",
+      "chinese_name": "打孔卡(操控炮塔的核心机制,竞品大概率没有对应内容)",
+      "evidence": "Step 12 exhaustively parsed 41 full-release Punchcard_*.asset files, including testing and demoblocked definitions. 28 records have populated Requirements arrays.",
+      "step12_resolution": "Requirements is RequirementSet: an array of generic condition objects containing RequirementType, Operation, ShellSlot, StringValue, IntValue, and BoolValue. It is not a Punchcard foreign-key list.",
+      "fields": {
+        "ID": {
+          "type": "string",
+          "example": "PowderCharges",
+          "evidence": "Punchcard_PowderCharges.asset"
+        },
+        "Cost": {
+          "type": "integer",
+          "example": 4,
+          "evidence": "Punchcard_PowderCharges.asset"
+        },
+        "MaxUses": {
+          "type": "integer",
+          "example": 0,
+          "evidence": "Punchcard_PowderCharges.asset"
+        },
+        "Title.Key": {
+          "type": "string (localization key)",
+          "example": "STR_PUNCHCARD_POWDERCHARGES_TITLE",
+          "evidence": "Punchcard_PowderCharges.asset"
+        },
+        "Description.Key": {
+          "type": "string (localization key)",
+          "example": "STR_PUNCHCARD_POWDERCHARGES_DESCRIPTION",
+          "evidence": "Punchcard_PowderCharges.asset"
+        },
+        "Requirements": {
+          "type": "array<RequirementSet.RequirementPair {operation, requirement:{RequirementType, Operation, ShellSlot, StringValue, IntValue, BoolValue}}>",
+          "example": {
+            "operation": 0,
+            "requirement": {
+              "RequirementType": 1,
+              "Operation": 3,
+              "ShellSlot": 3,
+              "StringValue": "ShellSlot",
+              "IntValue": 0,
+              "BoolValue": 0
+            }
+          },
+          "evidence": "28 populated full-release examples, including Punchcard_Shell_ATMC_DemoBlocked.asset; decoded from RequirementSet.cs and Requirement.cs during step 13",
+          "decoded_enum_RequirementPairOperation": {
+            "0": "Base",
+            "1": "And",
+            "2": "Or"
+          },
+          "decoded_enum_RequirementType": {
+            "0": "None",
+            "1": "ShellSlotCount",
+            "2": "TurretIsMoving"
+          },
+          "decoded_enum_RequirementOperation": {
+            "0": "Equals",
+            "1": "NotEquals",
+            "2": "LessThan",
+            "3": "GreaterThan",
+            "4": "LessThanOrEquals",
+            "5": "GreaterThanOrEquals"
+          },
+          "decoded_enum_ShellSlot": {
+            "0": "Right",
+            "1": "Left",
+            "2": "Any",
+            "3": "PunchardVaribale"
+          },
+          "serialized_value_notes": "Unity serializes BoolValue as integer 0/1 in these assets; all current records use 0. The source C# field type is bool."
+        },
+        "IsRecon": {
+          "type": "boolean",
+          "example": false,
+          "evidence": "Punchcard_PowderCharges.asset; Unity serialized 0 normalized to JSON boolean false during step-12 extraction"
+        }
+      }
+    },
+    "Mutator": {
+      "confidence": "verified",
+      "chinese_name": "难度修饰符(分级)",
+      "evidence": "Step 12 exhaustively parsed all 18 full-release Mutator_*.asset definitions. Decompiled MutatorDefinition.cs contains only displayName and description; there is no tier field. Twelve filenames carry T1-T6 suffixes; other variants use names such as Enemy Artillery 1-3, Counter Battery Timer 10m/15m, and Tutorial Cutaways.",
+      "step12_resolution": "tier is a derived filename convention only, not a structured game field; it is null for assets without a T-number suffix.",
+      "fields": {
+        "displayName": {
+          "type": "string",
+          "example": "Aerial Distance T1",
+          "evidence": "Mutator_Aerial Direction T1.asset"
+        },
+        "description": {
+          "type": "string",
+          "example": "Effects the precision of the Aerial Direction, i.e. Bearing correction information",
+          "evidence": "Mutator_Aerial Direction T1.asset"
+        },
+        "tier": {
+          "type": "string or null (derived)",
+          "example": "T1",
+          "evidence": "T1-T6 parsed from asset filename; MutatorDefinition.cs proves no structured tier field exists"
+        }
+      }
+    },
+    "Achievement": {
+      "confidence": "verified",
+      "chinese_name": "Steam成就",
+      "evidence": "project-data/iron-nest/06-api-samples/schema-sample.json (Steam ISteamUserStats/GetSchemaForGame), 33 achievements, data_source is Steam API not local unpack",
+      "fields": {
+        "name": {
+          "type": "string",
+          "example": "ACHIEVEMENT_5_CLEAR",
+          "evidence": "06-api-samples/schema-sample.json"
+        },
+        "displayName": {
+          "type": "string",
+          "example": "All Clear",
+          "evidence": "06-api-samples/schema-sample.json"
+        },
+        "description": {
+          "type": "string",
+          "example": "Intercept the Iron Road.",
+          "evidence": "06-api-samples/schema-sample.json"
+        },
+        "hidden": {
+          "type": "boolean",
+          "example": false,
+          "evidence": "06-api-samples/schema-sample.json; Steam 0/1 normalized to JSON boolean during step-12 extraction"
+        },
+        "type": {
+          "type": "string enum, inferred from name suffix",
+          "example": "CLEAR (mission completion) / GOLDEN (all medals gold in that mission)",
+          "evidence": "pattern across all 33 entries in 06-api-samples/schema-sample.json"
+        },
+        "missionRef": {
+          "type": "string (resolved Mission.id)",
+          "example": "IronRoad",
+          "evidence": "29 of 33 achievements resolve through MissionGraph.achievementForClearing/achievementForGolding integer indices. The four branching ACHIEVEMENT_15A-D_CLEAR records map to WhiteShells by the explicit shared ending-name pattern because WhiteShells stores achievementForClearing=-1."
+        }
+      }
+    },
+    "MapEntity": {
+      "confidence": "verified",
+      "former_name_in_schema": "Enemy (renamed - the class covers hostile, allied, and neutral/objective units, not just enemies)",
+      "chinese_name": "地图实体(敌方/友方/目标单位统称)",
+      "evidence": "Step 12 GUID reverse lookup for m_Script e184757d0dd5468738d71e892a08c1ca found and parsed all 275 full-release MapEntity spawn assets: 96 filenames use 'State_Spawn Map Entity' and 179 use 'State_SpawnMapEntity'. Each node's graph.guid was resolved through MissionGraph_*.asset.meta: 212 nodes map to an official Mission.id, 63 map to a ref/debug MissionGraph name, and 0 are unresolved. Decompiled State_SpawnMapEntity.cs confirms the shared class and fields. Non-default authored values include Armour=1 in 22 nodes, Stars>0 in 62 nodes, Health=999 in 13 nodes, Health=100 in 2 nodes, and Health=4 in 1 node.",
+      "related_lightweight_class": "MapEntityTemplateMin contains only ID, Name, and Role and therefore cannot be a canonical source for Health/Armour/Stars. No serialized MapEntityTemplateMin stat source was found.",
+      "fields": {
+        "ID": {
+          "type": "string",
+          "example": "HostileTank",
+          "evidence": "State_Spawn Map Entity_0.asset + MapEntity.cs field 'ID'"
+        },
+        "RawID": {
+          "type": "string or null",
+          "evidence": "MapEntity.cs defines RawID, but none of the 275 static State_SpawnMapEntity records serializes a value; runtime-only in current evidence",
+          "runtime_dump_attempted": "2026-08-17: Windows MelonLoader runtime-dump mod (project-data/iron-nest/12-runtime-dump-mod/) attempted; MelonLoader injection itself succeeded, but the mod's C# project never reached a successful build (unresolved CS0246/CS0656 compile-toolchain errors, root cause not found after multiple fix attempts). Owner decided to stop pursuing this field; remains null by design, not an oversight."
+        },
+        "Name": {
+          "type": "TextIdentifier localization key or null",
+          "example": "STR_ENTITYNAME_ALLYTANK",
+          "evidence": "274/275 static records provide DisplayName.Key; one debug/test node is null"
+        },
+        "IDIndex": {
+          "type": "integer or null",
+          "evidence": "MapEntity.cs defines IDIndex, but none of the 275 static State_SpawnMapEntity records serializes a value; runtime-only in current evidence",
+          "runtime_dump_attempted": "Same 2026-08-17 attempt and outcome as RawID above; see that field's note."
+        },
+        "Icon": {
+          "type": "null in step-12 extraction",
+          "extraction_status": "excluded_redline",
+          "evidence": "Icon references are art and deliberately not extracted under 02-措辞框架与红线.md"
+        },
+        "IconRaw": {
+          "type": "null in step-12 extraction",
+          "extraction_status": "excluded_redline",
+          "evidence": "Sprite references are art and deliberately not extracted under 02-措辞框架与红线.md"
+        },
+        "Role": {
+          "type": "EntityRoles bitmask enum",
+          "example": 262145,
+          "evidence": "State_Spawn Map Entity_0.asset, decoded via EntityRoles.cs: None=0, Enemy=1, Ally=2, Spotter=6, AllyGroup1=0xA, AllyGroup2=0x12, Target=0x20, OptionalTarget=0x40, EnemyGroup1=0x81, EnemyGroup2=0x101, EnemyGroup3=0x201, Artillery=0x8000, Fortification=0x10000, Infantry=0x20000, Tank=0x40000, ListeningPost=0x80000, AABattery=0x100000, Reference=0x2000000"
+        },
+        "Position": {
+          "type": "Vector3 or null",
+          "evidence": "MapEntity.cs field Position exists, but all 275 static spawn assets use LocationSelection rules and contain no resolved runtime Vector3; emitted as null",
+          "runtime_dump_attempted": "Same 2026-08-17 attempt and outcome as RawID above (was 'pending Windows runtime dump'; that attempt concluded without a successful build). See RawID's note."
+        },
+        "State": {
+          "type": "MapEntityStates enum",
+          "evidence": "State_SpawnMapEntity.StartingState plus MapEntityStates.cs: None=0, Destroyed=1, Damaged=2, Moving=64, Hidden=128, Suppressed=1024, State1=1048576, State2=2097152, State3=4194304, State4=8388608, State5=16777216"
+        },
+        "MaxHealth": {
+          "type": "integer or null",
+          "evidence": "Runtime MapEntity field exists but State_SpawnMapEntity serializes only Health; MaxHealth is emitted null rather than guessed",
+          "runtime_dump_attempted": "Same 2026-08-17 attempt and outcome as RawID above; see that field's note."
+        },
+        "Health": {
+          "type": "integer",
+          "example": "1 in 259 nodes; 999 in 13; 100 in 2; 4 in 1",
+          "evidence": "All 275 GUID-matched MapEntity spawn assets parsed in step 12"
+        },
+        "Armour": {
+          "type": "integer",
+          "example": "0 in 253 nodes; 1 in 22",
+          "evidence": "All 275 GUID-matched MapEntity spawn assets parsed in step 12"
+        },
+        "Stars": {
+          "type": "integer",
+          "example": "0 in 213 nodes; 1 in 26; 2 in 16; 3 in 13; 4 in 1; 5 in 6",
+          "evidence": "All 275 GUID-matched MapEntity spawn assets parsed in step 12"
+        },
+        "Scale": {
+          "type": "integer",
+          "example": "1 in 274 nodes; 0 in 1",
+          "evidence": "All 275 GUID-matched MapEntity spawn assets parsed in step 12"
+        },
+        "ImmuneShells": {
+          "type": "List<string> (Shell IDs)",
+          "evidence": "Field exists in MapEntity.cs and State_SpawnMapEntity.cs, but every one of the 275 GUID-matched static full-release spawn definitions has an empty list; populated values would require runtime evidence.",
+          "runtime_dump_attempted": "2026-08-17: Windows MelonLoader runtime-dump mod attempted (project-data/iron-nest/12-runtime-dump-mod/); injection succeeded but the mod never compiled successfully, so no runtime observation was ever collected for this field either. Owner decided to stop pursuing it. Working conclusion, based on static evidence alone (0/275 populated, plus a distinct authoring-side type mismatch between MapEntity.ImmuneShells (List<string>) and State_SpawnMapEntity's editor-facing field (List<ShellDefinition>) found during earlier static analysis): this mechanic is plausibly unused/unpopulated in the shipped campaign, but this is not empirically confirmed and should not be stated as fact in any published content."
+        },
+        "missionRef": {
+          "type": "reference -> Mission.id, debug MissionGraph name, or null",
+          "example": "IronRoad",
+          "evidence": "Each MapEntity node's graph.guid was reverse-resolved through Resources/missions/MissionGraph_*.asset.meta. Official graphs use MissionGraph.MissionID; ref & debugging graphs use their distinct MissionGraph m_Name. Resolution: 212 official Mission IDs, 63 debug graph names, 0 unresolved."
+        }
+      }
+    },
+    "Map": {
+      "confidence": "confirmed-as-art-asset, not promoted to a data entity",
+      "chinese_name": "地图(确认存在,但是美术资源,不建独立数据实体)",
+      "status": "Resolved this pass: a per-mission Map does exist in the full release (Resources/missionmaps/, 14 subfolders keyed by mission number+name, e.g. '5iron road-assets', '10fire on call-assets', plus 4 branching-finale locations 'barcelona', 'ciudad real', 'aranjuez', 'laguna'). Opened one sample (IronRoadMap.asset) and confirmed it is a Unity Sprite (map image, 4096x2048) plus a separate Topography sprite - i.e. art assets, not a structured data table.",
+      "red_line_implication": "Per 02-措辞框架与红线.md, art assets (textures/icons/models) must not be extracted or republished. The map images themselves are out of scope for direct use.",
+      "recommendation": "Do not build a 'Map' entity table. Instead: (1) add a 'location' text field on Mission (see Mission.recommended_new_field) using only the location name, not the image; (2) the owner raised that competitor sites do show maps as content - the numeric MapEntity.Position field (see MapEntity entity) is game data, not art, and could power a self-rendered schematic/POI-marker view built by the site itself instead of displaying the extracted map texture. This is logged as a content opportunity for step 16 (page matrix) / step 25 (tools), not decided yet - see project-data/iron-nest/config.json content_opportunities.",
+      "fields": {}
+    }
+  },
+  "relations": [
+    {
+      "from": "Mission",
+      "to": "Mission",
+      "type": "unlockedBy / unlocks (prerequisite chain)",
+      "confidence": "verified",
+      "evidence": "operations/Mission*.asset ports.keys = [UnlockedBy, Unlocks], connections populated between Mission graph nodes"
+    },
+    {
+      "from": "Achievement",
+      "to": "Mission",
+      "type": "tracks completion of",
+      "confidence": "verified",
+      "verification_basis": "direct integer foreign keys (upgraded from text-match-only evidence)",
+      "evidence": "Upgraded in step-12 correction: MissionGraph_*.asset directly serializes achievementForClearing and achievementForGolding integer indices into the 33-entry Steam achievement schema. This directly resolves 29 achievements (14 single CLEAR + 15 GOLDEN). WhiteShells stores clearing=-1 because its four ACHIEVEMENT_15A-D_CLEAR endings branch; those four retain the corroborating name/text mapping to WhiteShells."
+    },
+    {
+      "from": "Achievement (GOLDEN type)",
+      "to": "Medal",
+      "type": "requires all medals in the linked mission to be gold-rated",
+      "confidence": "verified",
+      "evidence": "ACHIEVEMENT_N_GOLDEN description pattern 'Earn gold on all medals in \"<mission>\".' in 06-api-samples/schema-sample.json"
+    },
+    {
+      "from": "Mission",
+      "to": "Medal",
+      "type": "mission grants a set of medals",
+      "confidence": "verified",
+      "evidence": "MissionGraph.cs declares List<MedalCategoryDefinition> Medals. Step 12 resolved every populated MissionGraph.Medals GUID through MedalDefinition_*.asset.meta and stored the resulting Medal.id values in Mission.medalRefs."
+    },
+    {
+      "from": "Mission",
+      "to": "MapEntity",
+      "type": "spawns",
+      "confidence": "verified",
+      "verification_basis": "per-record missionRef foreign key resolved from node graph.guid",
+      "evidence": "Every one of the 275 MapEntity records now carries missionRef. Each node's graph.guid was reverse-resolved to a concrete MissionGraph_*.asset.meta; 212 records point to an official Mission.id and 63 retain their distinct ref/debug MissionGraph name, with 0 unresolved. This replaces the earlier indirect 'node exists inside a graph structure' evidence with a queryable per-record foreign key."
+    },
+    {
+      "from": "MapEntity",
+      "to": "Shell",
+      "type": "immune to (List<string> of Shell IDs)",
+      "confidence": "verified",
+      "evidence": "MapEntity.cs field 'ImmuneShells: List<string>' - decompiled source, not yet sampled with a populated real value but the field's existence is confirmed. This is a new relation not anticipated in the original schema and supersedes the old speculative 'Shell used in Mission' guess with something more precise and higher-value (which shells are ineffective against which unit type)."
+    },
+    {
+      "from": "Punchcard",
+      "to": "Punchcard",
+      "type": "prerequisite (Requirements field)",
+      "confidence": "not_supported",
+      "evidence": "Step 12 found 28 populated Requirements arrays. Decompiled PunchcardDefinitionV2.cs types the field as RequirementSet, and populated entries are generic conditions (RequirementType/Operation/ShellSlot/StringValue/IntValue/BoolValue), not Punchcard references."
+    }
+  ],
+  "required_meta_fields": [
+    "game_version",
+    "data_source",
+    "last_updated",
+    "confidence"
+  ]
+}

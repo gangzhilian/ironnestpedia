@@ -1,0 +1,8 @@
+---
+import PlaceholderPage from '../components/PlaceholderPage.astro';
+import { placeholders } from '../lib/data';
+export function getStaticPaths() { return placeholders.map((page) => ({ params: { placeholder: page.url_path.slice(1) }, props: { page } })); }
+const { page } = Astro.props;
+---
+<PlaceholderPage path={page.url_path} title={page.title} reason={page.reason} />
+

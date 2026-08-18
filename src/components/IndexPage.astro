@@ -1,0 +1,37 @@
+---
+import Layout from './Layout.astro';
+import DataTable from './DataTable.astro';
+import { getIndexRows, getRelatedRoutes, getSeo, labelForRoute, routes, type RouteEntry } from '../lib/data';
+
+interface Props { route: RouteEntry; }
+const { route } = Astro.props;
+const seo = getSeo(route.url_path);
+const children = routes.filter((item) => item.entity === route.entity && item.page_type === 'data_entity');
+const rows = getIndexRows(route);
+const fields = (route as any).data_source?.fields ?? Object.keys(rows[0] ?? {});
+const related = getRelatedRoutes(route);
+---
+<Layout title={seo.title} description={seo.description} path={route.url_path} breadcrumbs={[{ label: seo.primary_keyword || route.url_path }]}>
+  <p class="eyebrow">{route.entity} index</p>
+  <h1>{seo.title}</h1>
+  <p>{seo.description}</p>
+  <p class="notice">{(route as any).unique_value_statement}</p>
+
+  {children.length > 0 && (
+    <section>
+      <h2>Pages in this index</h2>
+      <div class="grid">{children.map((item) => <article class="card"><h3><a href={item.url_path}>{labelForRoute(item)}</a></h3><p>{getSeo(item.url_path).description}</p></article>)}</div>
+    </section>
+  )}
+
+  <section>
+    <h2>{children.length ? 'Source records represented' : 'Verified records'}</h2>
+    <DataTable rows={rows} fields={fields} />
+  </section>
+
+  <section>
+    <h2>Related indexes and missions</h2>
+    <ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul>
+  </section>
+</Layout>
+

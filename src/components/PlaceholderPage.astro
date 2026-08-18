@@ -1,0 +1,12 @@
+---
+import Layout from './Layout.astro';
+interface Props { path: string; title: string; reason: string; }
+const { path, title, reason } = Astro.props;
+---
+<Layout title={`${title} | IronNestPedia`} description={reason} path={path} noindex breadcrumbs={[{ label: title }]}>
+  <p class="eyebrow">Unpublished section</p>
+  <h1>{title}</h1>
+  <p class="notice">{reason}</p>
+  <p>This route is present only so the site structure can be tested. It is marked <code>noindex,follow</code> and excluded from the sitemap until reviewed content or functionality is ready.</p>
+  <p><a href="/">Return to the database home</a></p>
+</Layout>

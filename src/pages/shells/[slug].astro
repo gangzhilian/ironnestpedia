@@ -1,0 +1,8 @@
+---
+import EntityPage from '../../components/EntityPage.astro';
+import { pathForPrefix } from '../../lib/data';
+export function getStaticPaths() { return pathForPrefix('shells').map((route) => ({ params: { slug: route.url_path.split('/').at(-1)! }, props: { route } })); }
+const { route } = Astro.props;
+---
+<EntityPage route={route} />
+

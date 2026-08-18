@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">IronNestPedia</title>
+  <desc id="desc">IRON NEST data reference</desc>
+  <rect width="1200" height="630" fill="#111820"/>
+  <path d="M0 470h1200v160H0z" fill="#18252f"/>
+  <circle cx="180" cy="315" r="86" fill="none" stroke="#d9a441" stroke-width="18"/>
+  <path d="M180 205v220M70 315h220" stroke="#d9a441" stroke-width="12"/>
+  <text x="330" y="290" fill="#f4f0e6" font-family="system-ui,sans-serif" font-size="76" font-weight="700">IronNestPedia</text>
+  <text x="334" y="370" fill="#aebdc7" font-family="system-ui,sans-serif" font-size="34">Verified shells, missions, achievements and units</text>
+</svg>
+
