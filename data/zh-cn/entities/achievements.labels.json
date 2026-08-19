@@ -1,0 +1,134 @@
+{
+  "ACHIEVEMENT_1_CLEAR": {
+    "displayName": "只是校准",
+    "description": "完成“校射”任务。"
+  },
+  "ACHIEVEMENT_1_GOLDEN": {
+    "displayName": "尽职尽责",
+    "description": "在“校射”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_10_CLEAR": {
+    "displayName": "火炮回应",
+    "description": "完成“火力支援”任务。"
+  },
+  "ACHIEVEMENT_10_GOLDEN": {
+    "displayName": "钢铁纪律",
+    "description": "在“火力支援”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_11_CLEAR": {
+    "displayName": "滩头拒止",
+    "description": "完成“敌人如潮”任务。"
+  },
+  "ACHIEVEMENT_11_GOLDEN": {
+    "displayName": "海防勋章",
+    "description": "在“敌人如潮”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_12_CLEAR": {
+    "displayName": "空无一物",
+    "description": "完成“孤独发炮”任务。"
+  },
+  "ACHIEVEMENT_12_GOLDEN": {
+    "displayName": "岿然不动",
+    "description": "在“孤独发炮”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_13_CLEAR": {
+    "displayName": "镜像",
+    "description": "完成“幽灵炮台”任务。"
+  },
+  "ACHIEVEMENT_13_GOLDEN": {
+    "displayName": "炮术大师",
+    "description": "在“幽灵炮台”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_14_CLEAR": {
+    "displayName": "黑暗之中",
+    "description": "完成“最终收割”任务。"
+  },
+  "ACHIEVEMENT_14_GOLDEN": {
+    "displayName": "夜间精准",
+    "description": "在“最终收割”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_15_GOLDEN": {
+    "displayName": "卡斯蒂利亚之傲",
+    "description": "在“白色炮弹”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_15A_CLEAR": {
+    "displayName": "欢庆之城",
+    "description": "一座出城迎接你的城市。"
+  },
+  "ACHIEVEMENT_15B_CLEAR": {
+    "displayName": "屈服之城",
+    "description": "一座屈膝并称之为和平的城市。"
+  },
+  "ACHIEVEMENT_15C_CLEAR": {
+    "displayName": "未择之路",
+    "description": "一座幸免于难的城市，以及一条再无人会踏上的路。"
+  },
+  "ACHIEVEMENT_15D_CLEAR": {
+    "displayName": "寂静之城",
+    "description": "一座从地图上被抹去的城市。"
+  },
+  "ACHIEVEMENT_2_CLEAR": {
+    "displayName": "荣誉礼炮",
+    "description": "完成“炮火与光辉”任务。"
+  },
+  "ACHIEVEMENT_2_GOLDEN": {
+    "displayName": "神射手荣誉",
+    "description": "在“炮火与光辉”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_3_CLEAR": {
+    "displayName": "为他们着想",
+    "description": "完成“解放”任务。"
+  },
+  "ACHIEVEMENT_3_GOLDEN": {
+    "displayName": "模范服役",
+    "description": "在“解放”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_4_CLEAR": {
+    "displayName": "首次回应",
+    "description": "完成“反炮兵”任务。"
+  },
+  "ACHIEVEMENT_4_GOLDEN": {
+    "displayName": "卓越表现",
+    "description": "在“反炮兵”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_5_CLEAR": {
+    "displayName": "全面清除",
+    "description": "完成“钢铁之路”任务。"
+  },
+  "ACHIEVEMENT_5_GOLDEN": {
+    "displayName": "黄铜加冕",
+    "description": "在“钢铁之路”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_6_CLEAR": {
+    "displayName": "突围",
+    "description": "完成“卡塔赫纳之围”任务。"
+  },
+  "ACHIEVEMENT_6_GOLDEN": {
+    "displayName": "海军嘉奖",
+    "description": "在“卡塔赫纳之围”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_7_CLEAR": {
+    "displayName": "冷启动",
+    "description": "在“峡谷要冲”中生还。"
+  },
+  "ACHIEVEMENT_7_GOLDEN": {
+    "displayName": "炮火下的英勇",
+    "description": "在“峡谷要冲”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_8_CLEAR": {
+    "displayName": "假旗出击",
+    "description": "完成“居高临下”任务。"
+  },
+  "ACHIEVEMENT_8_GOLDEN": {
+    "displayName": "功绩勋章",
+    "description": "在“居高临下”任务的全部奖章上获得金牌。"
+  },
+  "ACHIEVEMENT_9_CLEAR": {
+    "displayName": "稳健之手",
+    "description": "完成“盲区推算”任务。"
+  },
+  "ACHIEVEMENT_9_GOLDEN": {
+    "displayName": "无声精准",
+    "description": "在“盲区推算”任务的全部奖章上获得金牌。"
+  }
+}

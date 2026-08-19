@@ -1,0 +1,158 @@
+{
+  "APHEShell": {
+    "title": "APHE弹",
+    "description": "<b>穿甲</b>弹，中等装药。中等爆炸范围。"
+  },
+  "APShell": {
+    "title": "AP弹",
+    "description": "<b>穿甲</b>弹，最少装药。最小爆炸范围。"
+  },
+  "ArtilleryFlashNotifier": {
+    "title": "监听哨",
+    "description": "监听哨可在敌方炮兵开火的情况下获悉其位置。"
+  },
+  "ATMCShell": {
+    "title": "ATMC弹",
+    "description": "实验性裂变核炮弹。理论上可引发持续链式反应。效果未经测试。"
+  },
+  "ATMCShellDemo": {
+    "title": "ATMC弹",
+    "description": "实验性裂变核炮弹。理论上可引发持续链式反应。效果未经测试。"
+  },
+  "CLMNShell": {
+    "title": "CLMN弹",
+    "description": "集束弹，落地后散射六枚HE子母弹。对步兵与载具有效。"
+  },
+  "CLMNShellDemo": {
+    "title": "CLMN弹",
+    "description": "集束弹，落地后散射六枚HE子母弹。对步兵与载具有效。"
+  },
+  "CYANShell": {
+    "title": "CYAN弹",
+    "description": "氰气弹。对开阔地带单位致命，工事内单位无影响。"
+  },
+  "DRILShell": {
+    "title": "DRIL弹",
+    "description": "训练弹。混凝土填充，无爆炸物。极小有效半径。"
+  },
+  "EQKEShell": {
+    "title": "EQKE弹",
+    "description": "<b>穿甲</b>弹，深侵彻地下延时起爆。较大爆炸范围。"
+  },
+  "FLCHShell": {
+    "title": "FLCH弹",
+    "description": "箭矢弹。有效范围大。仅对开阔地带无防护步兵致命。"
+  },
+  "HCHEShell": {
+    "title": "HCHE弹",
+    "description": "高装药高爆弹。薄弹壁，最大爆炸装药。大爆炸半径。"
+  },
+  "HEShell": {
+    "title": "HE弹",
+    "description": "中等装药高爆弹。中等爆炸范围。"
+  },
+  "ImpactObserver": {
+    "title": "监听哨",
+    "description": "监听哨可在敌方炮兵开火的情况下获悉其位置。"
+  },
+  "INCNShell": {
+    "title": "INCN弹",
+    "description": "燃烧弹。落地时引发火灾，中等半径。有一定概率会蔓延。"
+  },
+  "INCNShellDemo": {
+    "title": "INCN弹",
+    "description": "燃烧弹。落地时引发火灾，中等半径。有一定概率会蔓延。"
+  },
+  "LEShell": {
+    "title": "LE弹",
+    "description": "中等装药小威力爆炸弹。小爆炸半径。"
+  },
+  "ListeningPost": {
+    "title": "监听哨",
+    "description": "监听哨可在敌方炮兵开火的情况下获悉其位置。"
+  },
+  "LocationReport": {
+    "title": "位置报告",
+    "description": "当地后勤车队提供<b><i><smallcaps>铁巢</smallcaps></b></i>的位置情报"
+  },
+  "MoveDirection": {
+    "title": "定向移动",
+    "description": "令铁巢向指定方向移动设定距离"
+  },
+  "MoveZone": {
+    "title": "紧急转移!",
+    "description": "立即转移至未知位置，暂停反炮兵计时器。"
+  },
+  "MSTDShell": {
+    "title": "MSTD弹",
+    "description": "获取1枚芥子气(YX)糜烂毒气弹"
+  },
+  "MSTDShellDemo": {
+    "title": "MSTD弹",
+    "description": "获取1枚芥子气(YX)糜烂毒气弹"
+  },
+  "PCLMShell": {
+    "title": "PCLM弹",
+    "description": "伞降延时集束弹。内含六枚HE子母弹。间隔10秒依次起爆。"
+  },
+  "PHGNShell": {
+    "title": "PHGN弹",
+    "description": "光气窒息毒气弹。单位会逃离烟云范围。如被压制则造成范围内人员死亡。"
+  },
+  "PHGNShellDemo": {
+    "title": "PHGN弹",
+    "description": "光气窒息毒气弹。单位会逃离烟云范围。如被压制则造成范围内人员死亡。"
+  },
+  "PowderCharges": {
+    "title": "装药",
+    "description": "20发装药"
+  },
+  "PRPGShell": {
+    "title": "PRPG弹",
+    "description": "宣传弹。凭借卡斯蒂利亚的荣光在心理上威慑敌军，有一定概率会诱发逃兵。"
+  },
+  "PRPGShellDemo": {
+    "title": "PRPG弹",
+    "description": "宣传弹。凭借卡斯蒂利亚的荣光在心理上威慑敌军，有一定概率会诱发逃兵。"
+  },
+  "ScoutPlane": {
+    "title": "侦察机",
+    "description": "请求侦察机飞越位置"
+  },
+  "ScoutPlane_OnTimeUse": {
+    "title": "侦察机",
+    "description": "请求侦察机飞越位置"
+  },
+  "SMOKEShell": {
+    "title": "SMK弹",
+    "description": "掩护用烟雾弹。无杀伤性，友军单位将向落点推进。"
+  },
+  "Spotter": {
+    "title": "前线观测员",
+    "description": "前线观测员(FO)提供最近处敌军的情报。"
+  },
+  "STARShell": {
+    "title": "STAR弹",
+    "description": "伞降延时照明弹。照亮目标区域以进行侦察。"
+  },
+  "TEARShell": {
+    "title": "TEAR弹",
+    "description": "氯苯乙酮催泪弹。压制敌方单位，并迫使隐藏单位显身。"
+  },
+  "TEARShellDemo": {
+    "title": "TEAR弹",
+    "description": "氯苯乙酮催泪弹。压制敌方单位，并迫使隐藏单位显身。"
+  },
+  "TESTING": {
+    "title": "测试",
+    "description": "英文示例文本"
+  },
+  "THRMShell": {
+    "title": "THRM弹",
+    "description": "高温燃烧弹。命中后引燃大范围火灾。火势大概率会蔓延。"
+  },
+  "WPShell": {
+    "title": "WP弹",
+    "description": "白磷弹。受影响单位会逃离烟云范围，若被压制则造成人员死亡。有一定概率会引发火灾。"
+  }
+}

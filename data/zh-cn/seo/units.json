@@ -1,0 +1,277 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/units",
+      "primary_keyword": "IRON NEST 单位数据库",
+      "keyword_candidates": [
+        "IRON NEST 敌军单位",
+        "IRON NEST 任务目标"
+      ],
+      "title": "IRON NEST 单位数据库：任务目标与单位数据",
+      "description": "按任务汇总敌军、友军、目标和参考实体的生命、装甲、星级与角色配置，并保留合并前的源ID。"
+    },
+    {
+      "url_path": "/units/allyhospital",
+      "primary_keyword": "IRON NEST 友方医院单位",
+      "keyword_candidates": [
+        "友方医院单位数据",
+        "友方医院任务"
+      ],
+      "title": "IRON NEST 友方医院单位：任务、生命与装甲数据",
+      "description": "汇总友方医院在5个任务中的5条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/allymech",
+      "primary_keyword": "IRON NEST 友方机械化部队单位",
+      "keyword_candidates": [
+        "友方机械化部队单位数据",
+        "友方机械化部队任务"
+      ],
+      "title": "IRON NEST 友方机械化部队单位：任务、生命与装甲数据",
+      "description": "汇总友方机械化部队在2个任务中的2条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/allytank",
+      "primary_keyword": "IRON NEST 友方坦克单位",
+      "keyword_candidates": [
+        "友方坦克单位数据",
+        "友方坦克任务"
+      ],
+      "title": "IRON NEST 友方坦克单位：任务、生命与装甲数据",
+      "description": "汇总友方坦克在6个任务中的6条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemyartillery",
+      "primary_keyword": "IRON NEST 敌方火炮单位",
+      "keyword_candidates": [
+        "敌方火炮单位数据",
+        "敌方火炮任务"
+      ],
+      "title": "IRON NEST 敌方火炮单位：任务、生命与装甲数据",
+      "description": "汇总敌方火炮在2个任务中的4条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemyassemblyarea",
+      "primary_keyword": "IRON NEST 敌方集结区单位",
+      "keyword_candidates": [
+        "敌方集结区单位数据",
+        "敌方集结区任务"
+      ],
+      "title": "IRON NEST 敌方集结区单位：任务、生命与装甲数据",
+      "description": "汇总敌方集结区在2个任务中的2条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemycommander",
+      "primary_keyword": "IRON NEST 敌方指挥官单位",
+      "keyword_candidates": [
+        "敌方指挥官单位数据",
+        "敌方指挥官任务"
+      ],
+      "title": "IRON NEST 敌方指挥官单位：任务、生命与装甲数据",
+      "description": "汇总敌方指挥官在5个任务中的5条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemyfield",
+      "primary_keyword": "IRON NEST 敌方野战炮单位",
+      "keyword_candidates": [
+        "敌方野战炮单位数据",
+        "敌方野战炮任务"
+      ],
+      "title": "IRON NEST 敌方野战炮单位：任务、生命与装甲数据",
+      "description": "汇总敌方野战炮在2个任务中的2条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemyinfantry",
+      "primary_keyword": "IRON NEST 敌方步兵单位",
+      "keyword_candidates": [
+        "敌方步兵单位数据",
+        "敌方步兵任务"
+      ],
+      "title": "IRON NEST 敌方步兵单位：任务、生命与装甲数据",
+      "description": "汇总敌方步兵在8个任务中的19条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemymech",
+      "primary_keyword": "IRON NEST 敌方机械化步兵单位",
+      "keyword_candidates": [
+        "敌方机械化步兵单位数据",
+        "敌方机械化步兵任务"
+      ],
+      "title": "IRON NEST 敌方机械化步兵单位：任务、生命与装甲数据",
+      "description": "汇总敌方机械化步兵在3个任务中的3条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemyrelay",
+      "primary_keyword": "IRON NEST 敌方信号站单位",
+      "keyword_candidates": [
+        "敌方信号站单位数据",
+        "敌方信号站任务"
+      ],
+      "title": "IRON NEST 敌方信号站单位：任务、生命与装甲数据",
+      "description": "汇总敌方信号站在2个任务中的2条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemytarget",
+      "primary_keyword": "IRON NEST 目标单位",
+      "keyword_candidates": [
+        "目标单位数据",
+        "目标任务"
+      ],
+      "title": "IRON NEST 目标单位：任务、生命与装甲数据",
+      "description": "汇总目标在5个任务中的8条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/frendlyinfantry",
+      "primary_keyword": "IRON NEST 步兵单位",
+      "keyword_candidates": [
+        "步兵单位数据",
+        "步兵任务"
+      ],
+      "title": "IRON NEST 步兵单位：任务、生命与装甲数据",
+      "description": "汇总步兵在3个任务中的3条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/frendlymech",
+      "primary_keyword": "IRON NEST 装甲部队单位",
+      "keyword_candidates": [
+        "装甲部队单位数据",
+        "装甲部队任务"
+      ],
+      "title": "IRON NEST 装甲部队单位：任务、生命与装甲数据",
+      "description": "汇总装甲部队在3个任务中的5条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/hospital",
+      "primary_keyword": "IRON NEST 医院单位",
+      "keyword_candidates": [
+        "医院单位数据",
+        "医院任务"
+      ],
+      "title": "IRON NEST 医院单位：任务、生命与装甲数据",
+      "description": "汇总医院在3个任务中的3条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/hostileartillery",
+      "primary_keyword": "IRON NEST 敌方火炮单位",
+      "keyword_candidates": [
+        "敌方火炮单位数据",
+        "敌方火炮任务"
+      ],
+      "title": "IRON NEST 敌方火炮单位：任务、生命与装甲数据",
+      "description": "汇总敌方火炮在2个任务中的4条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/hostilebunker",
+      "primary_keyword": "IRON NEST 敌方地堡单位",
+      "keyword_candidates": [
+        "敌方地堡单位数据",
+        "敌方地堡任务"
+      ],
+      "title": "IRON NEST 敌方地堡单位：任务、生命与装甲数据",
+      "description": "汇总敌方地堡在4个任务中的4条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/hostileinfatry",
+      "primary_keyword": "IRON NEST 敌方步兵单位",
+      "keyword_candidates": [
+        "敌方步兵单位数据",
+        "敌方步兵任务"
+      ],
+      "title": "IRON NEST 敌方步兵单位：任务、生命与装甲数据",
+      "description": "汇总敌方步兵在4个任务中的5条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/hostiletank",
+      "primary_keyword": "IRON NEST 敌方坦克单位",
+      "keyword_candidates": [
+        "敌方坦克单位数据",
+        "敌方坦克任务"
+      ],
+      "title": "IRON NEST 敌方坦克单位：任务、生命与装甲数据",
+      "description": "汇总敌方坦克在4个任务中的4条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/mechanized",
+      "primary_keyword": "IRON NEST 机械化部队单位",
+      "keyword_candidates": [
+        "机械化部队单位数据",
+        "机械化部队任务"
+      ],
+      "title": "IRON NEST 机械化部队单位：任务、生命与装甲数据",
+      "description": "汇总机械化部队在2个任务中的2条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/police",
+      "primary_keyword": "IRON NEST 警察单位",
+      "keyword_candidates": [
+        "警察单位数据",
+        "警察任务"
+      ],
+      "title": "IRON NEST 警察单位：任务、生命与装甲数据",
+      "description": "汇总警察在3个任务中的3条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/target",
+      "primary_keyword": "IRON NEST 目标单位",
+      "keyword_candidates": [
+        "目标单位数据",
+        "目标任务"
+      ],
+      "title": "IRON NEST 目标单位：任务、生命与装甲数据",
+      "description": "汇总目标在13个任务中的26条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/trainstation",
+      "primary_keyword": "IRON NEST 总站单位",
+      "keyword_candidates": [
+        "总站单位数据",
+        "总站任务"
+      ],
+      "title": "IRON NEST 总站单位：任务、生命与装甲数据",
+      "description": "汇总总站在2个任务中的2条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/allyartillery",
+      "primary_keyword": "IRON NEST 友军火炮单位",
+      "keyword_candidates": [
+        "友军火炮单位数据",
+        "友军火炮任务"
+      ],
+      "title": "IRON NEST 友军火炮单位：任务、生命与装甲数据",
+      "description": "汇总友军火炮在3个任务中的6条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/allyinfantry",
+      "primary_keyword": "IRON NEST 友方步兵单位",
+      "keyword_candidates": [
+        "友方步兵单位数据",
+        "友方步兵任务"
+      ],
+      "title": "IRON NEST 友方步兵单位：任务、生命与装甲数据",
+      "description": "汇总友方步兵在10个任务中的14条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/allyspotter",
+      "primary_keyword": "IRON NEST 观测员单位",
+      "keyword_candidates": [
+        "观测员单位数据",
+        "观测员任务"
+      ],
+      "title": "IRON NEST 观测员单位：任务、生命与装甲数据",
+      "description": "汇总观测员在14个任务中的24条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    },
+    {
+      "url_path": "/units/enemyarmour",
+      "primary_keyword": "IRON NEST 敌方装甲单位单位",
+      "keyword_candidates": [
+        "敌方装甲单位单位数据",
+        "敌方装甲单位任务"
+      ],
+      "title": "IRON NEST 敌方装甲单位单位：任务、生命与装甲数据",
+      "description": "汇总敌方装甲单位在4个任务中的6条生成记录，包括生命、装甲、星级和角色配置，并保留全部源ID差异。"
+    }
+  ]
+}

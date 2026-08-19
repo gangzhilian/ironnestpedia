@@ -10,6 +10,8 @@ const routes = JSON.parse(readFileSync(join(projectRoot, 'data', 'routes.json'),
 const placeholders = JSON.parse(readFileSync(join(projectRoot, 'data', 'skeleton-placeholder-pages.json'), 'utf8')).pages;
 const siteOrigin = 'https://ironnestpedia.com';
 const minInbound = 3;
+const locales = ['en', 'zh-cn', 'zh-tw'];
+const localizedPath = (path, locale) => locale === 'en' ? path : path === '/' ? `/${locale}` : `/${locale}${path}`;
 
 function walk(dir) {
   return readdirSync(dir).flatMap((name) => {
@@ -58,7 +60,8 @@ for (const route of audited) {
   if (count < minInbound) errors.push(`${route.url_path}: inbound=${count}, expected >=${minInbound}`);
 }
 
-const noindexPaths = [...placeholders.map((page) => page.url_path), '/tools/mission-map', '/404'];
+const baseNoindexPaths = [...placeholders.map((page) => page.url_path), '/tools/mission-map', '/404'];
+const noindexPaths = locales.flatMap((locale) => baseNoindexPaths.map((path) => localizedPath(path, locale)));
 for (const path of noindexPaths) {
   const html = htmlByRoute.get(path);
   if (!html) errors.push(`${path}: missing noindex placeholder HTML`);
@@ -75,12 +78,12 @@ for (const file of sitemapFiles) {
   }
 }
 for (const path of noindexPaths) if (sitemapUrls.has(path)) errors.push(`${path}: noindex page leaked into sitemap`);
-const expectedSitemapRoutes = new Map([
+const baseSitemapRoutes = [
   ['/', { entity: 'Home', page_type: 'home' }],
-  ...routes
-    .filter((route) => route.page_type !== 'tool_placeholder')
+  ...routes.filter((route) => route.page_type !== 'tool_placeholder')
     .map((route) => [route.url_path, { entity: route.entity, page_type: route.page_type }]),
-]);
+];
+const expectedSitemapRoutes = new Map(locales.flatMap((locale) => baseSitemapRoutes.map(([path, route]) => [localizedPath(path, locale), { ...route, locale }])));
 const missingSitemapRoutes = [...expectedSitemapRoutes]
   .filter(([path]) => !sitemapUrls.has(path))
   .map(([url_path, route]) => ({ url_path, ...route }));

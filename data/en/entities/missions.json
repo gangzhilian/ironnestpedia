@@ -162,7 +162,7 @@
   },
   {
     "id": "ceremony and HCHE",
-    "displayName": "ceremony and HCHE",
+    "displayName": "Fire & Light",
     "unlockedBy": [
       "Hospital False Flag"
     ],
@@ -183,7 +183,7 @@
   },
   {
     "id": "Insurrections and Requisitions",
-    "displayName": "Insurrections and Requisitions",
+    "displayName": "Liberation",
     "unlockedBy": [
       "ceremony and HCHE"
     ],

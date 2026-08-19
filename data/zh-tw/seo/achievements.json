@@ -1,0 +1,347 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/achievements",
+      "primary_keyword": "IRON NEST 成就列表",
+      "keyword_candidates": [
+        "IRON NEST Steam成就",
+        "IRON NEST 成就條件"
+      ],
+      "title": "IRON NEST 成就列表：33項解鎖條件與完成率",
+      "description": "查看33項Steam成就對應的任務、CLEAR或GOLD條件，以及即時全球完成率。"
+    },
+    {
+      "url_path": "/achievements/achievement-1-clear",
+      "primary_keyword": "IRON NEST 只是校準成就",
+      "keyword_candidates": [
+        "只是校準成就",
+        "只是校準解鎖條件"
+      ],
+      "title": "IRON NEST「只是校準」成就：條件與完成率",
+      "description": "查看「只是校準」的解鎖條件、相關任務「校準射擊」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-2-clear",
+      "primary_keyword": "IRON NEST 榮譽禮炮成就",
+      "keyword_candidates": [
+        "榮譽禮炮成就",
+        "榮譽禮炮解鎖條件"
+      ],
+      "title": "IRON NEST「榮譽禮炮」成就：條件與完成率",
+      "description": "查看「榮譽禮炮」的解鎖條件、相關任務「射擊與照明」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-3-clear",
+      "primary_keyword": "IRON NEST 為他們著想成就",
+      "keyword_candidates": [
+        "為他們著想成就",
+        "為他們著想解鎖條件"
+      ],
+      "title": "IRON NEST「為他們著想」成就：條件與完成率",
+      "description": "查看「為他們著想」的解鎖條件、相關任務「解放」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-4-clear",
+      "primary_keyword": "IRON NEST 首次回應成就",
+      "keyword_candidates": [
+        "首次回應成就",
+        "首次回應解鎖條件"
+      ],
+      "title": "IRON NEST「首次回應」成就：條件與完成率",
+      "description": "查看「首次回應」的解鎖條件、相關任務「反炮兵戰」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-5-clear",
+      "primary_keyword": "IRON NEST 全面清除成就",
+      "keyword_candidates": [
+        "全面清除成就",
+        "全面清除解鎖條件"
+      ],
+      "title": "IRON NEST「全面清除」成就：條件與完成率",
+      "description": "查看「全面清除」的解鎖條件、相關任務「鋼鐵之路」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-6-clear",
+      "primary_keyword": "IRON NEST 突圍成就",
+      "keyword_candidates": [
+        "突圍成就",
+        "突圍解鎖條件"
+      ],
+      "title": "IRON NEST「突圍」成就：條件與完成率",
+      "description": "查看「突圍」的解鎖條件、相關任務「卡塔赫納圍城」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-7-clear",
+      "primary_keyword": "IRON NEST 冷啟動成就",
+      "keyword_candidates": [
+        "冷啟動成就",
+        "冷啟動解鎖條件"
+      ],
+      "title": "IRON NEST「冷啟動」成就：條件與完成率",
+      "description": "查看「冷啟動」的解鎖條件、相關任務「峽谷」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-8-clear",
+      "primary_keyword": "IRON NEST 假旗出擊成就",
+      "keyword_candidates": [
+        "假旗出擊成就",
+        "假旗出擊解鎖條件"
+      ],
+      "title": "IRON NEST「假旗出擊」成就：條件與完成率",
+      "description": "查看「假旗出擊」的解鎖條件、相關任務「直布羅陀巨巖」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-9-clear",
+      "primary_keyword": "IRON NEST 穩健之手成就",
+      "keyword_candidates": [
+        "穩健之手成就",
+        "穩健之手解鎖條件"
+      ],
+      "title": "IRON NEST「穩健之手」成就：條件與完成率",
+      "description": "查看「穩健之手」的解鎖條件、相關任務「盲區推算」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-10-clear",
+      "primary_keyword": "IRON NEST 火炮回應成就",
+      "keyword_candidates": [
+        "火炮回應成就",
+        "火炮回應解鎖條件"
+      ],
+      "title": "IRON NEST「火炮回應」成就：條件與完成率",
+      "description": "查看「火炮回應」的解鎖條件、相關任務「呼叫火力支援」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-11-clear",
+      "primary_keyword": "IRON NEST 灘頭拒止成就",
+      "keyword_candidates": [
+        "灘頭拒止成就",
+        "灘頭拒止解鎖條件"
+      ],
+      "title": "IRON NEST「灘頭拒止」成就：條件與完成率",
+      "description": "查看「灘頭拒止」的解鎖條件、相關任務「漲潮」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-12-clear",
+      "primary_keyword": "IRON NEST 空無一物成就",
+      "keyword_candidates": [
+        "空無一物成就",
+        "空無一物解鎖條件"
+      ],
+      "title": "IRON NEST「空無一物」成就：條件與完成率",
+      "description": "查看「空無一物」的解鎖條件、相關任務「盲射」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-13-clear",
+      "primary_keyword": "IRON NEST 鏡像成就",
+      "keyword_candidates": [
+        "鏡像成就",
+        "鏡像解鎖條件"
+      ],
+      "title": "IRON NEST「鏡像」成就：條件與完成率",
+      "description": "查看「鏡像」的解鎖條件、相關任務「幻影炮台」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-14-clear",
+      "primary_keyword": "IRON NEST 黑暗之中成就",
+      "keyword_candidates": [
+        "黑暗之中成就",
+        "黑暗之中解鎖條件"
+      ],
+      "title": "IRON NEST「黑暗之中」成就：條件與完成率",
+      "description": "查看「黑暗之中」的解鎖條件、相關任務「最終收割」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-15a-clear",
+      "primary_keyword": "IRON NEST 歡慶之城成就",
+      "keyword_candidates": [
+        "歡慶之城成就",
+        "歡慶之城解鎖條件"
+      ],
+      "title": "IRON NEST「歡慶之城」成就：條件與完成率",
+      "description": "查看「歡慶之城」的解鎖條件、相關任務「白色炮彈」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-15b-clear",
+      "primary_keyword": "IRON NEST 臣服之城成就",
+      "keyword_candidates": [
+        "臣服之城成就",
+        "臣服之城解鎖條件"
+      ],
+      "title": "IRON NEST「臣服之城」成就：條件與完成率",
+      "description": "查看「臣服之城」的解鎖條件、相關任務「白色炮彈」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-15c-clear",
+      "primary_keyword": "IRON NEST 未擇之路成就",
+      "keyword_candidates": [
+        "未擇之路成就",
+        "未擇之路解鎖條件"
+      ],
+      "title": "IRON NEST「未擇之路」成就：條件與完成率",
+      "description": "查看「未擇之路」的解鎖條件、相關任務「白色炮彈」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-15d-clear",
+      "primary_keyword": "IRON NEST 寂靜之城成就",
+      "keyword_candidates": [
+        "寂靜之城成就",
+        "寂靜之城解鎖條件"
+      ],
+      "title": "IRON NEST「寂靜之城」成就：條件與完成率",
+      "description": "查看「寂靜之城」的解鎖條件、相關任務「白色炮彈」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-1-golden",
+      "primary_keyword": "IRON NEST 克盡職守成就",
+      "keyword_candidates": [
+        "克盡職守成就",
+        "克盡職守解鎖條件"
+      ],
+      "title": "IRON NEST「克盡職守」成就：條件與完成率",
+      "description": "查看「克盡職守」的解鎖條件、相關任務「校準射擊」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-2-golden",
+      "primary_keyword": "IRON NEST 神射手榮譽成就",
+      "keyword_candidates": [
+        "神射手榮譽成就",
+        "神射手榮譽解鎖條件"
+      ],
+      "title": "IRON NEST「神射手榮譽」成就：條件與完成率",
+      "description": "查看「神射手榮譽」的解鎖條件、相關任務「射擊與照明」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-3-golden",
+      "primary_keyword": "IRON NEST 模範服役成就",
+      "keyword_candidates": [
+        "模範服役成就",
+        "模範服役解鎖條件"
+      ],
+      "title": "IRON NEST「模範服役」成就：條件與完成率",
+      "description": "查看「模範服役」的解鎖條件、相關任務「解放」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-4-golden",
+      "primary_keyword": "IRON NEST 卓越表現成就",
+      "keyword_candidates": [
+        "卓越表現成就",
+        "卓越表現解鎖條件"
+      ],
+      "title": "IRON NEST「卓越表現」成就：條件與完成率",
+      "description": "查看「卓越表現」的解鎖條件、相關任務「反炮兵戰」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-5-golden",
+      "primary_keyword": "IRON NEST 黃銅加冕成就",
+      "keyword_candidates": [
+        "黃銅加冕成就",
+        "黃銅加冕解鎖條件"
+      ],
+      "title": "IRON NEST「黃銅加冕」成就：條件與完成率",
+      "description": "查看「黃銅加冕」的解鎖條件、相關任務「鋼鐵之路」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-6-golden",
+      "primary_keyword": "IRON NEST 海軍嘉獎成就",
+      "keyword_candidates": [
+        "海軍嘉獎成就",
+        "海軍嘉獎解鎖條件"
+      ],
+      "title": "IRON NEST「海軍嘉獎」成就：條件與完成率",
+      "description": "查看「海軍嘉獎」的解鎖條件、相關任務「卡塔赫納圍城」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-8-golden",
+      "primary_keyword": "IRON NEST 功績勳章成就",
+      "keyword_candidates": [
+        "功績勳章成就",
+        "功績勳章解鎖條件"
+      ],
+      "title": "IRON NEST「功績勳章」成就：條件與完成率",
+      "description": "查看「功績勳章」的解鎖條件、相關任務「峽谷」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-9-golden",
+      "primary_keyword": "IRON NEST 無聲精準成就",
+      "keyword_candidates": [
+        "無聲精準成就",
+        "無聲精準解鎖條件"
+      ],
+      "title": "IRON NEST「無聲精準」成就：條件與完成率",
+      "description": "查看「無聲精準」的解鎖條件、相關任務「直布羅陀巨巖」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-10-golden",
+      "primary_keyword": "IRON NEST 鋼鐵紀律成就",
+      "keyword_candidates": [
+        "鋼鐵紀律成就",
+        "鋼鐵紀律解鎖條件"
+      ],
+      "title": "IRON NEST「鋼鐵紀律」成就：條件與完成率",
+      "description": "查看「鋼鐵紀律」的解鎖條件、相關任務「盲區推算」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-11-golden",
+      "primary_keyword": "IRON NEST 海防勳章成就",
+      "keyword_candidates": [
+        "海防勳章成就",
+        "海防勳章解鎖條件"
+      ],
+      "title": "IRON NEST「海防勳章」成就：條件與完成率",
+      "description": "查看「海防勳章」的解鎖條件、相關任務「呼叫火力支援」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-12-golden",
+      "primary_keyword": "IRON NEST 屹立不搖成就",
+      "keyword_candidates": [
+        "屹立不搖成就",
+        "屹立不搖解鎖條件"
+      ],
+      "title": "IRON NEST「屹立不搖」成就：條件與完成率",
+      "description": "查看「屹立不搖」的解鎖條件、相關任務「漲潮」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-13-golden",
+      "primary_keyword": "IRON NEST 炮術大師成就",
+      "keyword_candidates": [
+        "炮術大師成就",
+        "炮術大師解鎖條件"
+      ],
+      "title": "IRON NEST「炮術大師」成就：條件與完成率",
+      "description": "查看「炮術大師」的解鎖條件、相關任務「盲射」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-14-golden",
+      "primary_keyword": "IRON NEST 夜間精準成就",
+      "keyword_candidates": [
+        "夜間精準成就",
+        "夜間精準解鎖條件"
+      ],
+      "title": "IRON NEST「夜間精準」成就：條件與完成率",
+      "description": "查看「夜間精準」的解鎖條件、相關任務「幻影炮台」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-15-golden",
+      "primary_keyword": "IRON NEST 卡斯提亞之傲成就",
+      "keyword_candidates": [
+        "卡斯提亞之傲成就",
+        "卡斯提亞之傲解鎖條件"
+      ],
+      "title": "IRON NEST「卡斯提亞之傲」成就：條件與完成率",
+      "description": "查看「卡斯提亞之傲」的解鎖條件、相關任務「最終收割」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    },
+    {
+      "url_path": "/achievements/achievement-7-golden",
+      "primary_keyword": "IRON NEST 炮火下的英勇成就",
+      "keyword_candidates": [
+        "炮火下的英勇成就",
+        "炮火下的英勇解鎖條件"
+      ],
+      "title": "IRON NEST「炮火下的英勇」成就：條件與完成率",
+      "description": "查看「炮火下的英勇」的解鎖條件、相關任務「白色炮彈」及Steam全球完成率；完成率資料會隨玩家進度更新。"
+    }
+  ]
+}

@@ -14,6 +14,10 @@ header .inner, footer .inner, main { width: min(1120px, calc(100% - 2rem)); marg
 header .inner { min-height: 4rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
 .brand { color: #fff; text-decoration: none; font-weight: 800; letter-spacing: .02em; }
 nav { display: flex; flex-wrap: wrap; gap: .85rem; }
+.language-switcher { margin-left: auto; font-size: .88rem; }
+.language-switcher a { color: #b8c5cd; text-decoration: none; }
+.language-switcher a[aria-current="page"] { color: #fff; font-weight: 800; text-decoration: underline; }
+#site-search { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; width: 100%; padding-bottom: .8rem; }
 main { padding: 2rem 0 4rem; }
 h1 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.08; max-width: 22ch; }
 h2 { margin-top: 2.4rem; }
@@ -35,5 +39,12 @@ footer p { color: #9eb0bd; max-width: 80ch; }
 input, button { font: inherit; padding: .55rem .7rem; border-radius: .35rem; border: 1px solid #3b4e5c; }
 input { background: #0e1419; color: #fff; min-width: min(22rem, 70vw); }
 button { background: #d9a441; color: #17120a; font-weight: 700; cursor: pointer; }
-@media (max-width: 640px) { main { padding-top: 1.25rem; } table { min-width: 540px; } }
-
+@media (max-width: 640px) {
+  header .inner { align-items: flex-start; padding-top: .9rem; gap: .75rem 1rem; }
+  header .inner > nav:not(.language-switcher) { order: 3; width: 100%; }
+  .language-switcher { margin-left: 0; }
+  #site-search { order: 4; }
+  #site-search input { min-width: 0; flex: 1 1 12rem; }
+  main { padding-top: 1.25rem; }
+  table { min-width: 540px; }
+}

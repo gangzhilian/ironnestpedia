@@ -85,24 +85,24 @@
       "description": "Calibration Fire combines 0 prerequisites, 1 follow-up, 1 medal slot, 2 achievements and 5 targets without forcing readers to cross-check separate records."
     },
     {
-      "url_path": "/missions/ceremony-and-hche",
-      "primary_keyword": "IRON NEST ceremony and HCHE mission",
+      "url_path": "/missions/fire-and-light",
+      "primary_keyword": "IRON NEST Fire & Light mission",
       "keyword_candidates": [
-        "IRON NEST ceremony and HCHE medals",
-        "IRON NEST ceremony and HCHE targets"
+        "IRON NEST Fire & Light medals",
+        "IRON NEST Fire & Light targets"
       ],
-      "title": "IRON NEST ceremony and HCHE Mission - 1 Medal, 11 Targets",
-      "description": "ceremony and HCHE combines 1 prerequisite, 1 follow-up, 1 medal slot, 2 achievements and 11 targets without forcing readers to cross-check separate records."
+      "title": "IRON NEST Fire & Light Mission - 1 Medal, 11 Targets",
+      "description": "Fire & Light combines 1 prerequisite, 1 follow-up, 1 medal slot, 2 achievements and 11 targets without forcing readers to cross-check separate records."
     },
     {
-      "url_path": "/missions/insurrections-and-requisitions",
-      "primary_keyword": "IRON NEST Insurrections and Requisitions mission",
+      "url_path": "/missions/liberation",
+      "primary_keyword": "IRON NEST Liberation mission",
       "keyword_candidates": [
-        "IRON NEST Insurrections and Requisitions medals",
-        "IRON NEST Insurrections and Requisitions targets"
+        "IRON NEST Liberation medals",
+        "IRON NEST Liberation targets"
       ],
-      "title": "IRON NEST Insurrections & Requisitions Mission - 10 Targets",
-      "description": "Insurrections and Requisitions links 1 prior, 2 follow-ups, 4 medal slots, 2 achievements and 10 targets in one record, preserving its exact objective context."
+      "title": "IRON NEST Liberation Mission - 10 Targets",
+      "description": "Liberation links 1 prior, 2 follow-ups, 4 medal slots, 2 achievements and 10 targets in one record, preserving its exact objective context."
     },
     {
       "url_path": "/missions/artillery-introduction",

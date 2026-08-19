@@ -1,0 +1,19 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/known-issues",
+      "primary_keyword": "IRON NEST 已知问题",
+      "keyword_candidates": [
+        "IRON NEST Bug修复",
+        "IRON NEST 更新日志",
+        "IRON NEST 路线图",
+        "IRON NEST 存档问题"
+      ],
+      "title": "IRON NEST 已知问题与更新追踪",
+      "description": "依据官方Steam补丁记录追踪已修复问题、当前更新和后续路线，避免把旧问题误报为仍然存在。"
+    }
+  ]
+}

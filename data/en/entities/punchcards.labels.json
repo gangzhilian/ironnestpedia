@@ -1,0 +1,158 @@
+{
+  "APHEShell": {
+    "title": "APHE Shell",
+    "description": "<b>Armour-piercing</b> shell, medium bursting charge. Medium blast radius."
+  },
+  "APShell": {
+    "title": "AP Shell",
+    "description": "<b>Armour-piercing</b> shell, minimal bursting charge. Minimal blast radius."
+  },
+  "ArtilleryFlashNotifier": {
+    "title": "Listening Post",
+    "description": "A Listening Post provide intel to enemy artillery positions when they open fire."
+  },
+  "ATMCShell": {
+    "title": "ATMC Shell",
+    "description": "Experimental fissile-core shell. Theorised sustained chain-reaction. Effects untested."
+  },
+  "ATMCShellDemo": {
+    "title": "ATMC Shell",
+    "description": "Experimental fissile-core shell. Theorised sustained chain-reaction. Effects untested."
+  },
+  "CLMNShell": {
+    "title": "CLMN Shell",
+    "description": "Cluster shell, six HE bomblets scattered on impact. Effective against infantry and vehicles."
+  },
+  "CLMNShellDemo": {
+    "title": "CLMN Shell",
+    "description": "Cluster shell, six HE bomblets scattered on impact. Effective against infantry and vehicles."
+  },
+  "CYANShell": {
+    "title": "CYAN Shell",
+    "description": "Cyanogen gas shell. Lethal to units in the open. Fortified units unaffected."
+  },
+  "DRILShell": {
+    "title": "DRIL Shell",
+    "description": "Blind-loaded practice shell. Concrete-filled, inert. Minimal effective radius."
+  },
+  "EQKEShell": {
+    "title": "EQKE Shell",
+    "description": "<b>Armour-piercing</b> shell, deep-penetrating delayed subterranean burst. Large blast radius."
+  },
+  "FLCHShell": {
+    "title": "FLCH Shell",
+    "description": "Flechette shell. Large area of effect. Lethal only to infantry on foot in the open."
+  },
+  "HCHEShell": {
+    "title": "HCHE Shell",
+    "description": "High-capacity high-explosive shell. Thin-walled, maximum bursting charge. Large blast radius."
+  },
+  "HEShell": {
+    "title": "HE Shell",
+    "description": "Medium-capacity high-explosive shell. Medium blast radius."
+  },
+  "ImpactObserver": {
+    "title": "Listening Post",
+    "description": "A Listening Post provide intel to enemy artillery positions when they open fire."
+  },
+  "INCNShell": {
+    "title": "INCN Shell",
+    "description": "Incendiary shell. Ignites a fire on impact, medium radius. Chance to spread."
+  },
+  "INCNShellDemo": {
+    "title": "INCN Shell",
+    "description": "Incendiary shell. Ignites a fire on impact, medium radius. Chance to spread."
+  },
+  "LEShell": {
+    "title": "LE Shell",
+    "description": "Medium-capacity low-grade explosive shell. Small blast radius."
+  },
+  "ListeningPost": {
+    "title": "Listening Post",
+    "description": "A Listening Post provide intel to enemy artillery positions when they open fire."
+  },
+  "LocationReport": {
+    "title": "Position Report",
+    "description": "Local logistics convoy report <b><i><smallcaps>Iron Nest:</smallcaps></b></i> positional intel."
+  },
+  "MoveDirection": {
+    "title": "Move Direction",
+    "description": "Move the Iron Nest a set distance in a specific direction."
+  },
+  "MoveZone": {
+    "title": "EMERGENCY MOVE !",
+    "description": "Immediately reposition to an unknown location, pause CBT."
+  },
+  "MSTDShell": {
+    "title": "MSTD Shell",
+    "description": "Get 1 mustard (YX) blister agent shell"
+  },
+  "MSTDShellDemo": {
+    "title": "MSTD Shell",
+    "description": "Get 1 mustard (YX) blister agent shell"
+  },
+  "PCLMShell": {
+    "title": "PCLM Shell",
+    "description": "Parachute-delayed cluster shell. Six HE bomblets. Staggered impacts 10 seconds apart."
+  },
+  "PHGNShell": {
+    "title": "PHGN Shell",
+    "description": "Phosgene choking gas shell. Units flee the cloud. If suppressed, they die in it."
+  },
+  "PHGNShellDemo": {
+    "title": "PHGN Shell",
+    "description": "Phosgene choking gas shell. Units flee the cloud. If suppressed, they die in it."
+  },
+  "PowderCharges": {
+    "title": "Powder Charges",
+    "description": "20 Powder Charges"
+  },
+  "PRPGShell": {
+    "title": "PRPG Shell",
+    "description": "Propaganda leaflet shell. Suppresses enemy troops under the glory of Castile. Chance to induce desertion."
+  },
+  "PRPGShellDemo": {
+    "title": "PRPG Shell",
+    "description": "Propaganda leaflet shell. Suppresses enemy troops under the glory of Castile. Chance to induce desertion."
+  },
+  "ScoutPlane": {
+    "title": "Scout Plane",
+    "description": "Request Scout Plane Flyover Location"
+  },
+  "ScoutPlane_OnTimeUse": {
+    "title": "Scout Plane",
+    "description": "Request Scout Plane Flyover Location"
+  },
+  "SMOKEShell": {
+    "title": "SMK Shell",
+    "description": "Covering smoke shell. Non-lethal, allied units advance toward the impact point."
+  },
+  "Spotter": {
+    "title": "Forward Observer",
+    "description": "Forward Observer (FO) gives intel to nearest enemy."
+  },
+  "STARShell": {
+    "title": "STAR Shell",
+    "description": "Parachute-delayed illumination shell. Lights the target area for scouting."
+  },
+  "TEARShell": {
+    "title": "TEAR Shell",
+    "description": "Chloroacetophenone gas shell. Suppresses units, and reveals any hidden ones."
+  },
+  "TEARShellDemo": {
+    "title": "TEAR Shell",
+    "description": "Chloroacetophenone gas shell. Suppresses units, and reveals any hidden ones."
+  },
+  "TESTING": {
+    "title": "TEST",
+    "description": "Some Text In English"
+  },
+  "THRMShell": {
+    "title": "THRM Shell",
+    "description": "Thermal incendiary shell. Ignites a fire on impact, large radius. High chance to spread."
+  },
+  "WPShell": {
+    "title": "WP Shell",
+    "description": "White phosphorus shell. Units flee the cloud, or die if suppressed. Chance to ignite fires."
+  }
+}

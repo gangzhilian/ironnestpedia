@@ -17,8 +17,11 @@ export default defineConfig({
   build: { format: 'file' },
   integrations: [
     sitemap({
-      filter: (page) => !noindexPaths.has(new URL(page).pathname.replace(/\/$/, '') || '/'),
+      filter: (page) => {
+        const pathname = new URL(page).pathname.replace(/\/$/, '') || '/';
+        const basePath = pathname.replace(/^\/(?:zh-cn|zh-tw)(?=\/|$)/, '') || '/';
+        return !noindexPaths.has(basePath);
+      },
     }),
   ],
 });
-

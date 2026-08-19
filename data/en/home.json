@@ -11,7 +11,12 @@
     "implication": "首屏内容形态必须服务探索型访客：0输入0猜测的验证过的直达内容优先于搜索框和分类目录"
   },
   "header": {
-    "components": ["站点名/品牌", "精简主导航", "搜索/快速跳转（辅助位置，非首屏主角）", "语言切换（预留给step22）"],
+    "components": [
+      "站点名/品牌",
+      "精简主导航",
+      "搜索/快速跳转（辅助位置，非首屏主角）",
+      "语言切换（预留给step22）"
+    ],
     "search_widget": {
       "type": "client_side_typeahead",
       "scope": "全站105个页面的实体名/标题",
@@ -22,7 +27,7 @@
   "blocks": [
     {
       "order": 1,
-      "name": "首屏主角区（精选直达）",
+      "name": "Featured routes",
       "type": "curated_direct_links",
       "input_required_from_visitor": "none",
       "items": [
@@ -55,22 +60,53 @@
     },
     {
       "order": 2,
-      "name": "数据库入口矩阵",
+      "name": "Database indexes",
       "type": "index_cards",
       "cards": [
-        {"label": "Shells", "url": "/shells", "count": 20},
-        {"label": "Missions", "url": "/missions", "count": 17},
-        {"label": "Achievements", "url": "/achievements", "count": 33},
-        {"label": "Units", "url": "/units", "count": 26},
-        {"label": "Medals", "url": "/medals", "count": 26, "type": "index_only"},
-        {"label": "Punchcards", "url": "/punchcards", "count": 33, "type": "index_only"},
-        {"label": "Mutators", "url": "/mutators", "count": 10, "type": "index_only"}
+        {
+          "label": "Shells",
+          "url": "/shells",
+          "count": 20
+        },
+        {
+          "label": "Missions",
+          "url": "/missions",
+          "count": 17
+        },
+        {
+          "label": "Achievements",
+          "url": "/achievements",
+          "count": 33
+        },
+        {
+          "label": "Units",
+          "url": "/units",
+          "count": 26
+        },
+        {
+          "label": "Medals",
+          "url": "/medals",
+          "count": 26,
+          "type": "index_only"
+        },
+        {
+          "label": "Punchcards",
+          "url": "/punchcards",
+          "count": 33,
+          "type": "index_only"
+        },
+        {
+          "label": "Mutators",
+          "url": "/mutators",
+          "count": 10,
+          "type": "index_only"
+        }
       ],
       "counts_source": "Shell/Mission/Achievement/MapEntity(Units)来自project-data/iron-nest/config.json page_matrix.entity_page_counts；Medal/Punchcard/Mutator无独立数据页，数字取自16-page-matrix.json entity_record_reconciliation的real_count(Medal=真实任务引用的26个唯一ID；Punchcard=过滤TESTING/Demo后的33条真实记录；Mutator=按displayName去重的10个唯一名字)，index_only表示这些数字对应的是单个索引页内汇总展示的条目数，不是独立可访问页面数"
     },
     {
       "order": 3,
-      "name": "最新更新",
+      "name": "Latest updates",
       "type": "patch_summary",
       "content_source": "project-data/iron-nest/14-live-data/news.json",
       "display": "最近1-2条Patch标题+摘要，链接到/known-issues查看完整追踪",
@@ -79,14 +115,14 @@
     },
     {
       "order": 4,
-      "name": "精选指南",
+      "name": "Selected guides",
       "type": "guide_teaser",
       "count": 0,
       "status": "结构占位，等step20产出，不编造假标题"
     },
     {
       "order": 5,
-      "name": "数据说明区",
+      "name": "Data notes",
       "type": "data_provenance",
       "fields": {
         "latest_version_label": "Game Version 4 (Patch #5)",
@@ -99,10 +135,32 @@
       "order": 6,
       "name": "Footer",
       "type": "footer",
-      "index_links": ["/shells", "/missions", "/achievements", "/units", "/medals", "/punchcards", "/mutators"],
-      "tools_link": {"url": "/tools", "status": "占位，等step25", "note": "指向工具分类索引页（结构性导航入口，Footer必须包含Tools分类，来自主文档step18原有Footer规则），不是指向某个具体未完成工具的页面；索引页本身要不要收录/noindex，由step25实际产出内容后决定，不在此处预判"},
-      "guides_link": {"url": "/guides", "status": "占位，等step20", "note": "同上，指向指南分类索引页，不是具体未完成指南文章"},
-      "compliance_links": ["About", "Privacy Policy", "Cookie Policy", "Terms of Service", "Contact"],
+      "index_links": [
+        "/shells",
+        "/missions",
+        "/achievements",
+        "/units",
+        "/medals",
+        "/punchcards",
+        "/mutators"
+      ],
+      "tools_link": {
+        "url": "/tools",
+        "status": "占位，等step25",
+        "note": "指向工具分类索引页（结构性导航入口，Footer必须包含Tools分类，来自主文档step18原有Footer规则），不是指向某个具体未完成工具的页面；索引页本身要不要收录/noindex，由step25实际产出内容后决定，不在此处预判"
+      },
+      "guides_link": {
+        "url": "/guides",
+        "status": "占位，等step20",
+        "note": "同上，指向指南分类索引页，不是具体未完成指南文章"
+      },
+      "compliance_links": [
+        "About",
+        "Privacy Policy",
+        "Cookie Policy",
+        "Terms of Service",
+        "Contact"
+      ],
       "compliance_status": "占位，等step26",
       "sitemap_link": true
     }

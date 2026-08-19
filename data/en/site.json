@@ -3,22 +3,195 @@
   "game_name": "IRON NEST: Heavy Turret Simulator",
   "site_url": "https://ironnestpedia.com",
   "navigation": [
-    { "label": "Shells", "url": "/shells" },
-    { "label": "Missions", "url": "/missions" },
-    { "label": "Achievements", "url": "/achievements" },
-    { "label": "Units", "url": "/units" }
+    {
+      "label": "Shells",
+      "url": "/shells"
+    },
+    {
+      "label": "Missions",
+      "url": "/missions"
+    },
+    {
+      "label": "Achievements",
+      "url": "/achievements"
+    },
+    {
+      "label": "Units",
+      "url": "/units"
+    }
   ],
   "entity_indexes": [
-    { "label": "Shells", "url": "/shells" },
-    { "label": "Missions", "url": "/missions" },
-    { "label": "Achievements", "url": "/achievements" },
-    { "label": "Units", "url": "/units" },
-    { "label": "Medals", "url": "/medals" },
-    { "label": "Punchcards", "url": "/punchcards" },
-    { "label": "Mutators", "url": "/mutators" }
+    {
+      "label": "Shells",
+      "url": "/shells"
+    },
+    {
+      "label": "Missions",
+      "url": "/missions"
+    },
+    {
+      "label": "Achievements",
+      "url": "/achievements"
+    },
+    {
+      "label": "Units",
+      "url": "/units"
+    },
+    {
+      "label": "Medals",
+      "url": "/medals"
+    },
+    {
+      "label": "Punchcards",
+      "url": "/punchcards"
+    },
+    {
+      "label": "Mutators",
+      "url": "/mutators"
+    }
   ],
   "footer_disclaimer": "Unofficial fan-made data reference. IRON NEST and related trademarks belong to their respective owners.",
   "data_note": "Values are sourced from verified game data and Steam API records. Each record keeps its version, source, update date, and confidence metadata.",
-  "placeholder_disclaimer": "Temporary step 21 wording. Replace with reviewed compliance copy in step 26."
+  "placeholder_disclaimer": "Temporary step 21 wording. Replace with reviewed compliance copy in step 26.",
+  "locale": "en",
+  "html_lang": "en",
+  "hreflang": "en",
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "hreflang": "en"
+    },
+    {
+      "code": "zh-cn",
+      "label": "简体中文",
+      "hreflang": "zh-CN"
+    },
+    {
+      "code": "zh-tw",
+      "label": "繁體中文",
+      "hreflang": "zh-TW"
+    }
+  ],
+  "home_seo": {
+    "title": "IronNestPedia — IRON NEST Database, Guides & Tools",
+    "description": "Explore verified IRON NEST shell, mission, achievement, medal, punchcard, mutator and unit data, with version and source metadata retained."
+  },
+  "entity_names": {
+    "Shell": "Shell",
+    "Mission": "Mission",
+    "Achievement": "Achievement",
+    "MapEntity": "Unit",
+    "Medal": "Medal",
+    "Punchcard": "Punchcard",
+    "Mutator": "Mutator",
+    "Meta/Updates": "Updates"
+  },
+  "field_labels": {
+    "Armour": "Armour",
+    "BronzeConditions": "Bronze conditions",
+    "Cost": "Cost",
+    "Damage": "Damage",
+    "Description": "Description",
+    "Description.Key": "Description",
+    "DisplayName": "Display name",
+    "GoldConditions": "Gold conditions",
+    "Health": "Health",
+    "ID": "ID",
+    "ImmuneShells": "Immune shells",
+    "ImpactRadius": "Impact radius",
+    "IsRecon": "Recon",
+    "MaxUses": "Maximum uses",
+    "Name": "Name",
+    "Position": "Position",
+    "Requirements": "Requirements",
+    "Role": "Role",
+    "Scale": "Scale",
+    "ShellId": "Shell ID",
+    "ShellSpeed": "Shell speed",
+    "SilverConditions": "Silver conditions",
+    "Stars": "Stars",
+    "State": "State",
+    "Title.Key": "Title",
+    "achievementForClearing": "Clear achievement",
+    "achievementForGolding": "Gold achievement",
+    "charge_N_maxRange": "Maximum range by charge",
+    "contents": "Contents",
+    "date": "Date",
+    "defaultPowderCharge": "Default powder charge",
+    "description": "Description",
+    "displayName": "Display name",
+    "displayNameV2.Key": "Medal name",
+    "hidden": "Hidden",
+    "hintTextV2.Key": "Hint",
+    "horizontalDispersion": "Horizontal dispersion",
+    "id": "ID",
+    "location": "Location",
+    "maxPowderCharges": "Maximum powder charges",
+    "medalRefs": "Medals",
+    "missionRef": "Mission",
+    "name": "Name",
+    "projectilesPerShell": "Projectiles per shell",
+    "shellSpeedVariationPercent": "Speed variation",
+    "tier": "Tier",
+    "title": "Title",
+    "type": "Type",
+    "unlockedBy": "Prerequisite",
+    "unlocks": "Unlocks",
+    "verticalDispersion": "Vertical dispersion"
+  },
+  "patch_titles": {
+    "1840944183782791": "Patch #5: Minor Fixes and Improvements",
+    "1840944183774585": "Patch #4: Bug Fixes and Gameplay Improvements",
+    "1840310314354123": "Steam Global Top Sellers for week of 4 Aug — 11 August 2026",
+    "1840310314350447": "Patch #3: IRON NEST - PATCH 1.0 (1577)",
+    "1840310314347288": "Patch #2: IRON NEST - PATCH 1.0 (1558)"
+  },
+  "ui": {
+    "primary_navigation": "Primary navigation",
+    "database_indexes": "Database indexes",
+    "quick_jump": "Quick jump",
+    "search_placeholder": "Type a route, e.g. /shells/ap",
+    "go": "Go",
+    "language_switcher": "Language",
+    "breadcrumb_navigation": "Breadcrumb",
+    "home": "Home",
+    "data_page": "{entity} data page",
+    "entity_index": "{entity} index",
+    "verified_data": "Verified data",
+    "related_records": "Related {entity} records",
+    "record_provenance": "Record provenance",
+    "game_version": "Game version",
+    "source": "Source",
+    "updated": "Updated",
+    "confidence": "Confidence",
+    "related_pages": "Related pages",
+    "pages_in_index": "Pages in this index",
+    "source_records_represented": "Source records represented",
+    "verified_records": "Verified records",
+    "related_indexes": "Related indexes and missions",
+    "no_records": "No records matched this approved route join.",
+    "unpublished_section": "Unpublished section",
+    "placeholder_body": "This route is present only so the site structure can be tested. It is marked noindex,follow and excluded from the sitemap until reviewed content or functionality is ready.",
+    "return_home": "Return to the database home",
+    "official_update_evidence": "Official update evidence",
+    "patch_source_timeline": "Patch source timeline",
+    "steam_snapshot": "Official Steam news snapshot. Detailed issue prose remains a later content task.",
+    "related_missions": "Related missions",
+    "not_found_title": "Page not found",
+    "not_found_description": "The requested IronNestPedia page does not exist.",
+    "not_found_body": "The requested route is not part of the published database.",
+    "home_eyebrow": "IRON NEST verified data reference",
+    "current_question": "Start with a current question",
+    "planned_teaser": "Planned around the site’s verified shell fields; no inactive link is published.",
+    "browse_database": "Browse the database",
+    "verified_pages": "{count} verified pages.",
+    "verified_entries": "{count} verified index entries.",
+    "latest_updates": "Latest updates",
+    "view_tracker": "View the patch-verified issue tracker",
+    "data_provenance": "Data provenance",
+    "records_retain": "Entity records retain game_version, data_source, last_updated, and confidence.",
+    "mission_map_title": "Mission Map",
+    "mission_map_reason": "The interactive mission map is reserved for a later release and is not yet available."
+  }
 }
-

@@ -1,0 +1,14 @@
+---
+import Layout from './Layout.astro';
+import { getSite, localizedPath, translate, type Locale } from '../lib/data';
+interface Props { locale?: Locale; }
+const { locale = 'en' } = Astro.props;
+const site = getSite(locale);
+const links = site.navigation;
+---
+<Layout title={`${translate(locale, 'not_found_title')} | IronNestPedia`} description={translate(locale, 'not_found_description')} path="/404" locale={locale} noindex>
+  <p class="eyebrow">404</p>
+  <h1>{translate(locale, 'not_found_title')}</h1>
+  <p>{translate(locale, 'not_found_body')}</p>
+  <ul class="link-list"><li><a href={localizedPath('/', locale)}>{translate(locale, 'home')}</a></li>{links.map((item) => <li><a href={localizedPath(item.url, locale)}>{item.label}</a></li>)}</ul>
+</Layout>

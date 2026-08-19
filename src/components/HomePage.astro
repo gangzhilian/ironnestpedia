@@ -1,0 +1,58 @@
+---
+import Layout from './Layout.astro';
+import news from '../../data/live/news.json';
+import { getHome, getSeo, getSite, labelForRoute, localizedPath, routeMap, translate, type Locale } from '../lib/data';
+
+interface Props { locale?: Locale; }
+const { locale = 'en' } = Astro.props;
+const home = getHome(locale);
+const site = getSite(locale);
+const patchItems = news.raw_response?.appnews?.newsitems?.slice(0, 2) ?? [];
+const videoGameJson = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoGame',
+  name: site.game_name,
+  url: site.site_url,
+  gamePlatform: 'Windows',
+};
+const featured = home.blocks.find((block: any) => block.order === 1)?.items ?? [];
+const cards = home.blocks.find((block: any) => block.order === 2)?.cards ?? [];
+---
+<Layout title={site.home_seo.title} description={site.home_seo.description} path="/" locale={locale}>
+  <script type="application/ld+json" set:html={JSON.stringify(videoGameJson)} />
+  <p class="eyebrow">{translate(locale, 'home_eyebrow')}</p>
+  <h1>{home.h1}</h1>
+  <p>{site.data_note}</p>
+  <section>
+    <h2>{translate(locale, 'current_question')}</h2>
+    <div class="grid">
+      {featured.map((item: any) => item.linked && item.url ? (
+        <article class="card">
+          <h3><a href={localizedPath(item.url, locale)}>{item.label}</a></h3>
+          <p>{getSeo(item.url, locale).description}</p>
+        </article>
+      ) : (
+        <article class="card teaser"><h3>{item.label}</h3><p>{translate(locale, 'planned_teaser')}</p></article>
+      ))}
+    </div>
+  </section>
+  <section>
+    <h2>{translate(locale, 'browse_database')}</h2>
+    <div class="grid">
+      {cards.map((card: any) => {
+        const route = routeMap.get(card.url);
+        const countText = translate(locale, card.type === 'index_only' ? 'verified_entries' : 'verified_pages', { count: card.count });
+        return <article class="card"><h3><a href={localizedPath(card.url, locale)}>{card.label}</a></h3><p>{countText}</p>{route && <p class="meta">{labelForRoute(route, locale)}</p>}</article>;
+      })}
+    </div>
+  </section>
+  <section>
+    <h2>{translate(locale, 'latest_updates')}</h2>
+    <div class="grid">{patchItems.map((item: any) => <article class="card"><h3>{site.patch_titles[item.gid] ?? item.title}</h3><p>{new Date(item.date * 1000).toISOString().slice(0, 10)}</p><p><a href={localizedPath('/known-issues', locale)}>{translate(locale, 'view_tracker')}</a></p></article>)}</div>
+  </section>
+  <section class="panel">
+    <h2>{translate(locale, 'data_provenance')}</h2>
+    <p>{home.blocks.find((block: any) => block.order === 5)?.fields?.latest_version_label}</p>
+    <p>{translate(locale, 'records_retain')}</p>
+  </section>
+</Layout>

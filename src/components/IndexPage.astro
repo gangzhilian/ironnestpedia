@@ -1,35 +1,33 @@
 ---
 import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
-import { getIndexRows, getRelatedRoutes, getSeo, labelForRoute, routes, type RouteEntry } from '../lib/data';
+import { entityName, getIndexRows, getRelatedRoutes, getSeo, labelForRoute, localizeRows, localizedPath, routes, translate, type Locale, type RouteEntry } from '../lib/data';
 
-interface Props { route: RouteEntry; }
-const { route } = Astro.props;
-const seo = getSeo(route.url_path);
+interface Props { route: RouteEntry; locale?: Locale; }
+const { route, locale = 'en' } = Astro.props;
+const seo = getSeo(route.url_path, locale);
 const children = routes.filter((item) => item.entity === route.entity && item.page_type === 'data_entity');
-const rows = getIndexRows(route);
+const rows = localizeRows(getIndexRows(route), route.entity, locale);
 const fields = (route as any).data_source?.fields ?? Object.keys(rows[0] ?? {});
 const related = getRelatedRoutes(route);
+const entity = entityName(route.entity, locale);
 ---
-<Layout title={seo.title} description={seo.description} path={route.url_path} breadcrumbs={[{ label: seo.primary_keyword || route.url_path }]}>
-  <p class="eyebrow">{route.entity} index</p>
+<Layout title={seo.title} description={seo.description} path={route.url_path} locale={locale} breadcrumbs={[{ label: seo.primary_keyword || route.url_path }]}>
+  <p class="eyebrow">{translate(locale, 'entity_index', { entity })}</p>
   <h1>{seo.title}</h1>
   <p>{seo.description}</p>
-
   {children.length > 0 && (
     <section>
-      <h2>Pages in this index</h2>
-      <div class="grid">{children.map((item) => <article class="card"><h3><a href={item.url_path}>{labelForRoute(item)}</a></h3><p>{getSeo(item.url_path).description}</p></article>)}</div>
+      <h2>{translate(locale, 'pages_in_index')}</h2>
+      <div class="grid">{children.map((item) => <article class="card"><h3><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></h3><p>{getSeo(item.url_path, locale).description}</p></article>)}</div>
     </section>
   )}
-
   <section>
-    <h2>{children.length ? 'Source records represented' : 'Verified records'}</h2>
-    <DataTable rows={rows} fields={fields} />
+    <h2>{translate(locale, children.length ? 'source_records_represented' : 'verified_records')}</h2>
+    <DataTable rows={rows} fields={fields} locale={locale} />
   </section>
-
   <section>
-    <h2>Related indexes and missions</h2>
-    <ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul>
+    <h2>{translate(locale, 'related_indexes')}</h2>
+    <ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul>
   </section>
 </Layout>

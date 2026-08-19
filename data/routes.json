@@ -51,7 +51,7 @@
       "raw_count": 275,
       "real_count": 87,
       "filter_reason": "275条spawn记录按ID聚合为87个原始ID；Role自动分类的31个候选经站长复核后，三组双候选大小写/拼写变体各合并1页、AllyArtillery吸收单任务小写变体、King与General转入任务内嵌，最终形成26个独立页、51个任务内嵌ID和7个Reference标记排除。 [Claude审查修正: 清理了embedded_ids里残留的allyArtillery，该ID已合并进独立页AllyArtillery，不应重复计入嵌入清单。]",
-      "page_strategy": "26个独立数据页已通过站长复核；King与General嵌入ceremony and HCHE、WhiteShells任务页；另做1个分类索引页。",
+      "page_strategy": "26个独立数据页已通过站长复核；King与General嵌入Fire & Light、WhiteShells任务页；另做1个分类索引页。",
       "classification_counts": {
         "independent_candidates": 26,
         "embed_in_mission": 50,
@@ -1081,8 +1081,8 @@
         "/missions/finalharvest",
         "/missions/whiteshells",
         "/missions/hospital-false-flag",
-        "/missions/ceremony-and-hche",
-        "/missions/insurrections-and-requisitions",
+        "/missions/fire-and-light",
+        "/missions/liberation",
         "/missions/artillery-introduction",
         "/missions/ironroad",
         "/missions/siegeofcartagena",
@@ -2410,7 +2410,7 @@
       ]
     },
     {
-      "url_path": "/missions/ceremony-and-hche",
+      "url_path": "/missions/fire-and-light",
       "page_type": "data_entity",
       "entity": "Mission",
       "source_record_id": "ceremony and HCHE",
@@ -2475,7 +2475,7 @@
         }
       ],
       "unresolved_medal_candidates": [],
-      "unique_value_statement": "ceremony and HCHE页独有其1个前置、1个后续、1个奖章槽、2项关联成就和11条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。",
+      "unique_value_statement": "Fire & Light页独有其1个前置、1个后续、1个奖章槽、2项关联成就和11条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。",
       "internal_link_candidates": [
         "/missions",
         "/medals",
@@ -2488,7 +2488,7 @@
       ]
     },
     {
-      "url_path": "/missions/insurrections-and-requisitions",
+      "url_path": "/missions/liberation",
       "page_type": "data_entity",
       "entity": "Mission",
       "source_record_id": "Insurrections and Requisitions",
@@ -2556,7 +2556,7 @@
         }
       ],
       "unresolved_medal_candidates": [],
-      "unique_value_statement": "Insurrections and Requisitions页独有其1个前置、2个后续、4个奖章槽、2项关联成就和10条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。",
+      "unique_value_statement": "Liberation页独有其1个前置、2个后续、4个奖章槽、2项关联成就和10条本关生成节点的任务级组合，奖章门槛与目标配置不需要跨表猜测。",
       "internal_link_candidates": [
         "/missions",
         "/medals",
@@ -4170,10 +4170,10 @@
         "match_field": "name",
         "match_value": "ACHIEVEMENT_2_CLEAR"
       },
-      "unique_value_statement": "Honour Salute页把“CLEAR”解锁条件精确落到ceremony and HCHE任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
+      "unique_value_statement": "Honour Salute页把“CLEAR”解锁条件精确落到Fire & Light任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
       "internal_link_candidates": [
         "/achievements",
-        "/missions/ceremony-and-hche",
+        "/missions/fire-and-light",
         "/missions"
       ]
     },
@@ -4198,10 +4198,10 @@
         "match_field": "name",
         "match_value": "ACHIEVEMENT_3_CLEAR"
       },
-      "unique_value_statement": "For Their Own Good页把“CLEAR”解锁条件精确落到Insurrections and Requisitions任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
+      "unique_value_statement": "For Their Own Good页把“CLEAR”解锁条件精确落到Liberation任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
       "internal_link_candidates": [
         "/achievements",
-        "/missions/insurrections-and-requisitions",
+        "/missions/liberation",
         "/missions"
       ]
     },
@@ -4674,10 +4674,10 @@
         "match_field": "name",
         "match_value": "ACHIEVEMENT_2_GOLDEN"
       },
-      "unique_value_statement": "Marksman's Honour页把“GOLDEN”解锁条件精确落到ceremony and HCHE任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
+      "unique_value_statement": "Marksman's Honour页把“GOLDEN”解锁条件精确落到Fire & Light任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
       "internal_link_candidates": [
         "/achievements",
-        "/missions/ceremony-and-hche",
+        "/missions/fire-and-light",
         "/medals"
       ]
     },
@@ -4702,10 +4702,10 @@
         "match_field": "name",
         "match_value": "ACHIEVEMENT_3_GOLDEN"
       },
-      "unique_value_statement": "Exemplary Service页把“GOLDEN”解锁条件精确落到Insurrections and Requisitions任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
+      "unique_value_statement": "Exemplary Service页把“GOLDEN”解锁条件精确落到Liberation任务，并叠加会随时间变化的全球完成率；该成就的任务归属与稀有度组合不在其他成就页重复。",
       "internal_link_candidates": [
         "/achievements",
-        "/missions/insurrections-and-requisitions",
+        "/missions/liberation",
         "/medals"
       ]
     },
@@ -5072,8 +5072,8 @@
         "/missions/finalharvest",
         "/missions/whiteshells",
         "/missions/hospital-false-flag",
-        "/missions/ceremony-and-hche",
-        "/missions/insurrections-and-requisitions",
+        "/missions/fire-and-light",
+        "/missions/liberation",
         "/missions/artillery-introduction",
         "/missions/ironroad",
         "/missions/siegeofcartagena",
@@ -5988,8 +5988,8 @@
         "/missions/challangefdc",
         "/missions/chill",
         "/missions/hospital-false-flag",
-        "/missions/insurrections-and-requisitions",
-        "/missions/ceremony-and-hche"
+        "/missions/liberation",
+        "/missions/fire-and-light"
       ]
     },
     {
@@ -6105,7 +6105,7 @@
         "/shells",
         "/missions/hightide",
         "/missions/hospital-false-flag",
-        "/missions/insurrections-and-requisitions"
+        "/missions/liberation"
       ]
     },
     {
@@ -6335,7 +6335,7 @@
         "/shells",
         "/missions/hightide",
         "/missions/hospital-false-flag",
-        "/missions/insurrections-and-requisitions"
+        "/missions/liberation"
       ]
     },
     {
@@ -6466,7 +6466,7 @@
         "/shells",
         "/missions/hightide",
         "/missions/whiteshells",
-        "/missions/ceremony-and-hche"
+        "/missions/fire-and-light"
       ]
     },
     {
@@ -6590,13 +6590,13 @@
         "/missions/deadreckoning",
         "/missions/finalharvest",
         "/missions/fireoncall",
-        "/missions/insurrections-and-requisitions",
+        "/missions/liberation",
         "/missions/ironroad",
         "/missions/rockofgibraltar",
         "/missions/siegeofcartagena",
         "/missions/the-gorge",
         "/missions/whiteshells",
-        "/missions/ceremony-and-hche"
+        "/missions/fire-and-light"
       ]
     },
     {
@@ -6711,7 +6711,7 @@
     },
     {
       "question": "MapEntity独立候选人工复核",
-      "detail": "站长已完成6组复核：AllyArtillery/allyArtillery、AllyInfantry/allyInfantry、AllySpotter/allyspotter、EnemyArmor/EnemyArmour分别合并为canonical页 AllyArtillery、AllyInfantry、AllySpotter、EnemyArmour，且每页data_source保留两个原始ID的全部记录；King与General不独立成页，嵌入ceremony and HCHE及WhiteShells。manual_review_flagged已清空，最终独立页26个。",
+      "detail": "站长已完成6组复核：AllyArtillery/allyArtillery、AllyInfantry/allyInfantry、AllySpotter/allyspotter、EnemyArmor/EnemyArmour分别合并为canonical页 AllyArtillery、AllyInfantry、AllySpotter、EnemyArmour，且每页data_source保留两个原始ID的全部记录；King与General不独立成页，嵌入Fire & Light及WhiteShells。manual_review_flagged已清空，最终独立页26个。",
       "status": "resolved"
     },
     {

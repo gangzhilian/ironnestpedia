@@ -1,0 +1,134 @@
+{
+  "ACHIEVEMENT_1_CLEAR": {
+    "displayName": "只是校準",
+    "description": "完成「校準射擊」任務。"
+  },
+  "ACHIEVEMENT_1_GOLDEN": {
+    "displayName": "克盡職守",
+    "description": "於「校準射擊」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_10_CLEAR": {
+    "displayName": "火炮回應",
+    "description": "完成「呼叫火力支援」任務。"
+  },
+  "ACHIEVEMENT_10_GOLDEN": {
+    "displayName": "鋼鐵紀律",
+    "description": "於「呼叫火力支援」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_11_CLEAR": {
+    "displayName": "灘頭拒止",
+    "description": "完成「漲潮」任務。"
+  },
+  "ACHIEVEMENT_11_GOLDEN": {
+    "displayName": "海防勳章",
+    "description": "於「漲潮」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_12_CLEAR": {
+    "displayName": "空無一物",
+    "description": "完成「盲射」任務。"
+  },
+  "ACHIEVEMENT_12_GOLDEN": {
+    "displayName": "屹立不搖",
+    "description": "於「盲射」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_13_CLEAR": {
+    "displayName": "鏡像",
+    "description": "完成「幻影炮台」任務。"
+  },
+  "ACHIEVEMENT_13_GOLDEN": {
+    "displayName": "炮術大師",
+    "description": "於「幻影炮台」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_14_CLEAR": {
+    "displayName": "黑暗之中",
+    "description": "完成「最終收割」任務。"
+  },
+  "ACHIEVEMENT_14_GOLDEN": {
+    "displayName": "夜間精準",
+    "description": "於「最終收割」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_15_GOLDEN": {
+    "displayName": "卡斯提亞之傲",
+    "description": "於「白色炮彈」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_15A_CLEAR": {
+    "displayName": "歡慶之城",
+    "description": "一座出城迎接你的城市。"
+  },
+  "ACHIEVEMENT_15B_CLEAR": {
+    "displayName": "臣服之城",
+    "description": "一座屈膝並將此稱為和平的城市。"
+  },
+  "ACHIEVEMENT_15C_CLEAR": {
+    "displayName": "未擇之路",
+    "description": "一座得以倖存的城市，以及一條再也無人踏上的道路。"
+  },
+  "ACHIEVEMENT_15D_CLEAR": {
+    "displayName": "寂靜之城",
+    "description": "一座從地圖上徹底抹去的城市。"
+  },
+  "ACHIEVEMENT_2_CLEAR": {
+    "displayName": "榮譽禮炮",
+    "description": "完成「射擊與照明」任務。"
+  },
+  "ACHIEVEMENT_2_GOLDEN": {
+    "displayName": "神射手榮譽",
+    "description": "於「射擊與照明」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_3_CLEAR": {
+    "displayName": "為他們著想",
+    "description": "完成「解放」任務。"
+  },
+  "ACHIEVEMENT_3_GOLDEN": {
+    "displayName": "模範服役",
+    "description": "於「解放」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_4_CLEAR": {
+    "displayName": "首次回應",
+    "description": "完成「反炮兵戰」任務。"
+  },
+  "ACHIEVEMENT_4_GOLDEN": {
+    "displayName": "卓越表現",
+    "description": "於「反炮兵戰」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_5_CLEAR": {
+    "displayName": "全面清除",
+    "description": "完成「鋼鐵之路」任務。"
+  },
+  "ACHIEVEMENT_5_GOLDEN": {
+    "displayName": "黃銅加冕",
+    "description": "於「鋼鐵之路」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_6_CLEAR": {
+    "displayName": "突圍",
+    "description": "完成「卡塔赫納圍城」任務。"
+  },
+  "ACHIEVEMENT_6_GOLDEN": {
+    "displayName": "海軍嘉獎",
+    "description": "於「卡塔赫納圍城」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_7_CLEAR": {
+    "displayName": "冷啟動",
+    "description": "在「峽谷」中存活。"
+  },
+  "ACHIEVEMENT_7_GOLDEN": {
+    "displayName": "炮火下的英勇",
+    "description": "於「峽谷」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_8_CLEAR": {
+    "displayName": "假旗出擊",
+    "description": "完成「直布羅陀巨巖」任務。"
+  },
+  "ACHIEVEMENT_8_GOLDEN": {
+    "displayName": "功績勳章",
+    "description": "於「直布羅陀巨巖」任務的所有勳章取得金牌。"
+  },
+  "ACHIEVEMENT_9_CLEAR": {
+    "displayName": "穩健之手",
+    "description": "完成「盲區推算」任務。"
+  },
+  "ACHIEVEMENT_9_GOLDEN": {
+    "displayName": "無聲精準",
+    "description": "於「盲區推算」任務的所有勳章取得金牌。"
+  }
+}

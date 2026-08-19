@@ -1,0 +1,126 @@
+{
+  "ally_kills_0to2": {
+    "displayName": "精准测火之星",
+    "hintText": "最少误伤友军的前提下，完成射击行动。"
+  },
+  "avg_accuracy_50to250": {
+    "displayName": "神射手十字勋章",
+    "hintText": "所有射击任务始终维持极高平均命中率。"
+  },
+  "counter_battery_100to260": {
+    "displayName": "反炮兵嘉奖",
+    "hintText": "提前消灭所有敌方反炮兵阵地。"
+  },
+  "ending1": {
+    "displayName": "结局 1",
+    "hintText": "解锁结局 1"
+  },
+  "ending2": {
+    "displayName": "结局 2",
+    "hintText": "解锁结局 2"
+  },
+  "ending3": {
+    "displayName": "结局 3",
+    "hintText": "解锁结局 3"
+  },
+  "ending4": {
+    "displayName": "结局 4",
+    "hintText": "解锁结局 4"
+  },
+  "enemy_kills_10to30": {
+    "displayName": "杀无赦十字勋章",
+    "hintText": "消灭作战区域内所有敌方单位。"
+  },
+  "enemy_kills_5to20": {
+    "displayName": "杀无赦十字勋章",
+    "hintText": "消灭作战区域内所有敌方单位。"
+  },
+  "enemy_kills_6to10": {
+    "displayName": "杀无赦十字勋章",
+    "hintText": "消灭作战区域内所有敌方单位。"
+  },
+  "enemy_kills_6to15": {
+    "displayName": "杀无赦十字勋章",
+    "hintText": "消灭作战区域内所有敌方单位。"
+  },
+  "first_shot_fast_with_kills": {
+    "displayName": "快速交战勋章",
+    "hintText": "接到命令后迅速开出第一炮，并摧毁大量目标。"
+  },
+  "kill_shot_ratio_0.8to1.5_20kills": {
+    "displayName": "精准耗弹十字勋章",
+    "hintText": "至少消灭20名敌人，且保持极高的单发歼敌率。"
+  },
+  "kill_shot_ratio_0.8to2_10kills": {
+    "displayName": "精准耗弹十字勋章",
+    "hintText": "至少消灭10名敌人，且保持极高的单发歼敌率。"
+  },
+  "kill_streak_3to6": {
+    "displayName": "不间断齐射勋章",
+    "hintText": "连续多个射击任务中维持不间断击杀。"
+  },
+  "kill_streak_4to10": {
+    "displayName": "狂暴齐射勋章",
+    "hintText": "连续多个射击任务中维持不间断击杀。"
+  },
+  "kill_streak_5to20": {
+    "displayName": "狂暴齐射勋章",
+    "hintText": "连续多个射击任务中维持不间断击杀。"
+  },
+  "no_recon_with_kills": {
+    "displayName": "独立炮击勋章",
+    "hintText": "未调用任何空中侦察的情况下，摧毁大量目标。"
+  },
+  "req_spent_100to250": {
+    "displayName": "艰苦服役勋章",
+    "hintText": "仅征用最低限度资源而完成任务。"
+  },
+  "req_spent_10to30": {
+    "displayName": "艰苦服役勋章",
+    "hintText": "仅征用最低限度资源而完成任务。"
+  },
+  "req_spent_15to50": {
+    "displayName": "艰苦服役勋章",
+    "hintText": "仅征用最低限度资源而完成任务。"
+  },
+  "req_spent_20to50": {
+    "displayName": "艰苦服役勋章",
+    "hintText": "仅征用最低限度资源而完成任务。"
+  },
+  "req_spent_30to100": {
+    "displayName": "艰苦服役勋章",
+    "hintText": "仅征用最低限度资源而完成任务。"
+  },
+  "req_spent_50to180": {
+    "displayName": "艰苦服役勋章",
+    "hintText": "仅征用最低限度资源而完成任务。"
+  },
+  "req_spent_high_150to600": {
+    "displayName": "卓越军需勋章",
+    "hintText": "任务中征用并部署大量作战资源。"
+  },
+  "shots_fired_1to3": {
+    "displayName": "高效杀伤勋章",
+    "hintText": "消耗最少炮弹完成任务。"
+  },
+  "shots_fired_2to4": {
+    "displayName": "高效杀伤嘉奖",
+    "hintText": "消耗最少炮弹完成任务。"
+  },
+  "shots_fired_4to8": {
+    "displayName": "高效杀伤嘉奖",
+    "hintText": "消耗最少炮弹完成任务。"
+  },
+  "single_impact_kills_2to5": {
+    "displayName": "一网打尽之星",
+    "hintText": "单发炮弹消灭多个敌人。"
+  },
+  "TEST": {
+    "displayName": "测试勋章定义",
+    "hintText": ""
+  },
+  "three_kill_window_30to90": {
+    "displayName": "齐射嘉奖",
+    "hintText": "快速连续摧毁三个目标。"
+  }
+}

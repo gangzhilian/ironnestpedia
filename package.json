@@ -6,11 +6,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "migrate": "node scripts/migrate-from-project-data.mjs",
+    "migrate": "node scripts/migrate-from-project-data.mjs && node scripts/generate-locales.mjs",
+    "locales": "node scripts/generate-locales.mjs",
     "validate:data": "node scripts/validate-data.js",
     "validate:links": "node scripts/check-internal-links.js",
+    "validate:locales": "node scripts/check-locale-parity.js",
+    "validate:localized-output": "node scripts/check-localized-output.js",
     "validate:no-cjk": "node scripts/check-no-cjk.js",
-    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:no-cjk"
+    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk"
   },
   "keywords": ["iron-nest", "astro", "game-database"],
   "author": "",

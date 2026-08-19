@@ -1,45 +1,42 @@
 ---
 import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
-import { getEmbeddedRows, getPrimaryRows, getRelatedRoutes, getSeo, labelForRoute, routeMap, type RouteEntry } from '../lib/data';
+import { entityName, getEmbeddedRows, getPrimaryRows, getRelatedRoutes, getSeo, labelForRoute, localizeRows, localizedPath, routeMap, translate, type Locale, type RouteEntry } from '../lib/data';
 
-interface Props { route: RouteEntry; }
-const { route } = Astro.props;
-const seo = getSeo(route.url_path);
-const rows = getPrimaryRows(route);
+interface Props { route: RouteEntry; locale?: Locale; }
+const { route, locale = 'en' } = Astro.props;
+const seo = getSeo(route.url_path, locale);
+const rows = localizeRows(getPrimaryRows(route), route.entity, locale);
 const fields = (route as any).data_source?.fields ?? Object.keys(rows[0] ?? {});
-const embedded = getEmbeddedRows(route);
+const embedded = getEmbeddedRows(route).map((group) => ({ ...group, rows: localizeRows(group.rows, group.entity, locale) }));
 const related = getRelatedRoutes(route);
 const indexPath = `/${route.url_path.split('/').filter(Boolean)[0]}`;
 const indexRoute = routeMap.get(indexPath);
+const entity = entityName(route.entity, locale);
 ---
-<Layout title={seo.title} description={seo.description} path={route.url_path} breadcrumbs={[
-  ...(indexRoute ? [{ label: labelForRoute(indexRoute), url: indexRoute.url_path }] : []),
+<Layout title={seo.title} description={seo.description} path={route.url_path} locale={locale} breadcrumbs={[
+  ...(indexRoute ? [{ label: labelForRoute(indexRoute, locale), url: indexRoute.url_path }] : []),
   { label: seo.primary_keyword || route.source_record_id || route.url_path },
 ]}>
-  <p class="eyebrow">{route.entity} data page</p>
+  <p class="eyebrow">{translate(locale, 'data_page', { entity })}</p>
   <h1>{seo.title}</h1>
   <p>{seo.description}</p>
-
-  <h2>Verified data</h2>
-  <DataTable rows={rows} fields={fields} />
-
+  <h2>{translate(locale, 'verified_data')}</h2>
+  <DataTable rows={rows} fields={fields} locale={locale} />
   {embedded.map((group) => (
     <section>
-      <h2>Related {group.entity} records</h2>
-      <DataTable rows={group.rows} fields={group.source.fields ?? Object.keys(group.rows[0] ?? {})} />
+      <h2>{translate(locale, 'related_records', { entity: entityName(group.entity, locale) })}</h2>
+      <DataTable rows={group.rows} fields={group.source.fields ?? Object.keys(group.rows[0] ?? {})} locale={locale} />
     </section>
   ))}
-
   {rows[0] && (
     <section class="panel">
-      <h2>Record provenance</h2>
-      <p>Game version: <strong>{rows[0].game_version}</strong> · Source: <strong>{rows[0].data_source}</strong> · Updated: <strong>{rows[0].last_updated}</strong> · Confidence: <strong>{rows[0].confidence}</strong></p>
+      <h2>{translate(locale, 'record_provenance')}</h2>
+      <p>{translate(locale, 'game_version')}: <strong>{rows[0].game_version}</strong> · {translate(locale, 'source')}: <strong>{rows[0].data_source}</strong> · {translate(locale, 'updated')}: <strong>{rows[0].last_updated}</strong> · {translate(locale, 'confidence')}: <strong>{rows[0].confidence}</strong></p>
     </section>
   )}
-
   <section>
-    <h2>Related pages</h2>
-    <ul class="link-list">{related.map((item) => <li><a href={item.url_path}>{labelForRoute(item)}</a></li>)}</ul>
+    <h2>{translate(locale, 'related_pages')}</h2>
+    <ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul>
   </section>
 </Layout>

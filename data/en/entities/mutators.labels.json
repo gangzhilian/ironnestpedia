@@ -1,0 +1,66 @@
+{
+  "Aerial Distance T1::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "Aerial Distance T1",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information"
+  },
+  "Aerial Distance T1::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "Aerial Distance T1",
+    "description": "Effects the precision of the Aerial Distance correction information"
+  },
+  "Aerial Distance T2::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "Aerial Distance T2",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information"
+  },
+  "Aerial Distance T2::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "Aerial Distance T2",
+    "description": "Effects the precision of the Aerial Distance correction information"
+  },
+  "Aerial Distance T3::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "Aerial Distance T3",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information"
+  },
+  "Aerial Distance T3::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "Aerial Distance T3",
+    "description": "Effects the precision of the Aerial Distance correction information"
+  },
+  "Aerial Distance T4::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "Aerial Distance T4",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information"
+  },
+  "Aerial Distance T4::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "Aerial Distance T4",
+    "description": "Effects the precision of the Aerial Distance correction information"
+  },
+  "Aerial Distance T5::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "Aerial Distance T5",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information"
+  },
+  "Aerial Distance T5::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "Aerial Distance T5",
+    "description": "Effects the precision of the Aerial Distance correction information"
+  },
+  "Aerial Distance T6::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "Aerial Distance T6",
+    "description": "Effects the precision of the Aerial Direction, i.e. Bearing correction information"
+  },
+  "Aerial Distance T6::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "Aerial Distance T6",
+    "description": "Effects the precision of the Aerial Distance correction information"
+  },
+  "Enemy Artillery 1::determins how many hostile artillery are present": {
+    "displayName": "Enemy Artillery 1",
+    "description": "determins how many hostile artillery are present"
+  },
+  "Enemy Artillery 2::determins how many hostile artillery are present": {
+    "displayName": "Enemy Artillery 2",
+    "description": "determins how many hostile artillery are present"
+  },
+  "Enemy Artillery 3::determins how many hostile artillery are present": {
+    "displayName": "Enemy Artillery 3",
+    "description": "determins how many hostile artillery are present"
+  },
+  "Tutorial Cutaways::Tutorial Cutaways": {
+    "displayName": "Tutorial Cutaways",
+    "description": "Tutorial Cutaways"
+  }
+}

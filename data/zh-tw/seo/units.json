@@ -1,0 +1,277 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/units",
+      "primary_keyword": "IRON NEST 單位資料庫",
+      "keyword_candidates": [
+        "IRON NEST 敵軍單位",
+        "IRON NEST 任務目標"
+      ],
+      "title": "IRON NEST 單位資料庫：任務目標與單位資料",
+      "description": "依任務彙整敵軍、友軍、目標及參照實體的生命、裝甲、星級與角色設定，並保留合併前的來源ID。"
+    },
+    {
+      "url_path": "/units/allyhospital",
+      "primary_keyword": "IRON NEST 盟軍醫院單位",
+      "keyword_candidates": [
+        "盟軍醫院單位資料",
+        "盟軍醫院任務"
+      ],
+      "title": "IRON NEST 盟軍醫院單位：任務、生命與裝甲資料",
+      "description": "彙整盟軍醫院在5個任務中的5筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/allymech",
+      "primary_keyword": "IRON NEST 盟軍機械化部隊單位",
+      "keyword_candidates": [
+        "盟軍機械化部隊單位資料",
+        "盟軍機械化部隊任務"
+      ],
+      "title": "IRON NEST 盟軍機械化部隊單位：任務、生命與裝甲資料",
+      "description": "彙整盟軍機械化部隊在2個任務中的2筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/allytank",
+      "primary_keyword": "IRON NEST 盟軍戰車單位",
+      "keyword_candidates": [
+        "盟軍戰車單位資料",
+        "盟軍戰車任務"
+      ],
+      "title": "IRON NEST 盟軍戰車單位：任務、生命與裝甲資料",
+      "description": "彙整盟軍戰車在6個任務中的6筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemyartillery",
+      "primary_keyword": "IRON NEST 敵方炮兵單位",
+      "keyword_candidates": [
+        "敵方炮兵單位資料",
+        "敵方炮兵任務"
+      ],
+      "title": "IRON NEST 敵方炮兵單位：任務、生命與裝甲資料",
+      "description": "彙整敵方炮兵在2個任務中的4筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemyassemblyarea",
+      "primary_keyword": "IRON NEST 敵軍集結區單位",
+      "keyword_candidates": [
+        "敵軍集結區單位資料",
+        "敵軍集結區任務"
+      ],
+      "title": "IRON NEST 敵軍集結區單位：任務、生命與裝甲資料",
+      "description": "彙整敵軍集結區在2個任務中的2筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemycommander",
+      "primary_keyword": "IRON NEST 敵方指揮官單位",
+      "keyword_candidates": [
+        "敵方指揮官單位資料",
+        "敵方指揮官任務"
+      ],
+      "title": "IRON NEST 敵方指揮官單位：任務、生命與裝甲資料",
+      "description": "彙整敵方指揮官在5個任務中的5筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemyfield",
+      "primary_keyword": "IRON NEST 敵軍野戰炮單位",
+      "keyword_candidates": [
+        "敵軍野戰炮單位資料",
+        "敵軍野戰炮任務"
+      ],
+      "title": "IRON NEST 敵軍野戰炮單位：任務、生命與裝甲資料",
+      "description": "彙整敵軍野戰炮在2個任務中的2筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemyinfantry",
+      "primary_keyword": "IRON NEST 敵方步兵單位",
+      "keyword_candidates": [
+        "敵方步兵單位資料",
+        "敵方步兵任務"
+      ],
+      "title": "IRON NEST 敵方步兵單位：任務、生命與裝甲資料",
+      "description": "彙整敵方步兵在8個任務中的19筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemymech",
+      "primary_keyword": "IRON NEST 敵方機械化步兵單位",
+      "keyword_candidates": [
+        "敵方機械化步兵單位資料",
+        "敵方機械化步兵任務"
+      ],
+      "title": "IRON NEST 敵方機械化步兵單位：任務、生命與裝甲資料",
+      "description": "彙整敵方機械化步兵在3個任務中的3筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemyrelay",
+      "primary_keyword": "IRON NEST 敵方訊號站單位",
+      "keyword_candidates": [
+        "敵方訊號站單位資料",
+        "敵方訊號站任務"
+      ],
+      "title": "IRON NEST 敵方訊號站單位：任務、生命與裝甲資料",
+      "description": "彙整敵方訊號站在2個任務中的2筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemytarget",
+      "primary_keyword": "IRON NEST 目標單位",
+      "keyword_candidates": [
+        "目標單位資料",
+        "目標任務"
+      ],
+      "title": "IRON NEST 目標單位：任務、生命與裝甲資料",
+      "description": "彙整目標在5個任務中的8筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/frendlyinfantry",
+      "primary_keyword": "IRON NEST 步兵單位",
+      "keyword_candidates": [
+        "步兵單位資料",
+        "步兵任務"
+      ],
+      "title": "IRON NEST 步兵單位：任務、生命與裝甲資料",
+      "description": "彙整步兵在3個任務中的3筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/frendlymech",
+      "primary_keyword": "IRON NEST 裝甲部隊單位",
+      "keyword_candidates": [
+        "裝甲部隊單位資料",
+        "裝甲部隊任務"
+      ],
+      "title": "IRON NEST 裝甲部隊單位：任務、生命與裝甲資料",
+      "description": "彙整裝甲部隊在3個任務中的5筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/hospital",
+      "primary_keyword": "IRON NEST 醫院單位",
+      "keyword_candidates": [
+        "醫院單位資料",
+        "醫院任務"
+      ],
+      "title": "IRON NEST 醫院單位：任務、生命與裝甲資料",
+      "description": "彙整醫院在3個任務中的3筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/hostileartillery",
+      "primary_keyword": "IRON NEST 敵方火炮陣地單位",
+      "keyword_candidates": [
+        "敵方火炮陣地單位資料",
+        "敵方火炮陣地任務"
+      ],
+      "title": "IRON NEST 敵方火炮陣地單位：任務、生命與裝甲資料",
+      "description": "彙整敵方火炮陣地在2個任務中的4筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/hostilebunker",
+      "primary_keyword": "IRON NEST 敵方碉堡單位",
+      "keyword_candidates": [
+        "敵方碉堡單位資料",
+        "敵方碉堡任務"
+      ],
+      "title": "IRON NEST 敵方碉堡單位：任務、生命與裝甲資料",
+      "description": "彙整敵方碉堡在4個任務中的4筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/hostileinfatry",
+      "primary_keyword": "IRON NEST 敵方步兵單位",
+      "keyword_candidates": [
+        "敵方步兵單位資料",
+        "敵方步兵任務"
+      ],
+      "title": "IRON NEST 敵方步兵單位：任務、生命與裝甲資料",
+      "description": "彙整敵方步兵在4個任務中的5筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/hostiletank",
+      "primary_keyword": "IRON NEST 敵方戰車單位",
+      "keyword_candidates": [
+        "敵方戰車單位資料",
+        "敵方戰車任務"
+      ],
+      "title": "IRON NEST 敵方戰車單位：任務、生命與裝甲資料",
+      "description": "彙整敵方戰車在4個任務中的4筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/mechanized",
+      "primary_keyword": "IRON NEST 機械化部隊單位",
+      "keyword_candidates": [
+        "機械化部隊單位資料",
+        "機械化部隊任務"
+      ],
+      "title": "IRON NEST 機械化部隊單位：任務、生命與裝甲資料",
+      "description": "彙整機械化部隊在2個任務中的2筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/police",
+      "primary_keyword": "IRON NEST 警察單位",
+      "keyword_candidates": [
+        "警察單位資料",
+        "警察任務"
+      ],
+      "title": "IRON NEST 警察單位：任務、生命與裝甲資料",
+      "description": "彙整警察在3個任務中的3筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/target",
+      "primary_keyword": "IRON NEST 目標單位",
+      "keyword_candidates": [
+        "目標單位資料",
+        "目標任務"
+      ],
+      "title": "IRON NEST 目標單位：任務、生命與裝甲資料",
+      "description": "彙整目標在13個任務中的26筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/trainstation",
+      "primary_keyword": "IRON NEST 主要站點單位",
+      "keyword_candidates": [
+        "主要站點單位資料",
+        "主要站點任務"
+      ],
+      "title": "IRON NEST 主要站點單位：任務、生命與裝甲資料",
+      "description": "彙整主要站點在2個任務中的2筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/allyartillery",
+      "primary_keyword": "IRON NEST 盟軍炮兵單位",
+      "keyword_candidates": [
+        "盟軍炮兵單位資料",
+        "盟軍炮兵任務"
+      ],
+      "title": "IRON NEST 盟軍炮兵單位：任務、生命與裝甲資料",
+      "description": "彙整盟軍炮兵在3個任務中的6筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/allyinfantry",
+      "primary_keyword": "IRON NEST 盟軍步兵單位",
+      "keyword_candidates": [
+        "盟軍步兵單位資料",
+        "盟軍步兵任務"
+      ],
+      "title": "IRON NEST 盟軍步兵單位：任務、生命與裝甲資料",
+      "description": "彙整盟軍步兵在10個任務中的14筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/allyspotter",
+      "primary_keyword": "IRON NEST 前線觀測兵單位",
+      "keyword_candidates": [
+        "前線觀測兵單位資料",
+        "前線觀測兵任務"
+      ],
+      "title": "IRON NEST 前線觀測兵單位：任務、生命與裝甲資料",
+      "description": "彙整前線觀測兵在14個任務中的24筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    },
+    {
+      "url_path": "/units/enemyarmour",
+      "primary_keyword": "IRON NEST 敵方裝甲部隊單位",
+      "keyword_candidates": [
+        "敵方裝甲部隊單位資料",
+        "敵方裝甲部隊任務"
+      ],
+      "title": "IRON NEST 敵方裝甲部隊單位：任務、生命與裝甲資料",
+      "description": "彙整敵方裝甲部隊在4個任務中的6筆生成記錄，包含生命、裝甲、星級與角色設定，並保留所有來源ID差異。"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "STR_ENTITYNAME_AA_BATTERY": {
+    "displayName": "防空炮"
+  },
+  "STR_ENTITYNAME_ALLIED_ARTILLERY": {
+    "displayName": "友军火炮"
+  },
+  "STR_ENTITYNAME_ALLIED_INFANTRY": {
+    "displayName": "友军步兵"
+  },
+  "STR_ENTITYNAME_ALLIED_MECHANIZED": {
+    "displayName": "友军机械化部队"
+  },
+  "STR_ENTITYNAME_ALLY": {
+    "displayName": "友方"
+  },
+  "STR_ENTITYNAME_ALLY_ARTILLERY": {
+    "displayName": "友军火炮"
+  },
+  "STR_ENTITYNAME_ALLY_INFANTRY": {
+    "displayName": "友方步兵"
+  },
+  "STR_ENTITYNAME_ALLY_MECHANIZED": {
+    "displayName": "友方机械化部队"
+  },
+  "STR_ENTITYNAME_ALLY_SPOTTER": {
+    "displayName": "友方观测员"
+  },
+  "STR_ENTITYNAME_ALLY_TANK": {
+    "displayName": "友方坦克"
+  },
+  "STR_ENTITYNAME_ALLYHOSPITAL": {
+    "displayName": "友方医院"
+  },
+  "STR_ENTITYNAME_ALLYINFANTRY": {
+    "displayName": "友方步兵"
+  },
+  "STR_ENTITYNAME_ALLYTANK": {
+    "displayName": "友方坦克"
+  },
+  "STR_ENTITYNAME_ALPHA": {
+    "displayName": "Alpha"
+  },
+  "STR_ENTITYNAME_ARMOUR": {
+    "displayName": "装甲部队"
+  },
+  "STR_ENTITYNAME_ARTILLERY": {
+    "displayName": "炮兵"
+  },
+  "STR_ENTITYNAME_BRAVO": {
+    "displayName": "Bravo"
+  },
+  "STR_ENTITYNAME_CABOOSE": {
+    "displayName": "守车"
+  },
+  "STR_ENTITYNAME_CIV": {
+    "displayName": "平民"
+  },
+  "STR_ENTITYNAME_CIVILIAN": {
+    "displayName": "平民"
+  },
+  "STR_ENTITYNAME_CIVILIAN_HOSPITAL": {
+    "displayName": "民用医院"
+  },
+  "STR_ENTITYNAME_COASTAL_BATTERY": {
+    "displayName": "岸防炮台"
+  },
+  "STR_ENTITYNAME_COMMANDER": {
+    "displayName": "指挥官"
+  },
+  "STR_ENTITYNAME_DOCKMASTER'S_HOUSE": {
+    "displayName": "码头主管住宅"
+  },
+  "STR_ENTITYNAME_ENEMY_ANTI_AIRCRAFT_BATTERY": {
+    "displayName": "敌方防空炮"
+  },
+  "STR_ENTITYNAME_ENEMY_ANTI_ARMOR": {
+    "displayName": "敌方反装甲部队"
+  },
+  "STR_ENTITYNAME_ENEMY_ARMOR": {
+    "displayName": "敌方装甲部队"
+  },
+  "STR_ENTITYNAME_ENEMY_ARTILLERY": {
+    "displayName": "敌方火炮"
+  },
+  "STR_ENTITYNAME_ENEMY_ASSEMBLY_AREA": {
+    "displayName": "敌方集结区"
+  },
+  "STR_ENTITYNAME_ENEMY_COMMANDER": {
+    "displayName": "敌方指挥官"
+  },
+  "STR_ENTITYNAME_ENEMY_FIELD_COMMAND": {
+    "displayName": "敌方野战指挥部"
+  },
+  "STR_ENTITYNAME_ENEMY_FIELD_GUN": {
+    "displayName": "敌方野战炮"
+  },
+  "STR_ENTITYNAME_ENEMY_FIRE_DIRECTION_CENTER": {
+    "displayName": "敌方炮兵指挥中心"
+  },
+  "STR_ENTITYNAME_ENEMY_INFANTRY": {
+    "displayName": "敌方步兵"
+  },
+  "STR_ENTITYNAME_ENEMY_MARINE": {
+    "displayName": "敌方海军陆战队"
+  },
+  "STR_ENTITYNAME_ENEMY_MECHANIZED": {
+    "displayName": "敌方机械化部队"
+  },
+  "STR_ENTITYNAME_ENEMY_MECHANIZED_INFANTRY": {
+    "displayName": "敌方机械化步兵"
+  },
+  "STR_ENTITYNAME_ENEMY_SIGNAL_STATION": {
+    "displayName": "敌方信号站"
+  },
+  "STR_ENTITYNAME_ENEMY_SPOTTER": {
+    "displayName": "敌方观测员"
+  },
+  "STR_ENTITYNAME_ENEMY_SUPPLY_BUNKER": {
+    "displayName": "敌方补给地堡"
+  },
+  "STR_ENTITYNAME_ENEMY_TANK": {
+    "displayName": "敌方坦克"
+  },
+  "STR_ENTITYNAME_ENEMYARMOUR": {
+    "displayName": "敌方装甲单位"
+  },
+  "STR_ENTITYNAME_ENEMYARTILLERY": {
+    "displayName": "敌方火炮"
+  },
+  "STR_ENTITYNAME_ENEMYCOMMANDER": {
+    "displayName": "敌方指挥官"
+  },
+  "STR_ENTITYNAME_ENEMYHOSPITAL": {
+    "displayName": "敌方医院"
+  },
+  "STR_ENTITYNAME_ENEMYINFANTRY": {
+    "displayName": "敌方步兵"
+  },
+  "STR_ENTITYNAME_ENEMYMECHANIZED": {
+    "displayName": "敌方机械化部队"
+  },
+  "STR_ENTITYNAME_FDC": {
+    "displayName": "炮兵指挥中心"
+  },
+  "STR_ENTITYNAME_GENERAL": {
+    "displayName": "将军"
+  },
+  "STR_ENTITYNAME_HMS_ROCKINGHAM": {
+    "displayName": "皇家海军罗金厄姆号"
+  },
+  "STR_ENTITYNAME_HOSPITAL": {
+    "displayName": "医院"
+  },
+  "STR_ENTITYNAME_HOSTILEARTILLERY": {
+    "displayName": "敌方火炮"
+  },
+  "STR_ENTITYNAME_HOSTILEBUNKER": {
+    "displayName": "敌方地堡"
+  },
+  "STR_ENTITYNAME_HOSTILEINFATRY": {
+    "displayName": "敌方步兵"
+  },
+  "STR_ENTITYNAME_HOSTILETANK": {
+    "displayName": "敌方坦克"
+  },
+  "STR_ENTITYNAME_INFANTRY": {
+    "displayName": "步兵"
+  },
+  "STR_ENTITYNAME_KING": {
+    "displayName": "国王"
+  },
+  "STR_ENTITYNAME_LANDING_CRAFT": {
+    "displayName": "登陆艇"
+  },
+  "STR_ENTITYNAME_LOCOMOTIVE": {
+    "displayName": "机车"
+  },
+  "STR_ENTITYNAME_MAIN_STATION": {
+    "displayName": "总站"
+  },
+  "STR_ENTITYNAME_MAINSTATION": {
+    "displayName": "总站"
+  },
+  "STR_ENTITYNAME_MARINE_GARRISON": {
+    "displayName": "海军陆战队守军"
+  },
+  "STR_ENTITYNAME_MECHANIZED": {
+    "displayName": "机械化部队"
+  },
+  "STR_ENTITYNAME_MECHANIZED_INFANTRY": {
+    "displayName": "机械化步兵"
+  },
+  "STR_ENTITYNAME_MILITARY_POLICE": {
+    "displayName": "宪兵"
+  },
+  "STR_ENTITYNAME_MILITARY_POLICE_POST": {
+    "displayName": "宪兵站"
+  },
+  "STR_ENTITYNAME_PILLBOX": {
+    "displayName": "地堡"
+  },
+  "STR_ENTITYNAME_PLATFORM_CAR": {
+    "displayName": "平板车"
+  },
+  "STR_ENTITYNAME_POLICE": {
+    "displayName": "警察"
+  },
+  "STR_ENTITYNAME_PROPAGANDA_OFFICE": {
+    "displayName": "宣传机构"
+  },
+  "STR_ENTITYNAME_PROPAGANDASTATION": {
+    "displayName": "宣传站"
+  },
+  "STR_ENTITYNAME_REF": {
+    "displayName": "参考点"
+  },
+  "STR_ENTITYNAME_RMS_LUSITANIA": {
+    "displayName": "皇家邮轮卢西塔尼亚号"
+  },
+  "STR_ENTITYNAME_SIGNALS_POST": {
+    "displayName": "信号站"
+  },
+  "STR_ENTITYNAME_SMOKEREQUESTER": {
+    "displayName": "发烟请求单位"
+  },
+  "STR_ENTITYNAME_SPOTTER": {
+    "displayName": "观测员"
+  },
+  "STR_ENTITYNAME_SUPPLY_DEPOT": {
+    "displayName": "补给仓库"
+  },
+  "STR_ENTITYNAME_SUPPLYCASH": {
+    "displayName": "补给仓库"
+  },
+  "STR_ENTITYNAME_TANK": {
+    "displayName": "坦克"
+  },
+  "STR_ENTITYNAME_TARGET": {
+    "displayName": "目标"
+  },
+  "STR_ENTITYNAME_TARGETTEST": {
+    "displayName": "测试目标"
+  },
+  "STR_ENTITYNAME_THE_MOLE": {
+    "displayName": "谍报员"
+  },
+  "STR_ENTITYNAME_TROOP_CAR_A": {
+    "displayName": "运兵车A"
+  },
+  "STR_ENTITYNAME_TROOP_CAR_B": {
+    "displayName": "运兵车B"
+  },
+  "STR_ENTITYNAME_WAYPOINT_A": {
+    "displayName": "路径点-A"
+  },
+  "STR_ENTITYNAME_WAYPOINT_B": {
+    "displayName": "路径点-B"
+  },
+  "STR_ENTITYNAME_WAYPOINT_C": {
+    "displayName": "路径点-C"
+  },
+  "STR_ENTITYNAME_WAYPOINT_D": {
+    "displayName": "路径点-D"
+  },
+  "STR_MEDAL_HINT_TEST": {
+    "displayName": ""
+  },
+  "STR_MISSION_TITLE_PHANTOMBATTERY": {
+    "displayName": "幽灵炮台"
+  },
+  "STR_PUNCHCARD_LISTENING_POST": {
+    "displayName": "监听哨"
+  }
+}

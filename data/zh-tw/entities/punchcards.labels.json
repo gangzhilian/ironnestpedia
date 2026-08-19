@@ -1,0 +1,158 @@
+{
+  "APHEShell": {
+    "title": "APHE 彈",
+    "description": "<b>穿甲</b>高爆彈，具備中等裝藥量。破壞半徑中等。"
+  },
+  "APShell": {
+    "title": "AP 穿甲彈",
+    "description": "<b>穿甲</b>彈，僅具備極低裝藥量。破壞半徑極小。"
+  },
+  "ArtilleryFlashNotifier": {
+    "title": "聽音觀測哨",
+    "description": "聽音觀測哨能在敵方火炮開火時，提供其陣地位置的即時情報資料。"
+  },
+  "ATMCShell": {
+    "title": "ATMC 彈",
+    "description": "實驗性裂變彈芯砲彈。理論上可產生持續之連鎖反應。實際效果未經證實。"
+  },
+  "ATMCShellDemo": {
+    "title": "ATMC 彈",
+    "description": "實驗性裂變彈芯砲彈。理論上可產生持續之連鎖反應。實際效果未經證實。"
+  },
+  "CLMNShell": {
+    "title": "CLMN 彈",
+    "description": "集束彈。著彈時會散射 6 枚高爆子彈藥。對步兵與車輛極具效果。"
+  },
+  "CLMNShellDemo": {
+    "title": "CLMN 彈",
+    "description": "集束彈。著彈時會散射 6 枚高爆子彈藥。對步兵與車輛極具效果。"
+  },
+  "CYANShell": {
+    "title": "CYAN 彈",
+    "description": "氰化物毒氣彈。對露天開闊地之單位具致命性。防護掩體內之單位不受影響。"
+  },
+  "DRILShell": {
+    "title": "DRIL 彈",
+    "description": "無裝藥訓練用練習彈。內部填充水泥，無惰性炸藥。有效殺傷半徑極小。"
+  },
+  "EQKEShell": {
+    "title": "EQKE 彈",
+    "description": "<b>穿甲</b>地底延時彈，可深層貫穿並於地底延時起爆。破壞半徑大。"
+  },
+  "FLCHShell": {
+    "title": "FLCH 彈",
+    "description": "箭形殺傷彈。影響範圍極廣。僅對露天開闊地之徒步步兵具致命性。"
+  },
+  "HCHEShell": {
+    "title": "HCHE 彈",
+    "description": "高裝藥高爆彈。薄壁結構，具備最大炸藥裝填量。破壞半徑極大。"
+  },
+  "HEShell": {
+    "title": "HE 高爆彈",
+    "description": "標準裝藥高爆彈。破壞半徑中等。"
+  },
+  "ImpactObserver": {
+    "title": "聽音觀測哨",
+    "description": "聽音觀測哨能在敵方火炮開火時，提供其陣地位置的即時情報資料。"
+  },
+  "INCNShell": {
+    "title": "INCN 彈",
+    "description": "燃燒彈。著彈時引燃火勢，燃燒半徑中等。火勢有機會蔓延。"
+  },
+  "INCNShellDemo": {
+    "title": "INCN 彈",
+    "description": "燃燒彈。著彈時引燃火勢，燃燒半徑中等。火勢有機會蔓延。"
+  },
+  "LEShell": {
+    "title": "LE 彈",
+    "description": "標準裝藥低規炸藥彈。破壞半徑小。"
+  },
+  "ListeningPost": {
+    "title": "聽音觀測哨",
+    "description": "聽音觀測哨能在敵方火炮開火時，提供其陣地位置的即時情報資料。"
+  },
+  "LocationReport": {
+    "title": "位置報告",
+    "description": "地方後勤車隊回報<b><i><smallcaps>鐵巢：</smallcaps></b></i>位置情報。"
+  },
+  "MoveDirection": {
+    "title": "移動方向",
+    "description": "將鐵巢朝特定方向移動一段距離。"
+  },
+  "MoveZone": {
+    "title": "緊急移陣！",
+    "description": "立即轉移陣地至未知位置，暫停反炮兵計時器。"
+  },
+  "MSTDShell": {
+    "title": "MSTD 彈",
+    "description": "取得 1 枚芥子氣（YX）糜爛性毒劑彈"
+  },
+  "MSTDShellDemo": {
+    "title": "MSTD 彈",
+    "description": "取得 1 枚芥子氣（YX）糜爛性毒劑彈"
+  },
+  "PCLMShell": {
+    "title": "PCLM 彈",
+    "description": "降落傘延時集束彈。內含 6 枚高爆子彈藥。每隔 10 秒錯開著彈。"
+  },
+  "PHGNShell": {
+    "title": "PHGN 彈",
+    "description": "光氣窒息毒氣彈。單位會逃離毒氣雲；若遭壓制，則會死於其中。"
+  },
+  "PHGNShellDemo": {
+    "title": "PHGN 彈",
+    "description": "光氣窒息毒氣彈。單位會逃離毒氣雲；若遭壓制，則會死於其中。"
+  },
+  "PowderCharges": {
+    "title": "裝藥包",
+    "description": "補充 20發 裝藥包"
+  },
+  "PRPGShell": {
+    "title": "PRPG 彈",
+    "description": "宣傳傳單彈。於卡斯提亞的榮光下壓制敵軍部隊。有機會誘使敵軍逃亡。"
+  },
+  "PRPGShellDemo": {
+    "title": "PRPG 彈",
+    "description": "宣傳傳單彈。於卡斯提亞的榮光下壓制敵軍部隊。有機會誘使敵軍逃亡。"
+  },
+  "ScoutPlane": {
+    "title": "偵察機",
+    "description": "申請偵察機飛越指定座標"
+  },
+  "ScoutPlane_OnTimeUse": {
+    "title": "偵察機",
+    "description": "申請偵察機飛越指定座標"
+  },
+  "SMOKEShell": {
+    "title": "SMK 煙幕彈",
+    "description": "遮蔽煙幕彈。無致死性，友軍單位將朝著著彈點推進。"
+  },
+  "Spotter": {
+    "title": "前線觀測兵",
+    "description": "前線觀測兵 (FO) 已提供至最近主目標之方位角。"
+  },
+  "STARShell": {
+    "title": "STAR 觀測照明彈",
+    "description": "降落傘滯空照明彈。可照亮目標區域以進行偵察。"
+  },
+  "TEARShell": {
+    "title": "TEAR 彈",
+    "description": "氯代苯乙酮催淚毒氣彈。可壓制單位，並使所有隱蔽單位暴露位置。"
+  },
+  "TEARShellDemo": {
+    "title": "TEAR 彈",
+    "description": "氯代苯乙酮催淚毒氣彈。可壓制單位，並使所有隱蔽單位暴露位置。"
+  },
+  "TESTING": {
+    "title": "測試",
+    "description": "範例文本"
+  },
+  "THRMShell": {
+    "title": "THRM 彈",
+    "description": "鋁熱劑燃燒彈。著彈時引燃高溫火勢，燃燒半徑大。極高機率蔓延。"
+  },
+  "WPShell": {
+    "title": "WP 彈",
+    "description": "白磷彈。單位會逃離煙雲；若遭壓制，則會死於其中。有機會引燃火勢。"
+  }
+}

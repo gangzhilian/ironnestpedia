@@ -1,0 +1,22 @@
+---
+import Layout from './Layout.astro';
+import news from '../../data/live/news.json';
+import { getRelatedRoutes, getSeo, getSite, labelForRoute, localizedPath, routeMap, translate, type Locale } from '../lib/data';
+interface Props { locale?: Locale; }
+const { locale = 'en' } = Astro.props;
+const route = routeMap.get('/known-issues')!;
+const seo = getSeo(route.url_path, locale);
+const related = getRelatedRoutes(route);
+const items = news.raw_response?.appnews?.newsitems ?? [];
+const site = getSite(locale);
+---
+<Layout title={seo.title} description={seo.description} path={route.url_path} locale={locale} breadcrumbs={[{ label: seo.primary_keyword }]}>
+  <p class="eyebrow">{translate(locale, 'official_update_evidence')}</p>
+  <h1>{seo.title}</h1>
+  <p>{seo.description}</p>
+  <section>
+    <h2>{translate(locale, 'patch_source_timeline')}</h2>
+    <div class="grid">{items.slice(0, 5).map((item: any) => <article class="card"><h3>{site.patch_titles[item.gid] ?? item.title}</h3><p>{new Date(item.date * 1000).toISOString().slice(0, 10)}</p><p class="meta">{translate(locale, 'steam_snapshot')}</p></article>)}</div>
+  </section>
+  <section><h2>{translate(locale, 'related_missions')}</h2><ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul></section>
+</Layout>

@@ -1,7 +1,12 @@
 import routesSource from '../../data/routes.json';
 import placeholdersSource from '../../data/skeleton-placeholder-pages.json';
 import linkingRules from '../../data/en/relations/linking-rules.json';
-import site from '../../data/en/site.json';
+import enSite from '../../data/en/site.json';
+import zhCnSite from '../../data/zh-cn/site.json';
+import zhTwSite from '../../data/zh-tw/site.json';
+import enHome from '../../data/en/home.json';
+import zhCnHome from '../../data/zh-cn/home.json';
+import zhTwHome from '../../data/zh-tw/home.json';
 import shells from '../../data/en/entities/shells.json';
 import missions from '../../data/en/entities/missions.json';
 import achievements from '../../data/en/entities/achievements.json';
@@ -9,44 +14,85 @@ import medals from '../../data/en/entities/medals.json';
 import punchcards from '../../data/en/entities/punchcards.json';
 import mutators from '../../data/en/entities/mutators.json';
 import mapEntities from '../../data/en/entities/map-entities.json';
+import enAchievementLabels from '../../data/en/entities/achievements.labels.json';
+import enMapEntityLabels from '../../data/en/entities/map-entities.labels.json';
+import enMedalLabels from '../../data/en/entities/medals.labels.json';
+import enMissionLabels from '../../data/en/entities/missions.labels.json';
+import enMutatorLabels from '../../data/en/entities/mutators.labels.json';
+import enPunchcardLabels from '../../data/en/entities/punchcards.labels.json';
+import zhCnAchievementLabels from '../../data/zh-cn/entities/achievements.labels.json';
+import zhCnMapEntityLabels from '../../data/zh-cn/entities/map-entities.labels.json';
+import zhCnMedalLabels from '../../data/zh-cn/entities/medals.labels.json';
+import zhCnMissionLabels from '../../data/zh-cn/entities/missions.labels.json';
+import zhCnMutatorLabels from '../../data/zh-cn/entities/mutators.labels.json';
+import zhCnPunchcardLabels from '../../data/zh-cn/entities/punchcards.labels.json';
+import zhTwAchievementLabels from '../../data/zh-tw/entities/achievements.labels.json';
+import zhTwMapEntityLabels from '../../data/zh-tw/entities/map-entities.labels.json';
+import zhTwMedalLabels from '../../data/zh-tw/entities/medals.labels.json';
+import zhTwMissionLabels from '../../data/zh-tw/entities/missions.labels.json';
+import zhTwMutatorLabels from '../../data/zh-tw/entities/mutators.labels.json';
+import zhTwPunchcardLabels from '../../data/zh-tw/entities/punchcards.labels.json';
 
+export const localeCodes = ['en', 'zh-cn', 'zh-tw'] as const;
+export type Locale = (typeof localeCodes)[number];
 export type RouteEntry = (typeof routesSource.pages)[number];
 type AnyRecord = Record<string, any>;
 
 export const routes = routesSource.pages as RouteEntry[];
 export const routeMap = new Map(routes.map((route) => [route.url_path, route]));
 export const placeholders = placeholdersSource.pages;
-export { site };
+
+const sites: Record<Locale, AnyRecord> = { en: enSite, 'zh-cn': zhCnSite, 'zh-tw': zhTwSite };
+const homes: Record<Locale, AnyRecord> = { en: enHome, 'zh-cn': zhCnHome, 'zh-tw': zhTwHome };
+export const site = enSite;
+export const getSite = (locale: Locale = 'en') => sites[locale];
+export const getHome = (locale: Locale = 'en') => homes[locale];
+
+export function localizedPath(path: string, locale: Locale = 'en') {
+  if (locale === 'en') return path;
+  return path === '/' ? `/${locale}` : `/${locale}${path}`;
+}
+
+export function translate(locale: Locale, key: string, values: Record<string, string | number> = {}) {
+  let text = String(getSite(locale).ui[key] ?? key);
+  for (const [name, value] of Object.entries(values)) text = text.replaceAll(`{${name}}`, String(value));
+  return text;
+}
+
+export function entityName(entity: string, locale: Locale = 'en') {
+  return getSite(locale).entity_names[entity] ?? entity;
+}
+
+export function fieldLabel(field: string, locale: Locale = 'en') {
+  return getSite(locale).field_labels[field] ?? field;
+}
 
 const entities: Record<string, AnyRecord[]> = {
-  Shell: shells,
-  Mission: missions,
-  Achievement: achievements,
-  Medal: medals,
-  Punchcard: punchcards,
-  Mutator: mutators,
-  MapEntity: mapEntities,
+  Shell: shells, Mission: missions, Achievement: achievements, Medal: medals,
+  Punchcard: punchcards, Mutator: mutators, MapEntity: mapEntities,
 };
-
 const idFields: Record<string, string> = {
-  Shell: 'ShellId',
-  Mission: 'id',
-  Achievement: 'name',
-  Medal: 'id',
-  Punchcard: 'ID',
-  Mutator: 'displayName',
-  MapEntity: 'ID',
+  Shell: 'ShellId', Mission: 'id', Achievement: 'name', Medal: 'id', Punchcard: 'ID', Mutator: 'displayName', MapEntity: 'ID',
+};
+const labels: Record<Locale, Record<string, AnyRecord>> = {
+  en: { Achievement: enAchievementLabels, MapEntity: enMapEntityLabels, Medal: enMedalLabels, Mission: enMissionLabels, Mutator: enMutatorLabels, Punchcard: enPunchcardLabels },
+  'zh-cn': { Achievement: zhCnAchievementLabels, MapEntity: zhCnMapEntityLabels, Medal: zhCnMedalLabels, Mission: zhCnMissionLabels, Mutator: zhCnMutatorLabels, Punchcard: zhCnPunchcardLabels },
+  'zh-tw': { Achievement: zhTwAchievementLabels, MapEntity: zhTwMapEntityLabels, Medal: zhTwMedalLabels, Mission: zhTwMissionLabels, Mutator: zhTwMutatorLabels, Punchcard: zhTwPunchcardLabels },
 };
 
-const seoModules = import.meta.glob('../../data/en/seo/*.json', { eager: true }) as Record<string, { default: { pages: AnyRecord[] } }>;
-const seoPages = Object.values(seoModules).flatMap((module) => module.default.pages);
-const seoMap = new Map(seoPages.map((page) => [page.url_path, page]));
+const seoModules = import.meta.glob('../../data/{en,zh-cn,zh-tw}/seo/*.json', { eager: true }) as Record<string, { default: { pages: AnyRecord[] } }>;
+const seoMaps = Object.fromEntries(localeCodes.map((locale) => [locale, new Map<string, AnyRecord>()])) as Record<Locale, Map<string, AnyRecord>>;
+for (const [file, module] of Object.entries(seoModules)) {
+  const locale = localeCodes.find((code) => file.includes(`/data/${code}/seo/`));
+  if (!locale) continue;
+  for (const page of module.default.pages) seoMaps[locale].set(page.url_path, page);
+}
 
-export function getSeo(path: string) {
-  return seoMap.get(path) ?? {
+export function getSeo(path: string, locale: Locale = 'en') {
+  return seoMaps[locale].get(path) ?? {
     title: `${path === '/' ? 'IronNestPedia' : path.split('/').filter(Boolean).at(-1)} | IronNestPedia`,
-    description: site.data_note,
-    primary_keyword: '',
+    description: getSite(locale).data_note,
+    primary_keyword: '', keyword_candidates: [],
   };
 }
 
@@ -56,7 +102,6 @@ function rowsForIds(entity: string, ids: string[]) {
 }
 
 export function getPrimaryRows(route: RouteEntry): AnyRecord[] {
-  const allRows = entities[route.entity] ?? [];
   if (route.page_type === 'index') return getIndexRows(route);
   const filterIds = (route as any).data_source?.filter?.ID_in as string[] | undefined;
   if (filterIds?.length) return rowsForIds(route.entity, filterIds);
@@ -80,9 +125,7 @@ export function getIndexRows(route: RouteEntry): AnyRecord[] {
     ));
     return allRows.filter((row) => ids.has(row.id));
   }
-  if (route.entity === 'Punchcard') {
-    return allRows.filter((row) => row.ID !== 'TESTING' && !row.ID.endsWith('Demo'));
-  }
+  if (route.entity === 'Punchcard') return allRows.filter((row) => row.ID !== 'TESTING' && !row.ID.endsWith('Demo'));
   if (route.entity === 'Mutator') {
     const seen = new Set<string>();
     return allRows.filter((row) => {
@@ -111,47 +154,69 @@ export function getEmbeddedRows(route: RouteEntry) {
   });
 }
 
-function routeRows(route: RouteEntry) {
-  return route.page_type === 'data_entity' ? getPrimaryRows(route) : [];
+function mutatorKey(row: AnyRecord) { return `${row.displayName}::${row.description}`; }
+
+export function localizeRows(rows: AnyRecord[], entity: string, locale: Locale = 'en') {
+  const dictionary = labels[locale][entity] ?? {};
+  return rows.map((row) => {
+    const output = { ...row };
+    if (entity === 'MapEntity') output.Name = dictionary[row.Name]?.displayName ?? row.Name;
+    if (entity === 'Medal') {
+      output['displayNameV2.Key'] = dictionary[row.id]?.displayName ?? row['displayNameV2.Key'];
+      output['hintTextV2.Key'] = dictionary[row.id]?.hintText ?? row['hintTextV2.Key'];
+    }
+    if (entity === 'Punchcard') {
+      output['Title.Key'] = dictionary[row.ID]?.title ?? row['Title.Key'];
+      output['Description.Key'] = dictionary[row.ID]?.description ?? row['Description.Key'];
+    }
+    if (entity === 'Mission') {
+      output.displayName = dictionary[row.id]?.displayName ?? row.displayName;
+      output.location = dictionary[row.id]?.location ?? row.location;
+    }
+    if (entity === 'Achievement') {
+      output.displayName = dictionary[row.name]?.displayName ?? row.displayName;
+      output.description = dictionary[row.name]?.description ?? row.description;
+    }
+    if (entity === 'Mutator') {
+      output.displayName = dictionary[mutatorKey(row)]?.displayName ?? row.displayName;
+      output.description = dictionary[mutatorKey(row)]?.description ?? row.description;
+    }
+    return output;
+  });
 }
+
+function routeRows(route: RouteEntry) { return route.page_type === 'data_entity' ? getPrimaryRows(route) : []; }
 
 export function getRelatedRoutes(route: RouteEntry): RouteEntry[] {
   const paths = new Set<string>((route as any).internal_link_candidates ?? []);
-
   if (route.entity === 'Shell' && route.page_type === 'data_entity') {
-    routes.filter((candidate) => candidate.entity === 'Shell' && candidate.page_type === 'data_entity')
-      .forEach((candidate) => paths.add(candidate.url_path));
+    routes.filter((candidate) => candidate.entity === 'Shell' && candidate.page_type === 'data_entity').forEach((candidate) => paths.add(candidate.url_path));
   }
-
   if (route.entity === 'Achievement' && route.page_type === 'data_entity') {
     const missionRefs = new Set(routeRows(route).map((row) => row.missionRef));
     routes.filter((candidate) => candidate.entity === 'Achievement' && candidate.page_type === 'data_entity')
       .filter((candidate) => routeRows(candidate).some((row) => missionRefs.has(row.missionRef)))
       .forEach((candidate) => paths.add(candidate.url_path));
   }
-
   if (route.entity === 'MapEntity' && route.page_type === 'data_entity') {
     const missionRefs = new Set(routeRows(route).map((row) => row.missionRef));
     routes.filter((candidate) => candidate.entity === 'MapEntity' && candidate.page_type === 'data_entity')
       .filter((candidate) => routeRows(candidate).some((row) => missionRefs.has(row.missionRef)))
       .forEach((candidate) => paths.add(candidate.url_path));
   }
-
   const reciprocalFix = linkingRules.fixes.find((fix) => fix.id === 4);
   if (Array.isArray(reciprocalFix?.applies_to) && reciprocalFix.applies_to.includes(route.url_path)) {
     reciprocalFix.applies_to.filter((path) => path !== route.url_path).forEach((path) => paths.add(path));
   }
-
   paths.delete(route.url_path);
   return [...paths].map((path) => routeMap.get(path)).filter(Boolean) as RouteEntry[];
 }
 
-export function labelForRoute(route: RouteEntry) {
-  const seo = getSeo(route.url_path);
+export function labelForRoute(route: RouteEntry, locale: Locale = 'en') {
+  const seo = getSeo(route.url_path, locale);
   return seo.primary_keyword || seo.title || route.url_path;
 }
 
 export function pathForPrefix(prefix: string) {
   return routes.filter((route) => route.url_path.startsWith(`/${prefix}/`) && route.page_type === 'data_entity');
 }
-

@@ -1,0 +1,173 @@
+{
+  "source": "step-18-homepage-structure",
+  "task_file": "18-首页结构设计任务.md",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "site_url": "https://ironnestpedia.com",
+  "updated_at": "2026-08-17T00:00:00+08:00",
+  "h1": "IronNestPedia — IRON NEST 数据库、攻略与工具",
+  "h1_rationale": "品牌名+游戏名+真实搜索词组合，与站长在step18讨论中确认，不用slogan",
+  "visitor_model": {
+    "summary": "站内大部分真实流量走长尾专有名词直接落到深层数据页，不经过首页；首页真实访客是探索型（直接输域名/从深层页返回/外部分享点入），不是已经打好字准备搜索的任务型",
+    "implication": "首屏内容形态必须服务探索型访客：0输入0猜测的验证过的直达内容优先于搜索框和分类目录"
+  },
+  "header": {
+    "components": [
+      "站点名/品牌",
+      "精简主导航",
+      "搜索/快速跳转（辅助位置，非首屏主角）",
+      "语言切换（预留给step22）"
+    ],
+    "search_widget": {
+      "type": "client_side_typeahead",
+      "scope": "全站105个页面的实体名/标题",
+      "backend_required": false,
+      "classification_note": "不算step25定义的'工具'，不受未完成工具noindex规则限制，属于站内导航基础设施"
+    }
+  },
+  "blocks": [
+    {
+      "order": 1,
+      "name": "精选直达",
+      "type": "curated_direct_links",
+      "input_required_from_visitor": "none",
+      "items": [
+        {
+          "label": "“幽灵炮台”任务攻略",
+          "url": "/missions/phantombattery",
+          "linked": true,
+          "why": "15-content-priorities.json topic_importance_ranking 排名第1，mention_count 6",
+          "evidence": "project-data/iron-nest/15-content-priorities.json"
+        },
+        {
+          "label": "已知问题与路线图追踪",
+          "url": "/known-issues",
+          "linked": true,
+          "why": "解决10-player-questions.json负评渠道反复出现的挫败感信号；同时是唯一持续更新的页面，承担'证明站点活着'的作用；页面本身已在16-page-matrix.json/17-keywords.json落地",
+          "evidence": "project-data/iron-nest/10-player-questions.json; project-data/iron-nest/16-page-matrix.json (url_path /known-issues); project-data/iron-nest/config.json content_opportunities[2]"
+        },
+        {
+          "label": "🔧 综合射击规划器 · 开发中",
+          "url": null,
+          "linked": false,
+          "why": "text-only teaser，不带链接。对应09-competitor-landscape.json gap G3，被15-content-priorities.json排名第2话题（方位角/距离误差，mention_count 7）和17步骤a-z/SimilarWeb未匹配词（如'как треангулировать'、'compass'、'emergency move'）独立佐证。step25前不得做成正式导航入口；不得参考/复用竞品同类工具的具体代码或界面实现，只能用自有Shell弹道字段（ShellSpeed/Damage/ImpactRadius/charge_N_maxRange）重新实现",
+          "evidence": "project-data/iron-nest/config.json content_opportunities[1]; project-data/iron-nest/09-competitor-landscape.json gap G3; project-data/iron-nest/17-autocomplete-findings.json; project-data/iron-nest/17-similarweb-raw.json"
+        }
+      ],
+      "excluded_candidate": {
+        "label": "cross-mission bearing/distance mechanic page",
+        "reason": "15-content-priorities.json排名第2的话题目前没有对应的独立页面（属于跨任务机制，未来是step20指南类型，尚未产出），无法在①区块直接链接，先只体现为③里的firing planner文字预告的支撑证据，实际指南页留给step20"
+      }
+    },
+    {
+      "order": 2,
+      "name": "数据库入口",
+      "type": "index_cards",
+      "cards": [
+        {
+          "label": "炮弹",
+          "url": "/shells",
+          "count": 20
+        },
+        {
+          "label": "任务",
+          "url": "/missions",
+          "count": 17
+        },
+        {
+          "label": "成就",
+          "url": "/achievements",
+          "count": 33
+        },
+        {
+          "label": "单位",
+          "url": "/units",
+          "count": 26
+        },
+        {
+          "label": "勋章",
+          "url": "/medals",
+          "count": 26,
+          "type": "index_only"
+        },
+        {
+          "label": "征用卡",
+          "url": "/punchcards",
+          "count": 33,
+          "type": "index_only"
+        },
+        {
+          "label": "修正项",
+          "url": "/mutators",
+          "count": 10,
+          "type": "index_only"
+        }
+      ],
+      "counts_source": "Shell/Mission/Achievement/MapEntity(Units)来自project-data/iron-nest/config.json page_matrix.entity_page_counts；Medal/Punchcard/Mutator无独立数据页，数字取自16-page-matrix.json entity_record_reconciliation的real_count(Medal=真实任务引用的26个唯一ID；Punchcard=过滤TESTING/Demo后的33条真实记录；Mutator=按displayName去重的10个唯一名字)，index_only表示这些数字对应的是单个索引页内汇总展示的条目数，不是独立可访问页面数"
+    },
+    {
+      "order": 3,
+      "name": "最新更新",
+      "type": "patch_summary",
+      "content_source": "project-data/iron-nest/14-live-data/news.json",
+      "display": "最近1-2条Patch标题+摘要，链接到/known-issues查看完整追踪",
+      "dedup_note": "不重复①区块对/known-issues的直接展示方式；①是'直接解决你的困惑'角度，这里是'更新时间线'角度",
+      "latest_patch_label": "补丁 #5"
+    },
+    {
+      "order": 4,
+      "name": "精选指南",
+      "type": "guide_teaser",
+      "count": 0,
+      "status": "结构占位，等step20产出，不编造假标题"
+    },
+    {
+      "order": 5,
+      "name": "数据说明",
+      "type": "data_provenance",
+      "fields": {
+        "latest_version_label": "游戏版本4（补丁 #5）",
+        "version_label_source": "game_version=4来自Steam API GetSchemaForGame的gameVersion字段(project-data/iron-nest/06-api-samples/schema-sample.json，11-schema.json meta_field_notes已记录为game_version来源)；Patch #5是project-data/iron-nest/14-live-data/news.json最新一条patch标题，两者不冲突，前者是Steam侧版本计数，后者是人类可读的更新名称，一并展示",
+        "last_updated": "占位，接入实际部署时间",
+        "correction_entry_point": "占位，等step24"
+      }
+    },
+    {
+      "order": 6,
+      "name": "页脚",
+      "type": "footer",
+      "index_links": [
+        "/shells",
+        "/missions",
+        "/achievements",
+        "/units",
+        "/medals",
+        "/punchcards",
+        "/mutators"
+      ],
+      "tools_link": {
+        "url": "/tools",
+        "status": "占位，等step25",
+        "note": "指向工具分类索引页（结构性导航入口，Footer必须包含Tools分类，来自主文档step18原有Footer规则），不是指向某个具体未完成工具的页面；索引页本身要不要收录/noindex，由step25实际产出内容后决定，不在此处预判"
+      },
+      "guides_link": {
+        "url": "/guides",
+        "status": "占位，等step20",
+        "note": "同上，指向指南分类索引页，不是具体未完成指南文章"
+      },
+      "compliance_links": [
+        "关于本站",
+        "隐私政策",
+        "Cookie政策",
+        "服务条款",
+        "联系我们"
+      ],
+      "compliance_status": "占位，等step26",
+      "sitemap_link": true
+    }
+  ],
+  "mobile_first_screen_check": "①区块3条精选直达 + 简洁header，在移动端不滚动即可见；②区块7张分类卡片放在滚动线以下，不与①抢首屏空间",
+  "open_items": [
+    "①区块的3条内容是否需要配图（图文配合规则）留给实现阶段视觉设计决定，此处只锁定内容和顺序",
+    "firing planner文字预告的具体UI呈现（是否用灰色禁用态按钮样式）需要在实现阶段确认不会被误解为可点击"
+  ]
+}

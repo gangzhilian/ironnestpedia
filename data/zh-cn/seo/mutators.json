@@ -1,0 +1,18 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/mutators",
+      "primary_keyword": "IRON NEST 修正项",
+      "keyword_candidates": [
+        "IRON NEST mutator",
+        "IRON NEST 难度修正",
+        "IRON NEST 空中测距"
+      ],
+      "title": "IRON NEST 修正项：等级与效果说明",
+      "description": "查看修正项的显示名称、等级和效果差异，包括空中方位、距离精度与敌方炮兵数量配置。"
+    }
+  ]
+}

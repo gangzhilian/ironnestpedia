@@ -1,0 +1,40 @@
+---
+import EntityPage from '../../components/EntityPage.astro';
+import HomePage from '../../components/HomePage.astro';
+import IndexPage from '../../components/IndexPage.astro';
+import KnownIssuesPage from '../../components/KnownIssuesPage.astro';
+import NotFoundPage from '../../components/NotFoundPage.astro';
+import PlaceholderPage from '../../components/PlaceholderPage.astro';
+import { getSite, placeholders, routes, type Locale, type RouteEntry } from '../../lib/data';
+
+type Kind = 'home' | 'entity' | 'index' | 'known-issues' | 'placeholder' | 'mission-map' | 'not-found';
+interface Props { locale: Locale; kind: Kind; route?: RouteEntry; page?: { url_path: string; title: string; reason: string }; }
+
+export function getStaticPaths() {
+  return (['zh-cn', 'zh-tw'] as Locale[]).flatMap((locale) => [
+    { params: { lang: locale, path: undefined }, props: { locale, kind: 'home' as Kind } },
+    ...routes.map((route) => ({
+      params: { lang: locale, path: route.url_path.slice(1) },
+      props: {
+        locale,
+        route,
+        kind: route.url_path === '/known-issues' ? 'known-issues' as Kind
+          : route.page_type === 'tool_placeholder' ? 'mission-map' as Kind
+          : route.page_type === 'index' ? 'index' as Kind : 'entity' as Kind,
+      },
+    })),
+    ...placeholders.map((page) => ({ params: { lang: locale, path: page.url_path.slice(1) }, props: { locale, kind: 'placeholder' as Kind, page } })),
+    { params: { lang: locale, path: '404' }, props: { locale, kind: 'not-found' as Kind } },
+  ]);
+}
+
+const { locale, kind, route, page } = Astro.props as Props;
+const site = getSite(locale);
+---
+{kind === 'home' && <HomePage locale={locale} />}
+{kind === 'entity' && route && <EntityPage route={route} locale={locale} />}
+{kind === 'index' && route && <IndexPage route={route} locale={locale} />}
+{kind === 'known-issues' && <KnownIssuesPage locale={locale} />}
+{kind === 'placeholder' && page && <PlaceholderPage path={page.url_path} title={page.title} reason={page.reason} locale={locale} />}
+{kind === 'mission-map' && route && <PlaceholderPage path={route.url_path} title={site.ui.mission_map_title} reason={site.ui.mission_map_reason} locale={locale} />}
+{kind === 'not-found' && <NotFoundPage locale={locale} />}

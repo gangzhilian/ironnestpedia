@@ -1,19 +1,22 @@
 ---
 import '../styles/global.css';
-import { routes, site } from '../lib/data';
+import { getSite, localizedPath, routes, type Locale } from '../lib/data';
 
 interface Props {
   title: string;
   description: string;
   path: string;
+  locale?: Locale;
   noindex?: boolean;
   breadcrumbs?: { label: string; url?: string }[];
 }
 
-const { title, description, path, noindex = false, breadcrumbs = [] } = Astro.props;
-const canonical = new URL(path, site.site_url).href;
+const { title, description, path, locale = 'en', noindex = false, breadcrumbs = [] } = Astro.props;
+const site = getSite(locale);
+const pagePath = localizedPath(path, locale);
+const canonical = new URL(pagePath, site.site_url).href;
 const ogImage = new URL('/og-default.svg', site.site_url).href;
-const breadcrumbItems = [{ label: 'Home', url: '/' }, ...breadcrumbs];
+const breadcrumbItems = [{ label: site.ui.home, url: '/' }, ...breadcrumbs];
 const breadcrumbJson = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -21,16 +24,20 @@ const breadcrumbJson = {
     '@type': 'ListItem',
     position: index + 1,
     name: item.label,
-    ...(item.url ? { item: new URL(item.url, site.site_url).href } : {}),
+    ...(item.url ? { item: new URL(localizedPath(item.url, locale), site.site_url).href } : {}),
   })),
 };
 const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => ({
   label: route.url_path,
-  path: route.url_path,
+  path: localizedPath(route.url_path, locale),
+}));
+const languageLinks = site.languages.map((language) => ({
+  ...language,
+  path: localizedPath(path, language.code as Locale),
 }));
 ---
 <!doctype html>
-<html lang="en">
+<html lang={site.html_lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,6 +45,8 @@ const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placehol
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
+    {!noindex && languageLinks.map((language) => <link rel="alternate" hreflang={language.hreflang} href={new URL(language.path, site.site_url).href} />)}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={new URL(path, site.site_url).href} />}
     {noindex && <meta name="robots" content="noindex,follow" />}
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -53,30 +62,33 @@ const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placehol
   <body>
     <header>
       <div class="inner">
-        <a class="brand" href="/">{site.site_name}</a>
-        <nav aria-label="Primary">
-          {site.navigation.map((item) => <a href={item.url}>{item.label}</a>)}
+        <a class="brand" href={localizedPath('/', locale)}>{site.site_name}</a>
+        <nav aria-label={site.ui.primary_navigation}>
+          {site.navigation.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
+        </nav>
+        <nav class="language-switcher" aria-label={site.ui.language_switcher}>
+          {languageLinks.map((language) => <a href={language.path} lang={language.hreflang} aria-current={language.code === locale ? 'page' : undefined}>{language.label}</a>)}
         </nav>
         <form id="site-search" role="search">
-          <label class="eyebrow" for="site-query">Quick jump</label>
-          <input id="site-query" name="query" list="site-paths" placeholder="Type a route, e.g. /shells/ap" autocomplete="off" />
+          <label class="eyebrow" for="site-query">{site.ui.quick_jump}</label>
+          <input id="site-query" name="query" list="site-paths" placeholder={site.ui.search_placeholder} autocomplete="off" />
           <datalist id="site-paths">{searchRoutes.map((item) => <option value={item.label} />)}</datalist>
-          <button type="submit">Go</button>
+          <button type="submit">{site.ui.go}</button>
         </form>
       </div>
     </header>
     <main>
       {breadcrumbItems.length > 1 && (
-        <nav class="breadcrumbs" aria-label="Breadcrumb">
-          {breadcrumbItems.map((item, index) => <>{index > 0 && ' / '}{item.url ? <a href={item.url}>{item.label}</a> : item.label}</>)}
+        <nav class="breadcrumbs" aria-label={site.ui.breadcrumb_navigation}>
+          {breadcrumbItems.map((item, index) => <>{index > 0 && ' / '}{item.url ? <a href={localizedPath(item.url, locale)}>{item.label}</a> : item.label}</>)}
         </nav>
       )}
       <slot />
     </main>
     <footer>
       <div class="inner">
-        <nav aria-label="Database indexes">
-          {site.entity_indexes.map((item) => <a href={item.url}>{item.label}</a>)}
+        <nav aria-label={site.ui.database_indexes}>
+          {site.entity_indexes.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
         </nav>
         <p>{site.footer_disclaimer}</p>
       </div>

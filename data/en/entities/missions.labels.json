@@ -1,0 +1,70 @@
+{
+  "Artillery Introduction": {
+    "displayName": "Counter-Battery",
+    "location": "Ciudad Real"
+  },
+  "BlindFire": {
+    "displayName": "Blind fire",
+    "location": "Blind Fire"
+  },
+  "ceremony and HCHE": {
+    "displayName": "Fire & Light",
+    "location": "Map Aranjuez"
+  },
+  "ChallangeFDC": {
+    "displayName": "Skirmish\n- Challenge -\nCounter battery timer",
+    "location": ""
+  },
+  "Chill": {
+    "displayName": "Skirmish\n- Chill -\nUncontested Front",
+    "location": ""
+  },
+  "DeadReckoning": {
+    "displayName": "Dead Reckoning",
+    "location": "Dead Reckoning"
+  },
+  "FinalHarvest": {
+    "displayName": "Final Harvest",
+    "location": "Final Harvest"
+  },
+  "FireOnCall": {
+    "displayName": "Fire on call",
+    "location": "Fire on Call"
+  },
+  "HighTide": {
+    "displayName": "High Tide",
+    "location": "High Tide"
+  },
+  "Hospital False Flag": {
+    "displayName": "Calibration Fire",
+    "location": "Map Aranjuez"
+  },
+  "Insurrections and Requisitions": {
+    "displayName": "Liberation",
+    "location": "Ciudad Real"
+  },
+  "IronRoad": {
+    "displayName": "Iron Road",
+    "location": "Iron Road"
+  },
+  "PhantomBattery": {
+    "displayName": "Phantom Battery",
+    "location": "Phantom Battery"
+  },
+  "RockofGibraltar": {
+    "displayName": "Rock of Gibraltar",
+    "location": "Rock of Gibraltar"
+  },
+  "SiegeOfCartagena": {
+    "displayName": "Siege of Cartagena",
+    "location": "Seige of Cartagena"
+  },
+  "The Gorge": {
+    "displayName": "The Gorge",
+    "location": "the gorge"
+  },
+  "WhiteShells": {
+    "displayName": "White shells",
+    "location": "Barcelona"
+  }
+}

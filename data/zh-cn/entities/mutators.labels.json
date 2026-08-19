@@ -1,0 +1,66 @@
+{
+  "Aerial Distance T1::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "空中测距 T1",
+    "description": "影响空中方位修正信息的精度。"
+  },
+  "Aerial Distance T1::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "空中测距 T1",
+    "description": "影响空中距离修正信息的精度。"
+  },
+  "Aerial Distance T2::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "空中测距 T2",
+    "description": "影响空中方位修正信息的精度。"
+  },
+  "Aerial Distance T2::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "空中测距 T2",
+    "description": "影响空中距离修正信息的精度。"
+  },
+  "Aerial Distance T3::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "空中测距 T3",
+    "description": "影响空中方位修正信息的精度。"
+  },
+  "Aerial Distance T3::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "空中测距 T3",
+    "description": "影响空中距离修正信息的精度。"
+  },
+  "Aerial Distance T4::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "空中测距 T4",
+    "description": "影响空中方位修正信息的精度。"
+  },
+  "Aerial Distance T4::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "空中测距 T4",
+    "description": "影响空中距离修正信息的精度。"
+  },
+  "Aerial Distance T5::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "空中测距 T5",
+    "description": "影响空中方位修正信息的精度。"
+  },
+  "Aerial Distance T5::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "空中测距 T5",
+    "description": "影响空中距离修正信息的精度。"
+  },
+  "Aerial Distance T6::Effects the precision of the Aerial Direction, i.e. Bearing correction information": {
+    "displayName": "空中测距 T6",
+    "description": "影响空中方位修正信息的精度。"
+  },
+  "Aerial Distance T6::Effects the precision of the Aerial Distance correction information": {
+    "displayName": "空中测距 T6",
+    "description": "影响空中距离修正信息的精度。"
+  },
+  "Enemy Artillery 1::determins how many hostile artillery are present": {
+    "displayName": "敌方炮兵 1",
+    "description": "决定任务中出现的敌方炮兵数量。"
+  },
+  "Enemy Artillery 2::determins how many hostile artillery are present": {
+    "displayName": "敌方炮兵 2",
+    "description": "决定任务中出现的敌方炮兵数量。"
+  },
+  "Enemy Artillery 3::determins how many hostile artillery are present": {
+    "displayName": "敌方炮兵 3",
+    "description": "决定任务中出现的敌方炮兵数量。"
+  },
+  "Tutorial Cutaways::Tutorial Cutaways": {
+    "displayName": "教程剖视图",
+    "description": "教程剖视图。"
+  }
+}

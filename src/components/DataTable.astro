@@ -1,18 +1,18 @@
 ---
-interface Props { rows: Record<string, any>[]; fields: string[]; }
-const { rows, fields } = Astro.props;
+import { fieldLabel, translate, type Locale } from '../lib/data';
+interface Props { rows: Record<string, any>[]; fields: string[]; locale?: Locale; }
+const { rows, fields, locale = 'en' } = Astro.props;
 const display = (value: any) => {
   if (value === null || value === undefined || value === '') return '—';
   if (typeof value === 'object') return JSON.stringify(value);
   return String(value);
 };
 ---
-{rows.length === 0 ? <p class="notice">No records matched this approved route join.</p> : (
+{rows.length === 0 ? <p class="notice">{translate(locale, 'no_records')}</p> : (
   <div class="table-wrap">
     <table>
-      <thead><tr>{fields.map((field) => <th scope="col">{field}</th>)}</tr></thead>
+      <thead><tr>{fields.map((field) => <th scope="col">{fieldLabel(field, locale)}</th>)}</tr></thead>
       <tbody>{rows.map((row) => <tr>{fields.map((field) => <td><code>{display(row[field])}</code></td>)}</tr>)}</tbody>
     </table>
   </div>
 )}
-

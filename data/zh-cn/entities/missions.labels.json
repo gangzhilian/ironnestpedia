@@ -1,0 +1,70 @@
+{
+  "Artillery Introduction": {
+    "displayName": "反炮兵",
+    "location": "雷阿尔城"
+  },
+  "BlindFire": {
+    "displayName": "孤独发炮",
+    "location": "孤独发炮"
+  },
+  "ceremony and HCHE": {
+    "displayName": "炮火与光辉",
+    "location": "阿兰胡埃斯地图"
+  },
+  "ChallangeFDC": {
+    "displayName": "遭遇战\n- 挑战模式 -\n反炮兵作战",
+    "location": ""
+  },
+  "Chill": {
+    "displayName": "遭遇战\n- 休闲模式 -\n无反击作战",
+    "location": ""
+  },
+  "DeadReckoning": {
+    "displayName": "盲区推算",
+    "location": "盲区推算"
+  },
+  "FinalHarvest": {
+    "displayName": "最终收割",
+    "location": "最终收割"
+  },
+  "FireOnCall": {
+    "displayName": "火力支援",
+    "location": "火力支援"
+  },
+  "HighTide": {
+    "displayName": "敌人如潮",
+    "location": "敌人如潮"
+  },
+  "Hospital False Flag": {
+    "displayName": "校射",
+    "location": "阿兰胡埃斯地图"
+  },
+  "Insurrections and Requisitions": {
+    "displayName": "解放",
+    "location": "雷阿尔城"
+  },
+  "IronRoad": {
+    "displayName": "钢铁之路",
+    "location": "钢铁之路"
+  },
+  "PhantomBattery": {
+    "displayName": "幽灵炮台",
+    "location": "幽灵炮台"
+  },
+  "RockofGibraltar": {
+    "displayName": "居高临下",
+    "location": "居高临下"
+  },
+  "SiegeOfCartagena": {
+    "displayName": "卡塔赫纳之围",
+    "location": "卡塔赫纳之围"
+  },
+  "The Gorge": {
+    "displayName": "峡谷要冲",
+    "location": "峡谷要冲"
+  },
+  "WhiteShells": {
+    "displayName": "白色炮弹",
+    "location": "巴塞罗那"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "ally_kills_0to2": {
+    "displayName": "精準火網星章",
+    "hintText": "以極低友軍傷亡圓滿達成火炮射擊任務。"
+  },
+  "avg_accuracy_50to250": {
+    "displayName": "神射手十字勳章",
+    "hintText": "於所有射擊任務中維持卓越之平均命中率。"
+  },
+  "counter_battery_100to260": {
+    "displayName": "反炮兵戰功獎章",
+    "hintText": "於時限內殲滅敵方所有反炮兵火力。"
+  },
+  "ending1": {
+    "displayName": "結局 1",
+    "hintText": "解鎖結局 1"
+  },
+  "ending2": {
+    "displayName": "結局 2",
+    "hintText": "解鎖結局 2"
+  },
+  "ending3": {
+    "displayName": "結局 3",
+    "hintText": "解鎖結局 3"
+  },
+  "ending4": {
+    "displayName": "結局 4",
+    "hintText": "解鎖結局 4"
+  },
+  "enemy_kills_10to30": {
+    "displayName": "格殺勿論十字勳章",
+    "hintText": "悉數殲滅作戰分區內之所有敵軍部隊。"
+  },
+  "enemy_kills_5to20": {
+    "displayName": "格殺勿論十字勳章",
+    "hintText": "悉數殲滅作戰分區內之所有敵軍部隊。"
+  },
+  "enemy_kills_6to10": {
+    "displayName": "格殺勿論十字勳章",
+    "hintText": "悉數殲滅作戰分區內之所有敵軍部隊。"
+  },
+  "enemy_kills_6to15": {
+    "displayName": "格殺勿論十字勳章",
+    "hintText": "悉數殲滅作戰分區內之所有敵軍部隊。"
+  },
+  "first_shot_fast_with_kills": {
+    "displayName": "急速交戰獎章",
+    "hintText": "於接收命令後迅速實施首發射擊，並摧毀大量敵方目標。"
+  },
+  "kill_shot_ratio_0.8to1.5_20kills": {
+    "displayName": "彈藥效能十字勳章",
+    "hintText": "在累計擊滅至少 20 名敵軍的過程中，維持極高之單發殲敵率。"
+  },
+  "kill_shot_ratio_0.8to2_10kills": {
+    "displayName": "彈藥效能十字勳章",
+    "hintText": "在至少擊殺10名敵人的情況下，達成極高單發擊殺比。"
+  },
+  "kill_streak_3to6": {
+    "displayName": "綿密齊射獎章",
+    "hintText": "於連續射擊任務中維持不間斷之連續擊滅紀錄"
+  },
+  "kill_streak_4to10": {
+    "displayName": "狂轟濫炸獎章",
+    "hintText": "於連續射擊任務中維持不間斷之連續擊滅紀錄"
+  },
+  "kill_streak_5to20": {
+    "displayName": "狂轟濫炸獎章",
+    "hintText": "於連續射擊任務中維持不間斷之連續擊滅紀錄"
+  },
+  "no_recon_with_kills": {
+    "displayName": "獨立無援射擊榮譽章",
+    "hintText": "在未徵用任何空中偵察（前觀機）的情況下，摧毀大量敵方目標。"
+  },
+  "req_spent_100to250": {
+    "displayName": "勤儉建軍獎章",
+    "hintText": "僅徵用最低限度之作戰資產，即圓滿達成任務。"
+  },
+  "req_spent_10to30": {
+    "displayName": "勤儉建軍獎章",
+    "hintText": "僅徵用最低限度之作戰資產，即圓滿達成任務。"
+  },
+  "req_spent_15to50": {
+    "displayName": "勤儉建軍獎章",
+    "hintText": "僅徵用最低限度之作戰資產，即圓滿達成任務。"
+  },
+  "req_spent_20to50": {
+    "displayName": "勤儉建軍獎章",
+    "hintText": "僅徵用最低限度之作戰資產，即圓滿達成任務。"
+  },
+  "req_spent_30to100": {
+    "displayName": "勤儉建軍獎章",
+    "hintText": "僅徵用最低限度之作戰資產，即圓滿達成任務。"
+  },
+  "req_spent_50to180": {
+    "displayName": "勤儉建軍獎章",
+    "hintText": "僅徵用最低限度之作戰資產，即圓滿達成任務。"
+  },
+  "req_spent_high_150to600": {
+    "displayName": "軍需官卓越榮譽章",
+    "hintText": "於任務執行期間，徵用並部署大量戰術資產。"
+  },
+  "shots_fired_1to3": {
+    "displayName": "彈藥效能月桂勳章",
+    "hintText": "以最低限度之彈藥消耗量完成任務。"
+  },
+  "shots_fired_2to4": {
+    "displayName": "彈藥效能表揚令",
+    "hintText": "以最低限度之彈藥消耗量完成任務。"
+  },
+  "shots_fired_4to8": {
+    "displayName": "彈藥效能表揚令",
+    "hintText": "以最低限度之彈藥消耗量完成任務。"
+  },
+  "single_impact_kills_2to5": {
+    "displayName": "一擊多殺星章",
+    "hintText": "單發炮彈著彈即摧毀多個敵方目標。"
+  },
+  "TEST": {
+    "displayName": "測試勳章定義",
+    "hintText": ""
+  },
+  "three_kill_window_30to90": {
+    "displayName": "閃電連擊獎章",
+    "hintText": "於極短時間內連續摧毀三個目標。"
+  }
+}

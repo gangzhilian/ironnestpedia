@@ -1,0 +1,126 @@
+{
+  "ally_kills_0to2": {
+    "displayName": "Measured Fire Star",
+    "hintText": "Conducted fire operations with minimal allied casualties."
+  },
+  "avg_accuracy_50to250": {
+    "displayName": "Marksman's Cross",
+    "hintText": "Maintained exceptional average accuracy across all fire missions."
+  },
+  "counter_battery_100to260": {
+    "displayName": "Counter-Battery Commendation",
+    "hintText": "Eliminated all enemy counter-batterys with the time to spare."
+  },
+  "ending1": {
+    "displayName": "Ending 1",
+    "hintText": "Get Ending 1"
+  },
+  "ending2": {
+    "displayName": "Ending 2",
+    "hintText": "Get Ending 2"
+  },
+  "ending3": {
+    "displayName": "Ending 3",
+    "hintText": "Get Ending 3"
+  },
+  "ending4": {
+    "displayName": "Ending 4",
+    "hintText": "Get Ending 4"
+  },
+  "enemy_kills_10to30": {
+    "displayName": "No Quarter Cross",
+    "hintText": "Eliminated all enemy units in the operational sector."
+  },
+  "enemy_kills_5to20": {
+    "displayName": "No Quarter Cross",
+    "hintText": "Eliminated all enemy units in the operational sector."
+  },
+  "enemy_kills_6to10": {
+    "displayName": "No Quarter Cross",
+    "hintText": "Eliminated all enemy units in the operational sector."
+  },
+  "enemy_kills_6to15": {
+    "displayName": "No Quarter Cross",
+    "hintText": "Eliminated all enemy units in the operational sector."
+  },
+  "first_shot_fast_with_kills": {
+    "displayName": "Rapid Engagement Medal",
+    "hintText": "Fired the first shot swiftly after receiving orders and destroyed a significant number of targets."
+  },
+  "kill_shot_ratio_0.8to1.5_20kills": {
+    "displayName": "Ordnance Efficiency Cross",
+    "hintText": "Achieved a high kills-per-shot ratio across a minimum of 20 enemy kills."
+  },
+  "kill_shot_ratio_0.8to2_10kills": {
+    "displayName": "Ordnance Efficiency Cross",
+    "hintText": "Achieved a high kills-per-shot ratio across a minimum of 10 enemy kills."
+  },
+  "kill_streak_3to6": {
+    "displayName": "Unbroken Volley Medal",
+    "hintText": "Sustained consecutive kills across successive fire missions."
+  },
+  "kill_streak_4to10": {
+    "displayName": "Unrelenting Volley Medal",
+    "hintText": "Sustained consecutive kills across successive fire missions."
+  },
+  "kill_streak_5to20": {
+    "displayName": "Unrelenting Volley Medal",
+    "hintText": "Sustained consecutive kills across successive fire missions."
+  },
+  "no_recon_with_kills": {
+    "displayName": "Unaided Fire Distinction",
+    "hintText": "Destroyed a significant number of targets without requisitioning any aerial reconnaissance."
+  },
+  "req_spent_100to250": {
+    "displayName": "Austere Service Medal",
+    "hintText": "Completed the mission requisitioning only the minimum assets necessary."
+  },
+  "req_spent_10to30": {
+    "displayName": "Austere Service Medal",
+    "hintText": "Completed the mission requisitioning only the minimum assets necessary."
+  },
+  "req_spent_15to50": {
+    "displayName": "Austere Service Medal",
+    "hintText": "Completed the mission requisitioning only the minimum assets necessary."
+  },
+  "req_spent_20to50": {
+    "displayName": "Austere Service Medal",
+    "hintText": "Completed the mission requisitioning only the minimum assets necessary."
+  },
+  "req_spent_30to100": {
+    "displayName": "Austere Service Medal",
+    "hintText": "Completed the mission requisitioning only the minimum assets necessary."
+  },
+  "req_spent_50to180": {
+    "displayName": "Austere Service Medal",
+    "hintText": "Completed the mission requisitioning only the minimum assets necessary."
+  },
+  "req_spent_high_150to600": {
+    "displayName": "Quartermaster's Distinction",
+    "hintText": "Requisitioned and deployed a substantial volume of assets over the course of the mission."
+  },
+  "shots_fired_1to3": {
+    "displayName": "Ordnance Efficiency Laurel",
+    "hintText": "Completed the mission with minimum rounds expended."
+  },
+  "shots_fired_2to4": {
+    "displayName": "Ordnance Efficiency Citation",
+    "hintText": "Completed the mission with minimum rounds expended."
+  },
+  "shots_fired_4to8": {
+    "displayName": "Ordnance Efficiency Citation",
+    "hintText": "Completed the mission with minimum rounds expended."
+  },
+  "single_impact_kills_2to5": {
+    "displayName": "Single Impact Star",
+    "hintText": "Destroyed multiple enemies with a single shell impact."
+  },
+  "TEST": {
+    "displayName": "Test Medal Definition",
+    "hintText": ""
+  },
+  "three_kill_window_30to90": {
+    "displayName": "Salvo Commendation",
+    "hintText": "Destroyed three targets in rapid succession."
+  }
+}

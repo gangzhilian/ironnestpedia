@@ -1,0 +1,197 @@
+{
+  "site_name": "IronNestPedia",
+  "game_name": "IRON NEST: Heavy Turret Simulator",
+  "site_url": "https://ironnestpedia.com",
+  "navigation": [
+    {
+      "label": "炮彈",
+      "url": "/shells"
+    },
+    {
+      "label": "任務",
+      "url": "/missions"
+    },
+    {
+      "label": "成就",
+      "url": "/achievements"
+    },
+    {
+      "label": "單位",
+      "url": "/units"
+    }
+  ],
+  "entity_indexes": [
+    {
+      "label": "炮彈",
+      "url": "/shells"
+    },
+    {
+      "label": "任務",
+      "url": "/missions"
+    },
+    {
+      "label": "成就",
+      "url": "/achievements"
+    },
+    {
+      "label": "單位",
+      "url": "/units"
+    },
+    {
+      "label": "勳章",
+      "url": "/medals"
+    },
+    {
+      "label": "徵用卡",
+      "url": "/punchcards"
+    },
+    {
+      "label": "修正項",
+      "url": "/mutators"
+    }
+  ],
+  "footer_disclaimer": "非官方玩家資料參考站。IRON NEST及相關商標均屬各自權利人所有。",
+  "data_note": "資料來自已核實的遊戲檔案與Steam API記錄；每筆記錄皆保留版本、來源、更新時間與可信度。",
+  "placeholder_disclaimer": "步驟21暫用文字；步驟26將替換為審核後的合規內容。",
+  "locale": "zh-tw",
+  "html_lang": "zh-TW",
+  "hreflang": "zh-TW",
+  "languages": [
+    {
+      "code": "en",
+      "label": "英文",
+      "hreflang": "en"
+    },
+    {
+      "code": "zh-cn",
+      "label": "簡體中文",
+      "hreflang": "zh-CN"
+    },
+    {
+      "code": "zh-tw",
+      "label": "繁體中文",
+      "hreflang": "zh-TW"
+    }
+  ],
+  "home_seo": {
+    "title": "IronNestPedia — IRON NEST 資料庫、攻略與工具",
+    "description": "查詢經核實的IRON NEST炮彈、任務、成就、勳章、徵用卡、修正項及單位資料，並查看版本與來源資訊。"
+  },
+  "entity_names": {
+    "Shell": "炮彈",
+    "Mission": "任務",
+    "Achievement": "成就",
+    "MapEntity": "單位",
+    "Medal": "勳章",
+    "Punchcard": "徵用卡",
+    "Mutator": "修正項",
+    "Meta/Updates": "更新"
+  },
+  "field_labels": {
+    "Armour": "裝甲",
+    "BronzeConditions": "銅牌條件",
+    "Cost": "花費",
+    "Damage": "傷害",
+    "Description": "說明",
+    "Description.Key": "說明",
+    "DisplayName": "顯示名稱",
+    "GoldConditions": "金牌條件",
+    "Health": "生命值",
+    "ID": "ID",
+    "ImmuneShells": "免疫炮彈",
+    "ImpactRadius": "爆炸半徑",
+    "IsRecon": "偵察類",
+    "MaxUses": "最大使用次數",
+    "Name": "名稱",
+    "Position": "位置",
+    "Requirements": "需求條件",
+    "Role": "角色",
+    "Scale": "規模",
+    "ShellId": "炮彈 ID",
+    "ShellSpeed": "炮彈速度",
+    "SilverConditions": "銀牌條件",
+    "Stars": "星級",
+    "State": "狀態",
+    "Title.Key": "標題",
+    "achievementForClearing": "通關成就",
+    "achievementForGolding": "全金成就",
+    "charge_N_maxRange": "各裝藥等級最大射程",
+    "contents": "內容",
+    "date": "日期",
+    "defaultPowderCharge": "預設裝藥",
+    "description": "說明",
+    "displayName": "顯示名稱",
+    "displayNameV2.Key": "勳章名稱",
+    "hidden": "隱藏",
+    "hintTextV2.Key": "達成提示",
+    "horizontalDispersion": "水平散布",
+    "id": "ID",
+    "location": "地點",
+    "maxPowderCharges": "最大裝藥數",
+    "medalRefs": "勳章",
+    "missionRef": "任務",
+    "name": "名稱",
+    "projectilesPerShell": "每發投射物數量",
+    "shellSpeedVariationPercent": "速度浮動",
+    "tier": "等級",
+    "title": "標題",
+    "type": "類型",
+    "unlockedBy": "前置任務",
+    "unlocks": "後續任務",
+    "verticalDispersion": "垂直散布"
+  },
+  "patch_titles": {
+    "1840944183782791": "更新 #5：小幅修正與改善",
+    "1840944183774585": "更新 #4：錯誤修正與遊玩體驗改善",
+    "1840310314354123": "2026年8月4日至11日 Steam 全球暢銷榜",
+    "1840310314350447": "更新 #3：IRON NEST 1.0（1577）",
+    "1840310314347288": "更新 #2：IRON NEST 1.0（1558）"
+  },
+  "ui": {
+    "primary_navigation": "主導覽",
+    "database_indexes": "資料庫索引",
+    "quick_jump": "快速跳轉",
+    "search_placeholder": "輸入路徑，例如 /shells/ap",
+    "go": "前往",
+    "language_switcher": "語言",
+    "breadcrumb_navigation": "階層導覽",
+    "home": "首頁",
+    "data_page": "{entity}資料頁",
+    "entity_index": "{entity}索引",
+    "verified_data": "已核實資料",
+    "related_records": "相關{entity}記錄",
+    "record_provenance": "資料來源",
+    "game_version": "遊戲版本",
+    "source": "來源",
+    "updated": "更新時間",
+    "confidence": "可信度",
+    "related_pages": "相關頁面",
+    "pages_in_index": "此索引包含的頁面",
+    "source_records_represented": "收錄的來源記錄",
+    "verified_records": "已核實記錄",
+    "related_indexes": "相關索引與任務",
+    "no_records": "沒有記錄符合這項已核准的路由關聯條件。",
+    "unpublished_section": "尚未發布的區段",
+    "placeholder_body": "此路徑僅用於測試網站結構，目前標記為 noindex,follow 並從 sitemap 排除；內容或功能完成審核後才會發布。",
+    "return_home": "返回資料庫首頁",
+    "official_update_evidence": "官方更新依據",
+    "patch_source_timeline": "更新來源時間軸",
+    "steam_snapshot": "官方 Steam 新聞快照；詳細問題說明將於後續內容步驟補上。",
+    "related_missions": "相關任務",
+    "not_found_title": "找不到頁面",
+    "not_found_description": "要求的 IronNestPedia 頁面不存在。",
+    "not_found_body": "要求的路徑不在目前已發布的資料庫中。",
+    "home_eyebrow": "IRON NEST 已核實資料參考站",
+    "current_question": "從目前的問題開始",
+    "planned_teaser": "此功能將以本站已核實的炮彈欄位開發，目前不提供無效連結。",
+    "browse_database": "瀏覽資料庫",
+    "verified_pages": "{count} 個已核實頁面。",
+    "verified_entries": "{count} 筆已核實索引記錄。",
+    "latest_updates": "最新更新",
+    "view_tracker": "查看經更新內容核實的問題追蹤頁",
+    "data_provenance": "資料來源說明",
+    "records_retain": "實體記錄保留遊戲版本、資料來源、更新時間與可信度。",
+    "mission_map_title": "任務地圖",
+    "mission_map_reason": "互動式任務地圖預計於後續版本推出，目前尚未開放。"
+  }
+}

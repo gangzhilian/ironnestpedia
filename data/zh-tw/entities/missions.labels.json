@@ -1,0 +1,70 @@
+{
+  "Artillery Introduction": {
+    "displayName": "反炮兵戰",
+    "location": "雷阿爾城"
+  },
+  "BlindFire": {
+    "displayName": "盲射",
+    "location": "盲射"
+  },
+  "ceremony and HCHE": {
+    "displayName": "射擊與照明",
+    "location": "阿蘭胡埃斯地圖"
+  },
+  "ChallangeFDC": {
+    "displayName": "小規模衝突\n- 挑戰 -\n反砲兵計時器",
+    "location": ""
+  },
+  "Chill": {
+    "displayName": "小規模衝突\n- 休閒 -\n無對抗",
+    "location": ""
+  },
+  "DeadReckoning": {
+    "displayName": "盲區推算",
+    "location": "盲區推算"
+  },
+  "FinalHarvest": {
+    "displayName": "最終收割",
+    "location": "最終收割"
+  },
+  "FireOnCall": {
+    "displayName": "呼叫火力支援",
+    "location": "呼叫火力支援"
+  },
+  "HighTide": {
+    "displayName": "漲潮",
+    "location": "漲潮"
+  },
+  "Hospital False Flag": {
+    "displayName": "校準射擊",
+    "location": "阿蘭胡埃斯地圖"
+  },
+  "Insurrections and Requisitions": {
+    "displayName": "解放",
+    "location": "雷阿爾城"
+  },
+  "IronRoad": {
+    "displayName": "鋼鐵之路",
+    "location": "鋼鐵之路"
+  },
+  "PhantomBattery": {
+    "displayName": "幻影炮台",
+    "location": "幻影炮台"
+  },
+  "RockofGibraltar": {
+    "displayName": "直布羅陀巨巖",
+    "location": "直布羅陀巨巖"
+  },
+  "SiegeOfCartagena": {
+    "displayName": "卡塔赫納圍城",
+    "location": "卡塔赫納圍城"
+  },
+  "The Gorge": {
+    "displayName": "峽谷",
+    "location": "峽谷"
+  },
+  "WhiteShells": {
+    "displayName": "白色炮彈",
+    "location": "巴塞隆納"
+  }
+}

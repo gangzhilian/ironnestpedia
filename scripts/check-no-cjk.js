@@ -14,16 +14,24 @@ function walk(dir) {
   });
 }
 
-const htmlFiles = walk(distRoot).filter((file) => file.endsWith('.html'));
+const htmlFiles = walk(distRoot).filter((file) => {
+  if (!file.endsWith('.html')) return false;
+  const relativePath = relative(distRoot, file).split('/').join('/');
+  return relativePath !== 'zh-cn.html' && relativePath !== 'zh-tw.html'
+    && !relativePath.startsWith('zh-cn/') && !relativePath.startsWith('zh-tw/');
+});
 const matches = htmlFiles.flatMap((file) => {
-  const characters = readFileSync(file, 'utf8').match(/[一-鿿]/g) ?? [];
+  // The English header intentionally names Chinese languages in their native
+  // scripts. Remove only that known selector before scanning English content.
+  const html = readFileSync(file, 'utf8').replace(/<nav class="language-switcher"[\s\S]*?<\/nav>/i, '');
+  const characters = html.match(/[一-鿿]/g) ?? [];
   return characters.length ? [{ file: relative(distRoot, file), cjk_characters: characters.length }] : [];
 });
 
 if (matches.length) {
   console.error(JSON.stringify({
     status: 'FAIL',
-    html_pages: htmlFiles.length,
+    english_html_pages: htmlFiles.length,
     files_with_cjk: matches.length,
     cjk_characters: matches.reduce((total, item) => total + item.cjk_characters, 0),
     matches,
@@ -33,7 +41,7 @@ if (matches.length) {
 
 console.log(JSON.stringify({
   status: 'PASS',
-  html_pages: htmlFiles.length,
+  english_html_pages: htmlFiles.length,
   files_with_cjk: 0,
   cjk_characters: 0,
 }, null, 2));

@@ -1,0 +1,275 @@
+{
+  "STR_ENTITYNAME_AA_BATTERY": {
+    "displayName": "AA Battery"
+  },
+  "STR_ENTITYNAME_ALLIED_ARTILLERY": {
+    "displayName": "Allied Artillery"
+  },
+  "STR_ENTITYNAME_ALLIED_INFANTRY": {
+    "displayName": "Allied Infantry"
+  },
+  "STR_ENTITYNAME_ALLIED_MECHANIZED": {
+    "displayName": "Allied Mechanized"
+  },
+  "STR_ENTITYNAME_ALLY": {
+    "displayName": "ally"
+  },
+  "STR_ENTITYNAME_ALLY_ARTILLERY": {
+    "displayName": "Ally Artillery"
+  },
+  "STR_ENTITYNAME_ALLY_INFANTRY": {
+    "displayName": "Ally Infantry"
+  },
+  "STR_ENTITYNAME_ALLY_MECHANIZED": {
+    "displayName": "Ally Mechanized"
+  },
+  "STR_ENTITYNAME_ALLY_SPOTTER": {
+    "displayName": "Ally Spotter"
+  },
+  "STR_ENTITYNAME_ALLY_TANK": {
+    "displayName": "Ally Tank"
+  },
+  "STR_ENTITYNAME_ALLYHOSPITAL": {
+    "displayName": "AllyHospital"
+  },
+  "STR_ENTITYNAME_ALLYINFANTRY": {
+    "displayName": "AllyInfantry"
+  },
+  "STR_ENTITYNAME_ALLYTANK": {
+    "displayName": "AllyTank"
+  },
+  "STR_ENTITYNAME_ALPHA": {
+    "displayName": "Alpha"
+  },
+  "STR_ENTITYNAME_ARMOUR": {
+    "displayName": "Armour"
+  },
+  "STR_ENTITYNAME_ARTILLERY": {
+    "displayName": "Artillery"
+  },
+  "STR_ENTITYNAME_BRAVO": {
+    "displayName": "Bravo"
+  },
+  "STR_ENTITYNAME_CABOOSE": {
+    "displayName": "Caboose"
+  },
+  "STR_ENTITYNAME_CIV": {
+    "displayName": "Civ"
+  },
+  "STR_ENTITYNAME_CIVILIAN": {
+    "displayName": "Civilian"
+  },
+  "STR_ENTITYNAME_CIVILIAN_HOSPITAL": {
+    "displayName": "Civilian Hospital"
+  },
+  "STR_ENTITYNAME_COASTAL_BATTERY": {
+    "displayName": "Coastal Battery"
+  },
+  "STR_ENTITYNAME_COMMANDER": {
+    "displayName": "Commander"
+  },
+  "STR_ENTITYNAME_DOCKMASTER'S_HOUSE": {
+    "displayName": "Dockmaster's House"
+  },
+  "STR_ENTITYNAME_ENEMY_ANTI_AIRCRAFT_BATTERY": {
+    "displayName": "Enemy Anti Aircraft Battery"
+  },
+  "STR_ENTITYNAME_ENEMY_ANTI_ARMOR": {
+    "displayName": "Enemy Anti armor"
+  },
+  "STR_ENTITYNAME_ENEMY_ARMOR": {
+    "displayName": "Enemy Armor"
+  },
+  "STR_ENTITYNAME_ENEMY_ARTILLERY": {
+    "displayName": "Enemy Artillery"
+  },
+  "STR_ENTITYNAME_ENEMY_ASSEMBLY_AREA": {
+    "displayName": "Enemy Assembly Area"
+  },
+  "STR_ENTITYNAME_ENEMY_COMMANDER": {
+    "displayName": "Enemy Commander"
+  },
+  "STR_ENTITYNAME_ENEMY_FIELD_COMMAND": {
+    "displayName": "Enemy Field Command"
+  },
+  "STR_ENTITYNAME_ENEMY_FIELD_GUN": {
+    "displayName": "Enemy Field Gun"
+  },
+  "STR_ENTITYNAME_ENEMY_FIRE_DIRECTION_CENTER": {
+    "displayName": "Enemy Fire Direction Center"
+  },
+  "STR_ENTITYNAME_ENEMY_INFANTRY": {
+    "displayName": "Enemy Infantry"
+  },
+  "STR_ENTITYNAME_ENEMY_MARINE": {
+    "displayName": "Enemy Marine"
+  },
+  "STR_ENTITYNAME_ENEMY_MECHANIZED": {
+    "displayName": "Enemy Mechanized"
+  },
+  "STR_ENTITYNAME_ENEMY_MECHANIZED_INFANTRY": {
+    "displayName": "Enemy Mechanized Infantry"
+  },
+  "STR_ENTITYNAME_ENEMY_SIGNAL_STATION": {
+    "displayName": "Enemy Signal Station"
+  },
+  "STR_ENTITYNAME_ENEMY_SPOTTER": {
+    "displayName": "Enemy Spotter"
+  },
+  "STR_ENTITYNAME_ENEMY_SUPPLY_BUNKER": {
+    "displayName": "Enemy Supply Bunker"
+  },
+  "STR_ENTITYNAME_ENEMY_TANK": {
+    "displayName": "Enemy Tank"
+  },
+  "STR_ENTITYNAME_ENEMYARMOUR": {
+    "displayName": "EnemyArmour"
+  },
+  "STR_ENTITYNAME_ENEMYARTILLERY": {
+    "displayName": "EnemyArtillery"
+  },
+  "STR_ENTITYNAME_ENEMYCOMMANDER": {
+    "displayName": "EnemyCommander"
+  },
+  "STR_ENTITYNAME_ENEMYHOSPITAL": {
+    "displayName": "EnemyHospital"
+  },
+  "STR_ENTITYNAME_ENEMYINFANTRY": {
+    "displayName": "EnemyInfantry"
+  },
+  "STR_ENTITYNAME_ENEMYMECHANIZED": {
+    "displayName": "EnemyMechanized"
+  },
+  "STR_ENTITYNAME_FDC": {
+    "displayName": "FDC"
+  },
+  "STR_ENTITYNAME_GENERAL": {
+    "displayName": "General"
+  },
+  "STR_ENTITYNAME_HMS_ROCKINGHAM": {
+    "displayName": "HMS Rockingham"
+  },
+  "STR_ENTITYNAME_HOSPITAL": {
+    "displayName": "Hospital"
+  },
+  "STR_ENTITYNAME_HOSTILEARTILLERY": {
+    "displayName": "HostileArtillery"
+  },
+  "STR_ENTITYNAME_HOSTILEBUNKER": {
+    "displayName": "HostileBunker"
+  },
+  "STR_ENTITYNAME_HOSTILEINFATRY": {
+    "displayName": "HostileInfatry"
+  },
+  "STR_ENTITYNAME_HOSTILETANK": {
+    "displayName": "HostileTank"
+  },
+  "STR_ENTITYNAME_INFANTRY": {
+    "displayName": "Infantry"
+  },
+  "STR_ENTITYNAME_KING": {
+    "displayName": "King"
+  },
+  "STR_ENTITYNAME_LANDING_CRAFT": {
+    "displayName": "Landing Craft"
+  },
+  "STR_ENTITYNAME_LOCOMOTIVE": {
+    "displayName": "Locomotive"
+  },
+  "STR_ENTITYNAME_MAIN_STATION": {
+    "displayName": "Main Station"
+  },
+  "STR_ENTITYNAME_MAINSTATION": {
+    "displayName": "MainStation"
+  },
+  "STR_ENTITYNAME_MARINE_GARRISON": {
+    "displayName": "Marine Garrison"
+  },
+  "STR_ENTITYNAME_MECHANIZED": {
+    "displayName": "Mechanized"
+  },
+  "STR_ENTITYNAME_MECHANIZED_INFANTRY": {
+    "displayName": "Mechanized Infantry"
+  },
+  "STR_ENTITYNAME_MILITARY_POLICE": {
+    "displayName": "Military Police"
+  },
+  "STR_ENTITYNAME_MILITARY_POLICE_POST": {
+    "displayName": "Military police Post"
+  },
+  "STR_ENTITYNAME_PILLBOX": {
+    "displayName": "Pillbox"
+  },
+  "STR_ENTITYNAME_PLATFORM_CAR": {
+    "displayName": "Platform Car"
+  },
+  "STR_ENTITYNAME_POLICE": {
+    "displayName": "Police"
+  },
+  "STR_ENTITYNAME_PROPAGANDA_OFFICE": {
+    "displayName": "Propaganda office"
+  },
+  "STR_ENTITYNAME_PROPAGANDASTATION": {
+    "displayName": "PropagandaStation"
+  },
+  "STR_ENTITYNAME_REF": {
+    "displayName": "Ref"
+  },
+  "STR_ENTITYNAME_RMS_LUSITANIA": {
+    "displayName": "RMS Lusitania"
+  },
+  "STR_ENTITYNAME_SIGNALS_POST": {
+    "displayName": "Signals Post"
+  },
+  "STR_ENTITYNAME_SMOKEREQUESTER": {
+    "displayName": "SmokeRequester"
+  },
+  "STR_ENTITYNAME_SPOTTER": {
+    "displayName": "Spotter"
+  },
+  "STR_ENTITYNAME_SUPPLY_DEPOT": {
+    "displayName": "Supply Depot"
+  },
+  "STR_ENTITYNAME_SUPPLYCASH": {
+    "displayName": "SupplyCash"
+  },
+  "STR_ENTITYNAME_TANK": {
+    "displayName": "Tank"
+  },
+  "STR_ENTITYNAME_TARGET": {
+    "displayName": "Target"
+  },
+  "STR_ENTITYNAME_TARGETTEST": {
+    "displayName": "TargetTest"
+  },
+  "STR_ENTITYNAME_THE_MOLE": {
+    "displayName": "The Mole"
+  },
+  "STR_ENTITYNAME_TROOP_CAR_A": {
+    "displayName": "Troop Car A"
+  },
+  "STR_ENTITYNAME_TROOP_CAR_B": {
+    "displayName": "Troop Car B"
+  },
+  "STR_ENTITYNAME_WAYPOINT_A": {
+    "displayName": "Waypoint A"
+  },
+  "STR_ENTITYNAME_WAYPOINT_B": {
+    "displayName": "Waypoint B"
+  },
+  "STR_ENTITYNAME_WAYPOINT_C": {
+    "displayName": "Waypoint C"
+  },
+  "STR_ENTITYNAME_WAYPOINT_D": {
+    "displayName": "Waypoint D"
+  },
+  "STR_MEDAL_HINT_TEST": {
+    "displayName": ""
+  },
+  "STR_MISSION_TITLE_PHANTOMBATTERY": {
+    "displayName": "Phantom Battery"
+  },
+  "STR_PUNCHCARD_LISTENING_POST": {
+    "displayName": "Listening Post"
+  }
+}

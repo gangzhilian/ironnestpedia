@@ -1,0 +1,188 @@
+{
+  "source": "step-17-keywords",
+  "updated_at": "2026-08-17T01:29:13.362Z",
+  "game": "IRON NEST: Heavy Turret Simulator",
+  "pages": [
+    {
+      "url_path": "/missions",
+      "primary_keyword": "IRON NEST 任务列表",
+      "keyword_candidates": [
+        "IRON NEST 任务攻略",
+        "IRON NEST 战役顺序",
+        "IRON NEST 挑战任务"
+      ],
+      "title": "IRON NEST 任务列表：17个战役与挑战任务",
+      "description": "查看17个正式任务的前置关系、奖章、成就和任务内目标记录；调试、教程重复体与Base模板不计入玩家任务。"
+    },
+    {
+      "url_path": "/missions/fireoncall",
+      "primary_keyword": "IRON NEST 火力支援任务",
+      "keyword_candidates": [
+        "火力支援任务攻略",
+        "火力支援奖章"
+      ],
+      "title": "IRON NEST“火力支援”任务：奖章、成就与目标",
+      "description": "汇总“火力支援”的1个前置任务、1个后续任务、4个奖章槽、关联成就和8条目标记录。"
+    },
+    {
+      "url_path": "/missions/hightide",
+      "primary_keyword": "IRON NEST 敌人如潮任务",
+      "keyword_candidates": [
+        "敌人如潮任务攻略",
+        "敌人如潮奖章"
+      ],
+      "title": "IRON NEST“敌人如潮”任务：奖章、成就与目标",
+      "description": "汇总“敌人如潮”的1个前置任务、1个后续任务、4个奖章槽、关联成就和13条目标记录。"
+    },
+    {
+      "url_path": "/missions/blindfire",
+      "primary_keyword": "IRON NEST 孤独发炮任务",
+      "keyword_candidates": [
+        "孤独发炮任务攻略",
+        "孤独发炮奖章"
+      ],
+      "title": "IRON NEST“孤独发炮”任务：奖章、成就与目标",
+      "description": "汇总“孤独发炮”的1个前置任务、1个后续任务、4个奖章槽、关联成就和17条目标记录。"
+    },
+    {
+      "url_path": "/missions/phantombattery",
+      "primary_keyword": "IRON NEST 幽灵炮台任务",
+      "keyword_candidates": [
+        "幽灵炮台任务攻略",
+        "幽灵炮台奖章"
+      ],
+      "title": "IRON NEST“幽灵炮台”任务：奖章、成就与目标",
+      "description": "汇总“幽灵炮台”的1个前置任务、1个后续任务、4个奖章槽、关联成就和6条目标记录。"
+    },
+    {
+      "url_path": "/missions/finalharvest",
+      "primary_keyword": "IRON NEST 最终收割任务",
+      "keyword_candidates": [
+        "最终收割任务攻略",
+        "最终收割奖章"
+      ],
+      "title": "IRON NEST“最终收割”任务：奖章、成就与目标",
+      "description": "汇总“最终收割”的1个前置任务、1个后续任务、4个奖章槽、关联成就和26条目标记录。"
+    },
+    {
+      "url_path": "/missions/whiteshells",
+      "primary_keyword": "IRON NEST 白色炮弹任务",
+      "keyword_candidates": [
+        "白色炮弹任务攻略",
+        "白色炮弹奖章"
+      ],
+      "title": "IRON NEST“白色炮弹”任务：奖章、成就与目标",
+      "description": "汇总“白色炮弹”的1个前置任务、0个后续任务、4个奖章槽、关联成就和10条目标记录。"
+    },
+    {
+      "url_path": "/missions/hospital-false-flag",
+      "primary_keyword": "IRON NEST 校射任务",
+      "keyword_candidates": [
+        "校射任务攻略",
+        "校射奖章"
+      ],
+      "title": "IRON NEST“校射”任务：奖章、成就与目标",
+      "description": "汇总“校射”的0个前置任务、1个后续任务、1个奖章槽、关联成就和5条目标记录。"
+    },
+    {
+      "url_path": "/missions/fire-and-light",
+      "primary_keyword": "IRON NEST 炮火与光辉任务",
+      "keyword_candidates": [
+        "炮火与光辉任务攻略",
+        "炮火与光辉奖章"
+      ],
+      "title": "IRON NEST“炮火与光辉”任务：奖章、成就与目标",
+      "description": "汇总“炮火与光辉”的1个前置任务、1个后续任务、1个奖章槽、关联成就和11条目标记录。"
+    },
+    {
+      "url_path": "/missions/liberation",
+      "primary_keyword": "IRON NEST 解放任务",
+      "keyword_candidates": [
+        "解放任务攻略",
+        "解放奖章"
+      ],
+      "title": "IRON NEST“解放”任务：奖章、成就与目标",
+      "description": "汇总“解放”的1个前置任务、2个后续任务、4个奖章槽、关联成就和10条目标记录。"
+    },
+    {
+      "url_path": "/missions/artillery-introduction",
+      "primary_keyword": "IRON NEST 反炮兵任务",
+      "keyword_candidates": [
+        "反炮兵任务攻略",
+        "反炮兵奖章"
+      ],
+      "title": "IRON NEST“反炮兵”任务：奖章、成就与目标",
+      "description": "汇总“反炮兵”的1个前置任务、2个后续任务、4个奖章槽、关联成就和8条目标记录。"
+    },
+    {
+      "url_path": "/missions/ironroad",
+      "primary_keyword": "IRON NEST 钢铁之路任务",
+      "keyword_candidates": [
+        "钢铁之路任务攻略",
+        "钢铁之路奖章"
+      ],
+      "title": "IRON NEST“钢铁之路”任务：奖章、成就与目标",
+      "description": "汇总“钢铁之路”的1个前置任务、1个后续任务、4个奖章槽、关联成就和21条目标记录。"
+    },
+    {
+      "url_path": "/missions/siegeofcartagena",
+      "primary_keyword": "IRON NEST 卡塔赫纳之围任务",
+      "keyword_candidates": [
+        "卡塔赫纳之围任务攻略",
+        "卡塔赫纳之围奖章"
+      ],
+      "title": "IRON NEST“卡塔赫纳之围”任务：奖章、成就与目标",
+      "description": "汇总“卡塔赫纳之围”的1个前置任务、1个后续任务、4个奖章槽、关联成就和13条目标记录。"
+    },
+    {
+      "url_path": "/missions/the-gorge",
+      "primary_keyword": "IRON NEST 峡谷要冲任务",
+      "keyword_candidates": [
+        "峡谷要冲任务攻略",
+        "峡谷要冲奖章"
+      ],
+      "title": "IRON NEST“峡谷要冲”任务：奖章、成就与目标",
+      "description": "汇总“峡谷要冲”的1个前置任务、1个后续任务、4个奖章槽、关联成就和13条目标记录。"
+    },
+    {
+      "url_path": "/missions/rockofgibraltar",
+      "primary_keyword": "IRON NEST 居高临下任务",
+      "keyword_candidates": [
+        "居高临下任务攻略",
+        "居高临下奖章"
+      ],
+      "title": "IRON NEST“居高临下”任务：奖章、成就与目标",
+      "description": "汇总“居高临下”的1个前置任务、1个后续任务、4个奖章槽、关联成就和8条目标记录。"
+    },
+    {
+      "url_path": "/missions/deadreckoning",
+      "primary_keyword": "IRON NEST 盲区推算任务",
+      "keyword_candidates": [
+        "盲区推算任务攻略",
+        "盲区推算奖章"
+      ],
+      "title": "IRON NEST“盲区推算”任务：奖章、成就与目标",
+      "description": "汇总“盲区推算”的1个前置任务、1个后续任务、4个奖章槽、关联成就和10条目标记录。"
+    },
+    {
+      "url_path": "/missions/challangefdc",
+      "primary_keyword": "IRON NEST 遭遇战\n- 挑战模式 -\n反炮兵作战任务",
+      "keyword_candidates": [
+        "遭遇战\n- 挑战模式 -\n反炮兵作战任务攻略",
+        "遭遇战\n- 挑战模式 -\n反炮兵作战奖章"
+      ],
+      "title": "IRON NEST“遭遇战\n- 挑战模式 -\n反炮兵作战”任务：奖章、成就与目标",
+      "description": "汇总“遭遇战\n- 挑战模式 -\n反炮兵作战”的1个前置任务、0个后续任务、4个奖章槽、关联成就和15条目标记录。"
+    },
+    {
+      "url_path": "/missions/chill",
+      "primary_keyword": "IRON NEST 遭遇战\n- 休闲模式 -\n无反击作战任务",
+      "keyword_candidates": [
+        "遭遇战\n- 休闲模式 -\n无反击作战任务攻略",
+        "遭遇战\n- 休闲模式 -\n无反击作战奖章"
+      ],
+      "title": "IRON NEST“遭遇战\n- 休闲模式 -\n无反击作战”任务：奖章、成就与目标",
+      "description": "汇总“遭遇战\n- 休闲模式 -\n无反击作战”的1个前置任务、0个后续任务、4个奖章槽、关联成就和18条目标记录。"
+    }
+  ]
+}
