@@ -9,6 +9,7 @@ import sharp from 'sharp';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const routes = (JSON.parse(await readFile(join(root, 'data/routes.json'), 'utf8'))).pages
   .filter((route) => route.page_type !== 'tool_placeholder');
+routes.push({ url_path: '/contact', page_type: 'contact', entity: 'Contact' });
 const locales = ['en', 'zh-cn', 'zh-tw'];
 const localeLang = { en: 'en', 'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW' };
 const failures = [];
@@ -106,11 +107,11 @@ for (const locale of locales) {
 }
 
 summary.og_images = ogImages.size;
-if (summary.pages !== 315) failures.push(`Expected 315 pages, checked ${summary.pages}`);
-if (summary.breadcrumbs !== 312) failures.push(`Expected 312 BreadcrumbLists, found ${summary.breadcrumbs}`);
+if (summary.pages !== 318) failures.push(`Expected 318 pages, checked ${summary.pages}`);
+if (summary.breadcrumbs !== 315) failures.push(`Expected 315 BreadcrumbLists, found ${summary.breadcrumbs}`);
 if (summary.datasets !== 21) failures.push(`Expected 21 localized Dataset schemas, found ${summary.datasets}`);
 if (summary.entity_pages !== 288) failures.push(`Expected 288 localized entity pages, found ${summary.entity_pages}`);
-if (summary.og_images !== 315) failures.push(`Expected 315 unique OG images, found ${summary.og_images}`);
+if (summary.og_images !== 318) failures.push(`Expected 318 unique OG images, found ${summary.og_images}`);
 
 const css = await readFile(join(root, 'src/styles/global.css'), 'utf8');
 for (const [token, value] of Object.entries({ '--bg-base': '#0d1210', '--bg-surface': '#161c19', '--text-primary': '#dce4dd', '--text-muted': '#8a978c', '--accent-warning': '#ffb020' })) {

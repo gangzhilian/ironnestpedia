@@ -100,6 +100,7 @@ const languageLinks = site.languages.map((language) => ({
       <div class="inner">
         <nav aria-label={site.ui.database_indexes}>
           {site.entity_indexes.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
+          <a class="footer-contact" href={localizedPath('/contact', locale)}>{site.contact.footer_label}</a>
         </nav>
         <p>{site.footer_disclaimer}</p>
       </div>

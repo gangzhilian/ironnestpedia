@@ -1,12 +1,22 @@
 ---
-interface Props { row?: Record<string, any>; locale?: string; }
-const { row, locale = 'en' } = Astro.props;
+import { getSite, localizedPath, type Locale } from '../lib/data';
+
+interface Props { row?: Record<string, any>; pagePath: string; locale?: Locale; }
+const { row, pagePath, locale = 'en' } = Astro.props;
+const site = getSite(locale);
 const confidence = String(row?.confidence ?? 'unverified').toUpperCase();
 const source = String(row?.data_source ?? 'unknown').toUpperCase();
 const version = String(row?.game_version ?? '—');
 const updated = String(row?.last_updated ?? '—');
+const pageUrl = new URL(localizedPath(pagePath, locale), site.site_url).href;
+const subject = `Correction: ${pageUrl}`;
+const body = String(site.contact.report_body).replace('{page_url}', pageUrl);
+const reportHref = `mailto:${site.contact_email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 ---
-<div class="provenance-stamp" lang="en" aria-label={`Data classification: ${confidence}, ${source}, version ${version}`} data-page-locale={locale}>
-  <span>{confidence}</span><b aria-hidden="true">·</b><span>{source}</span><b aria-hidden="true">·</b><span>v{version}</span>
+<div class="provenance-stamp" data-page-locale={locale}>
+  <span class="provenance-classification" lang="en" aria-label={`Data classification: ${confidence}, ${source}, version ${version}`}>
+    <span>{confidence}</span><b aria-hidden="true">·</b><span>{source}</span><b aria-hidden="true">·</b><span>v{version}</span>
+  </span>
+  <a class="report-issue" href={reportHref}>{site.contact.report_issue}</a>
   <time datetime={updated}>{updated}</time>
 </div>

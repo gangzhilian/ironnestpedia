@@ -5,4 +5,3 @@ export function getStaticPaths() { return placeholders.map((page) => ({ params: 
 const { page } = Astro.props;
 ---
 <PlaceholderPage path={page.url_path} title={page.title} reason={page.reason} />
-

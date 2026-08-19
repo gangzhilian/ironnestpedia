@@ -209,5 +209,26 @@
     "records_retain": "Entity records retain game_version, data_source, last_updated, and confidence.",
     "mission_map_title": "Mission Map",
     "mission_map_reason": "The interactive mission map is reserved for a later release and is not yet available."
+  },
+  "contact_email": "corrections@ironnestpedia.com",
+  "contact": {
+    "seo_title": "Contact & Data Corrections | IronNestPedia",
+    "seo_description": "Report incorrect IRON NEST data, include supporting evidence, or contact IronNestPedia by email.",
+    "eyebrow": "Correction channel",
+    "h1": "Contact & data corrections",
+    "intro": "Email the site owner when a field, value, label, or page is wrong.",
+    "what_to_include": "What to include",
+    "items": [
+      "The page URL and incorrect field or value.",
+      "What you believe the correct value should be.",
+      "Evidence such as the game version, a screenshot, a game-file key, or a source link."
+    ],
+    "email_action": "Email a correction",
+    "email_note": "This link opens your email app. IronNestPedia does not collect the message through a web form.",
+    "response_note": "There is no automated support desk. Reports are reviewed against the evidence provided.",
+    "footer_label": "Contact / corrections",
+    "generic_subject": "Correction: IronNestPedia",
+    "report_issue": "Report an issue",
+    "report_body": "Page: {page_url}\n\nField or value that looks wrong:\n\nWhat should it say instead:\n\nEvidence (game version, screenshot, game-file key, or source link):\n\nAdditional context:"
   }
 }

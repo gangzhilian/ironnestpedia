@@ -15,5 +15,5 @@ const readouts = getEntityReadouts(route, locale);
   <dl class="readout-list">
     {readouts.map((item) => <div><dt>{item.label}</dt><dd>{item.value}</dd></div>)}
   </dl>
-  <ProvenanceStamp row={row} />
+  <ProvenanceStamp row={row} pagePath={route.url_path} locale={locale} />
 </aside>

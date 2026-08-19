@@ -35,6 +35,7 @@ for (const locale of locales) {
   }
   const site = JSON.parse(await readFile(join(root, `data/${locale}/site.json`), 'utf8'));
   pages.push({ locale, path: '/', entity: 'Home', title: site.home_seo.title });
+  pages.push({ locale, path: '/contact', entity: 'Contact', title: site.contact.seo_title });
   for (const route of routes) {
     const page = seo.get(route.url_path);
     if (!page) throw new Error(`Missing ${locale} SEO: ${route.url_path}`);
@@ -42,7 +43,7 @@ for (const locale of locales) {
   }
 }
 
-const expected = 315;
+const expected = 318;
 if (pages.length !== expected) throw new Error(`Expected ${expected} indexable titles, found ${pages.length}`);
 const exact = new Map();
 const exactDuplicates = [];

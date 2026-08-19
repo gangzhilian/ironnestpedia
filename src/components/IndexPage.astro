@@ -36,7 +36,7 @@ const tableOnly = ['Medal', 'Punchcard', 'Mutator'].includes(route.entity);
   <section class="dataset-scope" aria-labelledby="dataset-scope-heading">
     <h2 id="dataset-scope-heading">{translate(locale, 'dataset_scope')}</h2>
     <p>{datasetDescription}</p>
-    <ProvenanceStamp row={rows[0]} locale={locale} />
+    <ProvenanceStamp row={rows[0]} pagePath={route.url_path} locale={locale} />
   </section>
   {children.length > 0 && (
     <section>

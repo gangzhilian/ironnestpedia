@@ -105,7 +105,10 @@ h3 { letter-spacing: -.015em; }
 .readout-list > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: baseline; padding: .75rem 1rem; border-top: 1px solid var(--border-line); }
 .readout-list dt { color: var(--text-muted); font-size: .77rem; }
 .readout-list dd { margin: 0; max-width: 13rem; color: var(--accent-warning); font: 600 .78rem/1.45 var(--font-data); text-align: right; overflow-wrap: anywhere; }
-.provenance-stamp { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; padding: .85rem 1rem; border-top: 1px solid var(--border-strong); color: var(--accent-warning); font: 600 .63rem var(--font-data); letter-spacing: .1em; }
+.provenance-stamp { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .55rem .9rem; padding: .85rem 1rem; border-top: 1px solid var(--border-strong); color: var(--accent-warning); font: 600 .63rem var(--font-data); letter-spacing: .1em; }
+.provenance-classification { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; }
+.report-issue { padding: .34rem .48rem; border: 1px solid currentColor; color: var(--accent-warning); font-weight: 700; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.report-issue:hover { color: var(--accent-ink); background: var(--accent-warning); }
 .provenance-stamp time { width: 100%; color: var(--text-muted); letter-spacing: .04em; }
 
 .interpretation-status { display: grid; grid-template-columns: auto 1fr; gap: .9rem; align-items: start; max-width: 55rem; padding: 1rem 1.1rem; background: rgba(74, 93, 69, .18); border-left: 3px solid var(--accent-warning); }
@@ -129,6 +132,14 @@ tbody tr:hover { background: rgba(255, 176, 32, .045); }
 .link-list li::marker { color: var(--accent-olive); }
 .notice { border-left: .25rem solid var(--accent-warning); padding: .8rem 1rem; background: var(--bg-surface); }
 footer p { color: var(--text-muted); max-width: 80ch; }
+.footer-contact { color: var(--accent-warning); }
+.contact-panel { max-width: 48rem; margin-top: 2rem; }
+.contact-panel h2 { margin-top: 0; }
+.contact-panel ul { padding-left: 1.25rem; }
+.contact-panel li + li { margin-top: .45rem; }
+.contact-action { display: inline-flex; margin-top: .5rem; padding: .62rem .85rem; border: 1px solid var(--accent-warning); color: var(--accent-warning); font: 700 .76rem var(--font-data); letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.contact-action:hover { color: var(--accent-ink); background: var(--accent-warning); }
+.contact-note { color: var(--text-muted); font-size: .88rem; }
 
 input, button { min-height: 2.35rem; border-radius: 0; border: 1px solid var(--border-strong); font: 500 .76rem var(--font-data); transition: border-color .2s ease, background-color .2s ease, color .2s ease, transform .1s ease; }
 input { width: 100%; padding: .5rem .7rem; background: #0a0f0d; color: var(--text-primary); }

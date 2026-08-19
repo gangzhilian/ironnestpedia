@@ -8,7 +8,6 @@
     { "url_path": "/about", "title": "About", "reason": "Reviewed site and data-source copy belongs to step 26." },
     { "url_path": "/privacy", "title": "Privacy Policy", "reason": "Policy must match the scripts actually deployed in step 26." },
     { "url_path": "/cookies", "title": "Cookie Policy", "reason": "Policy must match the scripts actually deployed in step 26." },
-    { "url_path": "/terms", "title": "Terms of Service", "reason": "Reviewed terms belong to step 26." },
-    { "url_path": "/contact", "title": "Contact", "reason": "A real contact channel is supplied in step 24/26." }
+    { "url_path": "/terms", "title": "Terms of Service", "reason": "Reviewed terms belong to step 26." }
   ]
 }

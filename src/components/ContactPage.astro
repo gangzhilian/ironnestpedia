@@ -1,0 +1,24 @@
+---
+import Layout from './Layout.astro';
+import { getSite, type Locale } from '../lib/data';
+
+interface Props { locale?: Locale; }
+const { locale = 'en' } = Astro.props;
+const site = getSite(locale);
+const copy = site.contact;
+const pageUrl = new URL(locale === 'en' ? '/contact' : `/${locale}/contact`, site.site_url).href;
+const body = String(copy.report_body).replace('{page_url}', pageUrl);
+const mailto = `mailto:${site.contact_email}?subject=${encodeURIComponent(copy.generic_subject)}&body=${encodeURIComponent(body)}`;
+---
+<Layout title={copy.seo_title} description={copy.seo_description} path="/contact" locale={locale} breadcrumbs={[{ label: copy.h1 }]}>
+  <p class="eyebrow">{copy.eyebrow}</p>
+  <h1>{copy.h1}</h1>
+  <p>{copy.intro}</p>
+  <section class="panel contact-panel" aria-labelledby="contact-checklist-heading">
+    <h2 id="contact-checklist-heading">{copy.what_to_include}</h2>
+    <ul>{copy.items.map((item: string) => <li>{item}</li>)}</ul>
+    <p><a class="contact-action" href={mailto}>{copy.email_action}: {site.contact_email}</a></p>
+    <p class="contact-note">{copy.email_note}</p>
+    <p class="contact-note">{copy.response_note}</p>
+  </section>
+</Layout>

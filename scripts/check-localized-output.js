@@ -47,7 +47,7 @@ function linkMap(html) {
 const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 const htmlByRoute = new Map(htmlFiles.map((file) => [fileToRoute(file), readFileSync(file, 'utf8')]));
 const errors = [];
-const indexable = ['/', ...routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => route.url_path)];
+const indexable = ['/', '/contact', ...routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => route.url_path)];
 const noindex = [...placeholders.map((page) => page.url_path), '/tools/mission-map', '/404'];
 
 if (htmlFiles.length !== 342) errors.push(`html pages=${htmlFiles.length}, expected=342`);
@@ -91,7 +91,7 @@ for (const file of walk(dist).filter((file) => /sitemap.*\.xml$/.test(file))) {
 const expectedSitemap = new Set(indexable.flatMap((path) => locales.map((locale) => localizedPath(path, locale.code))));
 const missing = [...expectedSitemap].filter((path) => !sitemapUrls.has(path));
 const extra = [...sitemapUrls].filter((path) => !expectedSitemap.has(path));
-if (sitemapUrls.size !== 315 || missing.length || extra.length) errors.push(`sitemap expected=315 actual=${sitemapUrls.size} missing=${JSON.stringify(missing)} extra=${JSON.stringify(extra)}`);
+if (sitemapUrls.size !== 318 || missing.length || extra.length) errors.push(`sitemap expected=318 actual=${sitemapUrls.size} missing=${JSON.stringify(missing)} extra=${JSON.stringify(extra)}`);
 for (const oldPath of ['/missions/ceremony-and-hche', '/missions/insurrections-and-requisitions']) {
   if ([...sitemapUrls].some((path) => path.endsWith(oldPath))) errors.push(`${oldPath}: old URL leaked into sitemap`);
 }

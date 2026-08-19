@@ -209,5 +209,26 @@
     "records_retain": "實體記錄保留遊戲版本、資料來源、更新時間與可信度。",
     "mission_map_title": "任務地圖",
     "mission_map_reason": "互動式任務地圖預計於後續版本推出，目前尚未開放。"
+  },
+  "contact_email": "corrections@ironnestpedia.com",
+  "contact": {
+    "seo_title": "聯絡與資料糾錯 | IronNestPedia",
+    "seo_description": "透過電子郵件回報錯誤的IRON NEST資料，並附上遊戲版本、截圖、檔案鍵或來源連結等依據。",
+    "eyebrow": "糾錯管道",
+    "h1": "聯絡與資料糾錯",
+    "intro": "如果欄位、數值、名稱或頁面有誤，請寄信聯絡站長。",
+    "what_to_include": "郵件請寫清楚",
+    "items": [
+      "頁面網址以及有誤的欄位或數值。",
+      "你認為正確的內容。",
+      "依據，例如遊戲版本、截圖、遊戲檔案鍵或來源連結。"
+    ],
+    "email_action": "寄送糾錯郵件",
+    "email_note": "此連結會開啟你的郵件應用程式；IronNestPedia不會透過網頁表單收集郵件內容。",
+    "response_note": "本站沒有自動客服；站長會依據你提供的資料核對回報。",
+    "footer_label": "聯絡／糾錯",
+    "generic_subject": "糾錯：IronNestPedia",
+    "report_issue": "回報問題",
+    "report_body": "頁面：{page_url}\n\n不正確的欄位或數值：\n\n應該改成：\n\n依據（遊戲版本、截圖、遊戲檔案鍵或來源連結）：\n\n補充說明："
   }
 }

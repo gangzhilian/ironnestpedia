@@ -209,5 +209,26 @@
     "records_retain": "实体记录保留游戏版本、数据来源、更新时间和可信度。",
     "mission_map_title": "任务地图",
     "mission_map_reason": "交互式任务地图计划在后续版本推出，目前尚不可用。"
+  },
+  "contact_email": "corrections@ironnestpedia.com",
+  "contact": {
+    "seo_title": "联系与数据纠错 | IronNestPedia",
+    "seo_description": "通过电子邮件报告错误的IRON NEST数据，并附上游戏版本、截图、文件键或来源链接等依据。",
+    "eyebrow": "纠错渠道",
+    "h1": "联系与数据纠错",
+    "intro": "如果字段、数值、名称或页面有误，请发送邮件联系站长。",
+    "what_to_include": "邮件请写清楚",
+    "items": [
+      "页面网址以及有误的字段或数值。",
+      "你认为正确的内容。",
+      "依据，例如游戏版本、截图、游戏文件键或来源链接。"
+    ],
+    "email_action": "发送纠错邮件",
+    "email_note": "此链接会打开你的邮件应用；IronNestPedia不会通过网页表单收集邮件内容。",
+    "response_note": "本站没有自动客服；站长会根据你提供的依据核对反馈。",
+    "footer_label": "联系／纠错",
+    "generic_subject": "纠错：IronNestPedia",
+    "report_issue": "报告问题",
+    "report_body": "页面：{page_url}\n\n不正确的字段或数值：\n\n应该改成：\n\n依据（游戏版本、截图、游戏文件键或来源链接）：\n\n补充说明："
   }
 }
