@@ -1,0 +1,61 @@
+{
+  "footer": { "about": "關於本站", "privacy": "隱私權政策", "cookies": "Cookie 政策", "terms": "使用條款" },
+  "pages": {
+    "privacy": {
+      "seo_title": "隱私權政策 | IronNestPedia",
+      "seo_description": "說明 IronNestPedia 目前如何處理勘誤郵件、Cloudflare 基礎請求資料，以及本站目前的 Cookie、分析與廣告使用情況。",
+      "eyebrow": "目前部署的隱私記錄",
+      "h1": "隱私權政策",
+      "intro": "本政策說明 IronNestPedia 目前實際發生的資料處理。使用本站不需要註冊或登入。",
+      "sections": [
+        { "heading": "您主動傳送的資訊", "paragraphs": ["IronNestPedia 不收集帳號或個人資料資訊。資料頁與聯絡頁的勘誤連結只會開啟您自己的郵件應用程式，不會把網頁表單提交給本站。", "如果您選擇寄送勘誤郵件，收件人會看到寄件信箱、郵件內容及您附上的依據。這些資訊由您主動提供，用於查核和回覆勘誤報告。"] },
+        { "heading": "託管與基礎請求資料", "paragraphs": ["IronNestPedia 是由 Cloudflare 託管和傳遞的靜態網站。為了傳遞和保護網站，Cloudflare 會處理基礎請求資訊，其中可能包括 IP 位址、User-Agent 或瀏覽器資訊、請求網址和請求時間。這是基礎設施層級的處理，不是 IronNestPedia 主動加入的追蹤指令碼。"] },
+        { "heading": "目前的分析、廣告與追蹤狀態", "paragraphs": ["IronNestPedia 目前不使用 Google Analytics、Google AdSense、Microsoft Clarity、Plausible，也不使用任何其他第三方分析、廣告或追蹤服務。", "本站目前不使用 Cookie 或本機儲存空間進行分析、廣告投放或使用者追蹤。目前技術狀態詳見 Cookie 政策。"] },
+        { "heading": "日後的變更", "paragraphs": ["如果日後導入分析或廣告服務，本政策與 Cookie 政策會同步更新，說明屆時實際使用的服務；在法律要求的情況下，本站也會在使用相關技術前提供相應的 Cookie 選擇。"] },
+        { "heading": "隱私問題", "paragraphs": ["如有隱私相關問題，請寄信至 {email}。此信箱同時用於接收資料勘誤。"] }
+      ]
+    },
+    "terms": {
+      "seo_title": "使用條款 | IronNestPedia",
+      "seo_description": "適用於非官方 IronNestPedia 遊戲資料參考站及成就工具的使用條款。",
+      "eyebrow": "網站使用條件",
+      "h1": "使用條款",
+      "intro": "使用 IronNestPedia 即表示您同意負責任地使用這個非官方玩家參考站，並遵守以下條款。",
+      "sections": [
+        { "heading": "本站提供的服務", "paragraphs": ["IronNestPedia 是 Steam 遊戲《IRON NEST: Heavy Turret Simulator》的免費、非官方玩家參考站，提供遊戲資料頁面和成就完成度查詢等工具。", "本站不提供遊戲本體，不銷售遊戲或相關產品，也不代表開發商、發行商或 Steam 提供客服。"] },
+        { "heading": "智慧財產權與歸屬", "paragraphs": ["本站將數值和可觀察的遊戲機制作為事實性參考資料呈現。遊戲本身、商標、美術、名稱及其他受保護內容的權利歸相應開發商、發行商和權利人所有；IronNestPedia 與其不存在從屬、認可或營運關係。", "本站介面圖示均為自行繪製的 SVG，不使用從遊戲中擷取的原始美術資源。如日後加入遊戲截圖，截圖將由站長在遊玩過程中自行擷取，並仍受遊戲權利人的相關權利約束。"] },
+        { "heading": "合理使用", "paragraphs": ["不得透過自動化請求使本站過載、干擾或濫用本站；不得用於違法活動；不得繞過技術保護措施；不得冒充 IronNestPedia、遊戲開發商、發行商或其官方代表。"] },
+        { "heading": "準確性與可用性", "paragraphs": ["本站及其資料按現狀提供。IronNestPedia 會盡力發布準確資料，並顯示來源、版本、更新時間和可信度，但不保證每項數值、翻譯、API 結果或頁面始終完整、最新或完全無誤。資料方法與邊界見關於本站頁面。", "在依賴任何資訊前，請自行查核。網站可用性可能不經通知發生變化。"] },
+        { "heading": "責任限制", "paragraphs": ["在適用法律允許的最大範圍內，IronNestPedia 及站長不對因使用、無法使用或依賴本站及其資料而產生的間接、附帶、特殊或後果性損失承擔責任。本條不排除依法不能排除的責任。"] },
+        { "heading": "條款變更", "paragraphs": ["本站功能、工具或適用要求發生變化時，本條款可能更新。以本頁面公布的目前版本為準，建議定期查看。如有問題，可寄信至 {email}。"] }
+      ]
+    },
+    "cookies": {
+      "seo_title": "Cookie 使用政策 | IronNestPedia",
+      "seo_description": "IronNestPedia 目前不使用 Cookie 或本機儲存空間進行分析、廣告或追蹤；本頁說明目前真實技術狀態。",
+      "eyebrow": "目前儲存狀態",
+      "h1": "Cookie 政策",
+      "intro": "本頁說明網站目前真實的 Cookie 與瀏覽器儲存行為，不列出尚未導入的服務。",
+      "sections": [
+        { "heading": "目前沒有分析、廣告或追蹤 Cookie", "paragraphs": ["IronNestPedia 目前不使用 Cookie 或本機儲存空間進行分析、廣告投放、個人化或使用者追蹤。", "本站目前沒有 Google Analytics、Google AdSense、Microsoft Clarity、Plausible 或同類追蹤指令碼，因此也不會製作空白或虛構的 Cookie 清單。"] },
+        { "heading": "技術快取與內容傳遞", "paragraphs": ["您的瀏覽器或 Cloudflare 內容傳遞網路可能會快取靜態檔案，並保留請求、傳遞或保護網站所需的一般技術資料。瀏覽器與 CDN 快取不是 IronNestPedia 為分析或廣告主動設定的追蹤 Cookie。您可以透過瀏覽器設定清除快取的網站資料。"] },
+        { "heading": "為什麼目前沒有同意橫幅", "paragraphs": ["由於本站目前不使用分析、廣告或追蹤類 Cookie 或本機儲存空間，因此目前不為這些技術顯示 Cookie 同意橫幅。"] },
+        { "heading": "如果網站日後發生變化", "paragraphs": ["如果日後導入分析或廣告等服務，本頁面與隱私權政策會同步更新，明確說明實際使用的技術、用途和使用者選擇。在需要取得同意的情況下，本站會在使用相關技術前提供相應的選擇機制。"] }
+      ]
+    },
+    "about": {
+      "seo_title": "關於 IronNestPedia：資料來源、範圍與勘誤",
+      "seo_description": "了解 IronNestPedia 適合哪些玩家、IRON NEST 資料如何取得、涵蓋範圍與勘誤方式。",
+      "eyebrow": "資料庫範圍與方法",
+      "h1": "關於 IronNestPedia",
+      "intro": "IronNestPedia 是一個中立的非官方參考站，目標是為 IRON NEST 玩家提供精確資料、清楚來源標示和可用的勘誤管道。",
+      "sections": [
+        { "heading": "本站適合誰", "paragraphs": ["本站適合希望查詢砲彈傷害和射程、任務關係、單位數值、成就條件及 Steam 完成率等具體機制與資料的玩家。它是查詢參考，不是對遊戲本身的替代。"] },
+        { "heading": "目前資料來源與涵蓋範圍", "paragraphs": ["目前實體資料集共有 {record_count} 筆來源記錄。所有已發布實體記錄的來源分類均為 {source_list}（從遊戲檔案解包取得）；目前沒有標為站長實測（in-game observed）或社群提交（community submitted）的記錄。", "目前資料記錄的遊戲版本為 {version}。每個資料頁的來源徽章會顯示該頁記錄對應的版本、來源、更新時間和可信度；具體版本應以頁面徽章的即時顯示為準。"] },
+        { "heading": "確切值、即時 API 資料與邊界", "paragraphs": ["傷害、射程和價格等數值是從遊戲檔案直接讀取的確切值。Steam 全球成就完成率和玩家成就狀態由相應工具從 Steam 官方 Web API 取得，並在頁面上標示為即時資料。", "IronNestPedia 不把主觀估算或猜測作為資料發布。如果站長尚未在遊戲中驗證某項解讀，頁面會如實標示暫無站長實測解讀，而不會編造結論。"] },
+        { "heading": "非官方身分", "paragraphs": ["IronNestPedia 是非官方的玩家自製資料參考站，與 IRON NEST 的開發商或發行商沒有從屬、認可或營運關係。IRON NEST 及相關商標歸各自權利人所有。"] },
+        { "heading": "勘誤機制", "paragraphs": ["如果某個欄位、數值或標籤可能有誤，請使用來源徽章旁的「回報問題」連結，或進入「聯絡 / 資料勘誤」頁面。本站會根據您提供的依據查核後再更新資料。"] }
+      ]
+    }
+  }
+}

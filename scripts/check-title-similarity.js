@@ -35,8 +35,12 @@ for (const locale of locales) {
   }
   const site = JSON.parse(await readFile(join(root, `data/${locale}/site.json`), 'utf8'));
   const tools = JSON.parse(await readFile(join(root, `data/${locale}/tools.json`), 'utf8'));
+  const compliance = JSON.parse(await readFile(join(root, `data/${locale}/compliance.json`), 'utf8'));
   pages.push({ locale, path: '/', entity: 'Home', title: site.home_seo.title });
   pages.push({ locale, path: '/contact', entity: 'Contact', title: site.contact.seo_title });
+  for (const path of ['/about', '/privacy', '/cookies', '/terms']) {
+    pages.push({ locale, path, entity: 'Compliance', title: compliance.pages[path.slice(1)].seo_title });
+  }
   pages.push({ locale, path: '/tools', entity: 'Tool', title: tools.index.seo_title });
   pages.push({ locale, path: '/tools/achievement-completion', entity: 'Tool', title: tools.achievement_completion.seo_title });
   for (const route of routes) {
@@ -46,7 +50,7 @@ for (const locale of locales) {
   }
 }
 
-const expected = 324;
+const expected = 336;
 if (pages.length !== expected) throw new Error(`Expected ${expected} indexable titles, found ${pages.length}`);
 const exact = new Map();
 const exactDuplicates = [];

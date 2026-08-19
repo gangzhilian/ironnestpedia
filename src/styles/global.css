@@ -141,6 +141,21 @@ footer p { color: var(--text-muted); max-width: 80ch; }
 .contact-action:hover { color: var(--accent-ink); background: var(--accent-warning); }
 .contact-note { color: var(--text-muted); font-size: .88rem; }
 
+.compliance-page { max-width: 68rem; }
+.compliance-header { position: relative; padding: 1.4rem 0 2rem; border-bottom: 1px solid var(--border-strong); }
+.compliance-header::after { content: ""; position: absolute; right: 0; bottom: -1px; width: 9rem; border-bottom: 3px solid var(--accent-warning); }
+.compliance-intro { max-width: 62ch; color: #bbc6bd; font-size: 1.08rem; }
+.compliance-status { display: inline-flex; gap: .55rem; margin: 1rem 0 0; padding: .42rem .58rem; border: 1px solid var(--accent-olive); color: var(--text-muted); font: 600 .68rem var(--font-data); letter-spacing: .08em; }
+.compliance-status span { color: var(--accent-warning); }
+.compliance-sections { counter-reset: compliance; }
+.compliance-section { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 1.25rem; padding: 2rem 0; border-bottom: 1px solid var(--border-line); }
+.compliance-section .section-index { margin: .28rem 0 0; color: var(--accent-warning); font: 700 .72rem var(--font-data); letter-spacing: .1em; }
+.compliance-section h2 { margin: 0 0 .8rem; }
+.compliance-section p { color: #bbc6bd; }
+.compliance-section p:last-child { margin-bottom: 0; }
+.compliance-related { margin-top: 2rem; padding: 1rem; border: 1px solid var(--border-strong); background: var(--bg-surface); }
+.compliance-related a { font: 650 .72rem var(--font-data); letter-spacing: .06em; text-transform: uppercase; }
+
 .tool-index-card { max-width: 42rem; }
 .tool-intro { color: #bbc6bd; font-size: 1.05rem; }
 .tool-console { max-width: 68rem; margin-top: 2rem; background: var(--bg-surface); border: 1px solid var(--border-strong); box-shadow: 0 1.4rem 3.5rem rgba(3, 7, 5, .28); }
@@ -219,6 +234,7 @@ button:active { transform: translateY(1px); }
   .tool-input-row button { width: 100%; }
   .achievement-result { grid-template-columns: 1fr; }
   .achievement-percent { grid-template-columns: auto 1fr; align-items: baseline; gap: .5rem; text-align: left; }
+  .compliance-section { grid-template-columns: 2rem minmax(0, 1fr); gap: .65rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

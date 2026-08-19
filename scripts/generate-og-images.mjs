@@ -13,6 +13,10 @@ const pages = [
   { url_path: '/', entity: 'IRON NEST' },
   ...routes,
   { url_path: '/contact', entity: 'Contact' },
+  { url_path: '/about', entity: 'Compliance' },
+  { url_path: '/privacy', entity: 'Compliance' },
+  { url_path: '/cookies', entity: 'Compliance' },
+  { url_path: '/terms', entity: 'Compliance' },
   { url_path: '/tools', entity: 'Tool' },
   { url_path: '/tools/achievement-completion', entity: 'Tool' },
 ];
@@ -49,12 +53,17 @@ for (const locale of locales) {
   }
   const site = JSON.parse(await readFile(join(root, `data/${locale}/site.json`), 'utf8'));
   const tools = JSON.parse(await readFile(join(root, `data/${locale}/tools.json`), 'utf8'));
+  const compliance = JSON.parse(await readFile(join(root, `data/${locale}/compliance.json`), 'utf8'));
   const outputDir = join(root, `public/og/${locale}`);
   await mkdir(outputDir, { recursive: true });
 
   for (const route of pages) {
     const page = route.url_path === '/' ? site.home_seo
       : route.url_path === '/contact' ? { title: site.contact.seo_title, description: site.contact.seo_description }
+      : ['/about', '/privacy', '/cookies', '/terms'].includes(route.url_path) ? {
+        title: compliance.pages[route.url_path.slice(1)].seo_title,
+        description: compliance.pages[route.url_path.slice(1)].seo_description,
+      }
       : route.url_path === '/tools' ? { title: tools.index.seo_title, description: tools.index.seo_description }
       : route.url_path === '/tools/achievement-completion' ? {
         title: tools.achievement_completion.seo_title,
@@ -86,7 +95,7 @@ for (const locale of locales) {
         <text x="1108" y="133" text-anchor="end" class="data">${escapeXml(locale.toUpperCase())}</text>
         ${titleSvg}
         ${descriptionSvg}
-        <text x="92" y="585" class="data amber">${route.entity === 'Contact' ? 'CONTACT · CORRECTIONS' : route.entity === 'Tool' ? 'LIVE · STEAM API · 33 ACHIEVEMENTS' : 'VERIFIED · DATAMINED · V4'}</text>
+        <text x="92" y="585" class="data amber">${route.entity === 'Contact' ? 'CONTACT · CORRECTIONS' : route.entity === 'Compliance' ? 'PUBLIC · SITE RECORD' : route.entity === 'Tool' ? 'LIVE · STEAM API · 33 ACHIEVEMENTS' : 'VERIFIED · DATAMINED · V4'}</text>
         <text x="1108" y="585" text-anchor="end" class="data">${escapeXml(routeLabel)}</text>
       </svg>`;
     await sharp(Buffer.from(svg)).png({ compressionLevel: 9, palette: true }).toFile(join(outputDir, `${imageName(route.url_path)}.png`));

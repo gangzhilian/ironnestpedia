@@ -47,7 +47,7 @@ function linkMap(html) {
 const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 const htmlByRoute = new Map(htmlFiles.map((file) => [fileToRoute(file), readFileSync(file, 'utf8')]));
 const errors = [];
-const indexable = ['/', '/contact', '/tools', '/tools/achievement-completion', ...routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => route.url_path)];
+const indexable = ['/', '/contact', '/about', '/privacy', '/cookies', '/terms', '/tools', '/tools/achievement-completion', ...routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => route.url_path)];
 const noindex = [...placeholders.map((page) => page.url_path), '/tools/mission-map', '/404'];
 
 const expectedHtmlPages = (indexable.length + noindex.length) * locales.length;

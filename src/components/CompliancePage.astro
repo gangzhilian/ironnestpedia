@@ -1,0 +1,70 @@
+---
+import Layout from './Layout.astro';
+import { getCompliance, getDataScope, getSite, localizedPath, type Locale } from '../lib/data';
+
+type PageKey = 'privacy' | 'terms' | 'cookies' | 'about';
+interface Props { page: PageKey; locale?: Locale; }
+
+const { page, locale = 'en' } = Astro.props;
+const site = getSite(locale);
+const copy = getCompliance(locale).pages[page];
+const scope = getDataScope();
+const replacements: Record<string, string | number> = {
+  email: site.contact_email,
+  record_count: scope.recordCount,
+  version: scope.versions.join(' / '),
+  source_list: scope.sources.join(' / '),
+};
+const renderText = (value: string) => Object.entries(replacements)
+  .reduce((text, [key, replacement]) => text.replaceAll(`{${key}}`, String(replacement)), value);
+const canonical = new URL(localizedPath(`/${page}`, locale), site.site_url).href;
+const pageType = page === 'about' ? 'AboutPage' : 'WebPage';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': pageType,
+  name: copy.h1,
+  description: copy.seo_description,
+  url: canonical,
+  inLanguage: site.html_lang,
+  isPartOf: { '@type': 'WebSite', name: site.site_name, url: site.site_url },
+};
+---
+<Layout
+  title={copy.seo_title}
+  description={copy.seo_description}
+  path={`/${page}`}
+  locale={locale}
+  schemas={[schema]}
+  breadcrumbs={[{ label: copy.h1 }]}
+>
+  <article class="compliance-page">
+    <header class="compliance-header">
+      <p class="eyebrow">{copy.eyebrow}</p>
+      <h1>{copy.h1}</h1>
+      <p class="compliance-intro">{copy.intro}</p>
+      <p class="compliance-status"><span>STATUS</span> CURRENT · PUBLIC</p>
+    </header>
+    <div class="compliance-sections">
+      {copy.sections.map((section: { heading: string; paragraphs: string[] }, index: number) => (
+        <section class="compliance-section" aria-labelledby={`${page}-section-${index}`}>
+          <p class="section-index">{String(index + 1).padStart(2, '0')}</p>
+          <div>
+            <h2 id={`${page}-section-${index}`}>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => (
+              paragraph.includes('{email}')
+                ? <p set:html={renderText(paragraph).replace(site.contact_email, `<a href="mailto:${site.contact_email}">${site.contact_email}</a>`)} />
+                : <p>{renderText(paragraph)}</p>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+    <nav class="compliance-related" aria-label={site.ui.database_indexes}>
+      <a href={localizedPath('/about', locale)}>{getCompliance(locale).footer.about}</a>
+      <a href={localizedPath('/privacy', locale)}>{getCompliance(locale).footer.privacy}</a>
+      <a href={localizedPath('/cookies', locale)}>{getCompliance(locale).footer.cookies}</a>
+      <a href={localizedPath('/terms', locale)}>{getCompliance(locale).footer.terms}</a>
+      <a href={localizedPath('/contact', locale)}>{site.contact.footer_label}</a>
+    </nav>
+  </article>
+</Layout>

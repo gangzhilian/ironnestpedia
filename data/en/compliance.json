@@ -1,0 +1,174 @@
+{
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms"
+  },
+  "pages": {
+    "privacy": {
+      "seo_title": "Privacy Policy | IronNestPedia",
+      "seo_description": "How IronNestPedia handles correction emails, Cloudflare request data, cookies, analytics and advertising in its current deployment.",
+      "eyebrow": "Current deployment privacy record",
+      "h1": "Privacy policy",
+      "intro": "This policy describes the data handling that actually occurs on IronNestPedia today. The site does not require an account or sign-in.",
+      "sections": [
+        {
+          "heading": "Information you choose to send",
+          "paragraphs": [
+            "IronNestPedia does not collect account or profile information. The correction links on data pages and the contact page open your own email application; they do not submit a web form to this site.",
+            "If you choose to send a correction email, the recipient can see the sender address, message text and any evidence you include. That information is provided by you for the purpose of reviewing and responding to the report."
+          ]
+        },
+        {
+          "heading": "Hosting and basic request data",
+          "paragraphs": [
+            "IronNestPedia is a static site hosted through Cloudflare. As the hosting and delivery provider, Cloudflare processes basic request information needed to deliver and protect the site, which may include an IP address, User-Agent or browser information, the requested URL and request time. This is infrastructure processing, not a tracking script added by IronNestPedia."
+          ]
+        },
+        {
+          "heading": "Current analytics, advertising and tracking status",
+          "paragraphs": [
+            "IronNestPedia currently does not use Google Analytics, Google AdSense, Microsoft Clarity, Plausible, or any other third-party analytics, advertising, or tracking service.",
+            "The site currently does not set cookies or use local storage for analytics, advertising or user tracking. See the Cookie Policy for the current technical position."
+          ]
+        },
+        {
+          "heading": "Future changes",
+          "paragraphs": [
+            "If analytics or advertising services are added later, this policy and the Cookie Policy will be updated to describe the services actually in use. Where required, the site will also provide appropriate cookie choices before those technologies are used."
+          ]
+        },
+        {
+          "heading": "Privacy questions",
+          "paragraphs": [
+            "For a privacy question, email {email}. This is the same address used for data corrections."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "seo_title": "Terms of Use | IronNestPedia",
+      "seo_description": "Terms governing use of the unofficial IronNestPedia game-data reference and achievement tools.",
+      "eyebrow": "Site use conditions",
+      "h1": "Terms of use",
+      "intro": "By using IronNestPedia, you agree to use this unofficial fan-made reference responsibly and subject to the terms below.",
+      "sections": [
+        {
+          "heading": "What this site provides",
+          "paragraphs": [
+            "IronNestPedia is a free, unofficial player reference for the Steam game IRON NEST: Heavy Turret Simulator. It provides game-data pages and tools such as the achievement completion checker.",
+            "The site does not provide the game itself, sell the game or any related product, or act as customer support for the developer, publisher or Steam."
+          ]
+        },
+        {
+          "heading": "Intellectual property and attribution",
+          "paragraphs": [
+            "Numeric values and observable mechanics are presented as factual reference data. Rights in the game, its trademarks, artwork, names and other protected material remain with their respective developer, publisher and rights holders. IronNestPedia is not affiliated with, endorsed by or operated by them.",
+            "Interface icons used by this site are original SVG drawings and do not reuse extracted game artwork. If gameplay screenshots are added, they will be captured by the site owner during play and remain subject to the rights of the game's owners."
+          ]
+        },
+        {
+          "heading": "Acceptable use",
+          "paragraphs": [
+            "Do not overload, disrupt or abuse the site through automated requests; use the site for unlawful activity; bypass technical safeguards; or impersonate IronNestPedia, the game developer, the publisher or an official representative."
+          ]
+        },
+        {
+          "heading": "Accuracy and availability",
+          "paragraphs": [
+            "The site and its data are provided as is. IronNestPedia aims to publish accurate values and shows source, version, update date and confidence metadata, but does not guarantee that every value, translation, API result or page will always be complete, current or error-free. Data methods and boundaries are explained on the About page.",
+            "You remain responsible for checking information before relying on it. Availability may change without notice."
+          ]
+        },
+        {
+          "heading": "Limitation of liability",
+          "paragraphs": [
+            "To the maximum extent permitted by applicable law, IronNestPedia and its owner are not liable for indirect, incidental, special or consequential loss arising from use of, inability to use, or reliance on this site or its data. Nothing in these terms excludes liability that cannot legally be excluded."
+          ]
+        },
+        {
+          "heading": "Changes to these terms",
+          "paragraphs": [
+            "These terms may be updated when the site, its tools or applicable requirements change. The current version published on this page applies, so check it periodically. Questions can be sent to {email}."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "seo_title": "Cookie Policy | IronNestPedia",
+      "seo_description": "IronNestPedia currently uses no analytics, advertising or tracking cookies or local storage. Read the current technical status.",
+      "eyebrow": "Current storage status",
+      "h1": "Cookie policy",
+      "intro": "This page states the site's current cookie and browser-storage behavior rather than listing services that have not been added.",
+      "sections": [
+        {
+          "heading": "No analytics, advertising or tracking cookies",
+          "paragraphs": [
+            "IronNestPedia currently does not use cookies or local storage for analytics, advertising, personalization or user tracking.",
+            "The site currently has no Google Analytics, Google AdSense, Microsoft Clarity, Plausible or comparable tracking script, and therefore does not present an empty or fictional cookie table."
+          ]
+        },
+        {
+          "heading": "Technical caching and delivery",
+          "paragraphs": [
+            "Your browser or the Cloudflare content-delivery network may cache static files and retain ordinary technical data needed to request, deliver or protect the site. Browser and CDN caching is not a tracking cookie set by IronNestPedia for analytics or advertising. You can clear cached site data through your browser settings."
+          ]
+        },
+        {
+          "heading": "Why there is no consent banner today",
+          "paragraphs": [
+            "Because the current site does not use analytics, advertising or tracking cookies or local storage, it does not currently display a cookie consent banner for those technologies."
+          ]
+        },
+        {
+          "heading": "If the site changes",
+          "paragraphs": [
+            "If services such as analytics or advertising are introduced later, this page and the Privacy Policy will be updated to identify the actual technologies, purposes and user choices. Where consent is required, an appropriate choice mechanism will be provided before those technologies are used."
+          ]
+        }
+      ]
+    },
+    "about": {
+      "seo_title": "About IronNestPedia — Sources, Scope & Corrections",
+      "seo_description": "Learn who IronNestPedia is for, how its IRON NEST data is sourced, what the data covers and how to report an error.",
+      "eyebrow": "Database scope and method",
+      "h1": "About IronNestPedia",
+      "intro": "IronNestPedia is a neutral, unofficial reference built to give IRON NEST players precise data, visible sourcing and a practical correction path.",
+      "sections": [
+        {
+          "heading": "Who this site is for",
+          "paragraphs": [
+            "The site is for players who want to check specific mechanics and values such as shell damage and range, mission relationships, unit statistics, achievement requirements and Steam completion percentages. It is designed as a reference, not as a substitute for playing the game."
+          ]
+        },
+        {
+          "heading": "Current data sources and coverage",
+          "paragraphs": [
+            "The current entity dataset contains {record_count} source records. Every published entity record is classified as {source_list}. There are currently no records classified as in-game observed or community submitted.",
+            "The current data reports game version {version}. The provenance badge on each data page displays the version, source, update date and confidence for the records used by that page; that page-level badge is the authoritative version reference."
+          ]
+        },
+        {
+          "heading": "Exact values, live API data and boundaries",
+          "paragraphs": [
+            "Values such as damage, range and cost are direct values read from the game files. Steam global achievement percentages and player achievement status are obtained from official Steam Web API responses where those tools identify them as live data.",
+            "IronNestPedia does not publish subjective estimates or guessed values as data. When the site owner has not tested an interpretation in play, the page says that no owner-tested interpretation is available instead of inventing one."
+          ]
+        },
+        {
+          "heading": "Unofficial status",
+          "paragraphs": [
+            "IronNestPedia is an unofficial fan-made data reference. It is not affiliated with, endorsed by or operated by the developer or publisher of IRON NEST. IRON NEST and related trademarks belong to their respective owners."
+          ]
+        },
+        {
+          "heading": "Corrections",
+          "paragraphs": [
+            "If a field, value or label appears wrong, use the Report an issue link beside the provenance badge or the Contact / corrections page. Reports are checked against the supplied evidence before the site data is updated."
+          ]
+        }
+      ]
+    }
+  }
+}

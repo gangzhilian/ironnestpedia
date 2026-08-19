@@ -87,11 +87,6 @@ for (const [path, html] of htmlByRoute) {
   footerLinksChecked += 1;
 }
 
-for (const path of ['/about', '/zh-cn/about', '/zh-tw/about']) {
-  const html = htmlByRoute.get(path) ?? '';
-  if (!/name="robots" content="noindex,follow"/i.test(html)) errors.push(`${path}: about placeholder was changed`);
-}
-
 const sitemapUrls = new Set();
 for (const file of walk(dist).filter((file) => /sitemap.*\.xml$/.test(file))) {
   for (const match of readFileSync(file, 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)) {
@@ -113,7 +108,7 @@ console.log(JSON.stringify({
   contact_pages_checked: contactPagesChecked,
   footer_links_checked: footerLinksChecked,
   contact_sitemap_urls: 3,
-  about_placeholders_unchanged: 3,
+  about_scope: 'published in step 26; not asserted by step 24 regression check',
   errors: errors.slice(0, 50),
 }, null, 2));
 if (errors.length) process.exitCode = 1;

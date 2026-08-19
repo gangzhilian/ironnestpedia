@@ -81,6 +81,10 @@ for (const path of noindexPaths) if (sitemapUrls.has(path)) errors.push(`${path}
 const baseSitemapRoutes = [
   ['/', { entity: 'Home', page_type: 'home' }],
   ['/contact', { entity: 'Contact', page_type: 'contact' }],
+  ['/about', { entity: 'Compliance', page_type: 'about' }],
+  ['/privacy', { entity: 'Compliance', page_type: 'privacy' }],
+  ['/cookies', { entity: 'Compliance', page_type: 'cookies' }],
+  ['/terms', { entity: 'Compliance', page_type: 'terms' }],
   ['/tools', { entity: 'Tool', page_type: 'tool_index' }],
   ['/tools/achievement-completion', { entity: 'Tool', page_type: 'tool' }],
   ...routes.filter((route) => route.page_type !== 'tool_placeholder')
