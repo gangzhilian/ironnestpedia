@@ -2,7 +2,7 @@
 import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
 import ProvenanceStamp from './ProvenanceStamp.astro';
-import { entityName, fieldLabel, getIndexRows, getRelatedRoutes, getSeo, getSite, labelForRoute, localizeRows, localizedPath, routes, translate, type Locale, type RouteEntry } from '../lib/data';
+import { entityName, fieldLabel, getIndexRows, getRelatedRoutes, getSeo, getSite, getTools, labelForRoute, localizeRows, localizedPath, routes, translate, type Locale, type RouteEntry } from '../lib/data';
 
 interface Props { route: RouteEntry; locale?: Locale; }
 const { route, locale = 'en' } = Astro.props;
@@ -13,6 +13,7 @@ const fields = (route as any).data_source?.fields ?? Object.keys(rows[0] ?? {});
 const related = getRelatedRoutes(route);
 const entity = entityName(route.entity, locale);
 const site = getSite(locale);
+const tools = getTools(locale);
 const datasetDescription = `${seo.description} ${site.data_note}`;
 const canonical = new URL(localizedPath(route.url_path, locale), site.site_url).href;
 const datasetJson = {
@@ -52,5 +53,14 @@ const tableOnly = ['Medal', 'Punchcard', 'Mutator'].includes(route.entity);
     <h2>{translate(locale, 'related_indexes')}</h2>
     <ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul>
   </section>
+  {route.entity === 'Achievement' && (
+    <section>
+      <h2>{tools.index.h1}</h2>
+      <article class="card">
+        <h3><a href={localizedPath('/tools/achievement-completion', locale)}>{tools.index.tool_name}</a></h3>
+        <p>{tools.index.tool_description}</p>
+      </article>
+    </section>
+  )}
   </div>
 </Layout>

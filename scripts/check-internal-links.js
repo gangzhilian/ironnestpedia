@@ -81,6 +81,8 @@ for (const path of noindexPaths) if (sitemapUrls.has(path)) errors.push(`${path}
 const baseSitemapRoutes = [
   ['/', { entity: 'Home', page_type: 'home' }],
   ['/contact', { entity: 'Contact', page_type: 'contact' }],
+  ['/tools', { entity: 'Tool', page_type: 'tool_index' }],
+  ['/tools/achievement-completion', { entity: 'Tool', page_type: 'tool' }],
   ...routes.filter((route) => route.page_type !== 'tool_placeholder')
     .map((route) => [route.url_path, { entity: route.entity, page_type: route.page_type }]),
 ];

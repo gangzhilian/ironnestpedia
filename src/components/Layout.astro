@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import TechMark from './TechMark.astro';
-import { getSite, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
+import { getSite, getTools, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
 
 interface Props {
   title: string;
@@ -16,6 +16,7 @@ interface Props {
 
 const { title, description, path, locale = 'en', noindex = false, breadcrumbs = [], schemas = [], image } = Astro.props;
 const site = getSite(locale);
+const tools = getTools(locale);
 const pagePath = localizedPath(path, locale);
 const canonical = new URL(pagePath, site.site_url).href;
 const ogImage = new URL(image ?? ogImagePath(path, locale), site.site_url).href;
@@ -34,7 +35,10 @@ const jsonLd = [...(breadcrumbItems.length > 1 ? [breadcrumbJson] : []), ...sche
 const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => ({
   label: route.url_path,
   path: localizedPath(route.url_path, locale),
-}));
+})).concat([
+  { label: '/tools', path: localizedPath('/tools', locale) },
+  { label: '/tools/achievement-completion', path: localizedPath('/tools/achievement-completion', locale) },
+]);
 const languageLinks = site.languages.map((language) => ({
   ...language,
   path: localizedPath(path, language.code as Locale),
@@ -100,6 +104,7 @@ const languageLinks = site.languages.map((language) => ({
       <div class="inner">
         <nav aria-label={site.ui.database_indexes}>
           {site.entity_indexes.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
+          <a class="footer-tools" href={localizedPath('/tools', locale)}>{tools.index.h1}</a>
           <a class="footer-contact" href={localizedPath('/contact', locale)}>{site.contact.footer_label}</a>
         </nav>
         <p>{site.footer_disclaimer}</p>

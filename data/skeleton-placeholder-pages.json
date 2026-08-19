@@ -3,7 +3,6 @@
   "updated_at": "2026-08-18",
   "robots": "noindex,follow",
   "pages": [
-    { "url_path": "/tools", "title": "Tools", "reason": "Tool index has no released tool until step 25." },
     { "url_path": "/guides", "title": "Guides", "reason": "Guide articles are not written in step 21." },
     { "url_path": "/about", "title": "About", "reason": "Reviewed site and data-source copy belongs to step 26." },
     { "url_path": "/privacy", "title": "Privacy Policy", "reason": "Policy must match the scripts actually deployed in step 26." },

@@ -1,0 +1,66 @@
+{
+  "index": {
+    "seo_title": "IRON NEST工具：成就完成度查詢 | IronNestPedia",
+    "seo_description": "查詢一個IRON NEST Steam個人檔案的33項成就，依即時全球完成率從稀有到常見排列尚未解鎖的成就。",
+    "eyebrow": "玩家工具",
+    "h1": "IRON NEST玩家工具",
+    "intro": "將Steam即時資料與本站已核實的成就名稱及說明配合使用。",
+    "tool_name": "成就完成度查詢",
+    "tool_description": "找出一個Steam個人檔案尚未解鎖的成就，並依目前全球稀有度排序。",
+    "open_tool": "開啟查詢工具",
+    "return_home": "返回資料庫首頁"
+  },
+  "achievement_completion": {
+    "seo_title": "IRON NEST成就完成度查詢 | IronNestPedia",
+    "seo_description": "輸入SteamID64或個人檔案網址，查詢尚未解鎖的IRON NEST成就，並依即時全球完成率由低到高排序。",
+    "eyebrow": "Steam即時查詢",
+    "h1": "IRON NEST成就完成度查詢",
+    "intro": "查詢一個Steam個人檔案的全部33項成就。尚未解鎖的成就優先顯示，並依全球完成率由低到高排列。",
+    "input_label": "SteamID64或Steam個人檔案網址",
+    "input_placeholder": "7656119… 或 https://steamcommunity.com/id/…",
+    "input_help": "該個人檔案的「遊戲詳細資料」必須設為公開。輸入內容只會傳送至IronNestPedia的無伺服器端點及Steam完成本次查詢；本站不會儲存。",
+    "submit": "查詢成就",
+    "loading": "正在向Steam查詢成就狀態…",
+    "invalid_input": "請輸入17位SteamID64，或steamcommunity.com個人檔案網址。",
+    "profile_not_found": "Steam無法解析這個個人檔案網址，請檢查後重試。",
+    "profile_unavailable": "Steam無法傳回此個人檔案的成就。最常見的原因是「遊戲詳細資料」未公開。請前往Steam個人檔案→隱私設定，把「遊戲詳細資料」改為公開後重試；如果已經公開，請稍後再試。",
+    "steam_unavailable": "Steam沒有傳回可用的成就資料，請稍後重試。",
+    "service_not_configured": "查詢服務暫時無法使用，請稍後再試。",
+    "data_mismatch": "Steam傳回的成就集合無法安全配對，本站不會顯示不完整結果。",
+    "unknown_error": "本次查詢未能完成，請稍後重試。",
+    "summary": "已解鎖{unlocked}/{total}項 · 尚餘{remaining}項",
+    "retrieved": "Steam資料擷取時間：{time}",
+    "locked_heading": "尚未解鎖——稀有成就優先",
+    "all_unlocked": "這個個人檔案已經解鎖全部33項成就。",
+    "global_unlock": "全球完成率",
+    "unlocked_summary": "已解鎖的成就（{count}）",
+    "no_result": "執行查詢後，這裡會顯示此個人檔案尚未完成的成就。",
+    "data_heading": "查詢使用的資料",
+    "data_text": "玩家解鎖狀態和全球完成率均在查詢時從Steam即時取得；名稱及說明使用IronNestPedia已核實的遊戲版本4成就資料。",
+    "tutorial_heading": "查詢步驟",
+    "tutorial": [
+      "開啟Steam個人檔案並複製網址，或複製該帳號的17位SteamID64。",
+      "前往Steam個人檔案→隱私設定，把「遊戲詳細資料」設為公開。",
+      "把ID或網址貼到上方，然後點選「查詢成就」。"
+    ],
+    "faq_heading": "常見問題",
+    "faq": [
+      {
+        "question": "支援哪些個人檔案連結？",
+        "answer": "支援17位SteamID64、steamcommunity.com上的數字/profiles/連結，以及自訂/id/個人檔案連結。"
+      },
+      {
+        "question": "為什麼個人檔案公開了仍然查不到？",
+        "answer": "Steam的「遊戲詳細資料」有獨立的隱私設定。個人檔案首頁可以是公開的，但成就資料仍可能保持私密。"
+      },
+      {
+        "question": "這裡的稀有度是歷史趨勢嗎？",
+        "answer": "不是。每次查詢都會從Steam取得目前的全球完成率快照，本站不建立歷史趨勢。"
+      }
+    ],
+    "related_heading": "相關頁面",
+    "achievements_index": "瀏覽全部33項成就",
+    "tools_index": "返回玩家工具",
+    "return_home": "返回資料庫首頁"
+  }
+}

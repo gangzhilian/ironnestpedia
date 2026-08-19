@@ -7,6 +7,9 @@ import zhTwSite from '../../data/zh-tw/site.json';
 import enHome from '../../data/en/home.json';
 import zhCnHome from '../../data/zh-cn/home.json';
 import zhTwHome from '../../data/zh-tw/home.json';
+import enTools from '../../data/en/tools.json';
+import zhCnTools from '../../data/zh-cn/tools.json';
+import zhTwTools from '../../data/zh-tw/tools.json';
 import shells from '../../data/en/entities/shells.json';
 import missions from '../../data/en/entities/missions.json';
 import achievements from '../../data/en/entities/achievements.json';
@@ -45,9 +48,11 @@ export const placeholders = placeholdersSource.pages;
 
 const sites: Record<Locale, AnyRecord> = { en: enSite, 'zh-cn': zhCnSite, 'zh-tw': zhTwSite };
 const homes: Record<Locale, AnyRecord> = { en: enHome, 'zh-cn': zhCnHome, 'zh-tw': zhTwHome };
+const tools: Record<Locale, AnyRecord> = { en: enTools, 'zh-cn': zhCnTools, 'zh-tw': zhTwTools };
 export const site = enSite;
 export const getSite = (locale: Locale = 'en') => sites[locale];
 export const getHome = (locale: Locale = 'en') => homes[locale];
+export const getTools = (locale: Locale = 'en') => tools[locale];
 
 export function localizedPath(path: string, locale: Locale = 'en') {
   if (locale === 'en') return path;
@@ -184,6 +189,10 @@ export function localizeRows(rows: AnyRecord[], entity: string, locale: Locale =
     }
     return output;
   });
+}
+
+export function getAchievementLabels(locale: Locale = 'en') {
+  return labels[locale].Achievement;
 }
 
 function routeRows(route: RouteEntry) { return route.page_type === 'data_entity' ? getPrimaryRows(route) : []; }

@@ -1,12 +1,13 @@
 ---
 import Layout from './Layout.astro';
 import news from '../../data/live/news.json';
-import { getHome, getSeo, getSite, labelForRoute, localizedPath, routeMap, translate, type Locale } from '../lib/data';
+import { getHome, getSeo, getSite, getTools, labelForRoute, localizedPath, routeMap, translate, type Locale } from '../lib/data';
 
 interface Props { locale?: Locale; }
 const { locale = 'en' } = Astro.props;
 const home = getHome(locale);
 const site = getSite(locale);
+const tools = getTools(locale);
 const patchItems = news.raw_response?.appnews?.newsitems?.slice(0, 2) ?? [];
 const videoGameJson = {
   '@context': 'https://schema.org',
@@ -34,6 +35,14 @@ const cards = home.blocks.find((block: any) => block.order === 2)?.cards ?? [];
         <article class="card teaser"><h3>{item.label}</h3><p>{translate(locale, 'planned_teaser')}</p></article>
       ))}
     </div>
+  </section>
+  <section>
+    <h2>{tools.index.h1}</h2>
+    <article class="card">
+      <h3><a href={localizedPath('/tools/achievement-completion', locale)}>{tools.index.tool_name}</a></h3>
+      <p>{tools.index.tool_description}</p>
+      <p><a href={localizedPath('/tools', locale)}>{tools.index.open_tool}</a></p>
+    </article>
   </section>
   <section>
     <h2>{translate(locale, 'browse_database')}</h2>

@@ -18,7 +18,8 @@
     "validate:titles": "node scripts/check-title-similarity.js",
     "validate:step23": "node scripts/check-step23-output.js",
     "validate:step24": "node scripts/check-step24-output.js",
-    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23 && npm run validate:step24"
+    "validate:step25": "node scripts/check-step25-output.js",
+    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23 && npm run validate:step24 && npm run validate:step25"
   },
   "keywords": ["iron-nest", "astro", "game-database"],
   "author": "",

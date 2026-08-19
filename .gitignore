@@ -3,7 +3,8 @@ dist/
 .astro/
 .env
 .env.*
+.dev.vars*
+.wrangler/
 !.env.example
 .DS_Store
 npm-debug.log*
-

@@ -1,0 +1,66 @@
+{
+  "index": {
+    "seo_title": "IRON NEST Tools: Achievement Completion Checker | IronNestPedia",
+    "seo_description": "Check an IRON NEST Steam profile against all 33 achievements, list missing unlocks from rarest upward, and review live global completion rates.",
+    "eyebrow": "Operator tools",
+    "h1": "IRON NEST player tools",
+    "intro": "Use live Steam data with the verified achievement labels in this database.",
+    "tool_name": "Achievement Completion Checker",
+    "tool_description": "Find the achievements a Steam profile is still missing, sorted by current global rarity.",
+    "open_tool": "Open the checker",
+    "return_home": "Return to the database home"
+  },
+  "achievement_completion": {
+    "seo_title": "IRON NEST Achievement Completion Checker | IronNestPedia",
+    "seo_description": "Enter a SteamID64 or profile URL to find missing IRON NEST achievements, sorted by live global completion rate from rarest upward.",
+    "eyebrow": "Live Steam lookup",
+    "h1": "IRON NEST achievement completion checker",
+    "intro": "Check all 33 achievements for one Steam profile. Missing achievements are listed first, from the lowest global completion rate upward.",
+    "input_label": "SteamID64 or Steam profile URL",
+    "input_placeholder": "7656119… or https://steamcommunity.com/id/…",
+    "input_help": "The profile's Game details must be Public. Your input is sent to IronNestPedia's serverless endpoint and Steam for this lookup; this site does not store it.",
+    "submit": "Check achievements",
+    "loading": "Requesting achievement status from Steam…",
+    "invalid_input": "Enter a 17-digit SteamID64 or a steamcommunity.com profile URL.",
+    "profile_not_found": "Steam could not resolve that profile URL. Check the address and try again.",
+    "profile_unavailable": "Steam could not return this profile's achievements. The most common cause is private Game details. Set Steam Profile → Privacy Settings → Game details to Public, then try again. If it is already public, wait a moment and retry.",
+    "steam_unavailable": "Steam did not return usable achievement data. Try again in a moment.",
+    "service_not_configured": "The lookup service is temporarily unavailable. Please try again later.",
+    "data_mismatch": "Steam returned an achievement set that could not be matched safely. No partial result is shown.",
+    "unknown_error": "The lookup could not be completed. Try again in a moment.",
+    "summary": "{unlocked} of {total} unlocked · {remaining} remaining",
+    "retrieved": "Steam snapshot retrieved {time}",
+    "locked_heading": "Still locked — rarest first",
+    "all_unlocked": "All 33 achievements are unlocked on this profile.",
+    "global_unlock": "Global unlock",
+    "unlocked_summary": "Unlocked achievements ({count})",
+    "no_result": "Run a lookup to see this profile's missing achievements.",
+    "data_heading": "What the checker uses",
+    "data_text": "Player unlock status and global completion rates are requested live from Steam. Names and descriptions use IronNestPedia's verified Version 4 achievement data.",
+    "tutorial_heading": "How to run a lookup",
+    "tutorial": [
+      "Open the Steam profile and copy its URL, or copy the account's 17-digit SteamID64.",
+      "In Steam Profile → Privacy Settings, set Game details to Public.",
+      "Paste the ID or URL above and select Check achievements."
+    ],
+    "faq_heading": "Questions",
+    "faq": [
+      {
+        "question": "Which profile links are accepted?",
+        "answer": "The checker accepts 17-digit SteamID64 values, numeric /profiles/ links, and custom /id/ profile links on steamcommunity.com."
+      },
+      {
+        "question": "Why does a public profile still fail?",
+        "answer": "Steam has a separate privacy setting for Game details. The main profile can be public while achievement data remains private."
+      },
+      {
+        "question": "Are the rarity percentages historical?",
+        "answer": "No. The checker requests a current global completion snapshot from Steam each time you run it; it does not build a trend history."
+      }
+    ],
+    "related_heading": "Related pages",
+    "achievements_index": "Browse all 33 achievements",
+    "tools_index": "Return to player tools",
+    "return_home": "Return to the database home"
+  }
+}

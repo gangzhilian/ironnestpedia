@@ -6,7 +6,6 @@ const { path, title: sourceTitle, reason: sourceReason, locale = 'en' } = Astro.
 const copies: Record<Locale, Record<string, [string, string]>> = {
   en: {},
   'zh-cn': {
-    '/tools': ['工具', '步骤25之前没有已经发布的工具，因此工具索引暂不开放。'],
     '/guides': ['攻略', '步骤21不编写攻略文章。'],
     '/about': ['关于本站', '经审核的站点与数据来源说明属于步骤26。'],
     '/privacy': ['隐私政策', '本政策必须在步骤26中与实际部署的脚本保持一致。'],
@@ -15,7 +14,6 @@ const copies: Record<Locale, Record<string, [string, string]>> = {
     '/contact': ['联系我们', '真实联系渠道将在步骤24或26提供。'],
   },
   'zh-tw': {
-    '/tools': ['工具', '步驟25之前沒有已發布的工具，因此工具索引暫不開放。'],
     '/guides': ['攻略', '步驟21不撰寫攻略文章。'],
     '/about': ['關於本站', '經審核的網站與資料來源說明屬於步驟26。'],
     '/privacy': ['隱私權政策', '本政策必須在步驟26中與實際部署的指令碼保持一致。'],

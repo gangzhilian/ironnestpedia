@@ -1,0 +1,43 @@
+---
+import Layout from './Layout.astro';
+import { getSite, getTools, localizedPath, type Locale } from '../lib/data';
+
+interface Props { locale?: Locale; }
+const { locale = 'en' } = Astro.props;
+const site = getSite(locale);
+const copy = getTools(locale).index;
+const canonical = new URL(localizedPath('/tools', locale), site.site_url).href;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: copy.h1,
+  description: copy.seo_description,
+  url: canonical,
+  inLanguage: site.html_lang,
+  isPartOf: { '@type': 'WebSite', name: site.site_name, url: site.site_url },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: 1,
+    itemListElement: [{
+      '@type': 'ListItem',
+      position: 1,
+      name: copy.tool_name,
+      url: new URL(localizedPath('/tools/achievement-completion', locale), site.site_url).href,
+    }],
+  },
+};
+---
+<Layout title={copy.seo_title} description={copy.seo_description} path="/tools" locale={locale} schemas={[schema]} breadcrumbs={[{ label: copy.h1 }]}>
+  <p class="eyebrow">{copy.eyebrow}</p>
+  <h1>{copy.h1}</h1>
+  <p>{copy.intro}</p>
+  <section aria-labelledby="released-tools-heading">
+    <h2 id="released-tools-heading">{copy.tool_name}</h2>
+    <article class="card tool-index-card">
+      <h3><a href={localizedPath('/tools/achievement-completion', locale)}>{copy.tool_name}</a></h3>
+      <p>{copy.tool_description}</p>
+      <a class="contact-action" href={localizedPath('/tools/achievement-completion', locale)}>{copy.open_tool}</a>
+    </article>
+  </section>
+  <p><a href={localizedPath('/', locale)}>{copy.return_home}</a></p>
+</Layout>

@@ -1,0 +1,227 @@
+---
+import Layout from './Layout.astro';
+import { getAchievementLabels, getSite, getTools, localizedPath, type Locale } from '../lib/data';
+
+interface Props { locale?: Locale; }
+const { locale = 'en' } = Astro.props;
+const site = getSite(locale);
+const tools = getTools(locale);
+const copy = tools.achievement_completion;
+const labels = getAchievementLabels(locale);
+const path = '/tools/achievement-completion';
+const canonical = new URL(localizedPath(path, locale), site.site_url).href;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: copy.h1,
+  description: copy.seo_description,
+  url: canonical,
+  applicationCategory: 'UtilitiesApplication',
+  operatingSystem: 'Any',
+  browserRequirements: 'JavaScript enabled',
+  inLanguage: site.html_lang,
+  isAccessibleForFree: true,
+};
+---
+<Layout
+  title={copy.seo_title}
+  description={copy.seo_description}
+  path={path}
+  locale={locale}
+  schemas={[schema]}
+  breadcrumbs={[{ label: tools.index.h1, url: '/tools' }, { label: copy.h1 }]}
+>
+  <p class="eyebrow">{copy.eyebrow}</p>
+  <h1>{copy.h1}</h1>
+  <p class="tool-intro">{copy.intro}</p>
+
+  <section class="tool-console" aria-labelledby="achievement-query-heading">
+    <div class="tool-console-header">
+      <span id="achievement-query-heading">STEAM // PLAYER ACHIEVEMENTS</span>
+      <span>APP 2950790</span>
+    </div>
+    <form id="achievement-checker" class="tool-form">
+      <label for="steam-profile-input">{copy.input_label}</label>
+      <div class="tool-input-row">
+        <input
+          id="steam-profile-input"
+          name="steam-profile"
+          type="text"
+          placeholder={copy.input_placeholder}
+          maxlength="240"
+          autocomplete="off"
+          autocapitalize="none"
+          spellcheck="false"
+          required
+          aria-describedby="steam-input-help"
+        />
+        <button type="submit">{copy.submit}</button>
+      </div>
+      <p id="steam-input-help" class="contact-note">{copy.input_help}</p>
+    </form>
+    <p id="achievement-status" class="tool-status" aria-live="polite">{copy.no_result}</p>
+    <section id="achievement-results" class="tool-results" hidden aria-live="polite">
+      <div class="result-summary">
+        <strong id="completion-summary"></strong>
+        <span id="retrieved-at" class="meta"></span>
+      </div>
+      <div id="locked-results"></div>
+      <details id="unlocked-results">
+        <summary></summary>
+        <div class="achievement-list"></div>
+      </details>
+    </section>
+  </section>
+
+  <section class="panel tool-data-note">
+    <h2>{copy.data_heading}</h2>
+    <p>{copy.data_text}</p>
+  </section>
+
+  <section>
+    <h2>{copy.tutorial_heading}</h2>
+    <ol class="instruction-list">
+      {copy.tutorial.map((step: string) => <li>{step}</li>)}
+    </ol>
+  </section>
+
+  <section>
+    <h2>{copy.faq_heading}</h2>
+    <div class="faq-list">
+      {copy.faq.map((item: { question: string; answer: string }) => (
+        <details class="card">
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2>{copy.related_heading}</h2>
+    <ul class="link-list">
+      <li><a href={localizedPath('/achievements', locale)}>{copy.achievements_index}</a></li>
+      <li><a href={localizedPath('/tools', locale)}>{copy.tools_index}</a></li>
+      <li><a href={localizedPath('/', locale)}>{copy.return_home}</a></li>
+    </ul>
+  </section>
+
+  <script define:vars={{ copy, labels, locale }}>
+    const form = document.querySelector('#achievement-checker');
+    const input = document.querySelector('#steam-profile-input');
+    const button = form?.querySelector('button[type="submit"]');
+    const status = document.querySelector('#achievement-status');
+    const results = document.querySelector('#achievement-results');
+    const summary = document.querySelector('#completion-summary');
+    const retrieved = document.querySelector('#retrieved-at');
+    const lockedRoot = document.querySelector('#locked-results');
+    const unlockedRoot = document.querySelector('#unlocked-results');
+
+    const interpolate = (template, values) => Object.entries(values)
+      .reduce((text, [key, value]) => text.replaceAll(`{${key}}`, String(value)), template);
+
+    function makeAchievement(row) {
+      const label = labels[row.apiname];
+      const article = document.createElement('article');
+      article.className = 'achievement-result';
+      const text = document.createElement('div');
+      const heading = document.createElement('h3');
+      heading.textContent = label.displayName;
+      const description = document.createElement('p');
+      description.textContent = label.description;
+      text.append(heading, description);
+      const percent = document.createElement('div');
+      percent.className = 'achievement-percent';
+      const value = document.createElement('strong');
+      value.textContent = `${new Intl.NumberFormat(locale, { maximumFractionDigits: 2 }).format(row.globalPercent)}%`;
+      const caption = document.createElement('span');
+      caption.textContent = copy.global_unlock;
+      percent.append(value, caption);
+      article.append(text, percent);
+      return article;
+    }
+
+    function showError(code) {
+      const message = copy[code] ?? copy.unknown_error;
+      status.textContent = message;
+      status.classList.add('is-error');
+      results.hidden = true;
+    }
+
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!(input instanceof HTMLInputElement) || !(button instanceof HTMLButtonElement)) return;
+      const value = input.value.trim();
+      if (!value) { showError('invalid_input'); return; }
+
+      button.disabled = true;
+      button.textContent = copy.loading;
+      form.setAttribute('aria-busy', 'true');
+      status.textContent = copy.loading;
+      status.classList.remove('is-error');
+      results.hidden = true;
+
+      try {
+        const response = await fetch('/api/achievement-completion', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ input: value }),
+        });
+        const payload = await response.json().catch(() => null);
+        if (!response.ok || !payload?.ok) { showError(payload?.code ?? 'unknown_error'); return; }
+
+        const expectedKeys = Object.keys(labels);
+        const receivedKeys = new Set(payload.achievements.map((row) => row.apiname));
+        if (payload.achievements.length !== expectedKeys.length || expectedKeys.some((key) => !receivedKeys.has(key))) {
+          showError('data_mismatch');
+          return;
+        }
+        const joined = payload.achievements.map((row) => ({ ...row, label: labels[row.apiname] }));
+        const byRarity = (left, right) => left.globalPercent - right.globalPercent
+          || left.label.displayName.localeCompare(right.label.displayName, locale);
+        const locked = joined.filter((row) => !row.achieved).sort(byRarity);
+        const unlocked = joined.filter((row) => row.achieved).sort(byRarity);
+
+        summary.textContent = interpolate(copy.summary, {
+          unlocked: unlocked.length,
+          total: joined.length,
+          remaining: locked.length,
+        });
+        const time = new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(payload.fetchedAt));
+        retrieved.textContent = interpolate(copy.retrieved, { time });
+
+        lockedRoot.replaceChildren();
+        const lockedHeading = document.createElement('h2');
+        lockedHeading.textContent = copy.locked_heading;
+        lockedRoot.append(lockedHeading);
+        if (locked.length) {
+          const list = document.createElement('div');
+          list.className = 'achievement-list';
+          list.append(...locked.map(makeAchievement));
+          lockedRoot.append(list);
+        } else {
+          const complete = document.createElement('p');
+          complete.className = 'notice';
+          complete.textContent = copy.all_unlocked;
+          lockedRoot.append(complete);
+        }
+
+        const unlockedSummary = unlockedRoot.querySelector('summary');
+        const unlockedList = unlockedRoot.querySelector('.achievement-list');
+        unlockedSummary.textContent = interpolate(copy.unlocked_summary, { count: unlocked.length });
+        unlockedList.replaceChildren(...unlocked.map(makeAchievement));
+        unlockedRoot.hidden = unlocked.length === 0;
+
+        status.textContent = '';
+        status.classList.remove('is-error');
+        results.hidden = false;
+      } catch {
+        showError('steam_unavailable');
+      } finally {
+        button.disabled = false;
+        button.textContent = copy.submit;
+        form.removeAttribute('aria-busy');
+      }
+    });
+  </script>
+</Layout>
