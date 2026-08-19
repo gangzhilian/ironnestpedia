@@ -16,203 +16,223 @@
     },
     {
       "url_path": "/shells/ap",
+      "title": "IRON NEST AP炮彈：2傷害、0.15爆炸半徑、徵用10",
+      "description": "AP炮彈實錄資料：傷害2、爆炸半徑0.15、速度0.7、最大裝藥射程30、徵用花費10，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST AP炮彈",
       "keyword_candidates": [
-        "AP炮彈資料",
-        "AP傷害"
-      ],
-      "title": "IRON NEST AP炮彈：傷害、爆炸半徑與射程",
-      "description": "查看AP炮彈的速度0.7、傷害2、爆炸半徑0.15、裝藥等級射程與相關徵用卡資料。"
+        "AP炮彈傷害",
+        "AP炮彈射程",
+        "AP徵用花費"
+      ]
     },
     {
       "url_path": "/shells/aphe",
+      "title": "IRON NEST APHE炮彈：2傷害、0.25爆炸半徑、徵用15",
+      "description": "APHE炮彈實錄資料：傷害2、爆炸半徑0.25、速度0.7、最大裝藥射程30、徵用花費15，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST APHE炮彈",
       "keyword_candidates": [
-        "APHE炮彈資料",
-        "APHE傷害"
-      ],
-      "title": "IRON NEST APHE炮彈：傷害、爆炸半徑與射程",
-      "description": "查看APHE炮彈的速度0.7、傷害2、爆炸半徑0.25、裝藥等級射程與相關徵用卡資料。"
+        "APHE炮彈傷害",
+        "APHE炮彈射程",
+        "APHE徵用花費"
+      ]
     },
     {
       "url_path": "/shells/atmc",
+      "title": "IRON NEST ATMC炮彈：2傷害、3爆炸半徑、徵用666",
+      "description": "ATMC炮彈實錄資料：傷害2、爆炸半徑3、速度0.7、最大裝藥射程30、徵用花費666，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST ATMC炮彈",
       "keyword_candidates": [
-        "ATMC炮彈資料",
-        "ATMC傷害"
-      ],
-      "title": "IRON NEST ATMC炮彈：傷害、爆炸半徑與射程",
-      "description": "查看ATMC炮彈的速度0.7、傷害2、爆炸半徑3、裝藥等級射程與相關徵用卡資料。"
+        "ATMC炮彈傷害",
+        "ATMC炮彈射程",
+        "ATMC徵用花費"
+      ]
     },
     {
       "url_path": "/shells/clmn",
+      "title": "IRON NEST CLMN炮彈：1傷害、0.5爆炸半徑、徵用17",
+      "description": "CLMN炮彈實錄資料：傷害1、爆炸半徑0.5、速度0.7、最大裝藥射程30、徵用花費17，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST CLMN炮彈",
       "keyword_candidates": [
-        "CLMN炮彈資料",
-        "CLMN傷害"
-      ],
-      "title": "IRON NEST CLMN炮彈：傷害、爆炸半徑與射程",
-      "description": "查看CLMN炮彈的速度0.7、傷害1、爆炸半徑0.5、裝藥等級射程與相關徵用卡資料。"
+        "CLMN炮彈傷害",
+        "CLMN炮彈射程",
+        "CLMN徵用花費"
+      ]
     },
     {
       "url_path": "/shells/cyan",
+      "title": "IRON NEST CYAN炮彈：1傷害、0.75爆炸半徑、徵用28",
+      "description": "CYAN炮彈實錄資料：傷害1、爆炸半徑0.75、速度0.7、最大裝藥射程30、徵用花費28，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST CYAN炮彈",
       "keyword_candidates": [
-        "CYAN炮彈資料",
-        "CYAN傷害"
-      ],
-      "title": "IRON NEST CYAN炮彈：傷害、爆炸半徑與射程",
-      "description": "查看CYAN炮彈的速度0.7、傷害1、爆炸半徑0.75、裝藥等級射程與相關徵用卡資料。"
+        "CYAN炮彈傷害",
+        "CYAN炮彈射程",
+        "CYAN徵用花費"
+      ]
     },
     {
       "url_path": "/shells/dril",
+      "title": "IRON NEST DRIL炮彈：1傷害、0.07爆炸半徑、徵用3",
+      "description": "DRIL炮彈實錄資料：傷害1、爆炸半徑0.07、速度0.7、最大裝藥射程30、徵用花費3，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST DRIL炮彈",
       "keyword_candidates": [
-        "DRIL炮彈資料",
-        "DRIL傷害"
-      ],
-      "title": "IRON NEST DRIL炮彈：傷害、爆炸半徑與射程",
-      "description": "查看DRIL炮彈的速度0.7、傷害1、爆炸半徑0.07、裝藥等級射程與相關徵用卡資料。"
+        "DRIL炮彈傷害",
+        "DRIL炮彈射程",
+        "DRIL徵用花費"
+      ]
     },
     {
       "url_path": "/shells/eqke",
+      "title": "IRON NEST EQKE炮彈：2傷害、0.55爆炸半徑、徵用26",
+      "description": "EQKE炮彈實錄資料：傷害2、爆炸半徑0.55、速度0.7、最大裝藥射程30、徵用花費26，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST EQKE炮彈",
       "keyword_candidates": [
-        "EQKE炮彈資料",
-        "EQKE傷害"
-      ],
-      "title": "IRON NEST EQKE炮彈：傷害、爆炸半徑與射程",
-      "description": "查看EQKE炮彈的速度0.7、傷害2、爆炸半徑0.55、裝藥等級射程與相關徵用卡資料。"
+        "EQKE炮彈傷害",
+        "EQKE炮彈射程",
+        "EQKE徵用花費"
+      ]
     },
     {
       "url_path": "/shells/flch",
+      "title": "IRON NEST FLCH炮彈：1傷害、0.62爆炸半徑、徵用20",
+      "description": "FLCH炮彈實錄資料：傷害1、爆炸半徑0.62、速度0.7、最大裝藥射程30、徵用花費20，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST FLCH炮彈",
       "keyword_candidates": [
-        "FLCH炮彈資料",
-        "FLCH傷害"
-      ],
-      "title": "IRON NEST FLCH炮彈：傷害、爆炸半徑與射程",
-      "description": "查看FLCH炮彈的速度0.7、傷害1、爆炸半徑0.62、裝藥等級射程與相關徵用卡資料。"
+        "FLCH炮彈傷害",
+        "FLCH炮彈射程",
+        "FLCH徵用花費"
+      ]
     },
     {
       "url_path": "/shells/hche",
+      "title": "IRON NEST HCHE炮彈：1傷害、0.55爆炸半徑、徵用18",
+      "description": "HCHE炮彈實錄資料：傷害1、爆炸半徑0.55、速度0.7、最大裝藥射程30、徵用花費18，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST HCHE炮彈",
       "keyword_candidates": [
-        "HCHE炮彈資料",
-        "HCHE傷害"
-      ],
-      "title": "IRON NEST HCHE炮彈：傷害、爆炸半徑與射程",
-      "description": "查看HCHE炮彈的速度0.7、傷害1、爆炸半徑0.55、裝藥等級射程與相關徵用卡資料。"
+        "HCHE炮彈傷害",
+        "HCHE炮彈射程",
+        "HCHE徵用花費"
+      ]
     },
     {
       "url_path": "/shells/he",
+      "title": "IRON NEST HE炮彈：1傷害、0.25爆炸半徑、徵用10",
+      "description": "HE炮彈實錄資料：傷害1、爆炸半徑0.25、速度0.7、最大裝藥射程30、徵用花費10，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST HE炮彈",
       "keyword_candidates": [
-        "HE炮彈資料",
-        "HE傷害"
-      ],
-      "title": "IRON NEST HE炮彈：傷害、爆炸半徑與射程",
-      "description": "查看HE炮彈的速度0.7、傷害1、爆炸半徑0.25、裝藥等級射程與相關徵用卡資料。"
+        "HE炮彈傷害",
+        "HE炮彈射程",
+        "HE徵用花費"
+      ]
     },
     {
       "url_path": "/shells/incn",
+      "title": "IRON NEST INCN炮彈：1傷害、0.25爆炸半徑、徵用12",
+      "description": "INCN炮彈實錄資料：傷害1、爆炸半徑0.25、速度0.7、最大裝藥射程30、徵用花費12，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST INCN炮彈",
       "keyword_candidates": [
-        "INCN炮彈資料",
-        "INCN傷害"
-      ],
-      "title": "IRON NEST INCN炮彈：傷害、爆炸半徑與射程",
-      "description": "查看INCN炮彈的速度0.7、傷害1、爆炸半徑0.25、裝藥等級射程與相關徵用卡資料。"
+        "INCN炮彈傷害",
+        "INCN炮彈射程",
+        "INCN徵用花費"
+      ]
     },
     {
       "url_path": "/shells/le",
+      "title": "IRON NEST LE炮彈：1傷害、0.15爆炸半徑、徵用8",
+      "description": "LE炮彈實錄資料：傷害1、爆炸半徑0.15、速度0.7、最大裝藥射程30、徵用花費8，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST LE炮彈",
       "keyword_candidates": [
-        "LE炮彈資料",
-        "LE傷害"
-      ],
-      "title": "IRON NEST LE炮彈：傷害、爆炸半徑與射程",
-      "description": "查看LE炮彈的速度0.7、傷害1、爆炸半徑0.15、裝藥等級射程與相關徵用卡資料。"
+        "LE炮彈傷害",
+        "LE炮彈射程",
+        "LE徵用花費"
+      ]
     },
     {
       "url_path": "/shells/plcm",
+      "title": "IRON NEST PLCM炮彈：1傷害、0.15爆炸半徑、徵用15",
+      "description": "PLCM炮彈實錄資料：傷害1、爆炸半徑0.15、速度0.7、最大裝藥射程30、徵用花費15，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST PLCM炮彈",
       "keyword_candidates": [
-        "PLCM炮彈資料",
-        "PLCM傷害"
-      ],
-      "title": "IRON NEST PLCM炮彈：傷害、爆炸半徑與射程",
-      "description": "查看PLCM炮彈的速度0.7、傷害1、爆炸半徑0.15、裝藥等級射程與相關徵用卡資料。"
+        "PLCM炮彈傷害",
+        "PLCM炮彈射程",
+        "PLCM徵用花費"
+      ]
     },
     {
       "url_path": "/shells/phgn",
+      "title": "IRON NEST PHGN炮彈：1傷害、0.62爆炸半徑、徵用10",
+      "description": "PHGN炮彈實錄資料：傷害1、爆炸半徑0.62、速度0.7、最大裝藥射程30、徵用花費10，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST PHGN炮彈",
       "keyword_candidates": [
-        "PHGN炮彈資料",
-        "PHGN傷害"
-      ],
-      "title": "IRON NEST PHGN炮彈：傷害、爆炸半徑與射程",
-      "description": "查看PHGN炮彈的速度0.7、傷害1、爆炸半徑0.62、裝藥等級射程與相關徵用卡資料。"
+        "PHGN炮彈傷害",
+        "PHGN炮彈射程",
+        "PHGN徵用花費"
+      ]
     },
     {
       "url_path": "/shells/prpg",
+      "title": "IRON NEST PRPG炮彈：1傷害、0.5爆炸半徑、徵用7",
+      "description": "PRPG炮彈實錄資料：傷害1、爆炸半徑0.5、速度0.7、最大裝藥射程30、徵用花費7，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST PRPG炮彈",
       "keyword_candidates": [
-        "PRPG炮彈資料",
-        "PRPG傷害"
-      ],
-      "title": "IRON NEST PRPG炮彈：傷害、爆炸半徑與射程",
-      "description": "查看PRPG炮彈的速度0.7、傷害1、爆炸半徑0.5、裝藥等級射程與相關徵用卡資料。"
+        "PRPG炮彈傷害",
+        "PRPG炮彈射程",
+        "PRPG徵用花費"
+      ]
     },
     {
       "url_path": "/shells/smk",
+      "title": "IRON NEST SMK炮彈：1傷害、1爆炸半徑、徵用2",
+      "description": "SMK炮彈實錄資料：傷害1、爆炸半徑1、速度0.7、最大裝藥射程30、徵用花費2，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST SMK炮彈",
       "keyword_candidates": [
-        "SMK炮彈資料",
-        "SMK傷害"
-      ],
-      "title": "IRON NEST SMK炮彈：傷害、爆炸半徑與射程",
-      "description": "查看SMK炮彈的速度0.7、傷害1、爆炸半徑1、裝藥等級射程與相關徵用卡資料。"
+        "SMK炮彈傷害",
+        "SMK炮彈射程",
+        "SMK徵用花費"
+      ]
     },
     {
       "url_path": "/shells/star",
+      "title": "IRON NEST STAR炮彈：0傷害、0.5爆炸半徑、徵用2",
+      "description": "STAR炮彈實錄資料：傷害0、爆炸半徑0.5、速度0.7、最大裝藥射程30、徵用花費2，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST STAR炮彈",
       "keyword_candidates": [
-        "STAR炮彈資料",
-        "STAR傷害"
-      ],
-      "title": "IRON NEST STAR炮彈：傷害、爆炸半徑與射程",
-      "description": "查看STAR炮彈的速度0.7、傷害0、爆炸半徑0.5、裝藥等級射程與相關徵用卡資料。"
+        "STAR炮彈傷害",
+        "STAR炮彈射程",
+        "STAR徵用花費"
+      ]
     },
     {
       "url_path": "/shells/tear",
+      "title": "IRON NEST TEAR炮彈：0傷害、0.75爆炸半徑、徵用8",
+      "description": "TEAR炮彈實錄資料：傷害0、爆炸半徑0.75、速度0.7、最大裝藥射程30、徵用花費8，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST TEAR炮彈",
       "keyword_candidates": [
-        "TEAR炮彈資料",
-        "TEAR傷害"
-      ],
-      "title": "IRON NEST TEAR炮彈：傷害、爆炸半徑與射程",
-      "description": "查看TEAR炮彈的速度0.7、傷害0、爆炸半徑0.75、裝藥等級射程與相關徵用卡資料。"
+        "TEAR炮彈傷害",
+        "TEAR炮彈射程",
+        "TEAR徵用花費"
+      ]
     },
     {
       "url_path": "/shells/thrm",
+      "title": "IRON NEST THRM炮彈：1傷害、0.35爆炸半徑、徵用22",
+      "description": "THRM炮彈實錄資料：傷害1、爆炸半徑0.35、速度0.7、最大裝藥射程30、徵用花費22，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST THRM炮彈",
       "keyword_candidates": [
-        "THRM炮彈資料",
-        "THRM傷害"
-      ],
-      "title": "IRON NEST THRM炮彈：傷害、爆炸半徑與射程",
-      "description": "查看THRM炮彈的速度0.7、傷害1、爆炸半徑0.35、裝藥等級射程與相關徵用卡資料。"
+        "THRM炮彈傷害",
+        "THRM炮彈射程",
+        "THRM徵用花費"
+      ]
     },
     {
       "url_path": "/shells/wp",
+      "title": "IRON NEST WP炮彈：0傷害、0.75爆炸半徑、徵用10",
+      "description": "WP炮彈實錄資料：傷害0、爆炸半徑0.75、速度0.7、最大裝藥射程30、徵用花費10，並列出完整裝藥射程表。",
       "primary_keyword": "IRON NEST WP炮彈",
       "keyword_candidates": [
-        "WP炮彈資料",
-        "WP傷害"
-      ],
-      "title": "IRON NEST WP炮彈：傷害、爆炸半徑與射程",
-      "description": "查看WP炮彈的速度0.7、傷害0、爆炸半徑0.75、裝藥等級射程與相關徵用卡資料。"
+        "WP炮彈傷害",
+        "WP炮彈射程",
+        "WP徵用花費"
+      ]
     }
   ]
 }

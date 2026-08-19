@@ -16,203 +16,223 @@
     },
     {
       "url_path": "/shells/ap",
+      "title": "AP Shell: 2 DMG · 0.15 Blast · Req 10 | IRON NEST",
+      "description": "AP shell data records 2 damage, 0.15 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 10, with the full charge table.",
       "primary_keyword": "IRON NEST AP shell",
       "keyword_candidates": [
-        "IRON NEST AP ammo",
-        "IRON NEST AP round"
-      ],
-      "title": "IRON NEST AP Shell - 2 Damage, 0.15 Impact Radius Data",
-      "description": "AP combines speed 0.7, damage 2, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
+        "AP shell damage",
+        "AP shell range",
+        "AP requisition cost"
+      ]
     },
     {
       "url_path": "/shells/aphe",
+      "title": "APHE Shell: 2 DMG · 0.25 Blast · Req 15 | IRON NEST",
+      "description": "APHE shell data records 2 damage, 0.25 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 15, with the full charge table.",
       "primary_keyword": "IRON NEST APHE shell",
       "keyword_candidates": [
-        "IRON NEST APHE ammo",
-        "IRON NEST APHE round"
-      ],
-      "title": "IRON NEST APHE Shell - 2 Damage, 0.25 Impact Radius",
-      "description": "APHE combines speed 0.7, damage 2, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 15; no other shell repeats this complete setup here."
+        "APHE shell damage",
+        "APHE shell range",
+        "APHE requisition cost"
+      ]
     },
     {
       "url_path": "/shells/atmc",
+      "title": "ATMC Shell: 2 DMG · 3 Blast · Req 666 | IRON NEST",
+      "description": "ATMC shell data records 2 damage, 3 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 666, with the full charge table.",
       "primary_keyword": "IRON NEST ATMC shell",
       "keyword_candidates": [
-        "IRON NEST ATMC ammo",
-        "IRON NEST ATMC round"
-      ],
-      "title": "IRON NEST ATMC Shell - 2 Damage, 3 Impact Radius Data",
-      "description": "ATMC combines speed 0.7, damage 2, impact radius 3, 1 projectile, 5–30 charge range and punchcard cost 666; no other shell repeats this complete setup here."
+        "ATMC shell damage",
+        "ATMC shell range",
+        "ATMC requisition cost"
+      ]
     },
     {
       "url_path": "/shells/clmn",
+      "title": "CLMN Shell: 1 DMG · 0.5 Blast · Req 17 | IRON NEST",
+      "description": "CLMN shell data records 1 damage, 0.5 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 17, with the full charge table.",
       "primary_keyword": "IRON NEST CLMN shell",
       "keyword_candidates": [
-        "IRON NEST CLMN ammo",
-        "IRON NEST CLMN round"
-      ],
-      "title": "IRON NEST CLMN Shell - 1 Damage, 0.5 Impact Radius",
-      "description": "CLMN combines speed 0.7, damage 1, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 17; no other shell repeats this complete setup here."
+        "CLMN shell damage",
+        "CLMN shell range",
+        "CLMN requisition cost"
+      ]
     },
     {
       "url_path": "/shells/cyan",
+      "title": "CYAN Shell: 1 DMG · 0.75 Blast · Req 28 | IRON NEST",
+      "description": "CYAN shell data records 1 damage, 0.75 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 28, with the full charge table.",
       "primary_keyword": "IRON NEST CYAN shell",
       "keyword_candidates": [
-        "IRON NEST CYAN ammo",
-        "IRON NEST CYAN round"
-      ],
-      "title": "IRON NEST CYAN Shell - 1 Damage, 0.75 Impact Radius",
-      "description": "CYAN combines speed 0.7, damage 1, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 28; no other shell repeats this complete setup here."
+        "CYAN shell damage",
+        "CYAN shell range",
+        "CYAN requisition cost"
+      ]
     },
     {
       "url_path": "/shells/dril",
+      "title": "DRIL Shell: 1 DMG · 0.07 Blast · Req 3 | IRON NEST",
+      "description": "DRIL shell data records 1 damage, 0.07 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 3, with the full charge table.",
       "primary_keyword": "IRON NEST DRIL shell",
       "keyword_candidates": [
-        "IRON NEST DRIL ammo",
-        "IRON NEST DRIL round"
-      ],
-      "title": "IRON NEST DRIL Shell - 1 Damage, 0.07 Impact Radius",
-      "description": "DRIL combines speed 0.7, damage 1, impact radius 0.07, 1 projectile, 5–30 charge range and punchcard cost 3; no other shell repeats this complete setup here."
+        "DRIL shell damage",
+        "DRIL shell range",
+        "DRIL requisition cost"
+      ]
     },
     {
       "url_path": "/shells/eqke",
+      "title": "EQKE Shell: 2 DMG · 0.55 Blast · Req 26 | IRON NEST",
+      "description": "EQKE shell data records 2 damage, 0.55 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 26, with the full charge table.",
       "primary_keyword": "IRON NEST EQKE shell",
       "keyword_candidates": [
-        "IRON NEST EQKE ammo",
-        "IRON NEST EQKE round"
-      ],
-      "title": "IRON NEST EQKE Shell - 2 Damage, 0.55 Impact Radius",
-      "description": "EQKE combines speed 0.7, damage 2, impact radius 0.55, 1 projectile, 5–30 charge range and punchcard cost 26; no other shell repeats this complete setup here."
+        "EQKE shell damage",
+        "EQKE shell range",
+        "EQKE requisition cost"
+      ]
     },
     {
       "url_path": "/shells/flch",
+      "title": "FLCH Shell: 1 DMG · 0.62 Blast · Req 20 | IRON NEST",
+      "description": "FLCH shell data records 1 damage, 0.62 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 20, with the full charge table.",
       "primary_keyword": "IRON NEST FLCH shell",
       "keyword_candidates": [
-        "IRON NEST FLCH ammo",
-        "IRON NEST FLCH round"
-      ],
-      "title": "IRON NEST FLCH Shell - 1 Damage, 0.62 Impact Radius",
-      "description": "FLCH combines speed 0.7, damage 1, impact radius 0.62, 1 projectile, 5–30 charge range and punchcard cost 20; no other shell repeats this complete setup here."
+        "FLCH shell damage",
+        "FLCH shell range",
+        "FLCH requisition cost"
+      ]
     },
     {
       "url_path": "/shells/hche",
+      "title": "HCHE Shell: 1 DMG · 0.55 Blast · Req 18 | IRON NEST",
+      "description": "HCHE shell data records 1 damage, 0.55 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 18, with the full charge table.",
       "primary_keyword": "IRON NEST HCHE shell",
       "keyword_candidates": [
-        "IRON NEST HCHE ammo",
-        "IRON NEST HCHE round"
-      ],
-      "title": "IRON NEST HCHE Shell - 1 Damage, 0.55 Impact Radius",
-      "description": "HCHE combines speed 0.7, damage 1, impact radius 0.55, 1 projectile, 5–30 charge range and punchcard cost 18; no other shell repeats this complete setup here."
+        "HCHE shell damage",
+        "HCHE shell range",
+        "HCHE requisition cost"
+      ]
     },
     {
       "url_path": "/shells/he",
+      "title": "HE Shell: 1 DMG · 0.25 Blast · Req 10 | IRON NEST",
+      "description": "HE shell data records 1 damage, 0.25 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 10, with the full charge table.",
       "primary_keyword": "IRON NEST HE shell",
       "keyword_candidates": [
-        "IRON NEST HE ammo",
-        "IRON NEST HE round"
-      ],
-      "title": "IRON NEST HE Shell - 1 Damage, 0.25 Impact Radius Data",
-      "description": "HE combines speed 0.7, damage 1, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
+        "HE shell damage",
+        "HE shell range",
+        "HE requisition cost"
+      ]
     },
     {
       "url_path": "/shells/incn",
+      "title": "INCN Shell: 1 DMG · 0.25 Blast · Req 12 | IRON NEST",
+      "description": "INCN shell data records 1 damage, 0.25 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 12, with the full charge table.",
       "primary_keyword": "IRON NEST INCN shell",
       "keyword_candidates": [
-        "IRON NEST INCN ammo",
-        "IRON NEST INCN round"
-      ],
-      "title": "IRON NEST INCN Shell - 1 Damage, 0.25 Impact Radius",
-      "description": "INCN combines speed 0.7, damage 1, impact radius 0.25, 1 projectile, 5–30 charge range and punchcard cost 12; no other shell repeats this complete setup here."
+        "INCN shell damage",
+        "INCN shell range",
+        "INCN requisition cost"
+      ]
     },
     {
       "url_path": "/shells/le",
+      "title": "LE Shell: 1 DMG · 0.15 Blast · Req 8 | IRON NEST",
+      "description": "LE shell data records 1 damage, 0.15 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 8, with the full charge table.",
       "primary_keyword": "IRON NEST LE shell",
       "keyword_candidates": [
-        "IRON NEST LE ammo",
-        "IRON NEST LE round"
-      ],
-      "title": "IRON NEST LE Shell - 1 Damage, 0.15 Impact Radius Data",
-      "description": "LE combines speed 0.7, damage 1, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 8; no other shell repeats this complete setup here."
+        "LE shell damage",
+        "LE shell range",
+        "LE requisition cost"
+      ]
     },
     {
       "url_path": "/shells/plcm",
+      "title": "PLCM Shell: 1 DMG · 0.15 Blast · Req 15 | IRON NEST",
+      "description": "PLCM shell data records 1 damage, 0.15 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 15, with the full charge table.",
       "primary_keyword": "IRON NEST PLCM shell",
       "keyword_candidates": [
-        "IRON NEST PLCM ammo",
-        "IRON NEST PLCM round"
-      ],
-      "title": "IRON NEST PLCM Shell - 1 Damage, 0.15 Impact Radius",
-      "description": "PLCM combines speed 0.7, damage 1, impact radius 0.15, 1 projectile, 5–30 charge range and punchcard cost 15; no other shell repeats this complete setup here."
+        "PLCM shell damage",
+        "PLCM shell range",
+        "PLCM requisition cost"
+      ]
     },
     {
       "url_path": "/shells/phgn",
+      "title": "PHGN Shell: 1 DMG · 0.62 Blast · Req 10 | IRON NEST",
+      "description": "PHGN shell data records 1 damage, 0.62 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 10, with the full charge table.",
       "primary_keyword": "IRON NEST PHGN shell",
       "keyword_candidates": [
-        "IRON NEST PHGN ammo",
-        "IRON NEST PHGN round"
-      ],
-      "title": "IRON NEST PHGN Shell - 1 Damage, 0.62 Impact Radius",
-      "description": "PHGN combines speed 0.7, damage 1, impact radius 0.62, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
+        "PHGN shell damage",
+        "PHGN shell range",
+        "PHGN requisition cost"
+      ]
     },
     {
       "url_path": "/shells/prpg",
+      "title": "PRPG Shell: 1 DMG · 0.5 Blast · Req 7 | IRON NEST",
+      "description": "PRPG shell data records 1 damage, 0.5 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 7, with the full charge table.",
       "primary_keyword": "IRON NEST PRPG shell",
       "keyword_candidates": [
-        "IRON NEST PRPG ammo",
-        "IRON NEST PRPG round"
-      ],
-      "title": "IRON NEST PRPG Shell - 1 Damage, 0.5 Impact Radius",
-      "description": "PRPG combines speed 0.7, damage 1, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 7; no other shell repeats this complete setup here."
+        "PRPG shell damage",
+        "PRPG shell range",
+        "PRPG requisition cost"
+      ]
     },
     {
       "url_path": "/shells/smk",
+      "title": "SMK Shell: 1 DMG · 1 Blast · Req 2 | IRON NEST",
+      "description": "SMK shell data records 1 damage, 1 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 2, with the full charge table.",
       "primary_keyword": "IRON NEST SMK shell",
       "keyword_candidates": [
-        "IRON NEST SMK ammo",
-        "IRON NEST SMK round"
-      ],
-      "title": "IRON NEST SMK Shell - 1 Damage, 1 Impact Radius Data",
-      "description": "SMK combines speed 0.7, damage 1, impact radius 1, 1 projectile, 5–30 charge range and punchcard cost 2; no other shell repeats this complete setup here."
+        "SMK shell damage",
+        "SMK shell range",
+        "SMK requisition cost"
+      ]
     },
     {
       "url_path": "/shells/star",
+      "title": "STAR Shell: 0 DMG · 0.5 Blast · Req 2 | IRON NEST",
+      "description": "STAR shell data records 0 damage, 0.5 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 2, with the full charge table.",
       "primary_keyword": "IRON NEST STAR shell",
       "keyword_candidates": [
-        "IRON NEST STAR ammo",
-        "IRON NEST STAR round"
-      ],
-      "title": "IRON NEST STAR Shell - 0 Damage, 0.5 Impact Radius",
-      "description": "STAR combines speed 0.7, damage 0, impact radius 0.5, 1 projectile, 5–30 charge range and punchcard cost 2; no other shell repeats this complete setup here."
+        "STAR shell damage",
+        "STAR shell range",
+        "STAR requisition cost"
+      ]
     },
     {
       "url_path": "/shells/tear",
+      "title": "TEAR Shell: 0 DMG · 0.75 Blast · Req 8 | IRON NEST",
+      "description": "TEAR shell data records 0 damage, 0.75 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 8, with the full charge table.",
       "primary_keyword": "IRON NEST TEAR shell",
       "keyword_candidates": [
-        "IRON NEST TEAR ammo",
-        "IRON NEST TEAR round"
-      ],
-      "title": "IRON NEST TEAR Shell - 0 Damage, 0.75 Impact Radius",
-      "description": "TEAR combines speed 0.7, damage 0, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 8; no other shell repeats this complete setup here."
+        "TEAR shell damage",
+        "TEAR shell range",
+        "TEAR requisition cost"
+      ]
     },
     {
       "url_path": "/shells/thrm",
+      "title": "THRM Shell: 1 DMG · 0.35 Blast · Req 22 | IRON NEST",
+      "description": "THRM shell data records 1 damage, 0.35 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 22, with the full charge table.",
       "primary_keyword": "IRON NEST THRM shell",
       "keyword_candidates": [
-        "IRON NEST THRM ammo",
-        "IRON NEST THRM round"
-      ],
-      "title": "IRON NEST THRM Shell - 1 Damage, 0.35 Impact Radius",
-      "description": "THRM combines speed 0.7, damage 1, impact radius 0.35, 1 projectile, 5–30 charge range and punchcard cost 22; no other shell repeats this complete setup here."
+        "THRM shell damage",
+        "THRM shell range",
+        "THRM requisition cost"
+      ]
     },
     {
       "url_path": "/shells/wp",
+      "title": "WP Shell: 0 DMG · 0.75 Blast · Req 10 | IRON NEST",
+      "description": "WP shell data records 0 damage, 0.75 impact radius, 0.7 speed, a 30 maximum charge range and requisition cost 10, with the full charge table.",
       "primary_keyword": "IRON NEST WP shell",
       "keyword_candidates": [
-        "IRON NEST WP ammo",
-        "IRON NEST WP round"
-      ],
-      "title": "IRON NEST WP Shell - 0 Damage, 0.75 Impact Radius Data",
-      "description": "WP combines speed 0.7, damage 0, impact radius 0.75, 1 projectile, 5–30 charge range and punchcard cost 10; no other shell repeats this complete setup here."
+        "WP shell damage",
+        "WP shell range",
+        "WP requisition cost"
+      ]
     }
   ]
 }

@@ -1,0 +1,19 @@
+---
+import ProvenanceStamp from './ProvenanceStamp.astro';
+import TechMark from './TechMark.astro';
+import { getEntityReadouts, translate, type Locale, type RouteEntry } from '../lib/data';
+
+interface Props { route: RouteEntry; row?: Record<string, any>; locale?: Locale; }
+const { route, row, locale = 'en' } = Astro.props;
+const readouts = getEntityReadouts(route, locale);
+---
+<aside class="infobox" aria-labelledby="field-readout-heading">
+  <header>
+    <h2 id="field-readout-heading">{translate(locale, 'field_readout')}</h2>
+    <TechMark size={25} />
+  </header>
+  <dl class="readout-list">
+    {readouts.map((item) => <div><dt>{item.label}</dt><dd>{item.value}</dd></div>)}
+  </dl>
+  <ProvenanceStamp row={row} />
+</aside>

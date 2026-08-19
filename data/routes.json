@@ -5581,7 +5581,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "AllyHospital页独有其跨5个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/65538，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "AllyHospital页独有其跨5个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/65538，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的5次生成实例里,官方本地化key不完全一致——4次为`STR_ENTITYNAME_ALLYHOSPITAL`(\"AllyHospital\"),另有1次(FinalHarvest)官方本地化key`STR_ENTITYNAME_HOSPITAL`(\"Hospital\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5619,7 +5619,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "AllyMech页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131074，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "AllyMech页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131074，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的2次生成实例里,官方本地化key不完全一致——1次为`STR_ENTITYNAME_ALLY_MECHANIZED`(\"Ally Mechanized\"),另有1次(The Gorge)官方本地化key`STR_ENTITYNAME_MECHANIZED`(\"Mechanized\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5658,7 +5658,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "AllyTank页独有其跨6个任务的6次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/262146/262154，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "AllyTank页独有其跨6个任务的6次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/262146/262154，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的6次生成实例里,官方本地化key不完全一致——4次为`STR_ENTITYNAME_ALLYTANK`(\"AllyTank\"),另有1次(FinalHarvest)官方本地化key`STR_ENTITYNAME_TANK`(\"Tank\")、1次(WhiteShells)官方本地化key`STR_ENTITYNAME_ALLY_TANK`(\"Ally Tank\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5699,7 +5699,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "EnemyArtillery页独有其跨2个任务的4次生成配置合并结果：生命1–1、装甲0–0、星级0–1及Role变体32769/32801/32929，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "EnemyArtillery页独有其跨2个任务的4次生成配置合并结果：生命1–1、装甲0–0、星级0–1及Role变体32769/32801/32929，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的4次生成实例里,官方本地化key不完全一致——2次为`STR_ENTITYNAME_ARTILLERY`(\"Artillery\"),另有1次(FinalHarvest)官方本地化key`STR_ENTITYNAME_ENEMYARTILLERY`(\"EnemyArtillery\")、1次(FinalHarvest)官方本地化key`STR_ENTITYNAME_ENEMY_ARTILLERY`(\"Enemy Artillery\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5775,7 +5775,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "EnemyCommander页独有其跨5个任务的5次生成配置合并结果：生命1–1、装甲0–1、星级2–4及Role变体65825/131073/131201，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "EnemyCommander页独有其跨5个任务的5次生成配置合并结果：生命1–1、装甲0–1、星级2–4及Role变体65825/131073/131201，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的5次生成实例里,官方本地化key不完全一致——2次为`STR_ENTITYNAME_ENEMY_FIELD_COMMAND`(\"Enemy Field Command\"),另有2次(BlindFire/The Gorge)官方本地化key`STR_ENTITYNAME_ENEMY_COMMANDER`(\"Enemy Commander\")、1次(IronRoad)官方本地化key`STR_ENTITYNAME_ENEMYCOMMANDER`(\"EnemyCommander\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5858,7 +5858,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "EnemyInfantry页独有其跨8个任务的19次生成配置合并结果：生命1–1、装甲0–0、星级0–1及Role变体131073/131201/131265/131329/131585/131617，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "EnemyInfantry页独有其跨8个任务的19次生成配置合并结果：生命1–1、装甲0–0、星级0–1及Role变体131073/131201/131265/131329/131585/131617，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的19次生成实例里,官方本地化key不完全一致——12次为`STR_ENTITYNAME_ENEMY_INFANTRY`(\"Enemy Infantry\"),另有5次(FinalHarvest/IronRoad)官方本地化key`STR_ENTITYNAME_ENEMYINFANTRY`(\"EnemyInfantry\")、2次(Artillery Introduction)官方本地化key`STR_ENTITYNAME_INFANTRY`(\"Infantry\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5902,7 +5902,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "EnemyMech页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131585/262401，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "EnemyMech页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131585/262401，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的3次生成实例里,官方本地化key不完全一致——2次为`STR_ENTITYNAME_ENEMY_MECHANIZED_INFANTRY`(\"Enemy Mechanized Infantry\"),另有1次(The Gorge)官方本地化key`STR_ENTITYNAME_ENEMY_MECHANIZED`(\"Enemy Mechanized\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -5981,7 +5981,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "EnemyTarget页独有其跨5个任务的8次生成配置合并结果：生命1–1、装甲0–1、星级0–3及Role变体33/161/289/32801/131105，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "EnemyTarget页独有其跨5个任务的8次生成配置合并结果：生命1–1、装甲0–1、星级0–3及Role变体33/161/289/32801/131105，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的8次生成实例里,官方本地化key不完全一致——7次为`STR_ENTITYNAME_TARGET`(\"Target\"),另有1次(Insurrections and Requisitions)官方本地化key`STR_ENTITYNAME_INFANTRY`(\"Infantry\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6060,7 +6060,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "FrendlyMech页独有其跨3个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131082/262154，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "FrendlyMech页独有其跨3个任务的5次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131082/262154，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的5次生成实例里,官方本地化key不完全一致——3次为`STR_ENTITYNAME_MECHANIZED_INFANTRY`(\"Mechanized Infantry\"),另有2次(DeadReckoning/FireOnCall)官方本地化key`STR_ENTITYNAME_ARMOUR`(\"Armour\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6291,7 +6291,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "Mechanized页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131074/131082，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "Mechanized页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体131074/131082，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的2次生成实例里,官方本地化key不完全一致——1次为`STR_ENTITYNAME_MECHANIZED`(\"Mechanized\"),另有1次(HighTide)官方本地化key`STR_ENTITYNAME_ALLIED_MECHANIZED`(\"Allied Mechanized\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6329,7 +6329,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "Police页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/131074，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "Police页独有其跨3个任务的3次生成配置合并结果：生命1–1、装甲0–0、星级0–0及Role变体2/131074，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的3次生成实例里,官方本地化key不完全一致——2次为`STR_ENTITYNAME_POLICE`(\"Police\"),另有1次(HighTide)官方本地化key`STR_ENTITYNAME_MILITARY_POLICE_POST`(\"Military police Post\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6405,7 +6405,7 @@
           "missionRef"
         ]
       },
-      "unique_value_statement": "TrainStation页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级2–3及Role变体65537，可直接看出同一单位在不同任务是否被改强或改弱。",
+      "unique_value_statement": "TrainStation页独有其跨2个任务的2次生成配置合并结果：生命1–1、装甲0–0、星级2–3及Role变体65537，可直接看出同一单位在不同任务是否被改强或改弱。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的2次生成实例里,官方本地化key不完全一致——1次为`STR_ENTITYNAME_MAIN_STATION`(\"Main Station\"),另有1次(IronRoad)官方本地化key`STR_ENTITYNAME_MAINSTATION`(\"MainStation\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6517,7 +6517,7 @@
           ]
         }
       },
-      "unique_value_statement": "AllyInfantry页把AllyInfantry与allyInfantry的14条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖10个任务，生命1–1、装甲0–0、星级0–2和Role 2/131074/131082可跨任务比较。",
+      "unique_value_statement": "AllyInfantry页把AllyInfantry与allyInfantry的14条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖10个任务，生命1–1、装甲0–0、星级0–2和Role 2/131074/131082可跨任务比较。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的10次生成实例里,官方本地化key不完全一致——5次为`STR_ENTITYNAME_ALLYINFANTRY`(\"AllyInfantry\"),另有4次(FinalHarvest/IronRoad/The Gorge)官方本地化key`STR_ENTITYNAME_INFANTRY`(\"Infantry\")、1次(WhiteShells)官方本地化key`STR_ENTITYNAME_ALLY_INFANTRY`(\"Ally Infantry\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6579,7 +6579,7 @@
           ]
         }
       },
-      "unique_value_statement": "AllySpotter页把AllySpotter与allyspotter的24条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖14个任务，生命1–1、装甲0–0、星级0–0和Role 6/131078/131082可跨任务比较。",
+      "unique_value_statement": "AllySpotter页把AllySpotter与allyspotter的24条原始生成记录统一到一个对外类别，同时保留全部源ID差异；合并后覆盖14个任务，生命1–1、装甲0–0、星级0–0和Role 6/131078/131082可跨任务比较。 ⚠️2026-08-19核对`12-terminology.json`发现:本页合并的22次生成实例里,官方本地化key不完全一致——21次为`STR_ENTITYNAME_SPOTTER`(\"Spotter\"),另有1次(WhiteShells)官方本地化key`STR_ENTITYNAME_ALLY_SPOTTER`(\"Ally Spotter\")。这不是同一实体在不同任务强化/削弱的数值差异,是该内部ID在少数任务里复用了不同命名的驻防标记物。写title/description时不能笼统当作单一官方名称处理,需要如实反映这个差异,可以用它本身作为该页的差异化点。",
       "internal_link_candidates": [
         "/units",
         "/shells",
@@ -6723,6 +6723,11 @@
       "question": "步骤15内容优先级输入缺失",
       "detail": "15-content-priorities.json已补入：4条可匹配的mission topic落到8个Mission页；Liberation保留在content_priority_unmatched；5条cross-mission mechanic原样进入content_priority_cross_mission_topics。",
       "status": "resolved"
+    },
+    {
+      "question": "MapEntity页内部Name(官方本地化key)不一致 + 4组跨页面key重叠",
+      "detail": "2026-08-19复核发现:26个MapEntity页里有14个(AllyHospital/AllyMech/AllyTank/EnemyArtillery/EnemyCommander/EnemyInfantry/EnemyMech/EnemyTarget/FrendlyMech/Mechanized/Police/TrainStation/AllyInfantry/AllySpotter)合并的多次生成实例中,`Name`字段(即STR_ENTITYNAME_*官方本地化key)不完全一致——多数是TrainStation这类纯格式差异(MainStation/Main Station同一个词),但Police(Police/Military police Post)、AllyHospital(AllyHospital/Hospital)等属实为不同的官方命名。另外发现4组官方key跨页面重叠:STR_ENTITYNAME_HOSPITAL同时出现在/units/hospital和/units/allyhospital;STR_ENTITYNAME_MECHANIZED同时出现在/units/allymech和/units/mechanized;STR_ENTITYNAME_INFANTRY同时出现在/units/enemyinfantry、/units/frendlyinfantry、/units/enemytarget、/units/allyinfantry四个页面;STR_ENTITYNAME_TARGET同时出现在/units/target和/units/enemytarget。核实过站长此前已对AllyArtillery/allyArtillery等大小写变体做过人工复核合并(见上一条open_question),这次发现的是更细粒度的问题——不是原始ID要不要合并,是已经合并的同一个ID内部,各次生成实例挂的官方名称本身就不统一。鉴于这批实体全部是Health=1/Armour=0/ImmuneShells全空的低战斗意义场景标记物(ImmuneShells全空已在上面'自绘任务地图数据未就绪'条目里被站长接受为已知缺口),且17-keywords.json现有title/description用的是'X Unit - N Spawns Across M Missions'这种基于原始ID的中性表述、没有虚构统一官方名称,不构成现有内容错误。处理方式:14个页面的unique_value_statement已如实补充官方key差异明细(供Codex在步骤23生成title/description时用作真实差异化字段,而不是重新做原始ID分组);4组跨页面key重叠不做拆分/合并处理,风险大于收益,只作为已知情况记录。是否要为这批raw ID做一次更彻底的分类体系重建(比如'Spotter'原始ID有23条纯净记录却完全没有对应页面,和已有的AllySpotter页是什么关系没有查证),留给以后单独评估,不在本次范围内。",
+      "status": "assessed_scoped_not_restructured"
     }
   ],
   "content_priority_unmatched": [

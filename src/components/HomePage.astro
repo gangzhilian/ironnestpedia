@@ -18,8 +18,7 @@ const videoGameJson = {
 const featured = home.blocks.find((block: any) => block.order === 1)?.items ?? [];
 const cards = home.blocks.find((block: any) => block.order === 2)?.cards ?? [];
 ---
-<Layout title={site.home_seo.title} description={site.home_seo.description} path="/" locale={locale}>
-  <script type="application/ld+json" set:html={JSON.stringify(videoGameJson)} />
+<Layout title={site.home_seo.title} description={site.home_seo.description} path="/" locale={locale} schemas={[videoGameJson]}>
   <p class="eyebrow">{translate(locale, 'home_eyebrow')}</p>
   <h1>{home.h1}</h1>
   <p>{site.data_note}</p>

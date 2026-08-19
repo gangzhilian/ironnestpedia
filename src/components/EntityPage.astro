@@ -1,6 +1,8 @@
 ---
 import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
+import EntityInfobox from './EntityInfobox.astro';
+import TechMark from './TechMark.astro';
 import { entityName, getEmbeddedRows, getPrimaryRows, getRelatedRoutes, getSeo, labelForRoute, localizeRows, localizedPath, routeMap, translate, type Locale, type RouteEntry } from '../lib/data';
 
 interface Props { route: RouteEntry; locale?: Locale; }
@@ -18,9 +20,14 @@ const entity = entityName(route.entity, locale);
   ...(indexRoute ? [{ label: labelForRoute(indexRoute, locale), url: indexRoute.url_path }] : []),
   { label: seo.primary_keyword || route.source_record_id || route.url_path },
 ]}>
-  <p class="eyebrow">{translate(locale, 'data_page', { entity })}</p>
-  <h1>{seo.title}</h1>
-  <p>{seo.description}</p>
+  <div class="entity-layout">
+    <div class="entity-lead">
+      <p class="eyebrow">{translate(locale, 'data_page', { entity })}</p>
+      <h1>{seo.title}</h1>
+      <p>{seo.description}</p>
+    </div>
+    <EntityInfobox route={route} row={rows[0]} locale={locale} />
+  </div>
   <h2>{translate(locale, 'verified_data')}</h2>
   <DataTable rows={rows} fields={fields} locale={locale} />
   {embedded.map((group) => (
@@ -29,12 +36,10 @@ const entity = entityName(route.entity, locale);
       <DataTable rows={group.rows} fields={group.source.fields ?? Object.keys(group.rows[0] ?? {})} locale={locale} />
     </section>
   ))}
-  {rows[0] && (
-    <section class="panel">
-      <h2>{translate(locale, 'record_provenance')}</h2>
-      <p>{translate(locale, 'game_version')}: <strong>{rows[0].game_version}</strong> · {translate(locale, 'source')}: <strong>{rows[0].data_source}</strong> · {translate(locale, 'updated')}: <strong>{rows[0].last_updated}</strong> · {translate(locale, 'confidence')}: <strong>{rows[0].confidence}</strong></p>
-    </section>
-  )}
+  <section>
+    <h2>{translate(locale, 'tested_interpretation')}</h2>
+    <div class="interpretation-status"><TechMark size={24} /><p>{translate(locale, 'no_tested_insight')}</p></div>
+  </section>
   <section>
     <h2>{translate(locale, 'related_pages')}</h2>
     <ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul>

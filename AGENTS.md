@@ -33,4 +33,4 @@ Do not infer route groupings, entity merges, record filters, or SEO copy from ra
 - Implement relationship links from verified data fields and `data/en/relations/linking-rules.json`; do not invent categories or hard-code a precomputed final graph.
 - Do not publish extracted game art. Use data, text, and original site assets only.
 - English database pages should prefer exact labels, tables, lists, and numbers over marketing prose. Avoid the banned phrases in the writing specification and back-translate new prose to reject empty wording.
-- `public/favicon.svg` is the temporary step 21 placeholder favicon. Replace it after the visual direction is approved in step 23.
+- `public/favicon.svg` is the approved step 23 military-terminal favicon. Keep future replacements aligned with the gunmetal, olive, and amber visual system.

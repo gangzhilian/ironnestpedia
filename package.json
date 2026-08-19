@@ -6,14 +6,18 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "migrate": "node scripts/migrate-from-project-data.mjs && node scripts/generate-locales.mjs",
+    "migrate": "node scripts/migrate-from-project-data.mjs && node scripts/generate-locales.mjs && node scripts/generate-step23-meta.mjs && node scripts/generate-og-images.mjs",
     "locales": "node scripts/generate-locales.mjs",
+    "meta": "node scripts/generate-step23-meta.mjs",
+    "og": "node scripts/generate-og-images.mjs",
     "validate:data": "node scripts/validate-data.js",
     "validate:links": "node scripts/check-internal-links.js",
     "validate:locales": "node scripts/check-locale-parity.js",
     "validate:localized-output": "node scripts/check-localized-output.js",
     "validate:no-cjk": "node scripts/check-no-cjk.js",
-    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk"
+    "validate:titles": "node scripts/check-title-similarity.js",
+    "validate:step23": "node scripts/check-step23-output.js",
+    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23"
   },
   "keywords": ["iron-nest", "astro", "game-database"],
   "author": "",
@@ -22,6 +26,8 @@
   "type": "module",
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.2.2"
+    "astro": "^7.2.2",
+    "parse5": "^7.3.0",
+    "sharp": "^0.35.3"
   }
 }

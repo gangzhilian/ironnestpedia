@@ -1,7 +1,8 @@
 ---
 import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
-import { entityName, getIndexRows, getRelatedRoutes, getSeo, labelForRoute, localizeRows, localizedPath, routes, translate, type Locale, type RouteEntry } from '../lib/data';
+import ProvenanceStamp from './ProvenanceStamp.astro';
+import { entityName, fieldLabel, getIndexRows, getRelatedRoutes, getSeo, getSite, labelForRoute, localizeRows, localizedPath, routes, translate, type Locale, type RouteEntry } from '../lib/data';
 
 interface Props { route: RouteEntry; locale?: Locale; }
 const { route, locale = 'en' } = Astro.props;
@@ -11,11 +12,32 @@ const rows = localizeRows(getIndexRows(route), route.entity, locale);
 const fields = (route as any).data_source?.fields ?? Object.keys(rows[0] ?? {});
 const related = getRelatedRoutes(route);
 const entity = entityName(route.entity, locale);
+const site = getSite(locale);
+const datasetDescription = `${seo.description} ${site.data_note}`;
+const canonical = new URL(localizedPath(route.url_path, locale), site.site_url).href;
+const datasetJson = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: seo.title,
+  description: datasetDescription,
+  url: canonical,
+  inLanguage: site.html_lang,
+  isAccessibleForFree: true,
+  version: String(rows[0]?.game_version ?? '4'),
+  variableMeasured: fields.map((field) => fieldLabel(field, locale)),
+};
+const tableOnly = ['Medal', 'Punchcard', 'Mutator'].includes(route.entity);
 ---
-<Layout title={seo.title} description={seo.description} path={route.url_path} locale={locale} breadcrumbs={[{ label: seo.primary_keyword || route.url_path }]}>
+<Layout title={seo.title} description={seo.description} path={route.url_path} locale={locale} schemas={[datasetJson]} breadcrumbs={[{ label: seo.primary_keyword || route.url_path }]}>
+  <div class:list={['index-page', { 'index-table-only': tableOnly }]}>
   <p class="eyebrow">{translate(locale, 'entity_index', { entity })}</p>
   <h1>{seo.title}</h1>
   <p>{seo.description}</p>
+  <section class="dataset-scope" aria-labelledby="dataset-scope-heading">
+    <h2 id="dataset-scope-heading">{translate(locale, 'dataset_scope')}</h2>
+    <p>{datasetDescription}</p>
+    <ProvenanceStamp row={rows[0]} locale={locale} />
+  </section>
   {children.length > 0 && (
     <section>
       <h2>{translate(locale, 'pages_in_index')}</h2>
@@ -30,4 +52,5 @@ const entity = entityName(route.entity, locale);
     <h2>{translate(locale, 'related_indexes')}</h2>
     <ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul>
   </section>
+  </div>
 </Layout>

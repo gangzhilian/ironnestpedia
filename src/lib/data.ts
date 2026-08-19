@@ -32,6 +32,7 @@ import zhTwMedalLabels from '../../data/zh-tw/entities/medals.labels.json';
 import zhTwMissionLabels from '../../data/zh-tw/entities/missions.labels.json';
 import zhTwMutatorLabels from '../../data/zh-tw/entities/mutators.labels.json';
 import zhTwPunchcardLabels from '../../data/zh-tw/entities/punchcards.labels.json';
+import achievementPercentages from '../../data/live/achievement-percentages.json';
 
 export const localeCodes = ['en', 'zh-cn', 'zh-tw'] as const;
 export type Locale = (typeof localeCodes)[number];
@@ -215,6 +216,108 @@ export function getRelatedRoutes(route: RouteEntry): RouteEntry[] {
 export function labelForRoute(route: RouteEntry, locale: Locale = 'en') {
   const seo = getSeo(route.url_path, locale);
   return seo.primary_keyword || seo.title || route.url_path;
+}
+
+const achievementPercentageMap = new Map(
+  achievementPercentages.raw_response.achievementpercentages.achievements.map((item) => [item.name, Number(item.percent)]),
+);
+
+export function getAchievementPercentage(name: string) {
+  return achievementPercentageMap.get(name);
+}
+
+export function missionDisplayName(id: string, locale: Locale = 'en') {
+  return String(labels[locale].Mission?.[id]?.displayName ?? id).replace(/\s+/g, ' ').trim();
+}
+
+export function getOfficialNamesForRoute(route: RouteEntry, locale: Locale = 'en') {
+  if (route.entity !== 'MapEntity') return [];
+  const statementKeys = [...String((route as any).unique_value_statement ?? '').matchAll(/STR_ENTITYNAME_[A-Z_]+/g)]
+    .map((match) => match[0]);
+  const rowKeys = getPrimaryRows(route).map((row) => String(row.Name ?? '')).filter(Boolean);
+  const keys = [...new Set(statementKeys.length ? statementKeys : rowKeys)];
+  return [...new Set(keys.map((key) => labels[locale].MapEntity?.[key]?.displayName ?? key))];
+}
+
+export function getOfficialKeyCount(route: RouteEntry) {
+  if (route.entity !== 'MapEntity') return 0;
+  const statementKeys = [...String((route as any).unique_value_statement ?? '').matchAll(/STR_ENTITYNAME_[A-Z_]+/g)]
+    .map((match) => match[0]);
+  const rowKeys = getPrimaryRows(route).map((row) => String(row.Name ?? '')).filter(Boolean);
+  return new Set(statementKeys.length ? statementKeys : rowKeys).size;
+}
+
+type Readout = { label: string; value: string };
+
+function formatMetric(value: unknown) {
+  if (value === null || value === undefined || value === '') return '—';
+  if (Array.isArray(value)) return value.length ? value.join(', ') : '0';
+  return String(value);
+}
+
+function numericRange(values: unknown[]) {
+  const numbers = values.map(Number).filter(Number.isFinite);
+  if (!numbers.length) return '—';
+  const min = Math.min(...numbers);
+  const max = Math.max(...numbers);
+  return min === max ? String(min) : `${min}–${max}`;
+}
+
+export function getEntityReadouts(route: RouteEntry, locale: Locale = 'en'): Readout[] {
+  const sourceRows = getPrimaryRows(route);
+  const rows = localizeRows(sourceRows, route.entity, locale);
+  const row = rows[0] ?? {};
+  if (route.entity === 'Shell') {
+    const chargeValues = Object.values(row.charge_N_maxRange ?? {});
+    const punchcard = getEmbeddedRows(route).find((group) => group.entity === 'Punchcard')?.rows?.[0];
+    return [
+      { label: fieldLabel('Damage', locale), value: formatMetric(row.Damage) },
+      { label: translate(locale, 'maximum_range'), value: numericRange(chargeValues) },
+      { label: fieldLabel('ImpactRadius', locale), value: formatMetric(row.ImpactRadius) },
+      { label: fieldLabel('ShellSpeed', locale), value: formatMetric(row.ShellSpeed) },
+      { label: translate(locale, 'requisition_cost'), value: formatMetric(punchcard?.Cost) },
+    ];
+  }
+  if (route.entity === 'Mission') {
+    const embedded = getEmbeddedRows(route);
+    const targets = embedded.find((group) => group.entity === 'MapEntity')?.rows.length ?? 0;
+    const achievementsCount = embedded.find((group) => group.entity === 'Achievement')?.rows.length ?? 0;
+    return [
+      { label: fieldLabel('location', locale), value: formatMetric(row.location) },
+      { label: translate(locale, 'prerequisites'), value: formatMetric(row.unlockedBy?.length ?? 0) },
+      { label: translate(locale, 'following_missions'), value: formatMetric(row.unlocks?.length ?? 0) },
+      { label: translate(locale, 'medal_slots'), value: formatMetric(row.medalRefs?.length ?? 0) },
+      { label: translate(locale, 'mission_targets'), value: formatMetric(targets) },
+      { label: entityName('Achievement', locale), value: formatMetric(achievementsCount) },
+    ];
+  }
+  if (route.entity === 'Achievement') {
+    const percentage = getAchievementPercentage(String(row.name));
+    return [
+      { label: fieldLabel('type', locale), value: formatMetric(row.type) },
+      { label: entityName('Mission', locale), value: missionDisplayName(String(row.missionRef), locale) },
+      { label: translate(locale, 'steam_completion'), value: percentage === undefined ? '—' : `${percentage}%` },
+      { label: fieldLabel('hidden', locale), value: formatMetric(row.hidden) },
+    ];
+  }
+  if (route.entity === 'MapEntity') {
+    const names = getOfficialNamesForRoute(route, locale);
+    return [
+      { label: translate(locale, 'official_names'), value: names.join(' / ') },
+      { label: translate(locale, 'localization_keys'), value: formatMetric(getOfficialKeyCount(route)) },
+      { label: translate(locale, 'source_records'), value: formatMetric(rows.length) },
+      { label: translate(locale, 'mission_appearances'), value: formatMetric(new Set(sourceRows.map((item) => item.missionRef)).size) },
+      { label: fieldLabel('Role', locale), value: [...new Set(rows.map((item) => item.Role))].join(' / ') },
+      { label: fieldLabel('Armour', locale), value: numericRange(rows.map((item) => item.Armour)) },
+      { label: fieldLabel('Health', locale), value: numericRange(rows.map((item) => item.Health)) },
+    ];
+  }
+  return [];
+}
+
+export function ogImagePath(path: string, locale: Locale = 'en') {
+  const slug = path === '/' ? 'home' : path.replace(/^\//, '').replaceAll('/', '--');
+  return `/og/${locale}/${slug}.png`;
 }
 
 export function pathForPrefix(prefix: string) {

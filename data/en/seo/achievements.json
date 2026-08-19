@@ -15,333 +15,366 @@
     },
     {
       "url_path": "/achievements/achievement-1-clear",
+      "title": "Just Calibrating: CLEAR Calibration Fire · 93.4% Steam | IRON NEST",
+      "description": "Just Calibrating: CLEAR achievement for Calibration Fire, with its official unlock text, a 93.4% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Just Calibrating achievement",
       "keyword_candidates": [
-        "IRON NEST Just Calibrating clear unlock",
-        "IRON NEST Hospital False Flag achievement"
-      ],
-      "title": "IRON NEST Just Calibrating - Clear Achievement & Rarity",
-      "description": "Just Calibrating: CLEAR for Hospital False Flag, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Just Calibrating unlock",
+        "Calibration Fire CLEAR achievement",
+        "Just Calibrating Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-2-clear",
+      "title": "Honour Salute: CLEAR Fire & Light · 85.4% Steam | IRON NEST",
+      "description": "Honour Salute: CLEAR achievement for Fire & Light, with its official unlock text, a 85.4% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Honour Salute achievement",
       "keyword_candidates": [
-        "IRON NEST Honour Salute clear unlock",
-        "IRON NEST Fire & Light achievement"
-      ],
-      "title": "IRON NEST Honour Salute - Clear Achievement & Rarity",
-      "description": "Honour Salute: CLEAR for Fire & Light, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Honour Salute unlock",
+        "Fire & Light CLEAR achievement",
+        "Honour Salute Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-3-clear",
+      "title": "For Their Own Good: CLEAR Liberation · 73.8% Steam | IRON NEST",
+      "description": "For Their Own Good: CLEAR achievement for Liberation, with its official unlock text, a 73.8% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST For Their Own Good achievement",
       "keyword_candidates": [
-        "IRON NEST For Their Own Good clear unlock",
-        "IRON NEST Liberation achievement"
-      ],
-      "title": "IRON NEST For Their Own Good - Clear Achievement & Rarity",
-      "description": "For Their Own Good is the CLEAR unlock for Liberation; this page uniquely pairs that exact mission link with a live global completion rate."
+        "For Their Own Good unlock",
+        "Liberation CLEAR achievement",
+        "For Their Own Good Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-4-clear",
+      "title": "First Reply: CLEAR Counter-Battery · 56.3% Steam | IRON NEST",
+      "description": "First Reply: CLEAR achievement for Counter-Battery, with its official unlock text, a 56.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST First Reply achievement",
       "keyword_candidates": [
-        "IRON NEST First Reply clear unlock",
-        "IRON NEST Artillery Introduction achievement"
-      ],
-      "title": "IRON NEST First Reply - Clear Achievement & Rarity",
-      "description": "First Reply: CLEAR for Artillery Introduction, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "First Reply unlock",
+        "Counter-Battery CLEAR achievement",
+        "First Reply Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-5-clear",
+      "title": "All Clear: CLEAR Iron Road · 43.2% Steam | IRON NEST",
+      "description": "All Clear: CLEAR achievement for Iron Road, with its official unlock text, a 43.2% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST All Clear achievement",
       "keyword_candidates": [
-        "IRON NEST All Clear clear unlock",
-        "IRON NEST IronRoad achievement"
-      ],
-      "title": "IRON NEST All Clear Achievement - Clear Unlock Data",
-      "description": "All Clear is the CLEAR unlock for IronRoad, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
+        "All Clear unlock",
+        "Iron Road CLEAR achievement",
+        "All Clear Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-6-clear",
+      "title": "Breakout: CLEAR Siege of Cartagena · 30.2% Steam | IRON NEST",
+      "description": "Breakout: CLEAR achievement for Siege of Cartagena, with its official unlock text, a 30.2% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Breakout achievement",
       "keyword_candidates": [
-        "IRON NEST Breakout clear unlock",
-        "IRON NEST SiegeOfCartagena achievement"
-      ],
-      "title": "IRON NEST Breakout Achievement - Clear Unlock Data",
-      "description": "Breakout is the CLEAR unlock for SiegeOfCartagena; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
+        "Breakout unlock",
+        "Siege of Cartagena CLEAR achievement",
+        "Breakout Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-7-clear",
+      "title": "Cold Start: CLEAR The Gorge · 25.7% Steam | IRON NEST",
+      "description": "Cold Start: CLEAR achievement for The Gorge, with its official unlock text, a 25.7% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Cold Start achievement",
       "keyword_candidates": [
-        "IRON NEST Cold Start clear unlock",
-        "IRON NEST The Gorge achievement"
-      ],
-      "title": "IRON NEST Cold Start Achievement - Clear Unlock Data",
-      "description": "Cold Start is the CLEAR unlock for The Gorge, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
+        "Cold Start unlock",
+        "The Gorge CLEAR achievement",
+        "Cold Start Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-8-clear",
+      "title": "Flying False Colours: CLEAR Rock of Gibraltar · 23.4% Steam | IRON NEST",
+      "description": "Flying False Colours: CLEAR achievement for Rock of Gibraltar, with its official unlock text, a 23.4% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Flying False Colours achievement",
       "keyword_candidates": [
-        "IRON NEST Flying False Colours clear unlock",
-        "IRON NEST RockofGibraltar achievement"
-      ],
-      "title": "IRON NEST Flying False Colours - Clear Achievement & Rarity",
-      "description": "Flying False Colours: CLEAR for RockofGibraltar, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Flying False Colours unlock",
+        "Rock of Gibraltar CLEAR achievement",
+        "Flying False Colours Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-9-clear",
+      "title": "Steady Hands: CLEAR Dead Reckoning · 20.3% Steam | IRON NEST",
+      "description": "Steady Hands: CLEAR achievement for Dead Reckoning, with its official unlock text, a 20.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Steady Hands achievement",
       "keyword_candidates": [
-        "IRON NEST Steady Hands clear unlock",
-        "IRON NEST DeadReckoning achievement"
-      ],
-      "title": "IRON NEST Steady Hands - Clear Achievement & Rarity",
-      "description": "Steady Hands: CLEAR for DeadReckoning, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Steady Hands unlock",
+        "Dead Reckoning CLEAR achievement",
+        "Steady Hands Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-10-clear",
+      "title": "The Gun Answers: CLEAR Fire on call · 16.5% Steam | IRON NEST",
+      "description": "The Gun Answers: CLEAR achievement for Fire on call, with its official unlock text, a 16.5% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST The Gun Answers achievement",
       "keyword_candidates": [
-        "IRON NEST The Gun Answers clear unlock",
-        "IRON NEST FireOnCall achievement"
-      ],
-      "title": "IRON NEST The Gun Answers - Clear Achievement & Rarity",
-      "description": "The Gun Answers: CLEAR for FireOnCall, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "The Gun Answers unlock",
+        "Fire on call CLEAR achievement",
+        "The Gun Answers Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-11-clear",
+      "title": "Beachhead Denied: CLEAR High Tide · 11.3% Steam | IRON NEST",
+      "description": "Beachhead Denied: CLEAR achievement for High Tide, with its official unlock text, a 11.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Beachhead Denied achievement",
       "keyword_candidates": [
-        "IRON NEST Beachhead Denied clear unlock",
-        "IRON NEST HighTide achievement"
-      ],
-      "title": "IRON NEST Beachhead Denied - Clear Achievement & Rarity",
-      "description": "Beachhead Denied is the CLEAR unlock for HighTide; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
+        "Beachhead Denied unlock",
+        "High Tide CLEAR achievement",
+        "Beachhead Denied Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-12-clear",
+      "title": "Nothing Was There: CLEAR Blind fire · 10.3% Steam | IRON NEST",
+      "description": "Nothing Was There: CLEAR achievement for Blind fire, with its official unlock text, a 10.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Nothing Was There achievement",
       "keyword_candidates": [
-        "IRON NEST Nothing Was There clear unlock",
-        "IRON NEST BlindFire achievement"
-      ],
-      "title": "IRON NEST Nothing Was There - Clear Achievement & Rarity",
-      "description": "Nothing Was There: CLEAR for BlindFire, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Nothing Was There unlock",
+        "Blind fire CLEAR achievement",
+        "Nothing Was There Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-13-clear",
+      "title": "Mirror Image: CLEAR Phantom Battery · 8% Steam | IRON NEST",
+      "description": "Mirror Image: CLEAR achievement for Phantom Battery, with its official unlock text, a 8% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Mirror Image achievement",
       "keyword_candidates": [
-        "IRON NEST Mirror Image clear unlock",
-        "IRON NEST PhantomBattery achievement"
-      ],
-      "title": "IRON NEST Mirror Image - Clear Achievement & Rarity",
-      "description": "Mirror Image: CLEAR for PhantomBattery, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Mirror Image unlock",
+        "Phantom Battery CLEAR achievement",
+        "Mirror Image Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-14-clear",
+      "title": "In the Dark: CLEAR Final Harvest · 6.3% Steam | IRON NEST",
+      "description": "In the Dark: CLEAR achievement for Final Harvest, with its official unlock text, a 6.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST In the Dark achievement",
       "keyword_candidates": [
-        "IRON NEST In the Dark clear unlock",
-        "IRON NEST FinalHarvest achievement"
-      ],
-      "title": "IRON NEST In the Dark - Clear Achievement & Rarity",
-      "description": "In the Dark is the CLEAR unlock for FinalHarvest; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
+        "In the Dark unlock",
+        "Final Harvest CLEAR achievement",
+        "In the Dark Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-15a-clear",
+      "title": "A City in Celebration: CLEAR White shells · 4% Steam | IRON NEST",
+      "description": "A City in Celebration: CLEAR achievement for White shells, with its official unlock text, a 4% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST A City in Celebration achievement",
       "keyword_candidates": [
-        "IRON NEST A City in Celebration clear unlock",
-        "IRON NEST WhiteShells achievement"
-      ],
-      "title": "IRON NEST A City in Celebration - Clear Achievement & Rarity",
-      "description": "A City in Celebration: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "A City in Celebration unlock",
+        "White shells CLEAR achievement",
+        "A City in Celebration Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-15b-clear",
+      "title": "A City Subdued: CLEAR White shells · 3.2% Steam | IRON NEST",
+      "description": "A City Subdued: CLEAR achievement for White shells, with its official unlock text, a 3.2% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST A City Subdued achievement",
       "keyword_candidates": [
-        "IRON NEST A City Subdued clear unlock",
-        "IRON NEST WhiteShells achievement"
-      ],
-      "title": "IRON NEST A City Subdued - Clear Achievement & Rarity",
-      "description": "A City Subdued: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "A City Subdued unlock",
+        "White shells CLEAR achievement",
+        "A City Subdued Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-15c-clear",
+      "title": "The Road Not Taken: CLEAR White shells · 2.4% Steam | IRON NEST",
+      "description": "The Road Not Taken: CLEAR achievement for White shells, with its official unlock text, a 2.4% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST The Road Not Taken achievement",
       "keyword_candidates": [
-        "IRON NEST The Road Not Taken clear unlock",
-        "IRON NEST WhiteShells achievement"
-      ],
-      "title": "IRON NEST The Road Not Taken - Clear Achievement & Rarity",
-      "description": "The Road Not Taken: CLEAR for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "The Road Not Taken unlock",
+        "White shells CLEAR achievement",
+        "The Road Not Taken Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-15d-clear",
+      "title": "A City Silent: CLEAR White shells · 5.3% Steam | IRON NEST",
+      "description": "A City Silent: CLEAR achievement for White shells, with its official unlock text, a 5.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST A City Silent achievement",
       "keyword_candidates": [
-        "IRON NEST A City Silent clear unlock",
-        "IRON NEST WhiteShells achievement"
-      ],
-      "title": "IRON NEST A City Silent - Clear Achievement & Rarity",
-      "description": "A City Silent is the CLEAR unlock for WhiteShells; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
+        "A City Silent unlock",
+        "White shells CLEAR achievement",
+        "A City Silent Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-1-golden",
+      "title": "Duty Fulfilled: GOLDEN Calibration Fire · 71.7% Steam | IRON NEST",
+      "description": "Duty Fulfilled: GOLDEN achievement for Calibration Fire, with its official unlock text, a 71.7% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Duty Fulfilled achievement",
       "keyword_candidates": [
-        "IRON NEST Duty Fulfilled gold unlock",
-        "IRON NEST Hospital False Flag achievement"
-      ],
-      "title": "IRON NEST Duty Fulfilled - Gold Achievement & Rarity",
-      "description": "Duty Fulfilled: GOLD for Hospital False Flag, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Duty Fulfilled unlock",
+        "Calibration Fire GOLDEN achievement",
+        "Duty Fulfilled Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-2-golden",
+      "title": "Marksman's Honour: GOLDEN Fire & Light · 83.9% Steam | IRON NEST",
+      "description": "Marksman's Honour: GOLDEN achievement for Fire & Light, with its official unlock text, a 83.9% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Marksman's Honour achievement",
       "keyword_candidates": [
-        "IRON NEST Marksman's Honour gold unlock",
-        "IRON NEST Fire & Light achievement"
-      ],
-      "title": "IRON NEST Marksman's Honour - Gold Achievement & Rarity",
-      "description": "Marksman's Honour: GOLD for Fire & Light, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Marksman's Honour unlock",
+        "Fire & Light GOLDEN achievement",
+        "Marksman's Honour Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-3-golden",
+      "title": "Exemplary Service: GOLDEN Liberation · 0.3% Steam | IRON NEST",
+      "description": "Exemplary Service: GOLDEN achievement for Liberation, with its official unlock text, a 0.3% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Exemplary Service achievement",
       "keyword_candidates": [
-        "IRON NEST Exemplary Service gold unlock",
-        "IRON NEST Liberation achievement"
-      ],
-      "title": "IRON NEST Exemplary Service - Gold Achievement & Rarity",
-      "description": "Exemplary Service is the GOLD unlock for Liberation; this page uniquely pairs that exact mission link with a live global completion rate."
+        "Exemplary Service unlock",
+        "Liberation GOLDEN achievement",
+        "Exemplary Service Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-4-golden",
+      "title": "Distinguished Conduct: GOLDEN Counter-Battery · 0.6% Steam | IRON NEST",
+      "description": "Distinguished Conduct: GOLDEN achievement for Counter-Battery, with its official unlock text, a 0.6% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Distinguished Conduct achievement",
       "keyword_candidates": [
-        "IRON NEST Distinguished Conduct gold unlock",
-        "IRON NEST Artillery Introduction achievement"
-      ],
-      "title": "IRON NEST Distinguished Conduct - Gold Achievement & Rarity",
-      "description": "Distinguished Conduct is the GOLD unlock for Artillery Introduction; this page uniquely pairs that exact mission link with a live global completion rate."
+        "Distinguished Conduct unlock",
+        "Counter-Battery GOLDEN achievement",
+        "Distinguished Conduct Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-5-golden",
+      "title": "Crowned in Brass: GOLDEN Iron Road · 0% Steam | IRON NEST",
+      "description": "Crowned in Brass: GOLDEN achievement for Iron Road, with its official unlock text, a 0% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Crowned in Brass achievement",
       "keyword_candidates": [
-        "IRON NEST Crowned in Brass gold unlock",
-        "IRON NEST IronRoad achievement"
-      ],
-      "title": "IRON NEST Crowned in Brass - Gold Achievement & Rarity",
-      "description": "Crowned in Brass is the GOLD unlock for IronRoad; this page uniquely pairs that exact mission link with a live global completion rate. Its pairing is unique."
+        "Crowned in Brass unlock",
+        "Iron Road GOLDEN achievement",
+        "Crowned in Brass Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-6-golden",
+      "title": "Naval Commendation: GOLDEN Siege of Cartagena · 0.1% Steam | IRON NEST",
+      "description": "Naval Commendation: GOLDEN achievement for Siege of Cartagena, with its official unlock text, a 0.1% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Naval Commendation achievement",
       "keyword_candidates": [
-        "IRON NEST Naval Commendation gold unlock",
-        "IRON NEST SiegeOfCartagena achievement"
-      ],
-      "title": "IRON NEST Naval Commendation - Gold Achievement & Rarity",
-      "description": "Naval Commendation: GOLD for SiegeOfCartagena, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Naval Commendation unlock",
+        "Siege of Cartagena GOLDEN achievement",
+        "Naval Commendation Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-8-golden",
+      "title": "Order of Merit: GOLDEN The Gorge · 0.1% Steam | IRON NEST",
+      "description": "Order of Merit: GOLDEN achievement for The Gorge, with its official unlock text, a 0.1% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Order of Merit achievement",
       "keyword_candidates": [
-        "IRON NEST Order of Merit gold unlock",
-        "IRON NEST The Gorge achievement"
-      ],
-      "title": "IRON NEST Order of Merit - Gold Achievement & Rarity",
-      "description": "Order of Merit is the GOLD unlock for The Gorge, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
+        "Order of Merit unlock",
+        "The Gorge GOLDEN achievement",
+        "Order of Merit Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-9-golden",
+      "title": "Quiet Precision: GOLDEN Rock of Gibraltar · 0% Steam | IRON NEST",
+      "description": "Quiet Precision: GOLDEN achievement for Rock of Gibraltar, with its official unlock text, a 0% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Quiet Precision achievement",
       "keyword_candidates": [
-        "IRON NEST Quiet Precision gold unlock",
-        "IRON NEST RockofGibraltar achievement"
-      ],
-      "title": "IRON NEST Quiet Precision - Gold Achievement & Rarity",
-      "description": "Quiet Precision: GOLD for RockofGibraltar, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Quiet Precision unlock",
+        "Rock of Gibraltar GOLDEN achievement",
+        "Quiet Precision Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-10-golden",
+      "title": "Iron Discipline: GOLDEN Dead Reckoning · 0.8% Steam | IRON NEST",
+      "description": "Iron Discipline: GOLDEN achievement for Dead Reckoning, with its official unlock text, a 0.8% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Iron Discipline achievement",
       "keyword_candidates": [
-        "IRON NEST Iron Discipline gold unlock",
-        "IRON NEST DeadReckoning achievement"
-      ],
-      "title": "IRON NEST Iron Discipline - Gold Achievement & Rarity",
-      "description": "Iron Discipline: GOLD for DeadReckoning, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Iron Discipline unlock",
+        "Dead Reckoning GOLDEN achievement",
+        "Iron Discipline Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-11-golden",
+      "title": "Coastal Defence Medal: GOLDEN Fire on call · 0.7% Steam | IRON NEST",
+      "description": "Coastal Defence Medal: GOLDEN achievement for Fire on call, with its official unlock text, a 0.7% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Coastal Defence Medal achievement",
       "keyword_candidates": [
-        "IRON NEST Coastal Defence Medal gold unlock",
-        "IRON NEST FireOnCall achievement"
-      ],
-      "title": "IRON NEST Coastal Defence Medal - Gold Achievement & Rarity",
-      "description": "Coastal Defence Medal: GOLD for FireOnCall, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Coastal Defence Medal unlock",
+        "Fire on call GOLDEN achievement",
+        "Coastal Defence Medal Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-12-golden",
+      "title": "Unshaken: GOLDEN High Tide · 0% Steam | IRON NEST",
+      "description": "Unshaken: GOLDEN achievement for High Tide, with its official unlock text, a 0% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Unshaken achievement",
       "keyword_candidates": [
-        "IRON NEST Unshaken gold unlock",
-        "IRON NEST HighTide achievement"
-      ],
-      "title": "IRON NEST Unshaken - Gold Achievement & Rarity - Source Data",
-      "description": "Unshaken is the GOLD unlock for HighTide, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
+        "Unshaken unlock",
+        "High Tide GOLDEN achievement",
+        "Unshaken Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-13-golden",
+      "title": "Master Gunner: GOLDEN Blind fire · 0% Steam | IRON NEST",
+      "description": "Master Gunner: GOLDEN achievement for Blind fire, with its official unlock text, a 0% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Master Gunner achievement",
       "keyword_candidates": [
-        "IRON NEST Master Gunner gold unlock",
-        "IRON NEST BlindFire achievement"
-      ],
-      "title": "IRON NEST Master Gunner - Gold Achievement & Rarity",
-      "description": "Master Gunner is the GOLD unlock for BlindFire, paired with a live global completion rate so its exact mission link and current rarity can be checked together."
+        "Master Gunner unlock",
+        "Blind fire GOLDEN achievement",
+        "Master Gunner Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-14-golden",
+      "title": "Night's Precision: GOLDEN Phantom Battery · 0% Steam | IRON NEST",
+      "description": "Night's Precision: GOLDEN achievement for Phantom Battery, with its official unlock text, a 0% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Night's Precision achievement",
       "keyword_candidates": [
-        "IRON NEST Night's Precision gold unlock",
-        "IRON NEST PhantomBattery achievement"
-      ],
-      "title": "IRON NEST Night's Precision - Gold Achievement & Rarity",
-      "description": "Night's Precision: GOLD for PhantomBattery, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Night's Precision unlock",
+        "Phantom Battery GOLDEN achievement",
+        "Night's Precision Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-15-golden",
+      "title": "Pride of Castile: GOLDEN Final Harvest · 0% Steam | IRON NEST",
+      "description": "Pride of Castile: GOLDEN achievement for Final Harvest, with its official unlock text, a 0% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Pride of Castile achievement",
       "keyword_candidates": [
-        "IRON NEST Pride of Castile gold unlock",
-        "IRON NEST FinalHarvest achievement"
-      ],
-      "title": "IRON NEST Pride of Castile - Gold Achievement & Rarity",
-      "description": "Pride of Castile: GOLD for FinalHarvest, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Pride of Castile unlock",
+        "Final Harvest GOLDEN achievement",
+        "Pride of Castile Steam percentage"
+      ]
     },
     {
       "url_path": "/achievements/achievement-7-golden",
+      "title": "Valour Under Fire: GOLDEN White shells · 0.7% Steam | IRON NEST",
+      "description": "Valour Under Fire: GOLDEN achievement for White shells, with its official unlock text, a 0.7% Steam global completion snapshot, version and source metadata.",
       "primary_keyword": "IRON NEST Valour Under Fire achievement",
       "keyword_candidates": [
-        "IRON NEST Valour Under Fire gold unlock",
-        "IRON NEST WhiteShells achievement"
-      ],
-      "title": "IRON NEST Valour Under Fire - Gold Achievement & Rarity",
-      "description": "Valour Under Fire: GOLD for WhiteShells, with a live global completion rate that keeps its mission assignment and changing rarity in one tracked record."
+        "Valour Under Fire unlock",
+        "White shells GOLDEN achievement",
+        "Valour Under Fire Steam percentage"
+      ]
     }
   ]
 }

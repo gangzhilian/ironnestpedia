@@ -16,173 +16,190 @@
     },
     {
       "url_path": "/missions/fireoncall",
-      "primary_keyword": "IRON NEST Fire on Call mission",
+      "title": "Fire on call Mission: 8 Targets · Fire on Call · 4 Medals | IRON NEST",
+      "description": "Fire on call: 8 target records at Fire on Call, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
+      "primary_keyword": "IRON NEST Fire on call mission",
       "keyword_candidates": [
-        "IRON NEST Fire on Call medals",
-        "IRON NEST Fire on Call targets"
-      ],
-      "title": "IRON NEST Fire on Call Mission - 4 Medals, 8 Targets",
-      "description": "Fire on Call combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 8 targets while keeping medal thresholds and target configuration together."
+        "Fire on call mission targets",
+        "Fire on call medals",
+        "Fire on call mission order"
+      ]
     },
     {
       "url_path": "/missions/hightide",
+      "title": "High Tide Mission: 13 Targets · High Tide · 4 Medals | IRON NEST",
+      "description": "High Tide: 13 target records at High Tide, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST High Tide mission",
       "keyword_candidates": [
-        "IRON NEST High Tide medals",
-        "IRON NEST High Tide targets"
-      ],
-      "title": "IRON NEST High Tide Mission - 4 Medals, 13 Targets",
-      "description": "High Tide combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets while keeping medal thresholds and target configuration together."
+        "High Tide mission targets",
+        "High Tide medals",
+        "High Tide mission order"
+      ]
     },
     {
       "url_path": "/missions/blindfire",
-      "primary_keyword": "IRON NEST Blind Fire mission",
+      "title": "Blind fire Mission: 17 Targets · 4 Medals | IRON NEST",
+      "description": "Blind fire: 17 target records at Blind Fire, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
+      "primary_keyword": "IRON NEST Blind fire mission",
       "keyword_candidates": [
-        "IRON NEST Blind Fire medals",
-        "IRON NEST Blind Fire targets"
-      ],
-      "title": "IRON NEST Blind Fire Mission - 4 Medals, 17 Targets",
-      "description": "Blind Fire combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 17 targets while keeping medal thresholds and target configuration together."
+        "Blind fire mission targets",
+        "Blind fire medals",
+        "Blind fire mission order"
+      ]
     },
     {
       "url_path": "/missions/phantombattery",
+      "title": "Phantom Battery Mission: 6 Targets · 4 Medals | IRON NEST",
+      "description": "Phantom Battery: 6 target records at Phantom Battery, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Phantom Battery mission",
       "keyword_candidates": [
-        "IRON NEST Phantom Battery medals",
-        "IRON NEST Phantom Battery targets"
-      ],
-      "title": "IRON NEST Phantom Battery Mission - 4 Medals, 6 Targets",
-      "description": "Phantom Battery combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 6 targets without forcing readers to cross-check separate records."
+        "Phantom Battery mission targets",
+        "Phantom Battery medals",
+        "Phantom Battery mission order"
+      ]
     },
     {
       "url_path": "/missions/finalharvest",
+      "title": "Final Harvest Mission: 26 Targets · 4 Medals | IRON NEST",
+      "description": "Final Harvest: 26 target records at Final Harvest, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Final Harvest mission",
       "keyword_candidates": [
-        "IRON NEST Final Harvest medals",
-        "IRON NEST Final Harvest targets"
-      ],
-      "title": "IRON NEST Final Harvest Mission - 4 Medals, 26 Targets",
-      "description": "Final Harvest combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 26 targets without forcing readers to cross-check separate records."
+        "Final Harvest mission targets",
+        "Final Harvest medals",
+        "Final Harvest mission order"
+      ]
     },
     {
       "url_path": "/missions/whiteshells",
-      "primary_keyword": "IRON NEST White Shells mission",
+      "title": "White shells Mission: 10 Targets · Barcelona · 4 Medals | IRON NEST",
+      "description": "White shells: 10 target records at Barcelona, 4 medal slots, 1 prerequisites, 0 follow-ups and linked achievements, with verified source fields.",
+      "primary_keyword": "IRON NEST White shells mission",
       "keyword_candidates": [
-        "IRON NEST White Shells medals",
-        "IRON NEST White Shells targets"
-      ],
-      "title": "IRON NEST White Shells Mission - 4 Medals, 10 Targets",
-      "description": "White Shells combines 1 prerequisite, 0 follow-ups, 4 medal slots, 5 achievements and 10 targets without forcing readers to cross-check separate records."
+        "White shells mission targets",
+        "White shells medals",
+        "White shells mission order"
+      ]
     },
     {
       "url_path": "/missions/hospital-false-flag",
+      "title": "Calibration Fire Mission: 5 Targets · 1 Medals | IRON NEST",
+      "description": "Calibration Fire: 5 target records at Map Aranjuez, 1 medal slots, 0 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Calibration Fire mission",
       "keyword_candidates": [
-        "IRON NEST Calibration Fire medals",
-        "IRON NEST Calibration Fire targets"
-      ],
-      "title": "IRON NEST Calibration Fire Mission - 1 Medal, 5 Targets",
-      "description": "Calibration Fire combines 0 prerequisites, 1 follow-up, 1 medal slot, 2 achievements and 5 targets without forcing readers to cross-check separate records."
+        "Calibration Fire mission targets",
+        "Calibration Fire medals",
+        "Calibration Fire mission order"
+      ]
     },
     {
       "url_path": "/missions/fire-and-light",
+      "title": "Fire & Light Mission: 11 Targets · 1 Medals | IRON NEST",
+      "description": "Fire & Light: 11 target records at Map Aranjuez, 1 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Fire & Light mission",
       "keyword_candidates": [
-        "IRON NEST Fire & Light medals",
-        "IRON NEST Fire & Light targets"
-      ],
-      "title": "IRON NEST Fire & Light Mission - 1 Medal, 11 Targets",
-      "description": "Fire & Light combines 1 prerequisite, 1 follow-up, 1 medal slot, 2 achievements and 11 targets without forcing readers to cross-check separate records."
+        "Fire & Light mission targets",
+        "Fire & Light medals",
+        "Fire & Light mission order"
+      ]
     },
     {
       "url_path": "/missions/liberation",
+      "title": "Liberation Mission: 10 Targets · Ciudad Real · 4 Medals | IRON NEST",
+      "description": "Liberation: 10 target records at Ciudad Real, 4 medal slots, 1 prerequisites, 2 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Liberation mission",
       "keyword_candidates": [
-        "IRON NEST Liberation medals",
-        "IRON NEST Liberation targets"
-      ],
-      "title": "IRON NEST Liberation Mission - 10 Targets",
-      "description": "Liberation links 1 prior, 2 follow-ups, 4 medal slots, 2 achievements and 10 targets in one record, preserving its exact objective context."
+        "Liberation mission targets",
+        "Liberation medals",
+        "Liberation mission order"
+      ]
     },
     {
       "url_path": "/missions/artillery-introduction",
+      "title": "Counter-Battery Mission: 8 Targets · Ciudad Real · 4 Medals | IRON NEST",
+      "description": "Counter-Battery: 8 target records at Ciudad Real, 4 medal slots, 1 prerequisites, 2 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Counter-Battery mission",
       "keyword_candidates": [
-        "IRON NEST Counter-Battery medals",
-        "IRON NEST Counter-Battery targets"
-      ],
-      "title": "IRON NEST Counter-Battery Mission - 4 Medals, 8 Targets",
-      "description": "Counter-Battery combines 1 prerequisite, 2 follow-ups, 4 medal slots, 2 achievements and 8 targets without forcing readers to cross-check separate records."
+        "Counter-Battery mission targets",
+        "Counter-Battery medals",
+        "Counter-Battery mission order"
+      ]
     },
     {
       "url_path": "/missions/ironroad",
+      "title": "Iron Road Mission: 21 Targets · 4 Medals | IRON NEST",
+      "description": "Iron Road: 21 target records at Iron Road, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Iron Road mission",
       "keyword_candidates": [
-        "IRON NEST Iron Road medals",
-        "IRON NEST Iron Road targets"
-      ],
-      "title": "IRON NEST Iron Road Mission - 4 Medals, 21 Targets",
-      "description": "Iron Road combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 21 targets while keeping medal thresholds and target configuration together."
+        "Iron Road mission targets",
+        "Iron Road medals",
+        "Iron Road mission order"
+      ]
     },
     {
       "url_path": "/missions/siegeofcartagena",
+      "title": "Siege of Cartagena Mission: 13 Targets · Seige of Cartagena · 4 Medals | IRON NEST",
+      "description": "Siege of Cartagena: 13 target records at Seige of Cartagena, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Siege of Cartagena mission",
       "keyword_candidates": [
-        "IRON NEST Siege of Cartagena medals",
-        "IRON NEST Siege of Cartagena targets"
-      ],
-      "title": "IRON NEST Siege of Cartagena Mission - 4 Medals, 13 Targets",
-      "description": "Siege of Cartagena combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets without forcing readers to cross-check separate records."
+        "Siege of Cartagena mission targets",
+        "Siege of Cartagena medals",
+        "Siege of Cartagena mission order"
+      ]
     },
     {
       "url_path": "/missions/the-gorge",
+      "title": "The Gorge Mission: 13 Targets · the gorge · 4 Medals | IRON NEST",
+      "description": "The Gorge: 13 target records at the gorge, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST The Gorge mission",
       "keyword_candidates": [
-        "IRON NEST The Gorge medals",
-        "IRON NEST The Gorge targets"
-      ],
-      "title": "IRON NEST The Gorge Mission - 4 Medals, 13 Targets",
-      "description": "The Gorge combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 13 targets while keeping medal thresholds and target configuration together."
+        "The Gorge mission targets",
+        "The Gorge medals",
+        "The Gorge mission order"
+      ]
     },
     {
       "url_path": "/missions/rockofgibraltar",
+      "title": "Rock of Gibraltar Mission: 8 Targets · Rock of Gibraltar · 4 Medals | IRON NEST",
+      "description": "Rock of Gibraltar: 8 target records at Rock of Gibraltar, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Rock of Gibraltar mission",
       "keyword_candidates": [
-        "IRON NEST Rock of Gibraltar medals",
-        "IRON NEST Rock of Gibraltar targets"
-      ],
-      "title": "IRON NEST Rock of Gibraltar Mission - 4 Medals, 8 Targets",
-      "description": "Rock of Gibraltar combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 8 targets without forcing readers to cross-check separate records."
+        "Rock of Gibraltar mission targets",
+        "Rock of Gibraltar medals",
+        "Rock of Gibraltar mission order"
+      ]
     },
     {
       "url_path": "/missions/deadreckoning",
+      "title": "Dead Reckoning Mission: 10 Targets · Dead Reckoning · 4 Medals | IRON NEST",
+      "description": "Dead Reckoning: 10 target records at Dead Reckoning, 4 medal slots, 1 prerequisites, 1 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Dead Reckoning mission",
       "keyword_candidates": [
-        "IRON NEST Dead Reckoning medals",
-        "IRON NEST Dead Reckoning targets"
-      ],
-      "title": "IRON NEST Dead Reckoning Mission - 4 Medals, 10 Targets",
-      "description": "Dead Reckoning combines 1 prerequisite, 1 follow-up, 4 medal slots, 2 achievements and 10 targets without forcing readers to cross-check separate records."
+        "Dead Reckoning mission targets",
+        "Dead Reckoning medals",
+        "Dead Reckoning mission order"
+      ]
     },
     {
       "url_path": "/missions/challangefdc",
+      "title": "Skirmish - Challenge - Counter battery timer Mission: 15 Targets · 4 Medals | IRON NEST",
+      "description": "Skirmish - Challenge - Counter battery timer: 15 target records at —, 4 medal slots, 1 prerequisites, 0 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Skirmish - Challenge - Counter battery timer mission",
       "keyword_candidates": [
-        "IRON NEST Skirmish - Challenge - Counter battery timer medals",
-        "IRON NEST Skirmish - Challenge - Counter battery timer targets"
-      ],
-      "title": "IRON NEST ChallangeFDC Mission - 4 Medals, 15 Targets",
-      "description": "ChallangeFDC Counter Battery Timer has 1 prior, 0 follow-ups, 4 medal slots, 0 achievements and 15 targets; its medal and objective context stays in one record."
+        "Skirmish - Challenge - Counter battery timer mission targets",
+        "Skirmish - Challenge - Counter battery timer medals",
+        "Skirmish - Challenge - Counter battery timer mission order"
+      ]
     },
     {
       "url_path": "/missions/chill",
+      "title": "Skirmish - Chill - Uncontested Front Mission: 18 Targets · 4 Medals | IRON NEST",
+      "description": "Skirmish - Chill - Uncontested Front: 18 target records at —, 4 medal slots, 1 prerequisites, 0 follow-ups and linked achievements, with verified source fields.",
       "primary_keyword": "IRON NEST Skirmish - Chill - Uncontested Front mission",
       "keyword_candidates": [
-        "IRON NEST Skirmish - Chill - Uncontested Front medals",
-        "IRON NEST Skirmish - Chill - Uncontested Front targets"
-      ],
-      "title": "IRON NEST Chill Mission - 4 Medals, 18 Targets - Source Data",
-      "description": "Chill Uncontested Front has 1 prior, 0 follow-ups, 4 medal slots, 0 achievements and 18 targets; its exact medal and objective context stays in one record."
+        "Skirmish - Chill - Uncontested Front mission targets",
+        "Skirmish - Chill - Uncontested Front medals",
+        "Skirmish - Chill - Uncontested Front mission order"
+      ]
     }
   ]
 }

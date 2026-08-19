@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import { getSite, localizedPath, routes, type Locale } from '../lib/data';
+import TechMark from './TechMark.astro';
+import { getSite, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
 
 interface Props {
   title: string;
@@ -9,13 +10,15 @@ interface Props {
   locale?: Locale;
   noindex?: boolean;
   breadcrumbs?: { label: string; url?: string }[];
+  schemas?: Record<string, any>[];
+  image?: string;
 }
 
-const { title, description, path, locale = 'en', noindex = false, breadcrumbs = [] } = Astro.props;
+const { title, description, path, locale = 'en', noindex = false, breadcrumbs = [], schemas = [], image } = Astro.props;
 const site = getSite(locale);
 const pagePath = localizedPath(path, locale);
 const canonical = new URL(pagePath, site.site_url).href;
-const ogImage = new URL('/og-default.svg', site.site_url).href;
+const ogImage = new URL(image ?? ogImagePath(path, locale), site.site_url).href;
 const breadcrumbItems = [{ label: site.ui.home, url: '/' }, ...breadcrumbs];
 const breadcrumbJson = {
   '@context': 'https://schema.org',
@@ -24,9 +27,10 @@ const breadcrumbJson = {
     '@type': 'ListItem',
     position: index + 1,
     name: item.label,
-    ...(item.url ? { item: new URL(localizedPath(item.url, locale), site.site_url).href } : {}),
+    item: new URL(localizedPath(item.url ?? path, locale), site.site_url).href,
   })),
 };
+const jsonLd = [...(breadcrumbItems.length > 1 ? [breadcrumbJson] : []), ...schemas];
 const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => ({
   label: route.url_path,
   path: localizedPath(route.url_path, locale),
@@ -49,20 +53,27 @@ const languageLinks = site.languages.map((language) => ({
     {!noindex && <link rel="alternate" hreflang="x-default" href={new URL(path, site.site_url).href} />}
     {noindex && <meta name="robots" content="noindex,follow" />}
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.site_name} />
+    <meta property="og:locale" content={site.html_lang.replace('-', '_')} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-    {!noindex && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJson)} />}
+    <meta name="twitter:image:alt" content={title} />
+    {!noindex && jsonLd.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
   </head>
   <body>
+    <a class="skip-link" href="#main-content">{translate(locale, 'skip_to_content')}</a>
     <header>
       <div class="inner">
-        <a class="brand" href={localizedPath('/', locale)}>{site.site_name}</a>
+        <a class="brand" href={localizedPath('/', locale)}><TechMark size={25} />{site.site_name}</a>
         <nav aria-label={site.ui.primary_navigation}>
           {site.navigation.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
         </nav>
@@ -77,7 +88,7 @@ const languageLinks = site.languages.map((language) => ({
         </form>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       {breadcrumbItems.length > 1 && (
         <nav class="breadcrumbs" aria-label={site.ui.breadcrumb_navigation}>
           {breadcrumbItems.map((item, index) => <>{index > 0 && ' / '}{item.url ? <a href={localizedPath(item.url, locale)}>{item.label}</a> : item.label}</>)}

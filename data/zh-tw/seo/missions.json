@@ -16,173 +16,190 @@
     },
     {
       "url_path": "/missions/fireoncall",
+      "title": "IRON NEST「呼叫火力支援」任務：8個目標 · 呼叫火力支援、4個勳章",
+      "description": "「呼叫火力支援」任務資料包含呼叫火力支援的8筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 呼叫火力支援任務",
       "keyword_candidates": [
-        "呼叫火力支援任務攻略",
-        "呼叫火力支援勳章"
-      ],
-      "title": "IRON NEST「呼叫火力支援」任務：勳章、成就與目標",
-      "description": "彙整「呼叫火力支援」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與8筆目標記錄。"
+        "呼叫火力支援任務目標",
+        "呼叫火力支援勳章",
+        "呼叫火力支援任務順序"
+      ]
     },
     {
       "url_path": "/missions/hightide",
+      "title": "IRON NEST「漲潮」任務：13個目標 · 漲潮、4個勳章",
+      "description": "「漲潮」任務資料包含漲潮的13筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 漲潮任務",
       "keyword_candidates": [
-        "漲潮任務攻略",
-        "漲潮勳章"
-      ],
-      "title": "IRON NEST「漲潮」任務：勳章、成就與目標",
-      "description": "彙整「漲潮」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與13筆目標記錄。"
+        "漲潮任務目標",
+        "漲潮勳章",
+        "漲潮任務順序"
+      ]
     },
     {
       "url_path": "/missions/blindfire",
+      "title": "IRON NEST「盲射」任務：17個目標、4個勳章",
+      "description": "「盲射」任務資料包含盲射的17筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 盲射任務",
       "keyword_candidates": [
-        "盲射任務攻略",
-        "盲射勳章"
-      ],
-      "title": "IRON NEST「盲射」任務：勳章、成就與目標",
-      "description": "彙整「盲射」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與17筆目標記錄。"
+        "盲射任務目標",
+        "盲射勳章",
+        "盲射任務順序"
+      ]
     },
     {
       "url_path": "/missions/phantombattery",
+      "title": "IRON NEST「幻影炮台」任務：6個目標、4個勳章",
+      "description": "「幻影炮台」任務資料包含幻影炮台的6筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 幻影炮台任務",
       "keyword_candidates": [
-        "幻影炮台任務攻略",
-        "幻影炮台勳章"
-      ],
-      "title": "IRON NEST「幻影炮台」任務：勳章、成就與目標",
-      "description": "彙整「幻影炮台」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與6筆目標記錄。"
+        "幻影炮台任務目標",
+        "幻影炮台勳章",
+        "幻影炮台任務順序"
+      ]
     },
     {
       "url_path": "/missions/finalharvest",
+      "title": "IRON NEST「最終收割」任務：26個目標、4個勳章",
+      "description": "「最終收割」任務資料包含最終收割的26筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 最終收割任務",
       "keyword_candidates": [
-        "最終收割任務攻略",
-        "最終收割勳章"
-      ],
-      "title": "IRON NEST「最終收割」任務：勳章、成就與目標",
-      "description": "彙整「最終收割」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與26筆目標記錄。"
+        "最終收割任務目標",
+        "最終收割勳章",
+        "最終收割任務順序"
+      ]
     },
     {
       "url_path": "/missions/whiteshells",
+      "title": "IRON NEST「白色炮彈」任務：10個目標 · 巴塞隆納、4個勳章",
+      "description": "「白色炮彈」任務資料包含巴塞隆納的10筆生成目標記錄、4個勳章欄位、1個前置任務及0個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 白色炮彈任務",
       "keyword_candidates": [
-        "白色炮彈任務攻略",
-        "白色炮彈勳章"
-      ],
-      "title": "IRON NEST「白色炮彈」任務：勳章、成就與目標",
-      "description": "彙整「白色炮彈」的1個前置任務、0個後續任務、4個勳章欄位、相關成就與10筆目標記錄。"
+        "白色炮彈任務目標",
+        "白色炮彈勳章",
+        "白色炮彈任務順序"
+      ]
     },
     {
       "url_path": "/missions/hospital-false-flag",
+      "title": "IRON NEST「校準射擊」任務：5個目標、1個勳章",
+      "description": "「校準射擊」任務資料包含阿蘭胡埃斯地圖的5筆生成目標記錄、1個勳章欄位、0個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 校準射擊任務",
       "keyword_candidates": [
-        "校準射擊任務攻略",
-        "校準射擊勳章"
-      ],
-      "title": "IRON NEST「校準射擊」任務：勳章、成就與目標",
-      "description": "彙整「校準射擊」的0個前置任務、1個後續任務、1個勳章欄位、相關成就與5筆目標記錄。"
+        "校準射擊任務目標",
+        "校準射擊勳章",
+        "校準射擊任務順序"
+      ]
     },
     {
       "url_path": "/missions/fire-and-light",
+      "title": "IRON NEST「射擊與照明」任務：11個目標、1個勳章",
+      "description": "「射擊與照明」任務資料包含阿蘭胡埃斯地圖的11筆生成目標記錄、1個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 射擊與照明任務",
       "keyword_candidates": [
-        "射擊與照明任務攻略",
-        "射擊與照明勳章"
-      ],
-      "title": "IRON NEST「射擊與照明」任務：勳章、成就與目標",
-      "description": "彙整「射擊與照明」的1個前置任務、1個後續任務、1個勳章欄位、相關成就與11筆目標記錄。"
+        "射擊與照明任務目標",
+        "射擊與照明勳章",
+        "射擊與照明任務順序"
+      ]
     },
     {
       "url_path": "/missions/liberation",
+      "title": "IRON NEST「解放」任務：10個目標 · 雷阿爾城、4個勳章",
+      "description": "「解放」任務資料包含雷阿爾城的10筆生成目標記錄、4個勳章欄位、1個前置任務及2個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 解放任務",
       "keyword_candidates": [
-        "解放任務攻略",
-        "解放勳章"
-      ],
-      "title": "IRON NEST「解放」任務：勳章、成就與目標",
-      "description": "彙整「解放」的1個前置任務、2個後續任務、4個勳章欄位、相關成就與10筆目標記錄。"
+        "解放任務目標",
+        "解放勳章",
+        "解放任務順序"
+      ]
     },
     {
       "url_path": "/missions/artillery-introduction",
+      "title": "IRON NEST「反炮兵戰」任務：8個目標 · 雷阿爾城、4個勳章",
+      "description": "「反炮兵戰」任務資料包含雷阿爾城的8筆生成目標記錄、4個勳章欄位、1個前置任務及2個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 反炮兵戰任務",
       "keyword_candidates": [
-        "反炮兵戰任務攻略",
-        "反炮兵戰勳章"
-      ],
-      "title": "IRON NEST「反炮兵戰」任務：勳章、成就與目標",
-      "description": "彙整「反炮兵戰」的1個前置任務、2個後續任務、4個勳章欄位、相關成就與8筆目標記錄。"
+        "反炮兵戰任務目標",
+        "反炮兵戰勳章",
+        "反炮兵戰任務順序"
+      ]
     },
     {
       "url_path": "/missions/ironroad",
+      "title": "IRON NEST「鋼鐵之路」任務：21個目標、4個勳章",
+      "description": "「鋼鐵之路」任務資料包含鋼鐵之路的21筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 鋼鐵之路任務",
       "keyword_candidates": [
-        "鋼鐵之路任務攻略",
-        "鋼鐵之路勳章"
-      ],
-      "title": "IRON NEST「鋼鐵之路」任務：勳章、成就與目標",
-      "description": "彙整「鋼鐵之路」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與21筆目標記錄。"
+        "鋼鐵之路任務目標",
+        "鋼鐵之路勳章",
+        "鋼鐵之路任務順序"
+      ]
     },
     {
       "url_path": "/missions/siegeofcartagena",
+      "title": "IRON NEST「卡塔赫納圍城」任務：13個目標 · 卡塔赫納圍城、4個勳章",
+      "description": "「卡塔赫納圍城」任務資料包含卡塔赫納圍城的13筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 卡塔赫納圍城任務",
       "keyword_candidates": [
-        "卡塔赫納圍城任務攻略",
-        "卡塔赫納圍城勳章"
-      ],
-      "title": "IRON NEST「卡塔赫納圍城」任務：勳章、成就與目標",
-      "description": "彙整「卡塔赫納圍城」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與13筆目標記錄。"
+        "卡塔赫納圍城任務目標",
+        "卡塔赫納圍城勳章",
+        "卡塔赫納圍城任務順序"
+      ]
     },
     {
       "url_path": "/missions/the-gorge",
+      "title": "IRON NEST「峽谷」任務：13個目標 · 峽谷、4個勳章",
+      "description": "「峽谷」任務資料包含峽谷的13筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 峽谷任務",
       "keyword_candidates": [
-        "峽谷任務攻略",
-        "峽谷勳章"
-      ],
-      "title": "IRON NEST「峽谷」任務：勳章、成就與目標",
-      "description": "彙整「峽谷」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與13筆目標記錄。"
+        "峽谷任務目標",
+        "峽谷勳章",
+        "峽谷任務順序"
+      ]
     },
     {
       "url_path": "/missions/rockofgibraltar",
+      "title": "IRON NEST「直布羅陀巨巖」任務：8個目標 · 直布羅陀巨巖、4個勳章",
+      "description": "「直布羅陀巨巖」任務資料包含直布羅陀巨巖的8筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 直布羅陀巨巖任務",
       "keyword_candidates": [
-        "直布羅陀巨巖任務攻略",
-        "直布羅陀巨巖勳章"
-      ],
-      "title": "IRON NEST「直布羅陀巨巖」任務：勳章、成就與目標",
-      "description": "彙整「直布羅陀巨巖」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與8筆目標記錄。"
+        "直布羅陀巨巖任務目標",
+        "直布羅陀巨巖勳章",
+        "直布羅陀巨巖任務順序"
+      ]
     },
     {
       "url_path": "/missions/deadreckoning",
+      "title": "IRON NEST「盲區推算」任務：10個目標 · 盲區推算、4個勳章",
+      "description": "「盲區推算」任務資料包含盲區推算的10筆生成目標記錄、4個勳章欄位、1個前置任務及1個後續任務，並列出相關成就。",
       "primary_keyword": "IRON NEST 盲區推算任務",
       "keyword_candidates": [
-        "盲區推算任務攻略",
-        "盲區推算勳章"
-      ],
-      "title": "IRON NEST「盲區推算」任務：勳章、成就與目標",
-      "description": "彙整「盲區推算」的1個前置任務、1個後續任務、4個勳章欄位、相關成就與10筆目標記錄。"
+        "盲區推算任務目標",
+        "盲區推算勳章",
+        "盲區推算任務順序"
+      ]
     },
     {
       "url_path": "/missions/challangefdc",
-      "primary_keyword": "IRON NEST 小規模衝突\n- 挑戰 -\n反砲兵計時器任務",
+      "title": "IRON NEST「小規模衝突 - 挑戰 - 反砲兵計時器」任務：15個目標、4個勳章",
+      "description": "「小規模衝突 - 挑戰 - 反砲兵計時器」任務資料包含—的15筆生成目標記錄、4個勳章欄位、1個前置任務及0個後續任務，並列出相關成就。",
+      "primary_keyword": "IRON NEST 小規模衝突 - 挑戰 - 反砲兵計時器任務",
       "keyword_candidates": [
-        "小規模衝突\n- 挑戰 -\n反砲兵計時器任務攻略",
-        "小規模衝突\n- 挑戰 -\n反砲兵計時器勳章"
-      ],
-      "title": "IRON NEST「小規模衝突\n- 挑戰 -\n反砲兵計時器」任務：勳章、成就與目標",
-      "description": "彙整「小規模衝突\n- 挑戰 -\n反砲兵計時器」的1個前置任務、0個後續任務、4個勳章欄位、相關成就與15筆目標記錄。"
+        "小規模衝突 - 挑戰 - 反砲兵計時器任務目標",
+        "小規模衝突 - 挑戰 - 反砲兵計時器勳章",
+        "小規模衝突 - 挑戰 - 反砲兵計時器任務順序"
+      ]
     },
     {
       "url_path": "/missions/chill",
-      "primary_keyword": "IRON NEST 小規模衝突\n- 休閒 -\n無對抗任務",
+      "title": "IRON NEST「小規模衝突 - 休閒 - 無對抗」任務：18個目標、4個勳章",
+      "description": "「小規模衝突 - 休閒 - 無對抗」任務資料包含—的18筆生成目標記錄、4個勳章欄位、1個前置任務及0個後續任務，並列出相關成就。",
+      "primary_keyword": "IRON NEST 小規模衝突 - 休閒 - 無對抗任務",
       "keyword_candidates": [
-        "小規模衝突\n- 休閒 -\n無對抗任務攻略",
-        "小規模衝突\n- 休閒 -\n無對抗勳章"
-      ],
-      "title": "IRON NEST「小規模衝突\n- 休閒 -\n無對抗」任務：勳章、成就與目標",
-      "description": "彙整「小規模衝突\n- 休閒 -\n無對抗」的1個前置任務、0個後續任務、4個勳章欄位、相關成就與18筆目標記錄。"
+        "小規模衝突 - 休閒 - 無對抗任務目標",
+        "小規模衝突 - 休閒 - 無對抗勳章",
+        "小規模衝突 - 休閒 - 無對抗任務順序"
+      ]
     }
   ]
 }
