@@ -67,9 +67,47 @@ function officialNames(route, labels) {
   return [...new Set(keys.map((key) => labels.MapEntity[key]?.displayName ?? key))];
 }
 
-function officialKeyCount(route) {
-  const statementKeys = [...String(route.unique_value_statement ?? '').matchAll(/STR_ENTITYNAME_[A-Z_]+/g)].map((match) => match[0]);
-  return new Set(statementKeys.length ? statementKeys : rowsFor(route).map((row) => row.Name).filter(Boolean)).size;
+const cleanText = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
+
+function statementNameEntries(route, labels) {
+  const keys = [...new Set([...String(route.unique_value_statement ?? '').matchAll(/STR_ENTITYNAME_[A-Z_]+/g)].map((match) => match[0]))];
+  const rows = rowsFor(route);
+  return keys.map((key) => ({
+    name: cleanText(labels.MapEntity[key]?.displayName ?? key),
+    missions: [...new Set(rows.filter((row) => row.Name === key).map((row) => cleanText(labels.Mission[row.missionRef]?.displayName ?? row.missionRef)))],
+  }));
+}
+
+function naturalList(values, locale) {
+  const list = [...new Set(values.filter(Boolean))];
+  if (list.length < 2) return list[0] ?? '';
+  const conjunction = locale === 'en' ? ' and ' : locale === 'zh-cn' ? '和' : '與';
+  return `${list.slice(0, -1).join(locale === 'en' ? ', ' : '、')}${conjunction}${list.at(-1)}`;
+}
+
+function quotedNaturalList(values, locale) {
+  const quote = locale === 'zh-cn' ? (value) => `“${value}”` : (value) => `「${value}」`;
+  return naturalList(values.map(quote), locale);
+}
+
+function naturalNameVariant(route, label, labels, locale) {
+  const entries = statementNameEntries(route, labels);
+  if (entries.length < 2) return '';
+  const normalizedLabel = cleanText(label).toLocaleLowerCase('en-US');
+  const alternatives = entries.filter((entry) => entry.name.toLocaleLowerCase('en-US') !== normalizedLabel);
+  const alternativeNames = [...new Set(alternatives.map((entry) => entry.name))];
+  if (!alternativeNames.length) return '';
+  if (alternativeNames.length > 1) {
+    const names = naturalList(alternativeNames, locale);
+    if (locale === 'en') return ` (also ${names})`;
+    if (locale === 'zh-cn') return `（另有${quotedNaturalList(alternativeNames, locale)}名称）`;
+    return `（另有${quotedNaturalList(alternativeNames, locale)}名稱）`;
+  }
+  const alternative = alternativeNames[0];
+  const missions = [...new Set(alternatives.filter((entry) => entry.name === alternative).flatMap((entry) => entry.missions))];
+  if (locale === 'en') return missions.length === 1 ? ` (also ${alternative} in ${missions[0]})` : ` (also ${alternative})`;
+  if (locale === 'zh-cn') return missions.length === 1 ? `（在“${missions[0]}”中也称“${alternative}”）` : `（也称“${alternative}”）`;
+  return missions.length === 1 ? `（在「${missions[0]}」中也稱「${alternative}」）` : `（也稱「${alternative}」）`;
 }
 
 function shellSeo(route, label, locale) {
@@ -144,16 +182,11 @@ function mapEntitySeo(route, label, labels, locale) {
   const rows = rowsFor(route);
   const names = officialNames(route, labels);
   const nameText = names.join(' / ');
-  const keyCount = officialKeyCount(route);
   const missions = new Set(rows.map((row) => row.missionRef)).size;
   const armour = range(rows.map((row) => row.Armour));
   const health = range(rows.map((row) => row.Health));
   const id = route.source_record_id;
-  const mixedNameSuffix = keyCount > 1
-    ? locale === 'en' ? ` [${keyCount} locale keys]`
-      : locale === 'zh-cn' ? ` [${keyCount}个本地化键]`
-        : ` [${keyCount}個本地化鍵]`
-    : '';
+  const mixedNameSuffix = naturalNameVariant(route, label, labels, locale);
   if (locale === 'en') return {
     title: `${label}${mixedNameSuffix}: ${rows.length} Records · ID ${id} | IRON NEST`,
     description: `${nameText}: ${rows.length} verified spawn records across ${missions} missions; health ${health}, armour ${armour}; stable ID ${id}.`,

@@ -15,7 +15,7 @@
     },
     {
       "url_path": "/units/allyhospital",
-      "title": "IRON NEST 友方医院 [2个本地化键]：5条记录、ID AllyHospital",
+      "title": "IRON NEST 友方医院（在“最终收割”中也称“医院”）：5条记录、ID AllyHospital",
       "description": "友方医院 / 医院：合并5个任务中的5条已核实生成记录；生命值范围1、装甲范围0；稳定ID为AllyHospital。",
       "primary_keyword": "IRON NEST 友方医院单位",
       "keyword_candidates": [
@@ -26,7 +26,7 @@
     },
     {
       "url_path": "/units/allymech",
-      "title": "IRON NEST 友方机械化部队 [2个本地化键]：2条记录、ID AllyMech",
+      "title": "IRON NEST 友方机械化部队（在“峡谷要冲”中也称“机械化部队”）：2条记录、ID AllyMech",
       "description": "友方机械化部队 / 机械化部队：合并2个任务中的2条已核实生成记录；生命值范围1、装甲范围0；稳定ID为AllyMech。",
       "primary_keyword": "IRON NEST 友方机械化部队单位",
       "keyword_candidates": [
@@ -37,7 +37,7 @@
     },
     {
       "url_path": "/units/allytank",
-      "title": "IRON NEST 友方坦克 [3个本地化键]：6条记录、ID AllyTank",
+      "title": "IRON NEST 友方坦克（在“最终收割”中也称“坦克”）：6条记录、ID AllyTank",
       "description": "友方坦克 / 坦克：合并6个任务中的6条已核实生成记录；生命值范围1、装甲范围0；稳定ID为AllyTank。",
       "primary_keyword": "IRON NEST 友方坦克单位",
       "keyword_candidates": [
@@ -48,7 +48,7 @@
     },
     {
       "url_path": "/units/enemyartillery",
-      "title": "IRON NEST 炮兵 [3个本地化键]：4条记录、ID EnemyArtillery",
+      "title": "IRON NEST 炮兵（在“最终收割”中也称“敌方火炮”）：4条记录、ID EnemyArtillery",
       "description": "炮兵 / 敌方火炮：合并2个任务中的4条已核实生成记录；生命值范围1、装甲范围0；稳定ID为EnemyArtillery。",
       "primary_keyword": "IRON NEST 炮兵单位",
       "keyword_candidates": [
@@ -70,7 +70,7 @@
     },
     {
       "url_path": "/units/enemycommander",
-      "title": "IRON NEST 敌方野战指挥部 [3个本地化键]：5条记录、ID EnemyCommander",
+      "title": "IRON NEST 敌方野战指挥部（也称“敌方指挥官”）：5条记录、ID EnemyCommander",
       "description": "敌方野战指挥部 / 敌方指挥官：合并5个任务中的5条已核实生成记录；生命值范围1、装甲范围0–1；稳定ID为EnemyCommander。",
       "primary_keyword": "IRON NEST 敌方野战指挥部单位",
       "keyword_candidates": [
@@ -92,7 +92,7 @@
     },
     {
       "url_path": "/units/enemyinfantry",
-      "title": "IRON NEST 敌方步兵 [3个本地化键]：19条记录、ID EnemyInfantry",
+      "title": "IRON NEST 敌方步兵（在“反炮兵”中也称“步兵”）：19条记录、ID EnemyInfantry",
       "description": "敌方步兵 / 步兵：合并8个任务中的19条已核实生成记录；生命值范围1、装甲范围0；稳定ID为EnemyInfantry。",
       "primary_keyword": "IRON NEST 敌方步兵单位",
       "keyword_candidates": [
@@ -103,7 +103,7 @@
     },
     {
       "url_path": "/units/enemymech",
-      "title": "IRON NEST 敌方机械化步兵 [2个本地化键]：3条记录、ID EnemyMech",
+      "title": "IRON NEST 敌方机械化步兵（在“峡谷要冲”中也称“敌方机械化部队”）：3条记录、ID EnemyMech",
       "description": "敌方机械化步兵 / 敌方机械化部队：合并3个任务中的3条已核实生成记录；生命值范围1、装甲范围0；稳定ID为EnemyMech。",
       "primary_keyword": "IRON NEST 敌方机械化步兵单位",
       "keyword_candidates": [
@@ -125,7 +125,7 @@
     },
     {
       "url_path": "/units/enemytarget",
-      "title": "IRON NEST 目标 [2个本地化键]：8条记录、ID EnemyTarget",
+      "title": "IRON NEST 目标（在“解放”中也称“步兵”）：8条记录、ID EnemyTarget",
       "description": "目标 / 步兵：合并5个任务中的8条已核实生成记录；生命值范围1、装甲范围0–1；稳定ID为EnemyTarget。",
       "primary_keyword": "IRON NEST 目标单位",
       "keyword_candidates": [
@@ -147,7 +147,7 @@
     },
     {
       "url_path": "/units/frendlymech",
-      "title": "IRON NEST 装甲部队 [2个本地化键]：5条记录、ID FrendlyMech",
+      "title": "IRON NEST 装甲部队（也称“机械化步兵”）：5条记录、ID FrendlyMech",
       "description": "机械化步兵 / 装甲部队：合并3个任务中的5条已核实生成记录；生命值范围1、装甲范围0；稳定ID为FrendlyMech。",
       "primary_keyword": "IRON NEST 装甲部队单位",
       "keyword_candidates": [
@@ -213,7 +213,7 @@
     },
     {
       "url_path": "/units/mechanized",
-      "title": "IRON NEST 机械化部队 [2个本地化键]：2条记录、ID Mechanized",
+      "title": "IRON NEST 机械化部队（在“敌人如潮”中也称“友军机械化部队”）：2条记录、ID Mechanized",
       "description": "机械化部队 / 友军机械化部队：合并2个任务中的2条已核实生成记录；生命值范围1、装甲范围0；稳定ID为Mechanized。",
       "primary_keyword": "IRON NEST 机械化部队单位",
       "keyword_candidates": [
@@ -224,7 +224,7 @@
     },
     {
       "url_path": "/units/police",
-      "title": "IRON NEST 警察 [2个本地化键]：3条记录、ID Police",
+      "title": "IRON NEST 警察（在“敌人如潮”中也称“宪兵站”）：3条记录、ID Police",
       "description": "警察 / 宪兵站：合并3个任务中的3条已核实生成记录；生命值范围1、装甲范围0；稳定ID为Police。",
       "primary_keyword": "IRON NEST 警察单位",
       "keyword_candidates": [
@@ -246,7 +246,7 @@
     },
     {
       "url_path": "/units/trainstation",
-      "title": "IRON NEST 总站 [2个本地化键]：2条记录、ID TrainStation",
+      "title": "IRON NEST 总站：2条记录、ID TrainStation",
       "description": "总站：合并2个任务中的2条已核实生成记录；生命值范围1、装甲范围0；稳定ID为TrainStation。",
       "primary_keyword": "IRON NEST 总站单位",
       "keyword_candidates": [
@@ -257,7 +257,7 @@
     },
     {
       "url_path": "/units/allyartillery",
-      "title": "IRON NEST 友军火炮 [2个本地化键]：6条记录、ID AllyArtillery",
+      "title": "IRON NEST 友军火炮：6条记录、ID AllyArtillery",
       "description": "友军火炮：合并3个任务中的6条已核实生成记录；生命值范围1、装甲范围0–1；稳定ID为AllyArtillery。",
       "primary_keyword": "IRON NEST 友军火炮单位",
       "keyword_candidates": [
@@ -268,7 +268,7 @@
     },
     {
       "url_path": "/units/allyinfantry",
-      "title": "IRON NEST 友方步兵 [3个本地化键]：14条记录、ID AllyInfantry",
+      "title": "IRON NEST 友方步兵（也称“步兵”）：14条记录、ID AllyInfantry",
       "description": "友方步兵 / 步兵：合并10个任务中的14条已核实生成记录；生命值范围1、装甲范围0；稳定ID为AllyInfantry。",
       "primary_keyword": "IRON NEST 友方步兵单位",
       "keyword_candidates": [
@@ -279,7 +279,7 @@
     },
     {
       "url_path": "/units/allyspotter",
-      "title": "IRON NEST 观测员 [2个本地化键]：24条记录、ID AllySpotter",
+      "title": "IRON NEST 观测员（在“白色炮弹”中也称“友方观测员”）：24条记录、ID AllySpotter",
       "description": "观测员 / 友方观测员：合并14个任务中的24条已核实生成记录；生命值范围1、装甲范围0；稳定ID为AllySpotter。",
       "primary_keyword": "IRON NEST 观测员单位",
       "keyword_candidates": [
@@ -290,7 +290,7 @@
     },
     {
       "url_path": "/units/enemyarmour",
-      "title": "IRON NEST 敌方装甲单位 [2个本地化键]：6条记录、ID EnemyArmour",
+      "title": "IRON NEST 敌方装甲单位：6条记录、ID EnemyArmour",
       "description": "敌方装甲单位 / 敌方装甲部队：合并4个任务中的6条已核实生成记录；生命值范围1、装甲范围0；稳定ID为EnemyArmour。",
       "primary_keyword": "IRON NEST 敌方装甲单位单位",
       "keyword_candidates": [

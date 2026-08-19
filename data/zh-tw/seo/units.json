@@ -15,7 +15,7 @@
     },
     {
       "url_path": "/units/allyhospital",
-      "title": "IRON NEST 盟軍醫院 [2個本地化鍵]：5筆記錄、ID AllyHospital",
+      "title": "IRON NEST 盟軍醫院（在「最終收割」中也稱「醫院」）：5筆記錄、ID AllyHospital",
       "description": "盟軍醫院 / 醫院：合併5個任務中的5筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為AllyHospital。",
       "primary_keyword": "IRON NEST 盟軍醫院單位",
       "keyword_candidates": [
@@ -26,7 +26,7 @@
     },
     {
       "url_path": "/units/allymech",
-      "title": "IRON NEST 盟軍機械化部隊 [2個本地化鍵]：2筆記錄、ID AllyMech",
+      "title": "IRON NEST 盟軍機械化部隊（在「峽谷」中也稱「機械化部隊」）：2筆記錄、ID AllyMech",
       "description": "盟軍機械化部隊 / 機械化部隊：合併2個任務中的2筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為AllyMech。",
       "primary_keyword": "IRON NEST 盟軍機械化部隊單位",
       "keyword_candidates": [
@@ -37,7 +37,7 @@
     },
     {
       "url_path": "/units/allytank",
-      "title": "IRON NEST 盟軍戰車 [3個本地化鍵]：6筆記錄、ID AllyTank",
+      "title": "IRON NEST 盟軍戰車（另有「坦克」與「盟軍坦克」名稱）：6筆記錄、ID AllyTank",
       "description": "盟軍戰車 / 坦克 / 盟軍坦克：合併6個任務中的6筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為AllyTank。",
       "primary_keyword": "IRON NEST 盟軍戰車單位",
       "keyword_candidates": [
@@ -48,7 +48,7 @@
     },
     {
       "url_path": "/units/enemyartillery",
-      "title": "IRON NEST 火炮 [3個本地化鍵]：4筆記錄、ID EnemyArtillery",
+      "title": "IRON NEST 火炮（在「最終收割」中也稱「敵方炮兵」）：4筆記錄、ID EnemyArtillery",
       "description": "火炮 / 敵方炮兵：合併2個任務中的4筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為EnemyArtillery。",
       "primary_keyword": "IRON NEST 火炮單位",
       "keyword_candidates": [
@@ -70,7 +70,7 @@
     },
     {
       "url_path": "/units/enemycommander",
-      "title": "IRON NEST 敵方野戰指揮部 [3個本地化鍵]：5筆記錄、ID EnemyCommander",
+      "title": "IRON NEST 敵方野戰指揮部（也稱「敵方指揮官」）：5筆記錄、ID EnemyCommander",
       "description": "敵方野戰指揮部 / 敵方指揮官：合併5個任務中的5筆已核實生成記錄；生命值範圍1、裝甲範圍0–1；穩定ID為EnemyCommander。",
       "primary_keyword": "IRON NEST 敵方野戰指揮部單位",
       "keyword_candidates": [
@@ -92,7 +92,7 @@
     },
     {
       "url_path": "/units/enemyinfantry",
-      "title": "IRON NEST 敵方步兵 [3個本地化鍵]：19筆記錄、ID EnemyInfantry",
+      "title": "IRON NEST 敵方步兵（在「反炮兵戰」中也稱「步兵」）：19筆記錄、ID EnemyInfantry",
       "description": "敵方步兵 / 步兵：合併8個任務中的19筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為EnemyInfantry。",
       "primary_keyword": "IRON NEST 敵方步兵單位",
       "keyword_candidates": [
@@ -103,7 +103,7 @@
     },
     {
       "url_path": "/units/enemymech",
-      "title": "IRON NEST 敵方機械化步兵 [2個本地化鍵]：3筆記錄、ID EnemyMech",
+      "title": "IRON NEST 敵方機械化步兵（在「峽谷」中也稱「敵方機械化部隊」）：3筆記錄、ID EnemyMech",
       "description": "敵方機械化步兵 / 敵方機械化部隊：合併3個任務中的3筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為EnemyMech。",
       "primary_keyword": "IRON NEST 敵方機械化步兵單位",
       "keyword_candidates": [
@@ -125,7 +125,7 @@
     },
     {
       "url_path": "/units/enemytarget",
-      "title": "IRON NEST 目標 [2個本地化鍵]：8筆記錄、ID EnemyTarget",
+      "title": "IRON NEST 目標（在「解放」中也稱「步兵」）：8筆記錄、ID EnemyTarget",
       "description": "目標 / 步兵：合併5個任務中的8筆已核實生成記錄；生命值範圍1、裝甲範圍0–1；穩定ID為EnemyTarget。",
       "primary_keyword": "IRON NEST 目標單位",
       "keyword_candidates": [
@@ -147,7 +147,7 @@
     },
     {
       "url_path": "/units/frendlymech",
-      "title": "IRON NEST 裝甲部隊 [2個本地化鍵]：5筆記錄、ID FrendlyMech",
+      "title": "IRON NEST 裝甲部隊（也稱「機械化步兵」）：5筆記錄、ID FrendlyMech",
       "description": "機械化步兵 / 裝甲部隊：合併3個任務中的5筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為FrendlyMech。",
       "primary_keyword": "IRON NEST 裝甲部隊單位",
       "keyword_candidates": [
@@ -213,7 +213,7 @@
     },
     {
       "url_path": "/units/mechanized",
-      "title": "IRON NEST 機械化部隊 [2個本地化鍵]：2筆記錄、ID Mechanized",
+      "title": "IRON NEST 機械化部隊（在「漲潮」中也稱「盟軍機械化部隊」）：2筆記錄、ID Mechanized",
       "description": "機械化部隊 / 盟軍機械化部隊：合併2個任務中的2筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為Mechanized。",
       "primary_keyword": "IRON NEST 機械化部隊單位",
       "keyword_candidates": [
@@ -224,7 +224,7 @@
     },
     {
       "url_path": "/units/police",
-      "title": "IRON NEST 警察 [2個本地化鍵]：3筆記錄、ID Police",
+      "title": "IRON NEST 警察（在「漲潮」中也稱「憲兵站」）：3筆記錄、ID Police",
       "description": "警察 / 憲兵站：合併3個任務中的3筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為Police。",
       "primary_keyword": "IRON NEST 警察單位",
       "keyword_candidates": [
@@ -246,7 +246,7 @@
     },
     {
       "url_path": "/units/trainstation",
-      "title": "IRON NEST 主要站點 [2個本地化鍵]：2筆記錄、ID TrainStation",
+      "title": "IRON NEST 主要站點：2筆記錄、ID TrainStation",
       "description": "主要站點：合併2個任務中的2筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為TrainStation。",
       "primary_keyword": "IRON NEST 主要站點單位",
       "keyword_candidates": [
@@ -257,7 +257,7 @@
     },
     {
       "url_path": "/units/allyartillery",
-      "title": "IRON NEST 盟軍炮兵 [2個本地化鍵]：6筆記錄、ID AllyArtillery",
+      "title": "IRON NEST 盟軍炮兵：6筆記錄、ID AllyArtillery",
       "description": "盟軍炮兵：合併3個任務中的6筆已核實生成記錄；生命值範圍1、裝甲範圍0–1；穩定ID為AllyArtillery。",
       "primary_keyword": "IRON NEST 盟軍炮兵單位",
       "keyword_candidates": [
@@ -268,7 +268,7 @@
     },
     {
       "url_path": "/units/allyinfantry",
-      "title": "IRON NEST 盟軍步兵 [3個本地化鍵]：14筆記錄、ID AllyInfantry",
+      "title": "IRON NEST 盟軍步兵（也稱「步兵」）：14筆記錄、ID AllyInfantry",
       "description": "盟軍步兵 / 步兵：合併10個任務中的14筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為AllyInfantry。",
       "primary_keyword": "IRON NEST 盟軍步兵單位",
       "keyword_candidates": [
@@ -279,7 +279,7 @@
     },
     {
       "url_path": "/units/allyspotter",
-      "title": "IRON NEST 前線觀測兵 [2個本地化鍵]：24筆記錄、ID AllySpotter",
+      "title": "IRON NEST 前線觀測兵（在「白色炮彈」中也稱「盟軍觀測員」）：24筆記錄、ID AllySpotter",
       "description": "前線觀測兵 / 盟軍觀測員：合併14個任務中的24筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為AllySpotter。",
       "primary_keyword": "IRON NEST 前線觀測兵單位",
       "keyword_candidates": [
@@ -290,7 +290,7 @@
     },
     {
       "url_path": "/units/enemyarmour",
-      "title": "IRON NEST 敵方裝甲部隊 [2個本地化鍵]：6筆記錄、ID EnemyArmour",
+      "title": "IRON NEST 敵方裝甲部隊：6筆記錄、ID EnemyArmour",
       "description": "敵方裝甲部隊 / 敵方裝甲：合併4個任務中的6筆已核實生成記錄；生命值範圍1、裝甲範圍0；穩定ID為EnemyArmour。",
       "primary_keyword": "IRON NEST 敵方裝甲部隊單位",
       "keyword_candidates": [

@@ -15,7 +15,7 @@
     },
     {
       "url_path": "/units/allyhospital",
-      "title": "AllyHospital [2 locale keys]: 5 Records · ID AllyHospital | IRON NEST",
+      "title": "AllyHospital (also Hospital in Final Harvest): 5 Records · ID AllyHospital | IRON NEST",
       "description": "AllyHospital / Hospital: 5 verified spawn records across 5 missions; health 1, armour 0; stable ID AllyHospital.",
       "primary_keyword": "IRON NEST AllyHospital unit",
       "keyword_candidates": [
@@ -26,7 +26,7 @@
     },
     {
       "url_path": "/units/allymech",
-      "title": "Ally Mechanized [2 locale keys]: 2 Records · ID AllyMech | IRON NEST",
+      "title": "Ally Mechanized (also Mechanized in The Gorge): 2 Records · ID AllyMech | IRON NEST",
       "description": "Ally Mechanized / Mechanized: 2 verified spawn records across 2 missions; health 1, armour 0; stable ID AllyMech.",
       "primary_keyword": "IRON NEST Ally Mechanized unit",
       "keyword_candidates": [
@@ -37,7 +37,7 @@
     },
     {
       "url_path": "/units/allytank",
-      "title": "AllyTank [3 locale keys]: 6 Records · ID AllyTank | IRON NEST",
+      "title": "AllyTank (also Tank and Ally Tank): 6 Records · ID AllyTank | IRON NEST",
       "description": "AllyTank / Tank / Ally Tank: 6 verified spawn records across 6 missions; health 1, armour 0; stable ID AllyTank.",
       "primary_keyword": "IRON NEST AllyTank unit",
       "keyword_candidates": [
@@ -48,7 +48,7 @@
     },
     {
       "url_path": "/units/enemyartillery",
-      "title": "EnemyArtillery [3 locale keys]: 4 Records · ID EnemyArtillery | IRON NEST",
+      "title": "EnemyArtillery (also Artillery and Enemy Artillery): 4 Records · ID EnemyArtillery | IRON NEST",
       "description": "Artillery / EnemyArtillery / Enemy Artillery: 4 verified spawn records across 2 missions; health 1, armour 0; stable ID EnemyArtillery.",
       "primary_keyword": "IRON NEST EnemyArtillery unit",
       "keyword_candidates": [
@@ -70,7 +70,7 @@
     },
     {
       "url_path": "/units/enemycommander",
-      "title": "EnemyCommander [3 locale keys]: 5 Records · ID EnemyCommander | IRON NEST",
+      "title": "EnemyCommander (also Enemy Field Command and Enemy Commander): 5 Records · ID EnemyCommander | IRON NEST",
       "description": "Enemy Field Command / Enemy Commander / EnemyCommander: 5 verified spawn records across 5 missions; health 1, armour 0–1; stable ID EnemyCommander.",
       "primary_keyword": "IRON NEST EnemyCommander unit",
       "keyword_candidates": [
@@ -92,7 +92,7 @@
     },
     {
       "url_path": "/units/enemyinfantry",
-      "title": "EnemyInfantry [3 locale keys]: 19 Records · ID EnemyInfantry | IRON NEST",
+      "title": "EnemyInfantry (also Enemy Infantry and Infantry): 19 Records · ID EnemyInfantry | IRON NEST",
       "description": "Enemy Infantry / EnemyInfantry / Infantry: 19 verified spawn records across 8 missions; health 1, armour 0; stable ID EnemyInfantry.",
       "primary_keyword": "IRON NEST EnemyInfantry unit",
       "keyword_candidates": [
@@ -103,7 +103,7 @@
     },
     {
       "url_path": "/units/enemymech",
-      "title": "Enemy Mechanized Infantry [2 locale keys]: 3 Records · ID EnemyMech | IRON NEST",
+      "title": "Enemy Mechanized Infantry (also Enemy Mechanized in The Gorge): 3 Records · ID EnemyMech | IRON NEST",
       "description": "Enemy Mechanized Infantry / Enemy Mechanized: 3 verified spawn records across 3 missions; health 1, armour 0; stable ID EnemyMech.",
       "primary_keyword": "IRON NEST Enemy Mechanized Infantry unit",
       "keyword_candidates": [
@@ -125,7 +125,7 @@
     },
     {
       "url_path": "/units/enemytarget",
-      "title": "Target [2 locale keys]: 8 Records · ID EnemyTarget | IRON NEST",
+      "title": "Target (also Infantry in Liberation): 8 Records · ID EnemyTarget | IRON NEST",
       "description": "Target / Infantry: 8 verified spawn records across 5 missions; health 1, armour 0–1; stable ID EnemyTarget.",
       "primary_keyword": "IRON NEST Target unit",
       "keyword_candidates": [
@@ -147,7 +147,7 @@
     },
     {
       "url_path": "/units/frendlymech",
-      "title": "Armour [2 locale keys]: 5 Records · ID FrendlyMech | IRON NEST",
+      "title": "Armour (also Mechanized Infantry): 5 Records · ID FrendlyMech | IRON NEST",
       "description": "Mechanized Infantry / Armour: 5 verified spawn records across 3 missions; health 1, armour 0; stable ID FrendlyMech.",
       "primary_keyword": "IRON NEST Armour unit",
       "keyword_candidates": [
@@ -213,7 +213,7 @@
     },
     {
       "url_path": "/units/mechanized",
-      "title": "Mechanized [2 locale keys]: 2 Records · ID Mechanized | IRON NEST",
+      "title": "Mechanized (also Allied Mechanized in High Tide): 2 Records · ID Mechanized | IRON NEST",
       "description": "Mechanized / Allied Mechanized: 2 verified spawn records across 2 missions; health 1, armour 0; stable ID Mechanized.",
       "primary_keyword": "IRON NEST Mechanized unit",
       "keyword_candidates": [
@@ -224,7 +224,7 @@
     },
     {
       "url_path": "/units/police",
-      "title": "Police [2 locale keys]: 3 Records · ID Police | IRON NEST",
+      "title": "Police (also Military police Post in High Tide): 3 Records · ID Police | IRON NEST",
       "description": "Police / Military police Post: 3 verified spawn records across 3 missions; health 1, armour 0; stable ID Police.",
       "primary_keyword": "IRON NEST Police unit",
       "keyword_candidates": [
@@ -246,7 +246,7 @@
     },
     {
       "url_path": "/units/trainstation",
-      "title": "Main Station [2 locale keys]: 2 Records · ID TrainStation | IRON NEST",
+      "title": "Main Station (also MainStation in Iron Road): 2 Records · ID TrainStation | IRON NEST",
       "description": "Main Station / MainStation: 2 verified spawn records across 2 missions; health 1, armour 0; stable ID TrainStation.",
       "primary_keyword": "IRON NEST Main Station unit",
       "keyword_candidates": [
@@ -257,7 +257,7 @@
     },
     {
       "url_path": "/units/allyartillery",
-      "title": "Ally Artillery [2 locale keys]: 6 Records · ID AllyArtillery | IRON NEST",
+      "title": "Ally Artillery: 6 Records · ID AllyArtillery | IRON NEST",
       "description": "Ally Artillery / Allied Artillery: 6 verified spawn records across 3 missions; health 1, armour 0–1; stable ID AllyArtillery.",
       "primary_keyword": "IRON NEST Ally Artillery unit",
       "keyword_candidates": [
@@ -268,7 +268,7 @@
     },
     {
       "url_path": "/units/allyinfantry",
-      "title": "AllyInfantry [3 locale keys]: 14 Records · ID AllyInfantry | IRON NEST",
+      "title": "AllyInfantry (also Infantry and Ally Infantry): 14 Records · ID AllyInfantry | IRON NEST",
       "description": "AllyInfantry / Infantry / Ally Infantry: 14 verified spawn records across 10 missions; health 1, armour 0; stable ID AllyInfantry.",
       "primary_keyword": "IRON NEST AllyInfantry unit",
       "keyword_candidates": [
@@ -279,7 +279,7 @@
     },
     {
       "url_path": "/units/allyspotter",
-      "title": "Spotter [2 locale keys]: 24 Records · ID AllySpotter | IRON NEST",
+      "title": "Spotter (also Ally Spotter in White shells): 24 Records · ID AllySpotter | IRON NEST",
       "description": "Spotter / Ally Spotter: 24 verified spawn records across 14 missions; health 1, armour 0; stable ID AllySpotter.",
       "primary_keyword": "IRON NEST Spotter unit",
       "keyword_candidates": [
@@ -290,7 +290,7 @@
     },
     {
       "url_path": "/units/enemyarmour",
-      "title": "EnemyArmour [2 locale keys]: 6 Records · ID EnemyArmour | IRON NEST",
+      "title": "EnemyArmour: 6 Records · ID EnemyArmour | IRON NEST",
       "description": "EnemyArmour / Enemy Armor: 6 verified spawn records across 4 missions; health 1, armour 0; stable ID EnemyArmour.",
       "primary_keyword": "IRON NEST EnemyArmour unit",
       "keyword_candidates": [

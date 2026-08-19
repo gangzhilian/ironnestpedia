@@ -239,14 +239,6 @@ export function getOfficialNamesForRoute(route: RouteEntry, locale: Locale = 'en
   return [...new Set(keys.map((key) => labels[locale].MapEntity?.[key]?.displayName ?? key))];
 }
 
-export function getOfficialKeyCount(route: RouteEntry) {
-  if (route.entity !== 'MapEntity') return 0;
-  const statementKeys = [...String((route as any).unique_value_statement ?? '').matchAll(/STR_ENTITYNAME_[A-Z_]+/g)]
-    .map((match) => match[0]);
-  const rowKeys = getPrimaryRows(route).map((row) => String(row.Name ?? '')).filter(Boolean);
-  return new Set(statementKeys.length ? statementKeys : rowKeys).size;
-}
-
 type Readout = { label: string; value: string };
 
 function formatMetric(value: unknown) {
@@ -304,7 +296,6 @@ export function getEntityReadouts(route: RouteEntry, locale: Locale = 'en'): Rea
     const names = getOfficialNamesForRoute(route, locale);
     return [
       { label: translate(locale, 'official_names'), value: names.join(' / ') },
-      { label: translate(locale, 'localization_keys'), value: formatMetric(getOfficialKeyCount(route)) },
       { label: translate(locale, 'source_records'), value: formatMetric(rows.length) },
       { label: translate(locale, 'mission_appearances'), value: formatMetric(new Set(sourceRows.map((item) => item.missionRef)).size) },
       { label: fieldLabel('Role', locale), value: [...new Set(rows.map((item) => item.Role))].join(' / ') },
