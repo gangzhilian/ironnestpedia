@@ -1,0 +1,45 @@
+{
+  "step": 27,
+  "verified_at": "2026-08-20",
+  "table_strategy": {
+    "selected": "horizontal-scroll",
+    "comparison_viewport_px": 375,
+    "reason": "Preserves row and column relationships and remains substantially more compact than the tested card layout.",
+    "guidance_locales": ["en", "zh-cn", "zh-tw"],
+    "tested_widths_px": [375, 390, 768]
+  },
+  "browser_checks": {
+    "shell_ap_375": {
+      "page_overflow_x": false,
+      "table_client_width_px": 338,
+      "table_scroll_width_px": 1215,
+      "scroll_end_reached": true,
+      "header_overlaps": 0
+    },
+    "shell_ap_390": { "page_overflow_x": false, "table_scrollable": true, "header_overlaps": 0 },
+    "shell_ap_768": { "page_overflow_x": false, "table_scrollable": true, "scroll_hint_visible": true },
+    "simple_achievement_390": { "page_overflow_x": false, "infobox_fits_viewport": true },
+    "shell_index_375": { "page_overflow_x": false, "cards_rendered": 20 },
+    "home_375": { "page_overflow_x": false, "data_entry_visible_in_first_viewport": true },
+    "language_switch_375": { "en_to_zh_cn": true, "zh_cn_to_zh_tw": true, "header_overlaps": 0 },
+    "achievement_tool_desktop": { "query_completed": true, "summary": "1 of 33 unlocked · 32 remaining", "rarity_sort_ascending": true },
+    "achievement_tool_390": { "query_completed": true, "summary": "1 of 33 unlocked · 32 remaining", "rarity_sort_ascending": true, "page_overflow_x": false }
+  },
+  "lighthouse": {
+    "version": "13.4.1",
+    "home_mobile": { "performance": 100, "accessibility": 100, "best_practices": 100, "seo": 100, "lcp_seconds": 1.2, "cls": 0.005, "tbt_ms": 0, "transfer_kib": 63 },
+    "shell_ap_mobile": { "performance": 100, "accessibility": 100, "best_practices": 100, "seo": 100, "lcp_seconds": 1.2, "cls": 0.015, "tbt_ms": 0, "transfer_kib": 63 },
+    "achievement_tool_mobile": { "performance": 100, "accessibility": 100, "best_practices": 100, "seo": 100, "lcp_seconds": 1.2, "cls": 0.007, "tbt_ms": 0, "transfer_kib": 66 },
+    "achievement_tool_desktop": { "performance": 100, "accessibility": 100, "best_practices": 100, "seo": 100, "lcp_seconds": 0.3, "cls": 0.005, "tbt_ms": 0, "transfer_kib": 66 },
+    "inp_note": "Lighthouse lab navigation does not provide field INP. The real desktop and mobile submission flows completed without a blocked or unresponsive state; TBT was 0 ms in all four lab runs."
+  },
+  "image_audit": {
+    "visible_raster_images": 0,
+    "social_og_png_images": 336,
+    "og_dimensions": "1200x630",
+    "self_drawn_svg_has_intrinsic_dimensions": true,
+    "game_art_used": false
+  },
+  "reduced_motion": true,
+  "adsense_cls": "deferred to step 33 because no ad slots exist"
+}

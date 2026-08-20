@@ -173,6 +173,8 @@
     "verified_records": "Verified records",
     "related_indexes": "Related indexes and missions",
     "no_records": "No records matched this approved route join.",
+    "table_scroll_hint": "Swipe horizontally to view all columns →",
+    "table_scroll_region": "Scrollable data table",
     "tested_interpretation": "Tested interpretation",
     "no_tested_insight": "No owner-tested interpretation is available yet. The page reports verified data only.",
     "dataset_scope": "Dataset scope",

@@ -173,6 +173,8 @@
     "verified_records": "已核实记录",
     "related_indexes": "相关索引与任务",
     "no_records": "没有记录符合这个已批准的路由关联条件。",
+    "table_scroll_hint": "左右滑动查看全部列 →",
+    "table_scroll_region": "可横向滚动的数据表格",
     "tested_interpretation": "实测解读",
     "no_tested_insight": "暂无站长实测解读。本页只报告已核实数据。",
     "dataset_scope": "数据集范围",

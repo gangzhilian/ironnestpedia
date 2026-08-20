@@ -9,10 +9,13 @@ const display = (value: any) => {
 };
 ---
 {rows.length === 0 ? <p class="notice">{translate(locale, 'no_records')}</p> : (
-  <div class="table-wrap">
-    <table>
-      <thead><tr>{fields.map((field) => <th scope="col">{fieldLabel(field, locale)}</th>)}</tr></thead>
-      <tbody>{rows.map((row) => <tr>{fields.map((field) => <td><code>{display(row[field])}</code></td>)}</tr>)}</tbody>
-    </table>
+  <div class="table-shell">
+    <p class="table-scroll-hint" aria-hidden="true">{translate(locale, 'table_scroll_hint')}</p>
+    <div class="table-wrap" role="region" aria-label={translate(locale, 'table_scroll_region')} tabindex="0">
+      <table>
+        <thead><tr>{fields.map((field) => <th scope="col">{fieldLabel(field, locale)}</th>)}</tr></thead>
+        <tbody>{rows.map((row) => <tr>{fields.map((field) => <td><code>{display(row[field])}</code></td>)}</tr>)}</tbody>
+      </table>
+    </div>
   </div>
 )}
