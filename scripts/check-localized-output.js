@@ -9,6 +9,10 @@ const dist = join(root, 'dist');
 const origin = 'https://ironnestpedia.com';
 const routes = JSON.parse(readFileSync(join(root, 'data', 'routes.json'), 'utf8')).pages;
 const placeholders = JSON.parse(readFileSync(join(root, 'data', 'skeleton-placeholder-pages.json'), 'utf8')).pages;
+const guidePaths = readdirSync(join(root, 'data', 'en', 'guides'))
+  .filter((file) => file.endsWith('.json'))
+  .map((file) => JSON.parse(readFileSync(join(root, 'data', 'en', 'guides', file), 'utf8')).url_path)
+  .sort();
 const locales = [
   { code: 'en', html: 'en', hreflang: 'en' },
   { code: 'zh-cn', html: 'zh-CN', hreflang: 'zh-CN' },
@@ -47,7 +51,7 @@ function linkMap(html) {
 const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 const htmlByRoute = new Map(htmlFiles.map((file) => [fileToRoute(file), readFileSync(file, 'utf8')]));
 const errors = [];
-const indexable = ['/', '/contact', '/about', '/privacy', '/cookies', '/terms', '/tools', '/tools/achievement-completion', ...routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => route.url_path)];
+const indexable = ['/', '/contact', '/about', '/privacy', '/cookies', '/terms', '/tools', '/tools/achievement-completion', ...routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => route.url_path), ...guidePaths];
 const noindex = [...placeholders.map((page) => page.url_path), '/tools/mission-map', '/404'];
 
 const expectedHtmlPages = (indexable.length + noindex.length) * locales.length;
@@ -133,4 +137,5 @@ console.log(JSON.stringify({
   sitemap_urls: sitemapUrls.size,
   corrected_pages_checked: 6 * locales.length,
   redirects_checked: 2,
+  published_guides: guidePaths.length,
 }, null, 2));

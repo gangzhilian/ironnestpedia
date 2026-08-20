@@ -3,6 +3,7 @@ import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
 import EntityInfobox from './EntityInfobox.astro';
 import TechMark from './TechMark.astro';
+import RelatedGuides from './RelatedGuides.astro';
 import { entityName, getEmbeddedRows, getPrimaryRows, getRelatedRoutes, getSeo, labelForRoute, localizeRows, localizedPath, routeMap, translate, type Locale, type RouteEntry } from '../lib/data';
 
 interface Props { route: RouteEntry; locale?: Locale; }
@@ -44,4 +45,5 @@ const entity = entityName(route.entity, locale);
     <h2>{translate(locale, 'related_pages')}</h2>
     <ul class="link-list">{related.map((item) => <li><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></li>)}</ul>
   </section>
+  <RelatedGuides pagePath={route.url_path} locale={locale} />
 </Layout>

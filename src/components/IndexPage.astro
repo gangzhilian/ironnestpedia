@@ -2,6 +2,7 @@
 import Layout from './Layout.astro';
 import DataTable from './DataTable.astro';
 import ProvenanceStamp from './ProvenanceStamp.astro';
+import RelatedGuides from './RelatedGuides.astro';
 import { entityName, fieldLabel, getIndexRows, getRelatedRoutes, getSeo, getSite, getTools, labelForRoute, localizeRows, localizedPath, routes, translate, type Locale, type RouteEntry } from '../lib/data';
 
 interface Props { route: RouteEntry; locale?: Locale; }
@@ -62,5 +63,6 @@ const tableOnly = ['Medal', 'Punchcard', 'Mutator'].includes(route.entity);
       </article>
     </section>
   )}
+  <RelatedGuides pagePath={route.url_path} locale={locale} />
   </div>
 </Layout>

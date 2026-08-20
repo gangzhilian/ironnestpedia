@@ -8,6 +8,8 @@ const root = join(fileURLToPath(new URL('..', import.meta.url)));
 const dist = join(root, 'dist');
 const locales = ['en', 'zh-cn', 'zh-tw'];
 const basePages = ['/privacy', '/terms', '/cookies', '/about'];
+const publishedGuideCount = readdirSync(join(root, 'data', 'en', 'guides')).filter((file) => file.endsWith('.json')).length;
+const expectedSitemapUrls = 336 + publishedGuideCount * locales.length;
 const localizedPath = (path, locale) => locale === 'en' ? path : `/${locale}${path}`;
 
 function walk(dir) {
@@ -86,14 +88,14 @@ const result = {
   compliance_pages: basePages.length * locales.length,
   footer_pages_checked: htmlByRoute.size,
   sitemap_urls: sitemapUrls.size,
-  expected_sitemap_urls: 336,
+  expected_sitemap_urls: expectedSitemapUrls,
   entity_records: entityRows.length,
   game_versions: versions,
   data_sources: sources,
   current_analytics_ad_tracking_scripts: 0,
   errors: errors.slice(0, 50),
 };
-if (sitemapUrls.size !== 336) result.errors.push(`sitemap count ${sitemapUrls.size}, expected 336`);
+if (sitemapUrls.size !== expectedSitemapUrls) result.errors.push(`sitemap count ${sitemapUrls.size}, expected ${expectedSitemapUrls}`);
 if (result.errors.length) result.status = 'FAIL';
 console.log(JSON.stringify(result, null, 2));
 if (result.status !== 'PASS') process.exitCode = 1;

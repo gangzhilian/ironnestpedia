@@ -1,0 +1,26 @@
+---
+import { getGuidesForSource, localizedPath, type Locale } from '../lib/data';
+
+interface Props { pagePath: string; locale?: Locale; }
+const { pagePath, locale = 'en' } = Astro.props;
+const guides = getGuidesForSource(pagePath, locale);
+const heading: Record<Locale, string> = {
+  en: 'Related field guides',
+  'zh-cn': '相关战地指南',
+  'zh-tw': '相關戰地指南',
+};
+---
+{guides.length > 0 && (
+  <section class="related-guides">
+    <h2>{heading[locale]}</h2>
+    <div class="grid">
+      {guides.map((guide) => (
+        <article class="card guide-link-card">
+          <p class="eyebrow">{guide.eyebrow}</p>
+          <h3><a href={localizedPath(guide.url_path, locale)}>{guide.h1}</a></h3>
+          <p>{guide.seo_description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+)}

@@ -19,7 +19,7 @@ function localizableFiles(locale) {
   const root = join(dataRoot, locale);
   return walk(root)
     .map((file) => relative(root, file).split(sep).join('/'))
-    .filter((file) => file === 'site.json' || file === 'home.json' || file.startsWith('seo/') || /^entities\/[^/]+\.labels\.json$/.test(file))
+    .filter((file) => file === 'site.json' || file === 'home.json' || file.startsWith('seo/') || file.startsWith('guides/') || /^entities\/[^/]+\.labels\.json$/.test(file))
     .sort();
 }
 
@@ -40,6 +40,7 @@ for (const file of sourceFiles) {
 
 let seoPagesChecked = 0;
 let labelsChecked = 0;
+let guidesChecked = 0;
 for (const locale of translatedLocales) {
   const files = localizableFiles(locale);
   if (JSON.stringify(files) !== JSON.stringify(sourceFiles)) {
@@ -70,6 +71,14 @@ for (const locale of translatedLocales) {
         }
       }
     }
+    if (file.startsWith('guides/')) {
+      guidesChecked += 1;
+      for (const field of ['seo_title', 'seo_description', 'h1']) {
+        if (!String(target[field] ?? '').trim()) errors.push(`${locale}/${file}: ${field} is empty`);
+        if (target[field] === source?.[field]) errors.push(`${locale}/${file}: ${field} is byte-for-byte identical to en`);
+      }
+      if (target.url_path !== source?.url_path) errors.push(`${locale}/${file}: url_path differs from en`);
+    }
     if (file.endsWith('.labels.json')) {
       labelsChecked += Object.keys(target).length;
       for (const [id, labels] of Object.entries(target)) {
@@ -92,5 +101,6 @@ console.log(JSON.stringify({
   localizable_files_per_locale: sourceFiles.length,
   seo_pages_checked: seoPagesChecked,
   translated_labels_checked: labelsChecked,
+  translated_guides_checked: guidesChecked,
   identical_translated_seo_fields: 0,
 }, null, 2));

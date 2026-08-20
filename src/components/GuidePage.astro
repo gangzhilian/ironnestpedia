@@ -1,0 +1,78 @@
+---
+import Layout from './Layout.astro';
+import TechMark from './TechMark.astro';
+import DataTable from './DataTable.astro';
+import { localizedPath, type GuideEntry, type Locale } from '../lib/data';
+
+interface Props { guide: GuideEntry; locale?: Locale; }
+const { guide, locale = 'en' } = Astro.props;
+const publishedLabel: Record<Locale, string> = {
+  en: 'Published',
+  'zh-cn': '发布日期',
+  'zh-tw': '發布日期',
+};
+const comparisonRows = guide.comparison_table.rows.map((row: string[]) => Object.fromEntries(
+  guide.comparison_table.columns.map((column: string, index: number) => [column, row[index]]),
+));
+---
+<Layout
+  title={guide.seo_title}
+  description={guide.seo_description}
+  path={guide.url_path}
+  locale={locale}
+  breadcrumbs={[{ label: guide.h1 }]}
+>
+  <article class="guide-page">
+    <header class="guide-header">
+      <p class="eyebrow">{guide.eyebrow}</p>
+      <h1>{guide.h1}</h1>
+      <p class="guide-summary">{guide.summary}</p>
+      <p class="guide-published"><span>{publishedLabel[locale]}</span> {guide.published_at}</p>
+    </header>
+
+    <div class="guide-sections">
+      {guide.sections.map((section: GuideEntry, index: number) => (
+        <section class="guide-section">
+          <p class="section-index">{String(index + 1).padStart(2, '0')}</p>
+          <div>
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph: string) => <p>{paragraph}</p>)}
+            {section.items.length > 0 && (
+              <ul>{section.items.map((item: string) => <li>{item}</li>)}</ul>
+            )}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    {guide.comparison_table.rows.length > 0 && (
+      <section class="guide-comparison">
+        <h2>{guide.comparison_table.heading}</h2>
+        <p>{guide.comparison_table.intro}</p>
+        <DataTable rows={comparisonRows} fields={guide.comparison_table.columns} locale={locale} />
+      </section>
+    )}
+
+    <section class="guide-takeaway">
+      <TechMark size={28} />
+      <div><h2>{guide.takeaway_heading}</h2><p>{guide.takeaway}</p></div>
+    </section>
+
+    <aside class="guide-provenance" aria-label={guide.provenance_label}>
+      <span>{guide.provenance_label}</span>
+      <p>{guide.provenance}</p>
+    </aside>
+
+    <section class="guide-related">
+      <h2>{guide.related_heading}</h2>
+      <div class="grid">
+        {guide.related_links.map((link: GuideEntry) => (
+          <article class="card">
+            <h3><a href={localizedPath(link.path, locale)}>{link.label}</a></h3>
+            <p>{link.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </article>
+</Layout>

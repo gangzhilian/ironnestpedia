@@ -8,6 +8,9 @@ const projectRoot = join(fileURLToPath(new URL('..', import.meta.url)));
 const distRoot = join(projectRoot, 'dist');
 const routes = JSON.parse(readFileSync(join(projectRoot, 'data', 'routes.json'), 'utf8')).pages;
 const placeholders = JSON.parse(readFileSync(join(projectRoot, 'data', 'skeleton-placeholder-pages.json'), 'utf8')).pages;
+const guides = readdirSync(join(projectRoot, 'data', 'en', 'guides'))
+  .filter((file) => file.endsWith('.json'))
+  .map((file) => JSON.parse(readFileSync(join(projectRoot, 'data', 'en', 'guides', file), 'utf8')));
 const siteOrigin = 'https://ironnestpedia.com';
 const minInbound = 3;
 const locales = ['en', 'zh-cn', 'zh-tw'];
@@ -40,7 +43,8 @@ function normalizeHref(href, source) {
 
 const htmlFiles = walk(distRoot).filter((file) => file.endsWith('.html'));
 const htmlByRoute = new Map(htmlFiles.map((file) => [fileToRoute(file), readFileSync(file, 'utf8')]));
-const inbound = new Map(routes.map((route) => [route.url_path, new Set()]));
+const audited = [...routes.filter((route) => route.page_type !== 'tool_placeholder'), ...guides.map((guide) => ({ ...guide, entity: 'Guide', page_type: 'guide' }))];
+const inbound = new Map(audited.map((route) => [route.url_path, new Set()]));
 
 for (const [source, html] of htmlByRoute) {
   const hrefPattern = /<a\b[^>]*\bhref=(?:"([^"]+)"|'([^']+)')[^>]*>/gi;
@@ -51,7 +55,6 @@ for (const [source, html] of htmlByRoute) {
 }
 
 const errors = [];
-const audited = routes.filter((route) => route.page_type !== 'tool_placeholder');
 for (const route of audited) {
   const html = htmlByRoute.get(route.url_path);
   if (!html) errors.push(`${route.url_path}: missing built HTML`);
@@ -89,6 +92,7 @@ const baseSitemapRoutes = [
   ['/tools/achievement-completion', { entity: 'Tool', page_type: 'tool' }],
   ...routes.filter((route) => route.page_type !== 'tool_placeholder')
     .map((route) => [route.url_path, { entity: route.entity, page_type: route.page_type }]),
+  ...guides.map((guide) => [guide.url_path, { entity: 'Guide', page_type: 'guide' }]),
 ];
 const expectedSitemapRoutes = new Map(locales.flatMap((locale) => baseSitemapRoutes.map(([path, route]) => [localizedPath(path, locale), { ...route, locale }])));
 const missingSitemapRoutes = [...expectedSitemapRoutes]
@@ -123,4 +127,5 @@ console.log(JSON.stringify({
   sitemap_urls: sitemapUrls.size,
   missing_sitemap_urls: missingSitemapRoutes.length,
   extra_sitemap_urls: extraSitemapRoutes.length,
+  guide_inbound: Object.fromEntries(guides.map((guide) => [guide.url_path, inbound.get(guide.url_path)?.size ?? 0])),
 }, null, 2));

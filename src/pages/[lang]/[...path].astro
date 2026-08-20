@@ -9,11 +9,12 @@ import PlaceholderPage from '../../components/PlaceholderPage.astro';
 import ToolsIndexPage from '../../components/ToolsIndexPage.astro';
 import AchievementCompletionTool from '../../components/AchievementCompletionTool.astro';
 import CompliancePage from '../../components/CompliancePage.astro';
-import { getSite, placeholders, routes, type Locale, type RouteEntry } from '../../lib/data';
+import GuidePage from '../../components/GuidePage.astro';
+import { getGuide, getSite, guidePaths, placeholders, routes, type GuideEntry, type Locale, type RouteEntry } from '../../lib/data';
 
 type ComplianceKey = 'privacy' | 'terms' | 'cookies' | 'about';
-type Kind = 'home' | 'entity' | 'index' | 'known-issues' | 'contact' | 'tools' | 'achievement-completion' | 'compliance' | 'placeholder' | 'mission-map' | 'not-found';
-interface Props { locale: Locale; kind: Kind; route?: RouteEntry; page?: { url_path: string; title: string; reason: string }; complianceKey?: ComplianceKey; }
+type Kind = 'home' | 'entity' | 'index' | 'known-issues' | 'contact' | 'tools' | 'achievement-completion' | 'compliance' | 'guide' | 'placeholder' | 'mission-map' | 'not-found';
+interface Props { locale: Locale; kind: Kind; route?: RouteEntry; guide?: GuideEntry; page?: { url_path: string; title: string; reason: string }; complianceKey?: ComplianceKey; }
 
 export function getStaticPaths() {
   return (['zh-cn', 'zh-tw'] as Locale[]).flatMap((locale) => [
@@ -35,12 +36,16 @@ export function getStaticPaths() {
           : route.page_type === 'index' ? 'index' as Kind : 'entity' as Kind,
       },
     })),
+    ...guidePaths.map((path) => ({
+      params: { lang: locale, path: path.slice(1) },
+      props: { locale, kind: 'guide' as Kind, guide: getGuide(path, locale) },
+    })),
     ...placeholders.map((page) => ({ params: { lang: locale, path: page.url_path.slice(1) }, props: { locale, kind: 'placeholder' as Kind, page } })),
     { params: { lang: locale, path: '404' }, props: { locale, kind: 'not-found' as Kind } },
   ]);
 }
 
-const { locale, kind, route, page, complianceKey } = Astro.props as Props;
+const { locale, kind, route, guide, page, complianceKey } = Astro.props as Props;
 const site = getSite(locale);
 ---
 {kind === 'home' && <HomePage locale={locale} />}
@@ -51,6 +56,7 @@ const site = getSite(locale);
 {kind === 'tools' && <ToolsIndexPage locale={locale} />}
 {kind === 'achievement-completion' && <AchievementCompletionTool locale={locale} />}
 {kind === 'compliance' && complianceKey && <CompliancePage page={complianceKey} locale={locale} />}
+{kind === 'guide' && guide && <GuidePage guide={guide} locale={locale} />}
 {kind === 'placeholder' && page && <PlaceholderPage path={page.url_path} title={page.title} reason={page.reason} locale={locale} />}
 {kind === 'mission-map' && route && <PlaceholderPage path={route.url_path} title={site.ui.mission_map_title} reason={site.ui.mission_map_reason} locale={locale} />}
 {kind === 'not-found' && <NotFoundPage locale={locale} />}

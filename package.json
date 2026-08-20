@@ -21,7 +21,8 @@
     "validate:step25": "node scripts/check-step25-output.js",
     "validate:step26": "node scripts/check-step26-output.js",
     "validate:step27": "node scripts/check-step27-output.js",
-    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23 && npm run validate:step24 && npm run validate:step25 && npm run validate:step26 && npm run validate:step27"
+    "validate:step29": "node scripts/check-step29-output.js",
+    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23 && npm run validate:step24 && npm run validate:step25 && npm run validate:step26 && npm run validate:step27 && npm run validate:step29"
   },
   "keywords": ["iron-nest", "astro", "game-database"],
   "author": "",

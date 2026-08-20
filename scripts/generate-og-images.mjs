@@ -9,6 +9,8 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const locales = ['en', 'zh-cn', 'zh-tw'];
 const routes = (JSON.parse(await readFile(join(root, 'data/routes.json'), 'utf8'))).pages
   .filter((route) => route.page_type !== 'tool_placeholder');
+const guideFiles = (await readdir(join(root, 'data/en/guides'))).filter((file) => file.endsWith('.json'));
+const guidePaths = await Promise.all(guideFiles.map(async (file) => (JSON.parse(await readFile(join(root, 'data/en/guides', file), 'utf8'))).url_path));
 const pages = [
   { url_path: '/', entity: 'IRON NEST' },
   ...routes,
@@ -19,6 +21,7 @@ const pages = [
   { url_path: '/terms', entity: 'Compliance' },
   { url_path: '/tools', entity: 'Tool' },
   { url_path: '/tools/achievement-completion', entity: 'Tool' },
+  ...guidePaths.map((url_path) => ({ url_path, entity: 'Guide' })),
 ];
 const displayFont = (await readFile(join(root, 'public/fonts/space-grotesk-latin-variable.woff2'))).toString('base64');
 const dataFont = (await readFile(join(root, 'public/fonts/jetbrains-mono-latin-variable.woff2'))).toString('base64');
@@ -54,6 +57,10 @@ for (const locale of locales) {
   const site = JSON.parse(await readFile(join(root, `data/${locale}/site.json`), 'utf8'));
   const tools = JSON.parse(await readFile(join(root, `data/${locale}/tools.json`), 'utf8'));
   const compliance = JSON.parse(await readFile(join(root, `data/${locale}/compliance.json`), 'utf8'));
+  const guideMap = new Map(await Promise.all(guideFiles.map(async (file) => {
+    const guide = JSON.parse(await readFile(join(root, `data/${locale}/guides/${file}`), 'utf8'));
+    return [guide.url_path, guide];
+  })));
   const outputDir = join(root, `public/og/${locale}`);
   await mkdir(outputDir, { recursive: true });
 
@@ -68,6 +75,9 @@ for (const locale of locales) {
       : route.url_path === '/tools/achievement-completion' ? {
         title: tools.achievement_completion.seo_title,
         description: tools.achievement_completion.seo_description,
+      } : route.entity === 'Guide' ? {
+        title: guideMap.get(route.url_path).seo_title,
+        description: guideMap.get(route.url_path).seo_description,
       } : seo.get(route.url_path);
     if (!page) throw new Error(`Missing ${locale} SEO for ${route.url_path}`);
     const titleLines = lines(page.title, locale === 'en' ? 34 : 23, 3);
@@ -95,7 +105,7 @@ for (const locale of locales) {
         <text x="1108" y="133" text-anchor="end" class="data">${escapeXml(locale.toUpperCase())}</text>
         ${titleSvg}
         ${descriptionSvg}
-        <text x="92" y="585" class="data amber">${route.entity === 'Contact' ? 'CONTACT · CORRECTIONS' : route.entity === 'Compliance' ? 'PUBLIC · SITE RECORD' : route.entity === 'Tool' ? 'LIVE · STEAM API · 33 ACHIEVEMENTS' : 'VERIFIED · DATAMINED · V4'}</text>
+        <text x="92" y="585" class="data amber">${route.entity === 'Contact' ? 'CONTACT · CORRECTIONS' : route.entity === 'Compliance' ? 'PUBLIC · SITE RECORD' : route.entity === 'Tool' ? 'LIVE · STEAM API · 33 ACHIEVEMENTS' : route.entity === 'Guide' ? 'FIELD GUIDE · VERIFIED SOURCES' : 'VERIFIED · DATAMINED · V4'}</text>
         <text x="1108" y="585" text-anchor="end" class="data">${escapeXml(routeLabel)}</text>
       </svg>`;
     await sharp(Buffer.from(svg)).png({ compressionLevel: 9, palette: true }).toFile(join(outputDir, `${imageName(route.url_path)}.png`));

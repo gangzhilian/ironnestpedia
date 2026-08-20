@@ -1,0 +1,97 @@
+{
+  "url_path": "/guides/requisition-and-powder-resets",
+  "slug": "requisition-and-powder-resets",
+  "seo_title": "IRON NEST Requisition and Powder Reset Rules | IronNestPedia",
+  "seo_description": "What Patch #3 confirms about mission resets, what remains unverified, and how STAR Shell saves 13–58 Requisition versus Scout Plane.",
+  "h1": "IRON NEST Requisition and Powder — What Actually Resets Between Missions",
+  "eyebrow": "Field guide · mission resources",
+  "summary": "Requisition Credits are what you spend between and during missions to bring in shells, punchcards and support assets like a Scout Plane. Powder is a separate resource tied to how much you've fired. Both carry some state between mission attempts, and that carried-over state is exactly what confuses players when they replay a mission.",
+  "sections": [
+    {
+      "heading": "What remains unconfirmed",
+      "paragraphs": [
+        "One player reported Requisition stuck at 100 in Skirmish mode and asked what formula governs starting or inherited RP. We checked our extracted schema and mission data for an explicit Skirmish starting-value or inheritance formula and did not find one. This remains an open question — we're not going to publish a guessed formula as if it were confirmed."
+      ],
+      "items": []
+    },
+    {
+      "heading": "What Patch #3 confirms",
+      "paragraphs": [
+        "A separate and more answerable report: a player replaying the same mission saw Powder change from 50 to 32 between attempts, while Requisition reset — and asked why the two resources behave differently on replay. We don't have a field-level answer for exactly which resource resets to what value, but we do have real evidence that the underlying reset mechanism itself was buggy and got fixed. Patch #3's official notes (pulled from Steam's news feed, not paraphrased) list two relevant fixes:"
+      ],
+      "items": [
+        "Mission events not resetting correctly when replaying the same mission",
+        "Turret position and movement not resetting correctly between missions"
+      ]
+    },
+    {
+      "heading": "Why older reports can disagree",
+      "paragraphs": [
+        "That means players who compared notes on resource-reset behavior may genuinely have been playing different patch versions of the game — the inconsistency they argued about wasn't necessarily one of them misremembering, it was the game's own reset logic changing under Patch #3. If you're still seeing inconsistent resets on the current build, that's worth reporting through this site's correction link rather than assuming it's expected behavior."
+      ],
+      "items": []
+    },
+    {
+      "heading": "Minimum safe distance depends on the shell",
+      "paragraphs": [
+        "For the friendly-fire minimum-distance question players have also asked about (how close is safe when enemy and friendly units overlap), that answer depends on which shell you're using — see that shell's own page for its blast/impact radius rather than repeating shell-specific numbers here."
+      ],
+      "items": []
+    }
+  ],
+  "comparison_table": {
+    "heading": "A real, verifiable Requisition-saving comparison",
+    "intro": "This is the kind of number that requires the extracted punchcard cost table, not just a description.",
+    "columns": [
+      "Option",
+      "Requisition cost",
+      "What it does"
+    ],
+    "rows": [
+      [
+        "Scout Plane (unlimited-use variant)",
+        "60",
+        "Request a flyover of a location for reconnaissance"
+      ],
+      [
+        "Scout Plane (one-time-use variant)",
+        "15",
+        "Same flyover, single use"
+      ],
+      [
+        "STAR Shell",
+        "2 (fired as a shell)",
+        "Parachute-delayed illumination shell that lights the target area for scouting"
+      ]
+    ]
+  },
+  "takeaway_heading": "What the cost difference means",
+  "takeaway": "One player specifically asked why a low-Requisition medal on an early mission points toward STAR Shell instead of the Scout Plane suggested by in-mission prompts, and how much that actually saves. Based on the cost table above: a single STAR Shell (2 Requisition) can substitute for a scouting flyover that would otherwise cost 15–60 Requisition, depending on which Scout Plane variant is available in that mission — a difference of 13 to 58 Requisition Credits per use, which matters directly for a \"minimum Requisition spent\" medal threshold.",
+  "provenance_label": "Data status",
+  "provenance": "Patch #3 fix citations: official Steam news feed, verbatim. Requisition costs: extracted punchcard data, verified. Skirmish starting-value formula: not confirmed — flagged as open.",
+  "related_heading": "Related verified data",
+  "related_links": [
+    {
+      "path": "/missions/liberation",
+      "label": "Liberation mission data",
+      "description": "The tutorial mission source record explicitly references Requisition and Scout Plane."
+    },
+    {
+      "path": "/shells/star",
+      "label": "STAR Shell data",
+      "description": "Verified range, impact and shell fields for the illumination round."
+    },
+    {
+      "path": "/punchcards",
+      "label": "Punchcard cost table",
+      "description": "Scout Plane and STAR Shell costs from extracted data."
+    }
+  ],
+  "inbound_from": [
+    "/missions/liberation",
+    "/shells/star",
+    "/punchcards"
+  ],
+  "published_at": "2026-08-20",
+  "source": "29-第一批发布任务文件.md"
+}

@@ -1,0 +1,71 @@
+{
+  "url_path": "/guides/bearing-distance-triangulation",
+  "slug": "bearing-distance-triangulation",
+  "seo_title": "IRON NEST Bearing, Distance and Triangulation Errors Explained | IronNestPedia",
+  "seo_description": "Why IRON NEST bearing fixes drift, when parallel sight lines fail, and which Spotter tolerance figures remain unconfirmed.",
+  "h1": "IRON NEST Bearing, Distance and Triangulation Errors Explained",
+  "eyebrow": "Field guide · fire-control geometry",
+  "summary": "If you're new to IRON NEST: your Forward Observer (Spotter) reports an enemy position as a bearing (a compass direction, like \"047°\" or \"East\") and a distance. Two of these reports — from two different observation points — should let you triangulate a single point on the map, the same way old-school artillery spotting worked. The catch: every report carries some margin of error, and that error compounds the moment two bearings are close to parallel instead of crossing at a clean angle.",
+  "sections": [
+    {
+      "heading": "Why players report different fixes",
+      "paragraphs": [
+        "Players have reported the same failure pattern across several missions. One Steam discussion (bug report style) found two bearings placing a target roughly 230 meters short of where the shell actually landed. A Reddit thread on Blind Fire found a third target consistently off by about 0.27 km and 13°. Another player asked directly: is Spotter bearing really accurate to ±0.5° and distance to ±0.005 km, as one community post claimed — while a different post in the same thread argued for ±0.05 km instead. We checked our own datamined fields for an official tolerance value and found none. IRON NEST's Spotter punchcard (cost: 1–6 Requisition depending on variant, unlimited uses) is documented in the game's own text only as \"Forward Observer (FO) gives intel to nearest enemy\" — no numeric error bound is exposed anywhere in the localization or schema data we've extracted. Anyone quoting a precise tolerance figure for Spotter bearings is not quoting an official number; they're quoting an estimate from their own testing. This page will be updated if a verified figure ever surfaces in a future patch or datamine."
+      ],
+      "items": []
+    },
+    {
+      "heading": "What the geometry tells us",
+      "paragraphs": [
+        "What we can explain with confidence is the geometry, because it doesn't depend on any hidden game constant — it's how triangulation works everywhere:"
+      ],
+      "items": [
+        "Two bearings define a fix by intersecting two lines. The closer those two lines are to parallel, the more a small angular error in either one shifts the intersection point — sometimes by a large distance for a tiny bearing error.",
+        "If your two observation points and the target are nearly in a straight line, you're in exactly that near-parallel situation. This matches what one player reported: two 215° bearings that were \"completely parallel,\" where the target may not be uniquely solvable from those two lines alone — you need a third bearing from a different angle, or a distance reading, to close the fix.",
+        "Chained intel compounds this. If a bearing you're using was itself relayed from another spotter or another mission event (rather than read directly), any error in that first read carries forward into your triangulation. We don't have a verified per-hop error figure, but the practical rule holds regardless of the exact number: the more hops between the original observation and your firing solution, the less you should trust a single bearing read."
+      ]
+    },
+    {
+      "heading": "Cardinal bearing phrases remain unconfirmed",
+      "paragraphs": [
+        "On cardinal bearing phrases (players have asked whether \"East\" or \"WNW\" mean an exact heading or a rounded sector, and where the sector boundary falls): we could not find an official cardinal-to-degree mapping in the extracted localization or schema data, so we're not going to publish a specific boundary as fact. If the in-game intel text uses compass points like WNW (a 16-point compass name), the game is almost certainly using a 16-point rose rather than 8-point — but \"almost certainly\" is not \"confirmed,\" and we'd rather tell you that plainly than invent a number that looks precise and isn't."
+      ],
+      "items": []
+    }
+  ],
+  "comparison_table": {
+    "heading": "",
+    "intro": "",
+    "columns": [],
+    "rows": []
+  },
+  "takeaway_heading": "Practical takeaway",
+  "takeaway": "Don't fire on a single relayed bearing when your gun and the reported target sit close to the same line as your two observation points. Cross-check with a second source that approaches from a meaningfully different angle before committing a shell.",
+  "provenance_label": "Data status",
+  "provenance": "Bearing tolerance and cardinal-sector boundaries: not confirmed in extracted data. Geometry explanation: general triangulation principles, not game-specific.",
+  "related_heading": "Related verified data",
+  "related_links": [
+    {
+      "path": "/missions/blindfire",
+      "label": "Blind Fire mission data",
+      "description": "Mission records and verified related entities."
+    },
+    {
+      "path": "/units/allyspotter",
+      "label": "Ally Spotter records",
+      "description": "Datamined Spotter appearances and official names."
+    },
+    {
+      "path": "/punchcards",
+      "label": "Punchcard cost table",
+      "description": "Spotter variants and their extracted Requisition costs."
+    }
+  ],
+  "inbound_from": [
+    "/missions/blindfire",
+    "/units/allyspotter",
+    "/punchcards"
+  ],
+  "published_at": "2026-08-20",
+  "source": "29-第一批发布任务文件.md"
+}

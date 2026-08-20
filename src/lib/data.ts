@@ -43,7 +43,8 @@ import achievementPercentages from '../../data/live/achievement-percentages.json
 export const localeCodes = ['en', 'zh-cn', 'zh-tw'] as const;
 export type Locale = (typeof localeCodes)[number];
 export type RouteEntry = (typeof routesSource.pages)[number];
-type AnyRecord = Record<string, any>;
+export type GuideEntry = Record<string, any>;
+type AnyRecord = GuideEntry;
 
 export const routes = routesSource.pages as RouteEntry[];
 export const routeMap = new Map(routes.map((route) => [route.url_path, route]));
@@ -114,6 +115,22 @@ export function getSeo(path: string, locale: Locale = 'en') {
     description: getSite(locale).data_note,
     primary_keyword: '', keyword_candidates: [],
   };
+}
+
+const guideModules = import.meta.glob('../../data/{en,zh-cn,zh-tw}/guides/*.json', { eager: true }) as Record<string, { default: GuideEntry }>;
+const guideMaps = Object.fromEntries(localeCodes.map((locale) => [locale, new Map<string, GuideEntry>()])) as Record<Locale, Map<string, GuideEntry>>;
+for (const [file, module] of Object.entries(guideModules)) {
+  const locale = localeCodes.find((code) => file.includes(`/data/${code}/guides/`));
+  if (!locale) continue;
+  guideMaps[locale].set(module.default.url_path, module.default);
+}
+
+export const guidePaths = [...guideMaps.en.keys()].sort();
+export function getGuide(path: string, locale: Locale = 'en') {
+  return guideMaps[locale].get(path);
+}
+export function getGuidesForSource(path: string, locale: Locale = 'en') {
+  return [...guideMaps[locale].values()].filter((guide) => guide.inbound_from.includes(path));
 }
 
 function rowsForIds(entity: string, ids: string[]) {

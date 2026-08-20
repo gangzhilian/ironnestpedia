@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import TechMark from './TechMark.astro';
-import { getCompliance, getSite, getTools, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
+import { getCompliance, getSite, getTools, guidePaths, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
 
 interface Props {
   title: string;
@@ -44,6 +44,7 @@ searchRoutes.push(...['/about', '/privacy', '/cookies', '/terms', '/contact'].ma
   label: route,
   path: localizedPath(route, locale),
 })));
+searchRoutes.push(...guidePaths.map((route) => ({ label: route, path: localizedPath(route, locale) })));
 const languageLinks = site.languages.map((language) => ({
   ...language,
   path: localizedPath(path, language.code as Locale),
