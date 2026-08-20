@@ -24,7 +24,9 @@ const measurementId = /^G-[A-Z0-9]+$/.test(rawMeasurementId) ? rawMeasurementId 
       window.gtag('config', measurementId, { send_page_view: true });
 
       window.ironNestTrack = (eventName, parameters = {}) => {
-        window.gtag('event', eventName, {
+        const ga4EventName = eventName.replaceAll('-', '_');
+        window.gtag('event', ga4EventName, {
+          spec_event_name: eventName,
           page_path: window.location.pathname,
           page_language: document.documentElement.lang,
           ...parameters,
@@ -47,7 +49,7 @@ const measurementId = /^G-[A-Z0-9]+$/.test(rawMeasurementId) ? rawMeasurementId 
       const results = document.querySelector('#achievement-results');
       if (results) {
         new MutationObserver(() => {
-          if (!results.hasAttribute('hidden')) once('tool-result');
+          if (!results.hasAttribute('hidden')) window.ironNestTrack('tool-result');
         }).observe(results, { attributes: true, attributeFilter: ['hidden'] });
       }
 

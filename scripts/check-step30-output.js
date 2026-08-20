@@ -50,6 +50,7 @@ if (measurementIds.size !== 1) errors.push(`expected one GA4 Measurement ID acro
 
 const allHtml = [...htmlByRoute.values()].join('\n');
 if (/(clarity\.ms|plausible\.io|umami|googlesyndication|adsbygoogle)/i.test(allHtml)) errors.push('an undeclared analytics or advertising script is present');
+if (!allHtml.includes("eventName.replaceAll('-', '_')")) errors.push('GA4 event names are not normalized from spec hyphens to supported underscores');
 
 for (const eventName of [
   'tool-open', 'tool-calculate', 'tool-result', 'tool-copy',
@@ -86,6 +87,7 @@ const result = {
     analytics_storage: 'granted',
   },
   analytics_services: ['Google Analytics 4'],
+  event_name_mapping: 'spec-hyphens-to-ga4-underscores',
   policy_pages_checked: locales.length * 2,
   errors: errors.slice(0, 50),
 };
