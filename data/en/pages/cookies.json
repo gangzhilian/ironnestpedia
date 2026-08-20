@@ -1,0 +1,33 @@
+{
+  "seo_title": "Cookie Policy | IronNestPedia",
+  "seo_description": "How IronNestPedia currently uses Google Analytics 4 cookies for aggregate traffic measurement while advertising and personalization signals remain disabled.",
+  "eyebrow": "Current storage status",
+  "h1": "Cookie policy",
+  "intro": "This page states the site's current cookie and browser-storage behavior and identifies the analytics service that is actually deployed.",
+  "sections": [
+    {
+      "heading": "Google Analytics 4 cookies",
+      "paragraphs": [
+        "IronNestPedia now uses Google Analytics 4, which sets cookies to distinguish visitors and measure site usage in aggregate. It does not use cookies for advertising or personalization — those signals are disabled by default. The site still does not use Microsoft Clarity, Plausible, or any advertising cookies. If that changes (for example, if advertising is introduced in a future update), this page will be updated again, and a consent mechanism will be added if required for your region."
+      ]
+    },
+    {
+      "heading": "Technical caching and delivery",
+      "paragraphs": [
+        "Your browser or the Cloudflare content-delivery network may cache static files and retain ordinary technical data needed to request, deliver or protect the site. Browser and CDN caching is separate from the analytics cookies described above. You can clear cached site data and cookies through your browser settings."
+      ]
+    },
+    {
+      "heading": "Current consent configuration",
+      "paragraphs": [
+        "The site currently uses GA4 only for basic traffic analysis. Google's Consent Mode sets ad_storage, ad_user_data and ad_personalization to denied by default. IronNestPedia does not currently run advertising or use analytics data for ad personalization."
+      ]
+    },
+    {
+      "heading": "If the site changes",
+      "paragraphs": [
+        "If the analytics configuration changes or advertising is introduced later, this page and the Privacy Policy will be updated to identify the actual technologies, purposes and user choices. Where consent is required, an appropriate choice mechanism will be provided before those technologies are used."
+      ]
+    }
+  ]
+}

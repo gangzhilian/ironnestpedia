@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from './Analytics.astro';
 import TechMark from './TechMark.astro';
 import { getCompliance, getSite, getTools, guidePaths, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
 
@@ -78,6 +79,7 @@ const languageLinks = site.languages.map((language) => ({
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:image:alt" content={title} />
     {!noindex && jsonLd.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+    <Analytics />
   </head>
   <body>
     <a class="skip-link" href="#main-content">{translate(locale, 'skip_to_content')}</a>
@@ -126,7 +128,10 @@ const languageLinks = site.languages.map((language) => ({
         const input = document.querySelector('#site-query');
         const value = input instanceof HTMLInputElement ? input.value.trim() : '';
         const match = searchRoutes.find((entry) => entry.label.toLowerCase() === value.toLowerCase());
-        if (match) window.location.assign(match.path);
+        if (match) {
+          window.ironNestTrack?.('search-use', { search_term: value });
+          window.location.assign(match.path);
+        }
       });
     </script>
   </body>

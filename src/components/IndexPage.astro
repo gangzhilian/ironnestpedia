@@ -43,7 +43,7 @@ const tableOnly = ['Medal', 'Punchcard', 'Mutator'].includes(route.entity);
   {children.length > 0 && (
     <section>
       <h2>{translate(locale, 'pages_in_index')}</h2>
-      <div class="grid">{children.map((item) => <article class="card"><h3><a href={localizedPath(item.url_path, locale)}>{labelForRoute(item, locale)}</a></h3><p>{getSeo(item.url_path, locale).description}</p></article>)}</div>
+      <div class="grid">{children.map((item) => <article class="card"><h3><a href={localizedPath(item.url_path, locale)} data-analytics-event="index-page-click">{labelForRoute(item, locale)}</a></h3><p>{getSeo(item.url_path, locale).description}</p></article>)}</div>
     </section>
   )}
   <section>

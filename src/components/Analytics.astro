@@ -1,0 +1,93 @@
+---
+const rawMeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID?.trim() ?? '';
+const measurementId = /^G-[A-Z0-9]+$/.test(rawMeasurementId) ? rawMeasurementId : '';
+---
+{measurementId && (
+  <>
+    <script is:inline define:vars={{ measurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function gtag(){ window.dataLayer.push(arguments); };
+
+      // Consent defaults must be queued before any config or event command.
+      window.gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'granted',
+        functionality_storage: 'granted',
+        security_storage: 'granted',
+      });
+    </script>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
+    <script is:inline define:vars={{ measurementId }}>
+      window.gtag('js', new Date());
+      window.gtag('config', measurementId, { send_page_view: true });
+
+      window.ironNestTrack = (eventName, parameters = {}) => {
+        window.gtag('event', eventName, {
+          page_path: window.location.pathname,
+          page_language: document.documentElement.lang,
+          ...parameters,
+        });
+      };
+
+      const trackOnce = new Set();
+      const once = (eventName, parameters = {}) => {
+        if (trackOnce.has(eventName)) return;
+        trackOnce.add(eventName);
+        window.ironNestTrack(eventName, parameters);
+      };
+
+      if (/\/tools\/achievement-completion$/.test(window.location.pathname)) once('tool-open');
+
+      document.querySelector('#achievement-checker')?.addEventListener('submit', () => {
+        window.ironNestTrack('tool-calculate');
+      });
+
+      const results = document.querySelector('#achievement-results');
+      if (results) {
+        new MutationObserver(() => {
+          if (!results.hasAttribute('hidden')) once('tool-result');
+        }).observe(results, { attributes: true, attributeFilter: ['hidden'] });
+      }
+
+      document.querySelectorAll('.faq-list details').forEach((details) => {
+        details.addEventListener('toggle', () => {
+          if (details.open) window.ironNestTrack('faq-open');
+        });
+      });
+
+      document.addEventListener('click', (event) => {
+        const target = event.target instanceof Element ? event.target.closest('a,button') : null;
+        if (!target) return;
+        if (target.matches('.report-issue, a.contact-action[href^="mailto:"]')) {
+          window.ironNestTrack('correction-submit');
+        }
+        const namedEvent = target.getAttribute('data-analytics-event');
+        if (namedEvent) window.ironNestTrack(namedEvent);
+      });
+
+      document.querySelector('[data-community-submit]')?.addEventListener('submit', () => {
+        window.ironNestTrack('community-submit');
+      });
+
+      document.querySelectorAll('[data-tool-copy]').forEach((control) => {
+        control.addEventListener('click', () => window.ironNestTrack('tool-copy'));
+      });
+
+      const readingTarget = document.querySelector('.guide-page, .entity-layout');
+      if (readingTarget instanceof HTMLElement) {
+        const readingEvent = readingTarget.matches('.guide-page') ? 'guide-read' : 'data-page-scroll';
+        const checkReadingDepth = () => {
+          const threshold = readingTarget.offsetTop + readingTarget.offsetHeight * 0.5;
+          if (window.scrollY + window.innerHeight >= threshold) {
+            once(readingEvent, { percent_scrolled: 50 });
+            window.removeEventListener('scroll', checkReadingDepth);
+          }
+        };
+        window.addEventListener('scroll', checkReadingDepth, { passive: true });
+        checkReadingDepth();
+      }
+    </script>
+  </>
+)}

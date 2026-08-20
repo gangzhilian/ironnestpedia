@@ -1,0 +1,33 @@
+{
+  "seo_title": "Cookie 政策 | IronNestPedia",
+  "seo_description": "说明 IronNestPedia 当前如何使用 Google Analytics 4 Cookie 汇总衡量流量，同时默认禁用广告与个性化信号。",
+  "eyebrow": "当前存储状态",
+  "h1": "Cookie 政策",
+  "intro": "本页说明网站当前真实的 Cookie 与浏览器存储行为，并列出已经实际接入的分析服务。",
+  "sections": [
+    {
+      "heading": "Google Analytics 4 Cookie",
+      "paragraphs": [
+        "IronNestPedia 现已使用 Google Analytics 4。GA4 会设置 Cookie，用于区分访客并汇总衡量网站使用情况。本站不会把 Cookie 用于广告投放或个性化，相关信号默认禁用。本站仍不使用 Microsoft Clarity、Plausible 或任何广告 Cookie。如果以后发生变化（例如未来接入广告），本页面会再次更新，并在您所在地区有此要求时加入同意机制。"
+      ]
+    },
+    {
+      "heading": "技术缓存与内容分发",
+      "paragraphs": [
+        "您的浏览器或 Cloudflare 内容分发网络可能会缓存静态文件，并保留请求、交付或保护网站所需的普通技术数据。浏览器与 CDN 缓存不同于上文说明的分析 Cookie。您可以通过浏览器设置清除缓存的网站数据和 Cookie。"
+      ]
+    },
+    {
+      "heading": "当前的同意配置",
+      "paragraphs": [
+        "本站目前只把 GA4 用于基础流量分析。Google Consent Mode 将 ad_storage、ad_user_data 和 ad_personalization 默认设为拒绝。IronNestPedia 目前不投放广告，也不将分析数据用于广告个性化。"
+      ]
+    },
+    {
+      "heading": "如果网站以后发生变化",
+      "paragraphs": [
+        "如果以后调整分析配置或接入广告，本页面和隐私政策会同步更新，明确说明实际使用的技术、用途和用户选择。在需要获得同意的情况下，本站会在使用相关技术前提供相应的选择机制。"
+      ]
+    }
+  ]
+}

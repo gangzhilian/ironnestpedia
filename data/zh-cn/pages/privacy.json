@@ -1,0 +1,40 @@
+{
+  "seo_title": "隐私政策 | IronNestPedia",
+  "seo_description": "说明 IronNestPedia 当前如何处理纠错邮件、Cloudflare 基础请求数据、GA4 分析、Cookie 与广告信号。",
+  "eyebrow": "当前部署的隐私记录",
+  "h1": "隐私政策",
+  "intro": "本政策说明 IronNestPedia 目前实际发生的数据处理。使用本站不需要注册或登录。",
+  "sections": [
+    {
+      "heading": "您主动发送的信息",
+      "paragraphs": [
+        "IronNestPedia 不收集账号或个人资料信息。数据页和联系页上的纠错链接只会打开您自己的邮件应用，不会把网页表单提交给本站。",
+        "如果您选择发送纠错邮件，收件人会看到发件邮箱、邮件正文及您附上的依据。这些信息由您主动提供，用于核实和回复纠错报告。"
+      ]
+    },
+    {
+      "heading": "托管与基础请求数据",
+      "paragraphs": [
+        "IronNestPedia 是由 Cloudflare 托管和分发的静态网站。为了交付和保护网站，Cloudflare 会处理基础请求信息，其中可能包括 IP 地址、User-Agent 或浏览器信息、请求的网址和请求时间。这是基础设施层面的处理，不是 IronNestPedia 主动添加的追踪脚本。"
+      ]
+    },
+    {
+      "heading": "当前的分析、广告与追踪状态",
+      "paragraphs": [
+        "截至本次更新，IronNestPedia 使用 Google Analytics 4（GA4）进行基础流量分析，包括访问了哪些页面、网站大致有多少访客，以及哪些工具或指南交互被使用。由于本站没有用户账号，GA4 无法访问任何个人账号信息。本站通过 Google Consent Mode 将广告相关信号（ad_storage、ad_user_data、ad_personalization）默认设为拒绝，因为本站目前不投放广告；只有未来接入 AdSense 时这些信号才会相关，届时本政策会再次更新。除 GA4 外，IronNestPedia 仍不使用 Google AdSense、Microsoft Clarity、Plausible 或任何其他分析、广告或追踪服务。"
+      ]
+    },
+    {
+      "heading": "今后的变更",
+      "paragraphs": [
+        "如果以后调整分析配置或接入广告，本政策和 Cookie 政策会同步更新，说明届时实际使用的服务；在法律要求的情况下，本站也会在使用相关技术前提供相应的 Cookie 选择。"
+      ]
+    },
+    {
+      "heading": "隐私问题",
+      "paragraphs": [
+        "如有隐私相关问题，请发送邮件至 {email}。该邮箱同时用于接收数据纠错。"
+      ]
+    }
+  ]
+}

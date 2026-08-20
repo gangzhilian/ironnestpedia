@@ -59,14 +59,16 @@ for (const locale of locales) {
 const enPrivacy = htmlByRoute.get('/privacy') ?? '';
 const enCookies = htmlByRoute.get('/cookies') ?? '';
 const enAbout = htmlByRoute.get('/about') ?? '';
-for (const service of ['Google Analytics', 'Google AdSense', 'Microsoft Clarity', 'Plausible']) {
-  if (!enPrivacy.includes(`currently does not use ${service}`) && !enPrivacy.includes(`does not use Google Analytics, Google AdSense, Microsoft Clarity, Plausible`)) errors.push(`/privacy: current non-use statement missing ${service}`);
-  if (!enCookies.includes(service)) errors.push(`/cookies: current technical status missing ${service}`);
+if (!enPrivacy.includes('uses Google Analytics 4 (GA4) for basic traffic analysis')) errors.push('/privacy: current GA4 disclosure missing');
+for (const service of ['Google AdSense', 'Microsoft Clarity', 'Plausible']) {
+  if (!enPrivacy.includes(`does not use ${service}`) && !enPrivacy.includes(`does not use Google AdSense, Microsoft Clarity, Plausible`)) errors.push(`/privacy: current non-use statement missing ${service}`);
+  if (service !== 'Google AdSense' && !enCookies.includes(service)) errors.push(`/cookies: current technical status missing ${service}`);
 }
+if (!enCookies.includes('does not use cookies for advertising or personalization')) errors.push('/cookies: advertising-cookie non-use statement missing');
 for (const disclosure of ['IP address', 'User-Agent', 'request time', 'sender address']) {
   if (!enPrivacy.includes(disclosure)) errors.push(`/privacy: disclosure missing ${disclosure}`);
 }
-if (!enCookies.includes('currently does not use cookies or local storage')) errors.push('/cookies: explicit current non-use statement missing');
+if (!enCookies.includes('uses Google Analytics 4, which sets cookies')) errors.push('/cookies: current GA4 cookie disclosure missing');
 if (!enAbout.includes(`${entityRows.length} source records`)) errors.push(`/about: dynamic record count ${entityRows.length} missing`);
 for (const version of versions) if (!enAbout.includes(`game version ${version}`)) errors.push(`/about: dynamic game version ${version} missing`);
 for (const source of sources) if (!enAbout.includes(source)) errors.push(`/about: dynamic source ${source} missing`);
@@ -81,7 +83,8 @@ for (const [path, html] of htmlByRoute) {
 }
 
 const complianceScripts = basePages.flatMap((path) => locales.map((locale) => htmlByRoute.get(localizedPath(path, locale)) ?? '')).join('\n');
-if (/(googletagmanager|googlesyndication|adsbygoogle|clarity\.ms|plausible\.io)/i.test(complianceScripts)) errors.push('compliance pages contain analytics or advertising script references');
+if (!/googletagmanager\.com\/gtag\/js\?id=G-/i.test(complianceScripts)) errors.push('compliance pages are missing the deployed GA4 tag');
+if (/(googlesyndication|adsbygoogle|clarity\.ms|plausible\.io|umami)/i.test(complianceScripts)) errors.push('compliance pages contain an undeclared analytics or advertising script');
 
 const result = {
   status: errors.length ? 'FAIL' : 'PASS',
@@ -92,7 +95,7 @@ const result = {
   entity_records: entityRows.length,
   game_versions: versions,
   data_sources: sources,
-  current_analytics_ad_tracking_scripts: 0,
+  current_analytics_services: ['Google Analytics 4'],
   errors: errors.slice(0, 50),
 };
 if (sitemapUrls.size !== expectedSitemapUrls) result.errors.push(`sitemap count ${sitemapUrls.size}, expected ${expectedSitemapUrls}`);

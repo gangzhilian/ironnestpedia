@@ -29,8 +29,8 @@
         {
           "heading": "Current analytics, advertising and tracking status",
           "paragraphs": [
-            "IronNestPedia currently does not use Google Analytics, Google AdSense, Microsoft Clarity, Plausible, or any other third-party analytics, advertising, or tracking service.",
-            "The site currently does not set cookies or use local storage for analytics, advertising or user tracking. See the Cookie Policy for the current technical position."
+            "As of this update, IronNestPedia uses Google Analytics 4 (GA4) for basic traffic analysis. Ad-related signals (ad_storage, ad_user_data, ad_personalization) are denied by default through Google's Consent Mode.",
+            "IronNestPedia still does not use Google AdSense, Microsoft Clarity, Plausible, or any analytics, advertising or tracking service beyond GA4."
           ]
         },
         {
@@ -97,16 +97,16 @@
     },
     "cookies": {
       "seo_title": "Cookie Policy | IronNestPedia",
-      "seo_description": "IronNestPedia currently uses no analytics, advertising or tracking cookies or local storage. Read the current technical status.",
+      "seo_description": "How IronNestPedia currently uses Google Analytics 4 cookies while advertising and personalization signals remain disabled.",
       "eyebrow": "Current storage status",
       "h1": "Cookie policy",
       "intro": "This page states the site's current cookie and browser-storage behavior rather than listing services that have not been added.",
       "sections": [
         {
-          "heading": "No analytics, advertising or tracking cookies",
+          "heading": "Google Analytics 4 cookies",
           "paragraphs": [
-            "IronNestPedia currently does not use cookies or local storage for analytics, advertising, personalization or user tracking.",
-            "The site currently has no Google Analytics, Google AdSense, Microsoft Clarity, Plausible or comparable tracking script, and therefore does not present an empty or fictional cookie table."
+            "IronNestPedia now uses Google Analytics 4, which sets cookies to distinguish visitors and measure site usage in aggregate. It does not use cookies for advertising or personalization — those signals are disabled by default.",
+            "The site still does not use Microsoft Clarity, Plausible or any advertising cookies."
           ]
         },
         {
@@ -116,9 +116,9 @@
           ]
         },
         {
-          "heading": "Why there is no consent banner today",
+          "heading": "Current consent configuration",
           "paragraphs": [
-            "Because the current site does not use analytics, advertising or tracking cookies or local storage, it does not currently display a cookie consent banner for those technologies."
+            "Google's Consent Mode sets ad_storage, ad_user_data and ad_personalization to denied by default. IronNestPedia does not currently run advertising or use analytics data for ad personalization."
           ]
         },
         {

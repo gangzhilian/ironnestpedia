@@ -1,0 +1,40 @@
+{
+  "seo_title": "Privacy Policy | IronNestPedia",
+  "seo_description": "How IronNestPedia handles correction emails, Cloudflare request data, GA4 analytics, cookies and advertising signals in its current deployment.",
+  "eyebrow": "Current deployment privacy record",
+  "h1": "Privacy policy",
+  "intro": "This policy describes the data handling that actually occurs on IronNestPedia today. The site does not require an account or sign-in.",
+  "sections": [
+    {
+      "heading": "Information you choose to send",
+      "paragraphs": [
+        "IronNestPedia does not collect account or profile information. The correction links on data pages and the contact page open your own email application; they do not submit a web form to this site.",
+        "If you choose to send a correction email, the recipient can see the sender address, message text and any evidence you include. That information is provided by you for the purpose of reviewing and responding to the report."
+      ]
+    },
+    {
+      "heading": "Hosting and basic request data",
+      "paragraphs": [
+        "IronNestPedia is a static site hosted through Cloudflare. As the hosting and delivery provider, Cloudflare processes basic request information needed to deliver and protect the site, which may include an IP address, User-Agent or browser information, the requested URL and request time. This is infrastructure processing, not a tracking script added by IronNestPedia."
+      ]
+    },
+    {
+      "heading": "Current analytics, advertising and tracking status",
+      "paragraphs": [
+        "As of this update, IronNestPedia uses Google Analytics 4 (GA4) for basic traffic analysis — which pages are visited, roughly how many visitors the site gets, and which tool/guide interactions are used. GA4 does not have access to any personal account information, because this site doesn't have user accounts. Ad-related signals (ad_storage, ad_user_data, ad_personalization) are set to denied by default through Google's Consent Mode, because this site does not currently run advertising — these signals only become relevant if the site adopts AdSense in the future, at which point this policy will be updated again. IronNestPedia still does not use Google AdSense, Microsoft Clarity, Plausible, or any other analytics, advertising or tracking service beyond GA4."
+      ]
+    },
+    {
+      "heading": "Future changes",
+      "paragraphs": [
+        "If the site's analytics configuration changes or advertising is added later, this policy and the Cookie Policy will be updated to describe the services actually in use. Where required, the site will also provide appropriate cookie choices before those technologies are used."
+      ]
+    },
+    {
+      "heading": "Privacy questions",
+      "paragraphs": [
+        "For a privacy question, email {email}. This is the same address used for data corrections."
+      ]
+    }
+  ]
+}

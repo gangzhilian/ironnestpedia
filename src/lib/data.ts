@@ -13,6 +13,12 @@ import zhTwTools from '../../data/zh-tw/tools.json';
 import enCompliance from '../../data/en/compliance.json';
 import zhCnCompliance from '../../data/zh-cn/compliance.json';
 import zhTwCompliance from '../../data/zh-tw/compliance.json';
+import enPrivacy from '../../data/en/pages/privacy.json';
+import enCookies from '../../data/en/pages/cookies.json';
+import zhCnPrivacy from '../../data/zh-cn/pages/privacy.json';
+import zhCnCookies from '../../data/zh-cn/pages/cookies.json';
+import zhTwPrivacy from '../../data/zh-tw/pages/privacy.json';
+import zhTwCookies from '../../data/zh-tw/pages/cookies.json';
 import shells from '../../data/en/entities/shells.json';
 import missions from '../../data/en/entities/missions.json';
 import achievements from '../../data/en/entities/achievements.json';
@@ -53,7 +59,11 @@ export const placeholders = placeholdersSource.pages;
 const sites: Record<Locale, AnyRecord> = { en: enSite, 'zh-cn': zhCnSite, 'zh-tw': zhTwSite };
 const homes: Record<Locale, AnyRecord> = { en: enHome, 'zh-cn': zhCnHome, 'zh-tw': zhTwHome };
 const tools: Record<Locale, AnyRecord> = { en: enTools, 'zh-cn': zhCnTools, 'zh-tw': zhTwTools };
-const compliance: Record<Locale, AnyRecord> = { en: enCompliance, 'zh-cn': zhCnCompliance, 'zh-tw': zhTwCompliance };
+const compliance: Record<Locale, AnyRecord> = {
+  en: { ...enCompliance, pages: { ...enCompliance.pages, privacy: enPrivacy, cookies: enCookies } },
+  'zh-cn': { ...zhCnCompliance, pages: { ...zhCnCompliance.pages, privacy: zhCnPrivacy, cookies: zhCnCookies } },
+  'zh-tw': { ...zhTwCompliance, pages: { ...zhTwCompliance.pages, privacy: zhTwPrivacy, cookies: zhTwCookies } },
+};
 export const site = enSite;
 export const getSite = (locale: Locale = 'en') => sites[locale];
 export const getHome = (locale: Locale = 'en') => homes[locale];
