@@ -45,6 +45,8 @@ const htmlByRoute = new Map(htmlFiles.map((file) => [fileToRoute(file), readFile
 const sitemap = sitemapPaths();
 const errors = [];
 const inbound = {};
+const redirects = readFileSync(join(dist, '_redirects'), 'utf8');
+if (!redirects.includes('/sitemap.xml  /sitemap-index.xml  301')) errors.push('/sitemap.xml compatibility redirect missing');
 
 if (guideFiles.length !== 2) errors.push(`English guide data files=${guideFiles.length}, expected=2`);
 for (const locale of locales) {
@@ -123,6 +125,7 @@ console.log(JSON.stringify({
   guide_inbound_sources: inbound,
   guide_index_noindex_pages: locales.length,
   unexpected_candidate_pages: unexpectedGuidePages.length,
+  sitemap_xml_compatibility_redirect: 301,
   errors: errors.slice(0, 50),
 }, null, 2));
 if (errors.length) process.exitCode = 1;
