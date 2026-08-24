@@ -268,6 +268,56 @@ export function labelForRoute(route: RouteEntry, locale: Locale = 'en') {
   return seo.primary_keyword || seo.title || route.url_path;
 }
 
+export type SearchDocument = {
+  id: string;
+  label: string;
+  title: string;
+  keywords: string;
+  path: string;
+  entity: string;
+};
+
+function searchLabelForRoute(route: RouteEntry, locale: Locale) {
+  const site = getSite(locale);
+  const indexLabel = site.entity_indexes.find((item: AnyRecord) => item.url === route.url_path)?.label;
+  if (route.page_type !== 'data_entity') return indexLabel ?? getSeo(route.url_path, locale).primary_keyword ?? getSeo(route.url_path, locale).title;
+
+  const row = localizeRows(getPrimaryRows(route), route.entity, locale)[0] ?? {};
+  if (route.entity === 'Shell') return row.DisplayName ?? row.ShellId;
+  if (route.entity === 'Mission' || route.entity === 'Achievement' || route.entity === 'Mutator') return row.displayName;
+  if (route.entity === 'MapEntity') return getOfficialNamesForRoute(route, locale)[0] ?? row.Name ?? row.ID;
+  if (route.entity === 'Medal') return row['displayNameV2.Key'];
+  if (route.entity === 'Punchcard') return row['Title.Key'];
+  return getSeo(route.url_path, locale).primary_keyword ?? getSeo(route.url_path, locale).title;
+}
+
+export function getSearchDocuments(locale: Locale = 'en'): SearchDocument[] {
+  const site = getSite(locale);
+  const homeTitle = site.home_seo.title;
+  const documents: SearchDocument[] = [{
+    id: '/',
+    label: 'IRON NEST',
+    title: homeTitle,
+    keywords: `${site.ui.home} ${site.game_name}`,
+    path: localizedPath('/', locale),
+    entity: site.ui.home,
+  }];
+
+  for (const route of routes.filter((item) => item.page_type !== 'tool_placeholder')) {
+    const seo = getSeo(route.url_path, locale);
+    documents.push({
+      id: route.url_path,
+      label: String(searchLabelForRoute(route, locale) ?? seo.primary_keyword ?? route.url_path),
+      title: String(seo.title),
+      keywords: [seo.primary_keyword, ...(seo.keyword_candidates ?? []), route.url_path].filter(Boolean).join(' '),
+      path: localizedPath(route.url_path, locale),
+      entity: entityName(route.entity, locale),
+    });
+  }
+
+  return documents;
+}
+
 const achievementPercentageMap = new Map(
   achievementPercentages.raw_response.achievementpercentages.achievements.map((item) => [item.name, Number(item.percent)]),
 );

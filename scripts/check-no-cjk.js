@@ -23,7 +23,7 @@ const htmlFiles = walk(distRoot).filter((file) => {
 const matches = htmlFiles.flatMap((file) => {
   // The English header intentionally names Chinese languages in their native
   // scripts. Remove only that known selector before scanning English content.
-  const html = readFileSync(file, 'utf8').replace(/<nav class="language-switcher"[\s\S]*?<\/nav>/i, '');
+  const html = readFileSync(file, 'utf8').replace(/<div class="language-menu"[\s\S]*?<\/div><\/div>/i, '');
   const characters = html.match(/[一-鿿]/g) ?? [];
   return characters.length ? [{ file: relative(distRoot, file), cjk_characters: characters.length }] : [];
 });

@@ -1,0 +1,275 @@
+---
+import TechMark from './TechMark.astro';
+import { getSite, localizedPath, type Locale } from '../lib/data';
+
+interface Props {
+  locale: Locale;
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+const site = getSite(locale);
+const languageLinks = site.languages.map((language: any) => ({
+  ...language,
+  path: localizedPath(path, language.code as Locale),
+}));
+const currentLanguage = languageLinks.find((language: any) => language.code === locale) ?? languageLinks[0];
+const headerBrand = 'IRON NEST';
+---
+<header class="site-header" data-site-header>
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="utility-actions">
+        <div class="language-menu" data-language-menu>
+          <button
+            class="utility-control language-trigger"
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-controls="language-options"
+          >
+            <span>{currentLanguage.label}</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
+          </button>
+          <div class="language-panel" id="language-options" role="menu" hidden>
+            {languageLinks.map((language: any) => (
+              <a
+                href={language.path}
+                lang={language.hreflang}
+                role="menuitem"
+                aria-current={language.code === locale ? 'page' : undefined}
+              >{language.label}</a>
+            ))}
+          </div>
+        </div>
+
+        <button
+          class="utility-control theme-toggle"
+          type="button"
+          aria-label={site.ui.theme_to_light}
+          data-light-label={site.ui.theme_to_light}
+          data-dark-label={site.ui.theme_to_dark}
+        >
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.5" />
+            <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" />
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z" />
+          </svg>
+        </button>
+
+        <a
+          class="steam-entry"
+          href="https://store.steampowered.com/app/2950790/"
+          target="_blank"
+          rel="noopener"
+        >Get on Steam</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-bar">
+    <a class="brand" href={localizedPath('/', locale)}><TechMark size={25} />{headerBrand}</a>
+    <nav class="main-navigation" aria-label={site.ui.primary_navigation}>
+      {site.navigation.map((item: any) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
+    </nav>
+    <form
+      id="site-search"
+      class="global-search"
+      role="search"
+      data-analytics-event="search-use"
+      data-search-index={`/search-index/${locale}.json`}
+      data-no-results={site.ui.search_no_results}
+      data-unavailable={site.ui.search_unavailable}
+    >
+      <label class="visually-hidden" for="site-query">{site.ui.search_label}</label>
+      <div class="search-input-shell">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.2" /><path d="m15.3 15.3 4.2 4.2" /></svg>
+        <input
+          id="site-query"
+          name="query"
+          type="search"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-controls="site-search-results"
+          placeholder={site.ui.search_placeholder}
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <div class="search-results" id="site-search-results" role="listbox" hidden></div>
+    </form>
+  </div>
+</header>
+
+<script>
+  import MiniSearch from 'minisearch';
+
+  type SearchDocument = {
+    id: string;
+    label: string;
+    title: string;
+    keywords: string;
+    path: string;
+    entity: string;
+  };
+
+  const headers = document.querySelectorAll<HTMLElement>('[data-site-header]');
+  headers.forEach((header) => {
+    const languageMenu = header.querySelector<HTMLElement>('[data-language-menu]');
+    const languageTrigger = languageMenu?.querySelector<HTMLButtonElement>('.language-trigger');
+    const languagePanel = languageMenu?.querySelector<HTMLElement>('.language-panel');
+    const themeToggle = header.querySelector<HTMLButtonElement>('.theme-toggle');
+    const searchForm = header.querySelector<HTMLFormElement>('.global-search');
+    const searchInput = searchForm?.querySelector<HTMLInputElement>('input[type="search"]');
+    const searchResults = searchForm?.querySelector<HTMLElement>('.search-results');
+
+    const closeLanguageMenu = () => {
+      if (!languageTrigger || !languagePanel) return;
+      languagePanel.hidden = true;
+      languageTrigger.setAttribute('aria-expanded', 'false');
+    };
+
+    languageTrigger?.addEventListener('click', () => {
+      if (!languagePanel) return;
+      const willOpen = languagePanel.hidden;
+      languagePanel.hidden = !willOpen;
+      languageTrigger.setAttribute('aria-expanded', String(willOpen));
+      if (willOpen) languagePanel.querySelector<HTMLElement>('[aria-current="page"]')?.focus();
+    });
+    languageMenu?.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageMenu();
+      languageTrigger?.focus();
+    });
+    document.addEventListener('click', (event) => {
+      if (languageMenu && !languageMenu.contains(event.target as Node)) closeLanguageMenu();
+    });
+
+    const updateThemeButton = () => {
+      if (!themeToggle) return;
+      const isLight = document.documentElement.dataset.theme === 'light';
+      themeToggle.setAttribute('aria-label', isLight ? themeToggle.dataset.darkLabel ?? '' : themeToggle.dataset.lightLabel ?? '');
+    };
+    updateThemeButton();
+    themeToggle?.addEventListener('click', () => {
+      const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      document.documentElement.dataset.theme = theme;
+      try { localStorage.setItem('ironnest-theme', theme); } catch {}
+      updateThemeButton();
+    });
+
+    if (!searchForm || !searchInput || !searchResults) return;
+    let miniSearch: MiniSearch<SearchDocument> | undefined;
+    let loadingIndex: Promise<MiniSearch<SearchDocument>> | undefined;
+    let activeResult = -1;
+
+    const closeSearch = () => {
+      searchResults.hidden = true;
+      searchResults.replaceChildren();
+      searchInput.setAttribute('aria-expanded', 'false');
+      searchInput.removeAttribute('aria-activedescendant');
+      activeResult = -1;
+    };
+
+    const loadIndex = () => {
+      if (miniSearch) return Promise.resolve(miniSearch);
+      if (loadingIndex) return loadingIndex;
+      loadingIndex = fetch(searchForm.dataset.searchIndex ?? '')
+        .then((response) => {
+          if (!response.ok) throw new Error(`Search index returned ${response.status}`);
+          return response.json() as Promise<SearchDocument[]>;
+        })
+        .then((documents) => {
+          miniSearch = new MiniSearch<SearchDocument>({
+            fields: ['label', 'title', 'keywords', 'path'],
+            storeFields: ['label', 'title', 'path', 'entity'],
+          });
+          miniSearch.addAll(documents);
+          return miniSearch;
+        });
+      return loadingIndex;
+    };
+
+    const setActiveResult = (index: number) => {
+      const options = [...searchResults.querySelectorAll<HTMLElement>('[role="option"]')];
+      if (!options.length) return;
+      activeResult = (index + options.length) % options.length;
+      options.forEach((option, optionIndex) => option.setAttribute('aria-selected', String(optionIndex === activeResult)));
+      searchInput.setAttribute('aria-activedescendant', options[activeResult].id);
+      options[activeResult].scrollIntoView({ block: 'nearest' });
+    };
+
+    const renderSearch = async () => {
+      const query = searchInput.value.trim();
+      if (!query) {
+        closeSearch();
+        return;
+      }
+      try {
+        const index = await loadIndex();
+        if (searchInput.value.trim() !== query) return;
+        const matches = index.search(query, { prefix: true, combineWith: 'AND' }).slice(0, 7);
+        searchResults.replaceChildren();
+        if (!matches.length) {
+          const empty = document.createElement('p');
+          empty.className = 'search-empty';
+          empty.textContent = searchForm.dataset.noResults ?? '';
+          searchResults.append(empty);
+        } else {
+          matches.forEach((match, index) => {
+            const link = document.createElement('a');
+            link.id = `site-search-result-${index}`;
+            link.href = String(match.path);
+            link.setAttribute('role', 'option');
+            link.setAttribute('aria-selected', 'false');
+            const label = document.createElement('strong');
+            label.textContent = String(match.label);
+            const meta = document.createElement('span');
+            meta.textContent = `${String(match.entity)} · ${String(match.path)}`;
+            link.append(label, meta);
+            searchResults.append(link);
+          });
+        }
+        activeResult = -1;
+        searchResults.hidden = false;
+        searchInput.setAttribute('aria-expanded', 'true');
+      } catch {
+        searchResults.replaceChildren();
+        const error = document.createElement('p');
+        error.className = 'search-empty';
+        error.textContent = searchForm.dataset.unavailable ?? '';
+        searchResults.append(error);
+        searchResults.hidden = false;
+        searchInput.setAttribute('aria-expanded', 'true');
+      }
+    };
+
+    searchInput.addEventListener('focus', () => { void loadIndex(); });
+    searchInput.addEventListener('input', () => { void renderSearch(); });
+    searchInput.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        setActiveResult(activeResult + 1);
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        setActiveResult(activeResult - 1);
+      } else if (event.key === 'Escape') {
+        closeSearch();
+      }
+    });
+    searchForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const options = [...searchResults.querySelectorAll<HTMLAnchorElement>('[role="option"]')];
+      const destination = options[activeResult] ?? options[0];
+      if (!destination) return;
+      window.ironNestTrack?.(searchForm.dataset.analyticsEvent ?? 'search-use', { search_term: searchInput.value.trim() });
+      window.location.assign(destination.href);
+    });
+    document.addEventListener('click', (event) => {
+      if (!searchForm.contains(event.target as Node)) closeSearch();
+    });
+  });
+</script>

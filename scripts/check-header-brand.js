@@ -4,6 +4,7 @@ import path from 'node:path';
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
 const layoutPath = path.join(root, 'src/components/Layout.astro');
+const headerPath = path.join(root, 'src/components/Header.astro');
 const stylesheetPath = path.join(root, 'src/styles/global.css');
 const expectedBrand = 'IRON NEST';
 
@@ -71,11 +72,12 @@ for (const filePath of htmlFiles) {
 }
 
 const layout = fs.readFileSync(layoutPath, 'utf8');
+const header = fs.readFileSync(headerPath, 'utf8');
 const stylesheet = fs.readFileSync(stylesheetPath, 'utf8');
 const brandRule = stylesheet.match(/\.brand\s*\{([^}]+)\}/)?.[1] ?? '';
 
-if (!layout.includes("const headerBrand = 'IRON NEST';")) {
-  failures.push('Layout.astro: missing the shared header-only IRON NEST brand constant');
+if (!header.includes("const headerBrand = 'IRON NEST';")) {
+  failures.push('Header.astro: missing the shared header-only IRON NEST brand constant');
 }
 if (!layout.includes('<meta property="og:site_name" content={site.site_name} />')) {
   failures.push('Layout.astro: og:site_name no longer uses the separate site identity');

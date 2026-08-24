@@ -114,8 +114,11 @@ if (summary.entity_pages !== 288) failures.push(`Expected 288 localized entity p
 if (summary.og_images !== 318) failures.push(`Expected 318 unique OG images, found ${summary.og_images}`);
 
 const css = await readFile(join(root, 'src/styles/global.css'), 'utf8');
-for (const [token, value] of Object.entries({ '--bg-base': '#0d1210', '--bg-surface': '#161c19', '--text-primary': '#dce4dd', '--text-muted': '#8a978c', '--accent-warning': '#ffb020' })) {
+for (const [token, value] of Object.entries({ '--bg-base': '#0d1210', '--bg-surface': '#161c19', '--bg-elevated': '#1c231f', '--text-primary': '#dce4dd', '--text-muted': '#8a978c', '--accent-warning': '#ffb020' })) {
   if (!css.includes(`${token}: ${value}`)) failures.push(`Visual token mismatch: ${token}`);
+}
+for (const [token, value] of Object.entries({ '--bg-base': '#eef1ec', '--bg-surface': '#e2e7de', '--bg-elevated': '#f8faf6', '--border-line': '#c3ccbe', '--text-primary': '#1a211c', '--text-muted': '#5c6a5a', '--accent-olive': '#5c7355', '--accent-warning': '#9b5d06' })) {
+  if (!css.includes(`${token}: ${value}`)) failures.push(`Light visual token mismatch: ${token}`);
 }
 if (css.includes('fonts.googleapis.com')) failures.push('Runtime Google Fonts reference found');
 
@@ -129,14 +132,28 @@ function contrast(foreground, background) {
   return (values[0] + 0.05) / (values[1] + 0.05);
 }
 summary.contrast = {
-  primary_on_base: Number(contrast('#dce4dd', '#0d1210').toFixed(2)),
-  muted_on_base: Number(contrast('#8a978c', '#0d1210').toFixed(2)),
-  warning_on_base: Number(contrast('#ffb020', '#0d1210').toFixed(2)),
-  primary_on_surface: Number(contrast('#dce4dd', '#161c19').toFixed(2)),
-  muted_on_surface: Number(contrast('#8a978c', '#161c19').toFixed(2)),
-  warning_on_surface: Number(contrast('#ffb020', '#161c19').toFixed(2)),
+  dark: {
+    primary_on_base: Number(contrast('#dce4dd', '#0d1210').toFixed(2)),
+    muted_on_base: Number(contrast('#8a978c', '#0d1210').toFixed(2)),
+    warning_on_base: Number(contrast('#ffb020', '#0d1210').toFixed(2)),
+    primary_on_surface: Number(contrast('#dce4dd', '#161c19').toFixed(2)),
+    muted_on_surface: Number(contrast('#8a978c', '#161c19').toFixed(2)),
+    warning_on_surface: Number(contrast('#ffb020', '#161c19').toFixed(2)),
+  },
+  light: {
+    primary_on_base: Number(contrast('#1a211c', '#eef1ec').toFixed(2)),
+    muted_on_base: Number(contrast('#5c6a5a', '#eef1ec').toFixed(2)),
+    warning_on_base: Number(contrast('#9b5d06', '#eef1ec').toFixed(2)),
+    primary_on_surface: Number(contrast('#1a211c', '#e2e7de').toFixed(2)),
+    muted_on_surface: Number(contrast('#5c6a5a', '#e2e7de').toFixed(2)),
+    warning_on_elevated: Number(contrast('#9b5d06', '#f8faf6').toFixed(2)),
+    button_text_on_warning: Number(contrast('#fffaf0', '#9b5d06').toFixed(2)),
+    panel_text_on_olive: Number(contrast('#fffaf0', '#5c7355').toFixed(2)),
+  },
 };
-for (const [pair, ratio] of Object.entries(summary.contrast)) if (ratio < 4.5) failures.push(`WCAG AA contrast failed: ${pair} = ${ratio}`);
+for (const [theme, pairs] of Object.entries(summary.contrast)) {
+  for (const [pair, ratio] of Object.entries(pairs)) if (ratio < 4.5) failures.push(`WCAG AA contrast failed: ${theme}.${pair} = ${ratio}`);
+}
 
 console.log(JSON.stringify({ status: failures.length ? 'FAIL' : 'PASS', ...summary, failures: failures.slice(0, 50) }, null, 2));
 if (failures.length) process.exitCode = 1;

@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 import Analytics from './Analytics.astro';
-import TechMark from './TechMark.astro';
-import { getCompliance, getSite, getTools, guidePaths, localizedPath, ogImagePath, routes, translate, type Locale } from '../lib/data';
+import Header from './Header.astro';
+import { getCompliance, getSite, getTools, localizedPath, ogImagePath, translate, type Locale } from '../lib/data';
 
 interface Props {
   title: string;
@@ -34,29 +34,26 @@ const breadcrumbJson = {
   })),
 };
 const jsonLd = [...(breadcrumbItems.length > 1 ? [breadcrumbJson] : []), ...schemas];
-const searchRoutes = routes.filter((route) => route.page_type !== 'tool_placeholder').map((route) => ({
-  label: route.url_path,
-  path: localizedPath(route.url_path, locale),
-})).concat([
-  { label: '/tools', path: localizedPath('/tools', locale) },
-  { label: '/tools/achievement-completion', path: localizedPath('/tools/achievement-completion', locale) },
-]);
-searchRoutes.push(...['/about', '/privacy', '/cookies', '/terms', '/contact'].map((route) => ({
-  label: route,
-  path: localizedPath(route, locale),
-})));
-searchRoutes.push(...guidePaths.map((route) => ({ label: route, path: localizedPath(route, locale) })));
 const languageLinks = site.languages.map((language) => ({
   ...language,
   path: localizedPath(path, language.code as Locale),
 }));
-const headerBrand = 'IRON NEST';
 ---
 <!doctype html>
 <html lang={site.html_lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      (() => {
+        let theme = 'dark';
+        try {
+          const stored = localStorage.getItem('ironnest-theme');
+          if (stored === 'light' || stored === 'dark') theme = stored;
+        } catch {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -84,23 +81,7 @@ const headerBrand = 'IRON NEST';
   </head>
   <body>
     <a class="skip-link" href="#main-content">{translate(locale, 'skip_to_content')}</a>
-    <header>
-      <div class="inner">
-        <a class="brand" href={localizedPath('/', locale)}><TechMark size={25} />{headerBrand}</a>
-        <nav aria-label={site.ui.primary_navigation}>
-          {site.navigation.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
-        </nav>
-        <nav class="language-switcher" aria-label={site.ui.language_switcher}>
-          {languageLinks.map((language) => <a href={language.path} lang={language.hreflang} aria-current={language.code === locale ? 'page' : undefined}>{language.label}</a>)}
-        </nav>
-        <form id="site-search" role="search">
-          <label class="eyebrow" for="site-query">{site.ui.quick_jump}</label>
-          <input id="site-query" name="query" list="site-paths" placeholder={site.ui.search_placeholder} autocomplete="off" />
-          <datalist id="site-paths">{searchRoutes.map((item) => <option value={item.label} />)}</datalist>
-          <button type="submit">{site.ui.go}</button>
-        </form>
-      </div>
-    </header>
+    <Header locale={locale} path={path} />
     <main id="main-content">
       {breadcrumbItems.length > 1 && (
         <nav class="breadcrumbs" aria-label={site.ui.breadcrumb_navigation}>
@@ -123,17 +104,5 @@ const headerBrand = 'IRON NEST';
         <p>{site.footer_disclaimer}</p>
       </div>
     </footer>
-    <script define:vars={{ searchRoutes }}>
-      document.querySelector('#site-search')?.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const input = document.querySelector('#site-query');
-        const value = input instanceof HTMLInputElement ? input.value.trim() : '';
-        const match = searchRoutes.find((entry) => entry.label.toLowerCase() === value.toLowerCase());
-        if (match) {
-          window.ironNestTrack?.('search-use', { search_term: value });
-          window.location.assign(match.path);
-        }
-      });
-    </script>
   </body>
 </html>

@@ -75,7 +75,11 @@ if (!/@media \(max-width: 560px\)[\s\S]*?th:first-child, td:first-child \{ posit
 if (!/@media \(prefers-reduced-motion: reduce\)/.test(css) || !/transition-duration: \.01ms !important/.test(css)) errors.push('reduced-motion override missing');
 if (!/-webkit-overflow-scrolling: touch/.test(css) || !/overscroll-behavior-inline: contain/.test(css)) errors.push('touch scrolling containment missing');
 
-const toolHeaderContrast = contrast('ffb020', '3f503b');
+const toolHeaderContrastByTheme = {
+  dark: contrast('dce4dd', '4a5d45'),
+  light: contrast('fffaf0', '5c7355'),
+};
+const toolHeaderContrast = Math.min(...Object.values(toolHeaderContrastByTheme));
 if (toolHeaderContrast < 4.5) errors.push(`tool header contrast ${toolHeaderContrast.toFixed(2)} is below 4.5`);
 
 const techMark = readFileSync(join(root, 'src/components/TechMark.astro'), 'utf8');
@@ -93,6 +97,7 @@ const result = {
   tablet_hint_breakpoint_px: 860,
   mobile_sticky_column_breakpoint_px: 560,
   tool_header_contrast: Number(toolHeaderContrast.toFixed(2)),
+  tool_header_contrast_by_theme: Object.fromEntries(Object.entries(toolHeaderContrastByTheme).map(([theme, ratio]) => [theme, Number(ratio.toFixed(2))])),
   reduced_motion: true,
   errors: errors.slice(0, 50),
 };
