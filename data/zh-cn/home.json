@@ -3,7 +3,7 @@
   "task_file": "18-首页结构设计任务.md",
   "game": "IRON NEST: Heavy Turret Simulator",
   "site_url": "https://ironnestpedia.com",
-  "updated_at": "2026-08-17T00:00:00+08:00",
+  "updated_at": "2026-08-24T00:00:00+08:00",
   "h1": "IronNestPedia — IRON NEST 数据库、攻略与工具",
   "h1_rationale": "品牌名+游戏名+真实搜索词组合，与站长在step18讨论中确认，不用slogan",
   "visitor_model": {
@@ -27,35 +27,62 @@
   "blocks": [
     {
       "order": 1,
-      "name": "精选直达",
-      "type": "curated_direct_links",
-      "input_required_from_visitor": "none",
-      "items": [
+      "name": "首页主视觉",
+      "type": "hero_embedded_cta",
+      "eyebrow": "VERIFIED · DATAMINED · Patch #5",
+      "title": {
+        "primary": "IRON NEST",
+        "subtitle": "Heavy Turret Simulator"
+      },
+      "description": "在《IRON NEST》中，你将坐进一座巨型炮塔的控制席——这台战争机器专为主宰残酷的柴油朋克战场而造。",
+      "background": {
+        "asset": "/images/page_bg_raw.jpg",
+        "source_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950790/3b260a205b71e5023f6808e60b76e9d18837fa60/page_bg_raw.jpg",
+        "verified_at": "2026-08-24"
+      },
+      "hero_stats": [
         {
-          "label": "“幽灵炮台”任务攻略",
-          "url": "/missions/phantombattery",
-          "linked": true,
-          "why": "15-content-priorities.json topic_importance_ranking 排名第1，mention_count 6",
-          "evidence": "project-data/iron-nest/15-content-priorities.json"
+          "key": "reviews",
+          "label": "好评如潮 · 12,254 篇评测中 98% 好评",
+          "verified_at": "2026-08-24"
         },
         {
-          "label": "已知问题与路线图追踪",
-          "url": "/known-issues",
-          "linked": true,
-          "why": "解决10-player-questions.json负评渠道反复出现的挫败感信号；同时是唯一持续更新的页面，承担'证明站点活着'的作用；页面本身已在16-page-matrix.json/17-keywords.json落地",
-          "evidence": "project-data/iron-nest/10-player-questions.json; project-data/iron-nest/16-page-matrix.json (url_path /known-issues); project-data/iron-nest/config.json content_opportunities[2]"
+          "key": "coverage",
+          "label": "452 个已核实数据点 · 105 个页面"
         },
         {
-          "label": "🔧 综合射击规划器 · 开发中",
-          "url": null,
-          "linked": false,
-          "why": "text-only teaser，不带链接。对应09-competitor-landscape.json gap G3，被15-content-priorities.json排名第2话题（方位角/距离误差，mention_count 7）和17步骤a-z/SimilarWeb未匹配词（如'как треангулировать'、'compass'、'emergency move'）独立佐证。step25前不得做成正式导航入口；不得参考/复用竞品同类工具的具体代码或界面实现，只能用自有Shell弹道字段（ShellSpeed/Damage/ImpactRadius/charge_N_maxRange）重新实现",
-          "evidence": "project-data/iron-nest/config.json content_opportunities[1]; project-data/iron-nest/09-competitor-landscape.json gap G3; project-data/iron-nest/17-autocomplete-findings.json; project-data/iron-nest/17-similarweb-raw.json"
+          "key": "languages",
+          "label": "3 种语言"
+        },
+        {
+          "key": "version",
+          "label": "游戏版本 4 · 补丁 #5"
         }
       ],
-      "excluded_candidate": {
-        "label": "cross-mission bearing/distance mechanic page",
-        "reason": "15-content-priorities.json排名第2的话题目前没有对应的独立页面（属于跨任务机制，未来是step20指南类型，尚未产出），无法在①区块直接链接，先只体现为③里的firing planner文字预告的支撑证据，实际指南页留给step20"
+      "input_required_from_visitor": "none",
+      "cta_buttons": [
+        {
+          "slot": "primary",
+          "label": "“幽灵炮台”任务指南",
+          "url": "/missions/phantombattery",
+          "style": "filled_accent"
+        },
+        {
+          "slot": "secondary",
+          "label": "已知问题与路线图追踪",
+          "url": "/known-issues",
+          "style": "outline"
+        },
+        {
+          "slot": "tertiary",
+          "label": "浏览数据库",
+          "url": "#database-matrix",
+          "style": "outline"
+        }
+      ],
+      "dev_teaser": {
+        "label": "🔧 综合射击规划器 · 开发中",
+        "linked": false
       }
     },
     {

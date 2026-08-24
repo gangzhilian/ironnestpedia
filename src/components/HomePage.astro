@@ -1,7 +1,7 @@
 ---
 import Layout from './Layout.astro';
 import news from '../../data/live/news.json';
-import { getHome, getSeo, getSite, getTools, labelForRoute, localizedPath, routeMap, translate, type Locale } from '../lib/data';
+import { getHome, getSite, getTools, labelForRoute, localizedPath, routeMap, translate, type Locale } from '../lib/data';
 
 interface Props { locale?: Locale; }
 const { locale = 'en' } = Astro.props;
@@ -16,26 +16,41 @@ const videoGameJson = {
   url: site.site_url,
   gamePlatform: 'Windows',
 };
-const featured = home.blocks.find((block: any) => block.order === 1)?.items ?? [];
+const hero = home.blocks.find((block: any) => block.order === 1);
 const cards = home.blocks.find((block: any) => block.order === 2)?.cards ?? [];
 ---
 <Layout title={site.home_seo.title} description={site.home_seo.description} path="/" locale={locale} schemas={[videoGameJson]}>
-  <p class="eyebrow">{translate(locale, 'home_eyebrow')}</p>
-  <h1>{home.h1}</h1>
-  <p>{site.data_note}</p>
-  <section>
-    <h2>{translate(locale, 'current_question')}</h2>
-    <div class="grid">
-      {featured.map((item: any) => item.linked && item.url ? (
-        <article class="card">
-          <h3><a href={localizedPath(item.url, locale)}>{item.label}</a></h3>
-          <p>{getSeo(item.url, locale).description}</p>
-        </article>
-      ) : (
-        <article class="card teaser"><h3>{item.label}</h3><p>{translate(locale, 'planned_teaser')}</p></article>
-      ))}
+  <section class="home-hero" style={`--hero-background: url("${hero.background.asset}")`} aria-labelledby="homepage-h1">
+    <div class="home-hero-content">
+      <h1 id="homepage-h1" class="visually-hidden">{home.h1}</h1>
+      <p class="hero-classification">{hero.eyebrow}</p>
+      <div class="hero-display-title" aria-hidden="true">
+        <span class="hero-title-primary">{hero.title.primary}</span>
+        <span class="hero-title-secondary">{hero.title.subtitle}</span>
+      </div>
+      <p class="hero-hook">{hero.description}</p>
+
+      <div class="hero-trust-row" aria-label="Site verification facts">
+        {hero.hero_stats.map((stat: any) => (
+          <div class="hero-stat" data-stat={stat.key}>
+            <span>{stat.label}</span>
+            {stat.verified_at && <time class="hero-stat-date" datetime={stat.verified_at}>Verified {stat.verified_at}</time>}
+          </div>
+        ))}
+      </div>
+
+      <div class="hero-cta-row">
+        {hero.cta_buttons.map((cta: any) => (
+          <a
+            class:list={['hero-cta', cta.style === 'filled_accent' ? 'hero-cta-primary' : 'hero-cta-outline']}
+            href={cta.url.startsWith('#') ? cta.url : localizedPath(cta.url, locale)}
+          >{cta.label}</a>
+        ))}
+      </div>
+      <p class="hero-dev-teaser">{hero.dev_teaser.label}</p>
     </div>
   </section>
+  {/* TODO: Refresh the Steam review snapshot periodically. Current value was manually verified on 2026-08-24. */}
   <section>
     <h2>{tools.index.h1}</h2>
     <article class="card">
@@ -44,7 +59,7 @@ const cards = home.blocks.find((block: any) => block.order === 2)?.cards ?? [];
       <p><a href={localizedPath('/tools', locale)}>{tools.index.open_tool}</a></p>
     </article>
   </section>
-  <section>
+  <section id="database-matrix">
     <h2>{translate(locale, 'browse_database')}</h2>
     <div class="grid">
       {cards.map((card: any) => {

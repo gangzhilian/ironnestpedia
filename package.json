@@ -25,7 +25,9 @@
     "validate:step30": "node scripts/check-step30-output.js",
     "validate:header-brand": "node scripts/check-header-brand.js",
     "validate:header-layout": "node scripts/check-header-layout.js",
-    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23 && npm run validate:step24 && npm run validate:step25 && npm run validate:step26 && npm run validate:step27 && npm run validate:step29 && npm run validate:step30 && npm run validate:header-brand && npm run validate:header-layout"
+    "validate:hero": "node scripts/check-hero-output.js",
+    "validate:hero-contrast": "node scripts/check-hero-contrast.js",
+    "verify": "npm run build && npm run validate:data && npm run validate:links && npm run validate:locales && npm run validate:localized-output && npm run validate:no-cjk && npm run validate:titles && npm run validate:step23 && npm run validate:step24 && npm run validate:step25 && npm run validate:step26 && npm run validate:step27 && npm run validate:step29 && npm run validate:step30 && npm run validate:header-brand && npm run validate:header-layout && npm run validate:hero && npm run validate:hero-contrast"
   },
   "keywords": [
     "iron-nest",

@@ -329,13 +329,13 @@ for (const locale of locales) {
 const homeBase = await readJson(join(dataRoot, 'en', 'home.json'));
 const homeCopy = {
   en: {
-    h1: homeBase.h1, featured: ['Phantom Battery Mission Guide', 'Known Issues & Roadmap Tracker', '🔧 Unified Firing Planner · in development'], cards: siteLabels.en.indexes, blocks: ['Featured routes', 'Database indexes', 'Latest updates', 'Selected guides', 'Data notes', 'Footer'], latest: 'Game Version 4 (Patch #5)', compliance: ['About', 'Privacy Policy', 'Cookie Policy', 'Terms of Service', 'Contact'],
+    h1: homeBase.h1, hero: { description: homeBase.blocks[0].description, stats: homeBase.blocks[0].hero_stats.map((stat) => stat.label), ctas: homeBase.blocks[0].cta_buttons.map((cta) => cta.label), teaser: homeBase.blocks[0].dev_teaser.label }, cards: siteLabels.en.indexes, blocks: ['Homepage Hero', 'Database indexes', 'Latest updates', 'Selected guides', 'Data notes', 'Footer'], latest: 'Game Version 4 (Patch #5)', compliance: ['About', 'Privacy Policy', 'Cookie Policy', 'Terms of Service', 'Contact'],
   },
   'zh-cn': {
-    h1: 'IronNestPedia — IRON NEST 数据库、攻略与工具', featured: ['“幽灵炮台”任务攻略', '已知问题与路线图追踪', '🔧 综合射击规划器 · 开发中'], cards: siteLabels['zh-cn'].indexes, blocks: ['精选直达', '数据库入口', '最新更新', '精选指南', '数据说明', '页脚'], latest: '游戏版本4（补丁 #5）', compliance: ['关于本站', '隐私政策', 'Cookie政策', '服务条款', '联系我们'],
+    h1: 'IronNestPedia — IRON NEST 数据库、攻略与工具', hero: { description: '在《IRON NEST》中，你将坐进一座巨型炮塔的控制席——这台战争机器专为主宰残酷的柴油朋克战场而造。', stats: ['好评如潮 · 12,254 篇评测中 98% 好评', '452 个已核实数据点 · 105 个页面', '3 种语言', '游戏版本 4 · 补丁 #5'], ctas: ['“幽灵炮台”任务指南', '已知问题与路线图追踪', '浏览数据库'], teaser: '🔧 综合射击规划器 · 开发中' }, cards: siteLabels['zh-cn'].indexes, blocks: ['首页主视觉', '数据库入口', '最新更新', '精选指南', '数据说明', '页脚'], latest: '游戏版本4（补丁 #5）', compliance: ['关于本站', '隐私政策', 'Cookie政策', '服务条款', '联系我们'],
   },
   'zh-tw': {
-    h1: 'IronNestPedia — IRON NEST 資料庫、攻略與工具', featured: ['「幻影炮台」任務攻略', '已知問題與開發路線追蹤', '🔧 綜合射擊規劃器 · 開發中'], cards: siteLabels['zh-tw'].indexes, blocks: ['精選直達', '資料庫入口', '最新更新', '精選攻略', '資料說明', '頁尾'], latest: '遊戲版本4（更新 #5）', compliance: ['關於本站', '隱私權政策', 'Cookie政策', '服務條款', '聯絡我們'],
+    h1: 'IronNestPedia — IRON NEST 資料庫、攻略與工具', hero: { description: '在《IRON NEST》中，你將坐進一座巨型砲塔的控制席——這台戰爭機器專為支配殘酷的柴油龐克戰場而造。', stats: ['壓倒性好評 · 12,254 篇評論中 98% 好評', '452 個已核實資料點 · 105 個頁面', '3 種語言', '遊戲版本 4 · 更新 #5'], ctas: ['「幻影炮台」任務指南', '已知問題與開發路線追蹤', '瀏覽資料庫'], teaser: '🔧 綜合射擊規劃器 · 開發中' }, cards: siteLabels['zh-tw'].indexes, blocks: ['首頁主視覺', '資料庫入口', '最新更新', '精選攻略', '資料說明', '頁尾'], latest: '遊戲版本4（更新 #5）', compliance: ['關於本站', '隱私權政策', 'Cookie政策', '服務條款', '聯絡我們'],
   },
 };
 
@@ -344,7 +344,11 @@ for (const locale of locales) {
   const tr = homeCopy[locale];
   copy.h1 = tr.h1;
   copy.blocks.forEach((block, index) => { block.name = tr.blocks[index]; });
-  copy.blocks.find((block) => block.order === 1).items.forEach((item, index) => { item.label = tr.featured[index]; });
+  const hero = copy.blocks.find((block) => block.order === 1);
+  hero.description = tr.hero.description;
+  hero.hero_stats.forEach((stat, index) => { stat.label = tr.hero.stats[index]; });
+  hero.cta_buttons.forEach((cta, index) => { cta.label = tr.hero.ctas[index]; });
+  hero.dev_teaser.label = tr.hero.teaser;
   copy.blocks.find((block) => block.order === 2).cards.forEach((card, index) => { card.label = tr.cards[index]; });
   copy.blocks.find((block) => block.order === 3).latest_patch_label = locale === 'en' ? 'Patch #5' : locale === 'zh-cn' ? '补丁 #5' : '更新 #5';
   copy.blocks.find((block) => block.order === 5).fields.latest_version_label = tr.latest;
