@@ -50,6 +50,7 @@ const languageLinks = site.languages.map((language) => ({
   ...language,
   path: localizedPath(path, language.code as Locale),
 }));
+const headerBrand = 'IRON NEST';
 ---
 <!doctype html>
 <html lang={site.html_lang}>
@@ -85,7 +86,7 @@ const languageLinks = site.languages.map((language) => ({
     <a class="skip-link" href="#main-content">{translate(locale, 'skip_to_content')}</a>
     <header>
       <div class="inner">
-        <a class="brand" href={localizedPath('/', locale)}><TechMark size={25} />{site.site_name}</a>
+        <a class="brand" href={localizedPath('/', locale)}><TechMark size={25} />{headerBrand}</a>
         <nav aria-label={site.ui.primary_navigation}>
           {site.navigation.map((item) => <a href={localizedPath(item.url, locale)}>{item.label}</a>)}
         </nav>

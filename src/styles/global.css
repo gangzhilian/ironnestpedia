@@ -63,7 +63,7 @@ header { border-width: 0 0 var(--line); box-shadow: 0 1.25rem 3rem rgba(3, 7, 5,
 footer { border-width: var(--line) 0 0; padding: 2rem 0; }
 header .inner, footer .inner, main { width: min(var(--container), calc(100% - 2rem)); margin-inline: auto; }
 header .inner { min-height: 4.5rem; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem 1.5rem; }
-.brand { display: inline-flex; align-items: center; gap: .6rem; color: var(--text-primary); text-decoration: none; font-weight: 700; letter-spacing: -.03em; }
+.brand { display: inline-flex; align-items: center; gap: .6rem; color: var(--text-primary); text-decoration: none; font-weight: 700; letter-spacing: -.03em; white-space: nowrap; }
 .brand .tech-mark { color: var(--accent-warning); }
 nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; }
 header nav a, footer nav a { font-size: .78rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
